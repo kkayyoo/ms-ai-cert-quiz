@@ -2339,5 +2339,395 @@
       "grounding",
       "enterprise data"
     ]
+  },
+  {
+    "id": "ai102-061",
+    "exam": "AI-102",
+    "domain": "Implement decision support solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to detect anomalies in time-series data from IoT sensors to identify equipment failures before they occur. Which Azure AI service should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Metrics Advisor"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Anomaly Detector"
+      },
+      {
+        "id": "C",
+        "text": "Azure Machine Learning AutoML"
+      },
+      {
+        "id": "D",
+        "text": "Azure Stream Analytics"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Anomaly Detector detects anomalies in time-series data without needing labeled training data. It uses AI to identify unusual patterns and offers both univariate (single time series) and multivariate (multiple correlated time series) anomaly detection, ideal for IoT sensor monitoring.",
+    "explanationCN": "Azure AI 异常检测器在不需要标记训练数据的情况下检测时序数据中的异常。它使用 AI 识别异常模式，提供单变量（单时序）和多变量（多个相关时序）异常检测，非常适合物联网传感器监控。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/overview",
+    "difficulty": "easy",
+    "tags": [
+      "Anomaly Detector",
+      "time-series",
+      "IoT",
+      "predictive maintenance"
+    ]
+  },
+  {
+    "id": "ai102-062",
+    "exam": "AI-102",
+    "domain": "Implement decision support solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to implement a content recommendation system for an e-commerce website that personalizes product recommendations for each user. Which Azure AI service provides this capability?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Personalizer"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Anomaly Detector"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Metrics Advisor"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Content Moderator"
+      }
+    ],
+    "correctAnswers": [
+      "A"
+    ],
+    "explanation": "Azure AI Personalizer uses reinforcement learning to make real-time, personalized content recommendations. It learns from user interactions (rewards/feedback) to improve recommendations over time, making it ideal for personalized product recommendations.",
+    "explanationCN": "Azure AI 个性化服务使用强化学习进行实时个性化内容推荐。它从用户交互（奖励/反馈）中学习，随时间改进推荐，非常适合个性化产品推荐。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/personalizer/what-is-personalizer",
+    "difficulty": "easy",
+    "tags": [
+      "Personalizer",
+      "recommendation",
+      "reinforcement learning",
+      "personalization"
+    ]
+  },
+  {
+    "id": "ai102-063",
+    "exam": "AI-102",
+    "domain": "Implement decision support solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You are using Azure AI Personalizer in your application. What is the correct sequence of API calls to implement the Personalizer decision loop?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reward -> Rank -> Reward"
+      },
+      {
+        "id": "B",
+        "text": "Rank (to get best action) -> Show content -> Reward (to provide feedback)"
+      },
+      {
+        "id": "C",
+        "text": "Train -> Deploy -> Rank"
+      },
+      {
+        "id": "D",
+        "text": "Reward -> Train -> Rank"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "The Azure AI Personalizer decision loop is: 1) Call Rank API with context and actions to get the best recommended action, 2) Show the recommended content to the user, 3) Call Reward API with a score (0-1) based on user interaction. This loop trains the model over time.",
+    "explanationCN": "Azure AI 个性化服务决策循环是：1) 调用排名 API，提供上下文和操作以获取最佳推荐操作；2) 向用户展示推荐内容；3) 根据用户交互调用奖励 API，提供分数（0-1）。这个循环随时间训练模型。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/personalizer/concepts-reinforcement-learning",
+    "difficulty": "medium",
+    "tags": [
+      "Personalizer",
+      "Rank API",
+      "Reward API",
+      "reinforcement learning loop"
+    ]
+  },
+  {
+    "id": "ai102-064",
+    "exam": "AI-102",
+    "domain": "Implement decision support solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to monitor business KPIs and automatically detect anomalies across multiple metrics simultaneously. Which Azure AI service is specifically designed for this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Anomaly Detector"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Metrics Advisor"
+      },
+      {
+        "id": "C",
+        "text": "Azure Monitor"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Vision"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Metrics Advisor is specifically designed for monitoring business metrics and KPIs. It automatically detects anomalies across multiple time series, performs root cause analysis, and provides a customizable dashboard for business performance monitoring.",
+    "explanationCN": "Azure AI 指标顾问专为监控业务指标和 KPI 而设计。它自动检测多个时序中的异常，执行根本原因分析，并提供用于业务性能监控的可自定义仪表板。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/overview",
+    "difficulty": "medium",
+    "tags": [
+      "Metrics Advisor",
+      "business metrics",
+      "KPI",
+      "anomaly detection"
+    ]
+  },
+  {
+    "id": "ai102-065",
+    "exam": "AI-102",
+    "domain": "Implement decision support solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to implement a content moderation solution for a user-generated content platform that reviews text and images for policy violations. Which Azure AI service should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Language - Sentiment Analysis"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Content Safety"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Vision - Image Analysis"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Personalizer"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Content Safety provides comprehensive content moderation for both text and images, detecting harmful content categories including hate speech, violence, sexual content, and self-harm. It provides severity scores and supports custom blocklists.",
+    "explanationCN": "Azure AI 内容安全为文本和图像提供全面的内容审核，检测有害内容类别，包括仇恨言论、暴力、色情内容和自我伤害。它提供严重性分数并支持自定义阻止列表。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview",
+    "difficulty": "easy",
+    "tags": [
+      "Content Safety",
+      "content moderation",
+      "UGC",
+      "harmful content"
+    ]
+  },
+  {
+    "id": "ai102-066",
+    "exam": "AI-102",
+    "domain": "Implement decision support solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You are configuring Azure AI Anomaly Detector for your time-series data. The data shows clear weekly seasonal patterns. What parameter should you configure to improve anomaly detection accuracy?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Set the sensitivity to maximum"
+      },
+      {
+        "id": "B",
+        "text": "Configure the period (granularity) to match the seasonality of your data"
+      },
+      {
+        "id": "C",
+        "text": "Disable outlier detection"
+      },
+      {
+        "id": "D",
+        "text": "Use batch detection instead of streaming"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "When your time-series data has seasonal patterns (like weekly cycles), configuring the granularity/period parameter helps Anomaly Detector understand the expected seasonal behavior and distinguish seasonal variations from true anomalies, improving detection accuracy.",
+    "explanationCN": "当时序数据具有季节性模式（如每周周期）时，配置粒度/周期参数有助于异常检测器了解预期的季节性行为，区分季节变化和真实异常，提高检测准确性。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/concepts/anomaly-detection-best-practices",
+    "difficulty": "medium",
+    "tags": [
+      "Anomaly Detector",
+      "seasonality",
+      "time-series",
+      "configuration"
+    ]
+  },
+  {
+    "id": "ai102-067",
+    "exam": "AI-102",
+    "domain": "Implement decision support solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You are building a fraud detection system for an e-commerce platform that needs to make real-time decisions about whether a transaction is fraudulent. Which type of AI solution architecture should you implement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Use Azure AI Anomaly Detector for all transactions"
+      },
+      {
+        "id": "B",
+        "text": "Train a custom classification model in Azure Machine Learning and deploy as a real-time endpoint"
+      },
+      {
+        "id": "C",
+        "text": "Use Azure AI Language sentiment analysis to detect fraud"
+      },
+      {
+        "id": "D",
+        "text": "Use Azure AI Personalizer with fraud as a negative reward"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "For fraud detection, a custom trained classification model in Azure Machine Learning, deployed as a real-time inference endpoint, is the appropriate approach. The model is trained on labeled historical transaction data (fraudulent vs. legitimate) and can make real-time predictions for new transactions.",
+    "explanationCN": "对于欺诈检测，在 Azure 机器学习中训练的自定义分类模型，作为实时推理终结点部署，是合适的方法。模型在标记的历史交易数据（欺诈与合法）上训练，并可以对新交易进行实时预测。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-automated-ml-forecast",
+    "difficulty": "hard",
+    "tags": [
+      "Azure ML",
+      "fraud detection",
+      "classification",
+      "real-time inference"
+    ]
+  },
+  {
+    "id": "ai102-068",
+    "exam": "AI-102",
+    "domain": "Implement decision support solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "Azure AI Personalizer uses the concept of 'exploration' and 'exploitation'. What does the exploration rate (epsilon) control?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The rate at which the model downloads new training data"
+      },
+      {
+        "id": "B",
+        "text": "The percentage of requests where Personalizer tries less-certain actions to learn more about them"
+      },
+      {
+        "id": "C",
+        "text": "The speed of model retraining"
+      },
+      {
+        "id": "D",
+        "text": "The maximum number of actions in a Rank request"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "In Azure AI Personalizer, the exploration rate (epsilon) determines what percentage of Rank calls use random action selection (exploration) instead of the best-known action (exploitation). Exploration allows the model to discover potentially better actions that haven't been tried enough.",
+    "explanationCN": "在 Azure AI 个性化服务中，探索率（epsilon）决定了多少百分比的排名调用使用随机动作选择（探索）而非最佳已知动作（利用）。探索允许模型发现尚未充分尝试的潜在更好动作。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/personalizer/concepts-exploration",
+    "difficulty": "hard",
+    "tags": [
+      "Personalizer",
+      "exploration",
+      "exploitation",
+      "reinforcement learning"
+    ]
+  },
+  {
+    "id": "ai102-069",
+    "exam": "AI-102",
+    "domain": "Implement decision support solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to detect multivariate anomalies where an anomaly is only detectable by considering the correlation between multiple sensor readings simultaneously. Which Anomaly Detector mode should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Univariate anomaly detection (entire series mode)"
+      },
+      {
+        "id": "B",
+        "text": "Univariate anomaly detection (last point mode)"
+      },
+      {
+        "id": "C",
+        "text": "Multivariate anomaly detection (MVAD)"
+      },
+      {
+        "id": "D",
+        "text": "Batch anomaly detection"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Multivariate Anomaly Detection (MVAD) in Azure AI Anomaly Detector detects anomalies by analyzing correlations across multiple time series simultaneously. This is essential when an anomaly only becomes apparent when multiple variables deviate from their expected correlated patterns.",
+    "explanationCN": "Azure AI 异常检测器中的多变量异常检测 (MVAD) 通过同时分析多个时序之间的相关性来检测异常。当异常只有在多个变量偏离其预期相关模式时才显现时，这是必不可少的。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/overview#multivariate-anomaly-detection",
+    "difficulty": "hard",
+    "tags": [
+      "Anomaly Detector",
+      "multivariate",
+      "MVAD",
+      "correlation"
+    ]
+  },
+  {
+    "id": "ai102-070",
+    "exam": "AI-102",
+    "domain": "Implement decision support solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to implement counterfactual analysis in Azure AI Personalizer to understand what would have happened if different actions were taken historically. Which Personalizer feature enables this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Online learning mode"
+      },
+      {
+        "id": "B",
+        "text": "Offline evaluation and counterfactual analysis"
+      },
+      {
+        "id": "C",
+        "text": "Exploration rate adjustment"
+      },
+      {
+        "id": "D",
+        "text": "Reward aggregation"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Personalizer's offline evaluation feature allows counterfactual analysis - you can simulate how different policies (e.g., random or custom policies) would have performed on historical data. This helps validate Personalizer's effectiveness and optimize reward parameters.",
+    "explanationCN": "Azure AI 个性化服务的离线评估功能允许反事实分析——您可以模拟不同策略（如随机或自定义策略）在历史数据上的表现。这有助于验证个性化服务的有效性并优化奖励参数。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/personalizer/concepts-offline-evaluation",
+    "difficulty": "hard",
+    "tags": [
+      "Personalizer",
+      "offline evaluation",
+      "counterfactual",
+      "policy evaluation"
+    ]
   }
 ]

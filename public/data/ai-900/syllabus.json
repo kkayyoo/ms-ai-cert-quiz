@@ -1,0 +1,14 @@
+{
+  "exam": "AI-900",
+  "name": "Microsoft Azure AI Fundamentals",
+  "passingScore": 700,
+  "totalQuestions": 60,
+  "duration": 45,
+  "domains": [
+    {"name": "Describe Artificial Intelligence workloads and considerations", "weight": 0.175},
+    {"name": "Describe fundamental principles of machine learning on Azure", "weight": 0.175},
+    {"name": "Describe features of computer vision workloads on Azure", "weight": 0.175},
+    {"name": "Describe features of Natural Language Processing workloads on Azure", "weight": 0.175},
+    {"name": "Describe features of generative AI workloads on Azure", "weight": 0.225}
+  ]
+}

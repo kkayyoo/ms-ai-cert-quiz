@@ -31,3 +31,9 @@ Last commit: 938568e
 ## Database/Data Layer Agent
 STATUS: COMPLETE
 Last commit: 3e66de8
+
+## AI-900 Data Agent
+STATUS: COMPLETE
+Total questions: 84
+Validated: Yes
+Last commit: 37c3c3e

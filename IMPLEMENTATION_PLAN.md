@@ -54,3 +54,13 @@ Domains covered: All 6
 - Knowledge Mining: 10 questions (ai102-041 to ai102-050)
 - Generative AI: 10 questions (ai102-051 to ai102-060)
 - Decision Support: 10 questions (ai102-061 to ai102-070)
+
+## QA/DevOps Agent
+STATUS: COMPLETE
+Build: PASSING
+Tests: 25 passing, 0 failing
+TypeScript: No errors (tsc --noEmit clean)
+Data validation: ai-900 84 questions (0 errors), ai-102 70 questions (0 errors)
+GitHub Actions: .github/workflows/deploy.yml created (runs tests then deploys to gh-pages)
+DEPLOYMENT.md: Created with local dev + GitHub Pages instructions
+Note: git push skipped due to expired token — all committed locally

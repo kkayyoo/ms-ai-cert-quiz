@@ -2729,5 +2729,592 @@
       "counterfactual",
       "policy evaluation"
     ]
+  },
+  {
+    "id": "ai102-071",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to create an Azure AI services resource that allows you to access multiple AI services with a single API key. Which resource type should you create?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A single-service resource for each AI service you need"
+      },
+      {
+        "id": "B",
+        "text": "An Azure AI services multi-service resource"
+      },
+      {
+        "id": "C",
+        "text": "An Azure Cognitive Search resource"
+      },
+      {
+        "id": "D",
+        "text": "An Azure Machine Learning workspace"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "An Azure AI services multi-service resource (formerly Cognitive Services) provides a single endpoint and key to access multiple AI services including Vision, Language, Speech, and Decision. This simplifies management compared to creating individual single-service resources.",
+    "explanationCN": "Azure AI 多服务资源（原 Cognitive Services）提供单一终结点和密钥，可访问多种 AI 服务，包括视觉、语言、语音和决策。与为每个服务单独创建资源相比，这大大简化了管理。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/multi-service-resource",
+    "difficulty": "easy",
+    "tags": [
+      "Azure AI services",
+      "multi-service resource",
+      "resource management"
+    ]
+  },
+  {
+    "id": "ai102-072",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You want to restrict access to your Azure AI services resource so that only your application hosted in Azure Virtual Network can call the API. Which approach should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Regenerate the API key frequently"
+      },
+      {
+        "id": "B",
+        "text": "Configure Virtual Network service endpoints or private endpoints for the resource"
+      },
+      {
+        "id": "C",
+        "text": "Enable Azure AD authentication only"
+      },
+      {
+        "id": "D",
+        "text": "Store the API key in Azure Key Vault"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "To restrict Azure AI services access to specific VNets, you configure Virtual Network service endpoints or private endpoints. This ensures only traffic from the specified virtual network can reach the resource, regardless of the authentication method used.",
+    "explanationCN": "要将 Azure AI 服务访问限制到特定 VNet，需要配置虚拟网络服务终结点或专用终结点。这确保只有来自指定虚拟网络的流量才能访问资源，与使用的身份验证方法无关。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-virtual-networks",
+    "difficulty": "medium",
+    "tags": [
+      "network security",
+      "virtual network",
+      "private endpoint",
+      "Azure AI services"
+    ]
+  },
+  {
+    "id": "ai102-073",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "Your company's security policy requires that API keys for Azure AI services must NOT be stored in application code or configuration files. What is the recommended approach?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encode the keys with Base64 before embedding them in configuration"
+      },
+      {
+        "id": "B",
+        "text": "Store API keys in Azure Key Vault and retrieve them at runtime"
+      },
+      {
+        "id": "C",
+        "text": "Rotate the keys monthly and update config files each time"
+      },
+      {
+        "id": "D",
+        "text": "Use shared access signatures instead of API keys"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure Key Vault is the recommended solution for storing secrets like API keys. Applications retrieve secrets from Key Vault at runtime using managed identities, eliminating the need to store secrets in code or config files.",
+    "explanationCN": "Azure Key Vault 是存储 API 密钥等机密信息的推荐解决方案。应用程序可以使用托管标识在运行时从 Key Vault 检索机密，避免在代码或配置文件中存储机密。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/key-vault/general/overview",
+    "difficulty": "easy",
+    "tags": [
+      "Key Vault",
+      "security",
+      "secrets management",
+      "managed identity"
+    ]
+  },
+  {
+    "id": "ai102-074",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to authenticate to Azure AI services without using API keys, following the principle of least privilege. Which authentication method should you implement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "HTTP Basic authentication"
+      },
+      {
+        "id": "B",
+        "text": "OAuth 2.0 with client credentials"
+      },
+      {
+        "id": "C",
+        "text": "Microsoft Entra ID (Azure AD) authentication with managed identities"
+      },
+      {
+        "id": "D",
+        "text": "Certificate-based authentication"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Microsoft Entra ID (Azure AD) authentication with managed identities is the recommended keyless approach. A managed identity assigned to an Azure resource can be granted RBAC roles to access Azure AI services, removing the need to manage API keys.",
+    "explanationCN": "使用托管标识的 Microsoft Entra ID（Azure AD）身份验证是推荐的无密钥方法。可以为 Azure 资源分配托管标识，并授予其访问 Azure AI 服务的 RBAC 角色，从而无需管理 API 密钥。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/authentication",
+    "difficulty": "medium",
+    "tags": [
+      "authentication",
+      "managed identity",
+      "Entra ID",
+      "Azure AD",
+      "RBAC"
+    ]
+  },
+  {
+    "id": "ai102-075",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You are deploying Azure AI services in a regulated industry and need to ensure diagnostic logs and metrics are retained for compliance auditing. Where should you configure this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Enable soft delete on the resource"
+      },
+      {
+        "id": "B",
+        "text": "Configure Diagnostic Settings to send logs to Log Analytics workspace, Storage Account, or Event Hub"
+      },
+      {
+        "id": "C",
+        "text": "Enable Azure Defender for AI services"
+      },
+      {
+        "id": "D",
+        "text": "Create an Azure Policy to audit resource configurations"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure Diagnostic Settings allow you to route platform logs and metrics from Azure AI services to a Log Analytics workspace for querying, a Storage Account for long-term retention, or an Event Hub for streaming. This is the standard approach for compliance logging.",
+    "explanationCN": "Azure 诊断设置允许将 Azure AI 服务的平台日志和指标路由到 Log Analytics 工作区进行查询、路由到存储帐户进行长期保留，或路由到事件中心进行流式传输。这是合规日志记录的标准方法。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/diagnostic-logging",
+    "difficulty": "medium",
+    "tags": [
+      "monitoring",
+      "diagnostic logging",
+      "Log Analytics",
+      "compliance"
+    ]
+  },
+  {
+    "id": "ai102-076",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "Your Azure AI services resource is receiving a high volume of requests and you want to be alerted when the latency exceeds a threshold. What should you configure?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure Service Health alerts"
+      },
+      {
+        "id": "B",
+        "text": "Azure Monitor metric alerts on the Latency metric for the AI services resource"
+      },
+      {
+        "id": "C",
+        "text": "Azure Security Center recommendations"
+      },
+      {
+        "id": "D",
+        "text": "Azure Advisor cost recommendations"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure Monitor metric alerts can be configured on Azure AI services metrics including latency, error rates, and call volume. When the metric exceeds a defined threshold, an alert fires and can trigger notifications or automated actions.",
+    "explanationCN": "Azure Monitor 指标警报可配置在 Azure AI 服务指标上，包括延迟、错误率和调用量。当指标超过定义的阈值时，会触发警报并可以发送通知或执行自动化操作。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-apis-create-account",
+    "difficulty": "medium",
+    "tags": [
+      "monitoring",
+      "Azure Monitor",
+      "alerts",
+      "metrics"
+    ]
+  },
+  {
+    "id": "ai102-077",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to deploy an Azure AI services container on-premises to process sensitive data that cannot leave the corporate network. What must you configure for the container to run?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The container does not require any special configuration and runs offline"
+      },
+      {
+        "id": "B",
+        "text": "The container requires a billing endpoint connection to Azure but processes data locally"
+      },
+      {
+        "id": "C",
+        "text": "You must install a VPN gateway before deploying the container"
+      },
+      {
+        "id": "D",
+        "text": "The container requires a dedicated Azure subscription for on-premises use"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI services containers process data locally (on-premises) but must connect to Azure for billing purposes. You provide the ApiKey, Billing endpoint URI, and accept the EULA when running the container. Data is not sent to Azure for processing.",
+    "explanationCN": "Azure AI 服务容器在本地处理数据，但必须连接到 Azure 进行计费。运行容器时需要提供 ApiKey、计费终结点 URI 并接受 EULA。数据不会发送到 Azure 进行处理。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-container-support",
+    "difficulty": "medium",
+    "tags": [
+      "containers",
+      "on-premises",
+      "deployment",
+      "billing"
+    ]
+  },
+  {
+    "id": "ai102-078",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "An Azure AI services resource is experiencing throttling due to exceeding the Transactions Per Second (TPS) limit. What is the most cost-effective solution to address this without changing the pricing tier?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Implement retry logic with exponential backoff in your application"
+      },
+      {
+        "id": "B",
+        "text": "Create multiple Azure AI services resources and distribute requests across them"
+      },
+      {
+        "id": "C",
+        "text": "Switch to a higher pricing tier immediately"
+      },
+      {
+        "id": "D",
+        "text": "Contact Microsoft support to increase limits"
+      }
+    ],
+    "correctAnswers": [
+      "A"
+    ],
+    "explanation": "Implementing retry logic with exponential backoff is the recommended first approach when experiencing HTTP 429 (Too Many Requests) throttling responses. This allows requests to succeed after waiting, without requiring additional resources or tier upgrades.",
+    "explanationCN": "当遇到 HTTP 429（请求过多）限流响应时，首先推荐实现指数退避重试逻辑。这允许请求在等待后成功，无需额外资源或升级套餐。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-apis-create-account",
+    "difficulty": "medium",
+    "tags": [
+      "throttling",
+      "rate limiting",
+      "retry",
+      "best practices"
+    ]
+  },
+  {
+    "id": "ai102-079",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You are implementing Responsible AI practices for your Azure AI solution. Which Azure service provides built-in content filtering to detect and block harmful content in AI-generated outputs?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure Policy"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Content Safety"
+      },
+      {
+        "id": "C",
+        "text": "Azure Firewall"
+      },
+      {
+        "id": "D",
+        "text": "Microsoft Defender for Cloud"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Content Safety is a dedicated service that detects harmful content including hate, violence, sexual content, and self-harm in both text and images. It can be integrated into AI pipelines to filter inputs and outputs.",
+    "explanationCN": "Azure AI 内容安全是一项专用服务，可检测文本和图像中的有害内容，包括仇恨、暴力、色情和自残内容。可以将其集成到 AI 流水线中以过滤输入和输出。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview",
+    "difficulty": "easy",
+    "tags": [
+      "Responsible AI",
+      "content safety",
+      "content filtering",
+      "Azure AI Content Safety"
+    ]
+  },
+  {
+    "id": "ai102-080",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "Your organization wants to apply consistent governance policies across all Azure AI services resources, such as requiring specific tags and restricting deployments to approved regions. What Azure feature should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure Blueprints"
+      },
+      {
+        "id": "B",
+        "text": "Azure Policy"
+      },
+      {
+        "id": "C",
+        "text": "Azure Resource Manager tags"
+      },
+      {
+        "id": "D",
+        "text": "Azure Management Groups"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure Policy allows you to create and enforce governance rules for Azure resources. You can create policies that require specific tags, restrict resource creation to certain regions, or enforce specific SKUs for Azure AI services resources.",
+    "explanationCN": "Azure Policy 允许为 Azure 资源创建和执行治理规则。可以创建策略来要求特定标记、将资源创建限制在特定区域，或为 Azure AI 服务资源强制执行特定 SKU。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/governance/policy/overview",
+    "difficulty": "medium",
+    "tags": [
+      "governance",
+      "Azure Policy",
+      "compliance",
+      "resource management"
+    ]
+  },
+  {
+    "id": "ai102-081",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to monitor Azure AI services costs and set a budget alert to notify the team when spending reaches 80% of the monthly budget. Which Azure service enables this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure Monitor"
+      },
+      {
+        "id": "B",
+        "text": "Azure Cost Management + Billing"
+      },
+      {
+        "id": "C",
+        "text": "Azure Advisor"
+      },
+      {
+        "id": "D",
+        "text": "Azure Service Health"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure Cost Management + Billing allows you to create budgets with alert thresholds. You can configure alerts at percentage thresholds (e.g., 80% and 100%) to notify stakeholders via email when spending approaches or exceeds budget limits.",
+    "explanationCN": "Azure 成本管理 + 计费允许创建具有警报阈值的预算。可以配置百分比阈值（如 80% 和 100%）的警报，以便在支出接近或超出预算限制时通过电子邮件通知利益相关者。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending",
+    "difficulty": "easy",
+    "tags": [
+      "cost management",
+      "budget",
+      "billing",
+      "alerts"
+    ]
+  },
+  {
+    "id": "ai102-082",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "When designing an Azure AI solution, you need to handle Personal Identifiable Information (PII) according to GDPR. Which Azure AI feature can automatically detect and redact PII from text before it is processed or stored?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Language - PII detection feature"
+      },
+      {
+        "id": "B",
+        "text": "Azure Information Protection"
+      },
+      {
+        "id": "C",
+        "text": "Microsoft Purview"
+      },
+      {
+        "id": "D",
+        "text": "Azure Security Center"
+      }
+    ],
+    "correctAnswers": [
+      "A"
+    ],
+    "explanation": "Azure AI Language includes a PII detection feature that identifies and can redact personally identifiable information such as names, phone numbers, email addresses, and financial data from text. This helps with GDPR and data protection compliance.",
+    "explanationCN": "Azure AI 语言包括 PII 检测功能，可识别并可编辑文本中的个人身份信息，如姓名、电话号码、电子邮件地址和财务数据。这有助于遵守 GDPR 和数据保护法规。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/overview",
+    "difficulty": "medium",
+    "tags": [
+      "PII",
+      "GDPR",
+      "data privacy",
+      "Azure AI Language",
+      "compliance"
+    ]
+  },
+  {
+    "id": "ai102-083",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You have an Azure AI services resource. You need to grant a developer read-only access to view resource metrics and logs but prevent them from modifying the resource or accessing API keys. Which RBAC role should you assign?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cognitive Services Contributor"
+      },
+      {
+        "id": "B",
+        "text": "Reader"
+      },
+      {
+        "id": "C",
+        "text": "Cognitive Services User"
+      },
+      {
+        "id": "D",
+        "text": "Monitoring Reader"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "The Reader role grants read-only access to Azure resource properties including metrics and monitoring data, but does not allow listing keys, modifying resources, or accessing the service. This follows the principle of least privilege.",
+    "explanationCN": "Reader 角色授予对 Azure 资源属性（包括指标和监控数据）的只读访问权限，但不允许列出密钥、修改资源或访问服务。这遵循最小权限原则。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/authentication",
+    "difficulty": "medium",
+    "tags": [
+      "RBAC",
+      "access control",
+      "least privilege",
+      "Reader role"
+    ]
+  },
+  {
+    "id": "ai102-084",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "Your Azure AI solution needs to comply with data residency requirements that mandate all data stays within the European Union. What should you verify when provisioning Azure AI services resources?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Use the Free tier which has different data handling rules"
+      },
+      {
+        "id": "B",
+        "text": "Select an Azure region located in the EU such as West Europe or North Europe"
+      },
+      {
+        "id": "C",
+        "text": "Enable geo-redundant storage for the resource"
+      },
+      {
+        "id": "D",
+        "text": "Enable encryption at rest with customer-managed keys"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Data residency requirements are met by deploying Azure AI services resources in Azure regions within the required geographic boundary (e.g., West Europe, North Europe for EU). Data processed by the service stays within that region.",
+    "explanationCN": "通过将 Azure AI 服务资源部署在所需地理边界内的 Azure 区域（例如，欧盟的西欧、北欧）来满足数据驻留要求。服务处理的数据将留在该区域内。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-apis-create-account",
+    "difficulty": "easy",
+    "tags": [
+      "data residency",
+      "compliance",
+      "GDPR",
+      "regional deployment"
+    ]
+  },
+  {
+    "id": "ai102-085",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You want to use Azure AI services with customer-managed encryption keys (CMK) to satisfy your organization's security requirements. Which prerequisite must you set up before enabling CMK?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Enable Azure Defender for AI services"
+      },
+      {
+        "id": "B",
+        "text": "Create an Azure Key Vault with soft-delete and purge protection enabled"
+      },
+      {
+        "id": "C",
+        "text": "Configure a private endpoint for the AI services resource"
+      },
+      {
+        "id": "D",
+        "text": "Create a Service Principal in Azure AD"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "To use customer-managed keys (CMK) with Azure AI services, you must first create an Azure Key Vault with both soft-delete and purge protection enabled. These settings protect against accidental or malicious key deletion that would make encrypted data permanently inaccessible.",
+    "explanationCN": "要在 Azure AI 服务中使用客户管理的密钥（CMK），必须先创建启用了软删除和清除保护的 Azure Key Vault。这些设置防止意外或恶意删除密钥，否则会导致加密数据永久无法访问。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/encryption/cognitive-services-encryption-keys-portal",
+    "difficulty": "hard",
+    "tags": [
+      "CMK",
+      "customer-managed keys",
+      "encryption",
+      "Key Vault",
+      "security"
+    ]
   }
 ]

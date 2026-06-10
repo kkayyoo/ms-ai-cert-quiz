@@ -1,0 +1,202 @@
+[
+  {
+    "id": "ai102-001",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to create an Azure AI Services resource that provides access to multiple AI capabilities including vision, speech, and language. Which resource type should you create?",
+    "options": [
+      { "id": "A", "text": "A separate resource for each AI service (e.g., Computer Vision, Speech, Language)" },
+      { "id": "B", "text": "An Azure AI Services multi-service resource" },
+      { "id": "C", "text": "An Azure Machine Learning workspace" },
+      { "id": "D", "text": "An Azure Cognitive Search resource" }
+    ],
+    "correctAnswers": ["B"],
+    "explanation": "An Azure AI Services multi-service resource provides a single endpoint and key for accessing multiple Azure AI capabilities including Vision, Speech, Language, and Decision services. This simplifies management compared to creating individual resources for each service.",
+    "explanationCN": "Azure AI 服务多服务资源提供单一终结点和密钥，可访问多种 Azure AI 功能，包括视觉、语音、语言和决策服务，相比为每个服务单独创建资源更易于管理。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/multi-service-resource",
+    "difficulty": "easy",
+    "tags": ["Azure AI Services", "resource management", "multi-service"]
+  },
+  {
+    "id": "ai102-002",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You are configuring network security for an Azure AI Services resource. You want to allow access only from specific virtual networks and IP addresses. Which feature should you configure?",
+    "options": [
+      { "id": "A", "text": "Azure Active Directory conditional access" },
+      { "id": "B", "text": "Managed identity" },
+      { "id": "C", "text": "Virtual network service endpoints and firewall rules" },
+      { "id": "D", "text": "Azure Policy" }
+    ],
+    "correctAnswers": ["C"],
+    "explanation": "Azure AI Services supports virtual network service endpoints and firewall rules to restrict access to specific virtual networks and IP address ranges. This provides network-level security for your AI resources.",
+    "explanationCN": "Azure AI 服务支持虚拟网络服务终结点和防火墙规则，可将访问限制到特定的虚拟网络和 IP 地址范围，为 AI 资源提供网络级安全性。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-virtual-networks",
+    "difficulty": "medium",
+    "tags": ["network security", "virtual networks", "firewall"]
+  },
+  {
+    "id": "ai102-003",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to authenticate calls to an Azure AI Services REST API from a production application without storing credentials in code. What is the recommended approach?",
+    "options": [
+      { "id": "A", "text": "Embed the subscription key directly in the application code" },
+      { "id": "B", "text": "Use a managed identity and Azure Key Vault" },
+      { "id": "C", "text": "Store the subscription key in a configuration file" },
+      { "id": "D", "text": "Use basic authentication with username and password" }
+    ],
+    "correctAnswers": ["B"],
+    "explanation": "Using a managed identity with Azure Key Vault is the recommended approach for production applications. The managed identity allows the application to authenticate to Azure services without storing credentials in code, and Key Vault securely manages the subscription key.",
+    "explanationCN": "使用托管标识和 Azure Key Vault 是生产应用程序的推荐方法。托管标识允许应用程序在不存储凭据的情况下进行身份验证，Key Vault 安全地管理订阅密钥。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/authentication",
+    "difficulty": "medium",
+    "tags": ["authentication", "managed identity", "Key Vault", "security"]
+  },
+  {
+    "id": "ai102-004",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You want to monitor the usage and performance of your Azure AI Services resources. Which Azure service should you use to create alerts and view metrics?",
+    "options": [
+      { "id": "A", "text": "Azure Security Center" },
+      { "id": "B", "text": "Azure Monitor" },
+      { "id": "C", "text": "Azure Advisor" },
+      { "id": "D", "text": "Azure Service Health" }
+    ],
+    "correctAnswers": ["B"],
+    "explanation": "Azure Monitor provides metrics, logs, and alerting capabilities for Azure AI Services. You can monitor call volumes, latency, errors, and set up alerts for specific thresholds using Azure Monitor.",
+    "explanationCN": "Azure Monitor 为 Azure AI 服务提供指标、日志和警报功能。您可以监控调用量、延迟、错误，并使用 Azure Monitor 为特定阈值设置警报。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/diagnostic-logging",
+    "difficulty": "easy",
+    "tags": ["monitoring", "Azure Monitor", "metrics", "alerts"]
+  },
+  {
+    "id": "ai102-005",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You are deploying Azure AI Services in a region where data residency requirements mandate that all data stays within that region. Which deployment option ensures this?",
+    "options": [
+      { "id": "A", "text": "Use Azure CDN to cache responses globally" },
+      { "id": "B", "text": "Deploy the service in the specific region and disable geo-redundancy" },
+      { "id": "C", "text": "Use the global endpoint for the service" },
+      { "id": "D", "text": "Enable zone redundancy across multiple regions" }
+    ],
+    "correctAnswers": ["B"],
+    "explanation": "To meet data residency requirements, you should deploy Azure AI Services in the specific required region and ensure you use regional endpoints (not global endpoints). This ensures data processed by the service stays within that region.",
+    "explanationCN": "为满足数据驻留要求，应将 Azure AI 服务部署在特定区域，并使用区域终结点（而非全局终结点），确保服务处理的数据留在该区域内。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-data-encryption-decryption",
+    "difficulty": "medium",
+    "tags": ["data residency", "compliance", "regional deployment"]
+  },
+  {
+    "id": "ai102-006",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to implement a solution that uses Azure AI Services in a disconnected environment without internet access. Which deployment option should you use?",
+    "options": [
+      { "id": "A", "text": "Standard Azure AI Services with VPN connection" },
+      { "id": "B", "text": "Azure AI Services containers" },
+      { "id": "C", "text": "Azure AI Services with private endpoints" },
+      { "id": "D", "text": "Azure Arc-enabled AI Services" }
+    ],
+    "correctAnswers": ["B"],
+    "explanation": "Azure AI Services containers allow you to run the services on-premises or in a disconnected environment. The containers can be deployed on any Docker-compatible host and process data locally, though they still need periodic connectivity to Azure for billing and authentication.",
+    "explanationCN": "Azure AI 服务容器允许您在本地或断开连接的环境中运行服务。容器可以部署在任何兼容 Docker 的主机上并在本地处理数据，但仍需定期连接 Azure 进行计费和身份验证。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-container-support",
+    "difficulty": "medium",
+    "tags": ["containers", "disconnected", "on-premises", "Docker"]
+  },
+  {
+    "id": "ai102-007",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "multiple",
+    "question": "You are responsible for ensuring responsible AI principles are implemented in your Azure AI solution. Which two actions should you take? (Select TWO)",
+    "options": [
+      { "id": "A", "text": "Implement content filtering to prevent harmful outputs" },
+      { "id": "B", "text": "Maximize model accuracy without considering fairness metrics" },
+      { "id": "C", "text": "Ensure transparency by documenting how the AI system makes decisions" },
+      { "id": "D", "text": "Allow the AI system to make all decisions autonomously without human oversight" }
+    ],
+    "correctAnswers": ["A", "C"],
+    "explanation": "Microsoft's Responsible AI principles include fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability. Implementing content filtering (safety) and ensuring transparency through documentation are both key responsible AI practices.",
+    "explanationCN": "微软的负责任 AI 原则包括公平性、可靠性与安全性、隐私与安全性、包容性、透明度和问责制。实施内容过滤（安全性）和通过文档确保透明度都是关键的负责任 AI 实践。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai",
+    "difficulty": "medium",
+    "tags": ["responsible AI", "content filtering", "transparency", "ethics"]
+  },
+  {
+    "id": "ai102-008",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to control costs for an Azure AI Services resource. Which feature allows you to limit the number of API calls per minute to prevent unexpected charges?",
+    "options": [
+      { "id": "A", "text": "Azure Policy" },
+      { "id": "B", "text": "Quota management and rate limiting" },
+      { "id": "C", "text": "Azure Cost Management budgets" },
+      { "id": "D", "text": "Resource locks" }
+    ],
+    "correctAnswers": ["B"],
+    "explanation": "Azure AI Services has built-in quota management that limits the number of transactions per minute (TPM) and tokens per minute. You can view and request quota increases through the Azure portal, and the service automatically rate-limits requests that exceed your quota.",
+    "explanationCN": "Azure AI 服务具有内置配额管理功能，可限制每分钟的事务数（TPM）和令牌数。您可以通过 Azure 门户查看和请求增加配额，服务会自动对超过配额的请求进行限速。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/quotas-limits",
+    "difficulty": "easy",
+    "tags": ["cost management", "quota", "rate limiting"]
+  },
+  {
+    "id": "ai102-009",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You are planning an Azure AI solution and need to choose the appropriate pricing tier for Azure AI Services. What is the key difference between the Free (F0) and Standard (S0) tiers?",
+    "options": [
+      { "id": "A", "text": "Free tier supports all AI services; Standard tier only supports select services" },
+      { "id": "B", "text": "Free tier has limited transactions per minute and monthly limits; Standard tier scales based on usage" },
+      { "id": "C", "text": "Free tier requires a credit card; Standard tier does not" },
+      { "id": "D", "text": "Free tier provides SLA guarantees; Standard tier does not" }
+    ],
+    "correctAnswers": ["B"],
+    "explanation": "The Free (F0) tier has limited transactions per minute and monthly call limits with no cost, suitable for development and testing. The Standard (S0) tier scales based on usage and charges per call, suitable for production workloads with SLA guarantees.",
+    "explanationCN": "免费 (F0) 层每分钟事务数和每月调用次数有限，适合开发和测试。标准 (S0) 层根据使用量扩展并按调用收费，适合具有 SLA 保证的生产工作负载。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-apis-create-account",
+    "difficulty": "easy",
+    "tags": ["pricing", "tiers", "Free tier", "Standard tier"]
+  },
+  {
+    "id": "ai102-010",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to implement Customer-Managed Keys (CMK) for an Azure AI Services resource to meet compliance requirements. Which Azure service stores the encryption keys?",
+    "options": [
+      { "id": "A", "text": "Azure Security Center" },
+      { "id": "B", "text": "Azure Key Vault" },
+      { "id": "C", "text": "Azure Active Directory" },
+      { "id": "D", "text": "Azure Storage" }
+    ],
+    "correctAnswers": ["B"],
+    "explanation": "Customer-managed keys (CMK) for Azure AI Services are stored in Azure Key Vault. This allows you to control the encryption keys used to protect your data at rest, meeting compliance requirements that mandate customer control of encryption keys.",
+    "explanationCN": "Azure AI 服务的客户管理密钥 (CMK) 存储在 Azure Key Vault 中。这允许您控制用于保护静态数据的加密密钥，满足要求客户控制加密密钥的合规性要求。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/encryption/cognitive-services-encryption-keys-portal",
+    "difficulty": "medium",
+    "tags": ["encryption", "CMK", "Key Vault", "compliance", "security"]
+  }
+]

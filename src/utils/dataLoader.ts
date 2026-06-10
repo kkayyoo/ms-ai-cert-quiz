@@ -1,14 +1,20 @@
 import { Question } from '../types';
 
-// Use vite's import.meta.env when available (browser), fall back for Node/test env
 const DATA_BASE_URL: string = '/ms-ai-cert-quiz/';
 
+// Map examId to actual folder name
+const EXAM_FOLDER: Record<string, string> = {
+  'ai900': 'ai-900',
+  'ai102': 'ai-102',
+};
+
 async function loadExamQuestions(examId: 'ai900' | 'ai102'): Promise<Question[]> {
-  const url = `${DATA_BASE_URL}data/${examId}/questions.json`;
+  const folder = EXAM_FOLDER[examId] ?? examId;
+  const url = `${DATA_BASE_URL}data/${folder}/questions.json`;
   try {
     const response = await fetch(url);
     if (!response.ok) {
-      console.warn(`Failed to load ${examId} questions: ${response.status}`);
+      console.warn(`Failed to load ${examId} questions from ${url}: ${response.status}`);
       return [];
     }
     const data: unknown = await response.json();
@@ -16,7 +22,6 @@ async function loadExamQuestions(examId: 'ai900' | 'ai102'): Promise<Question[]>
       console.warn(`${examId} questions.json is not an array`);
       return [];
     }
-    // Normalize exam field for backward compat
     return data.map((q: Record<string, unknown>) => ({
       ...q,
       examId: q.examId ?? (q.exam === 'AI-900' ? 'ai900' : q.exam === 'AI-102' ? 'ai102' : examId),

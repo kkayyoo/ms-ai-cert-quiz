@@ -1949,5 +1949,395 @@
       "contract extraction",
       "fixed layout"
     ]
+  },
+  {
+    "id": "ai102-051",
+    "exam": "AI-102",
+    "domain": "Implement generative AI solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to deploy a GPT-4 model in Azure OpenAI Service and want to test it interactively before integrating it into your application. Which Azure OpenAI Studio tool should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure OpenAI Studio - Fine-tuning"
+      },
+      {
+        "id": "B",
+        "text": "Azure OpenAI Studio - Chat playground"
+      },
+      {
+        "id": "C",
+        "text": "Azure OpenAI Studio - DALL-E playground"
+      },
+      {
+        "id": "D",
+        "text": "Azure OpenAI Studio - Deployments"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "The Chat playground in Azure OpenAI Studio allows you to interactively test GPT-3.5 and GPT-4 chat completion models. You can adjust system messages, test different prompts, configure parameters like temperature and max tokens, and experiment with the model before integrating it into your application.",
+    "explanationCN": "Azure OpenAI Studio 中的聊天操场允许您以交互方式测试 GPT-3.5 和 GPT-4 聊天完成模型。您可以调整系统消息、测试不同提示、配置温度和最大令牌数等参数，在集成到应用程序之前进行实验。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/chatgpt-quickstart",
+    "difficulty": "easy",
+    "tags": [
+      "Azure OpenAI",
+      "GPT-4",
+      "playground",
+      "chat completion"
+    ]
+  },
+  {
+    "id": "ai102-052",
+    "exam": "AI-102",
+    "domain": "Implement generative AI solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You are implementing a RAG (Retrieval-Augmented Generation) pattern with Azure OpenAI. What is the primary purpose of the retrieval component in RAG?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To fine-tune the language model with domain-specific data"
+      },
+      {
+        "id": "B",
+        "text": "To fetch relevant context from a knowledge base to include in the prompt"
+      },
+      {
+        "id": "C",
+        "text": "To validate the model output for accuracy"
+      },
+      {
+        "id": "D",
+        "text": "To reduce the model response latency"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "In the RAG pattern, the retrieval component searches a knowledge base (like Azure AI Search) for documents relevant to the user's query. These retrieved documents are then included in the prompt as context, allowing the LLM to generate grounded, accurate responses based on your own data.",
+    "explanationCN": "在 RAG 模式中，检索组件在知识库（如 Azure AI 搜索）中搜索与用户查询相关的文档。这些检索到的文档随后作为上下文包含在提示中，使 LLM 能够根据您自己的数据生成有依据的、准确的响应。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-studio/concepts/retrieval-augmented-generation",
+    "difficulty": "medium",
+    "tags": [
+      "Azure OpenAI",
+      "RAG",
+      "retrieval augmented generation",
+      "grounding"
+    ]
+  },
+  {
+    "id": "ai102-053",
+    "exam": "AI-102",
+    "domain": "Implement generative AI solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to customize an Azure OpenAI model to respond in a specific style and follow company guidelines. The customization is behavioral, not about adding new knowledge. Which approach is most appropriate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fine-tune the model with examples"
+      },
+      {
+        "id": "B",
+        "text": "Craft a detailed system message (system prompt) for each API call"
+      },
+      {
+        "id": "C",
+        "text": "Train a custom model from scratch"
+      },
+      {
+        "id": "D",
+        "text": "Use prompt caching"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "A well-crafted system message (system prompt) is the primary way to customize Azure OpenAI model behavior, including response style, tone, guidelines, and persona. This is preferred over fine-tuning for behavioral changes because it is simpler, free, and can be updated instantly.",
+    "explanationCN": "精心设计的系统消息（系统提示）是自定义 Azure OpenAI 模型行为的主要方式，包括响应风格、语气、指南和角色。对于行为更改，这优于微调，因为它更简单、免费且可以立即更新。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/system-message",
+    "difficulty": "medium",
+    "tags": [
+      "Azure OpenAI",
+      "system message",
+      "prompt engineering",
+      "customization"
+    ]
+  },
+  {
+    "id": "ai102-054",
+    "exam": "AI-102",
+    "domain": "Implement generative AI solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to generate images using Azure OpenAI's DALL-E model. Your application must create product mockups based on text descriptions. Which API endpoint should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The Completions API with a vision model"
+      },
+      {
+        "id": "B",
+        "text": "The Images API (image generation endpoint)"
+      },
+      {
+        "id": "C",
+        "text": "The Chat Completions API with a multimodal model"
+      },
+      {
+        "id": "D",
+        "text": "The Embeddings API"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "The Azure OpenAI Images API (image generation endpoint) is used to generate images from text descriptions using DALL-E models. You provide a prompt and parameters like image size and quality, and the API returns image URLs or base64-encoded images.",
+    "explanationCN": "Azure OpenAI 图像 API（图像生成终结点）用于使用 DALL-E 模型从文本描述生成图像。您提供提示和图像大小、质量等参数，API 返回图像 URL 或 base64 编码的图像。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/dall-e",
+    "difficulty": "easy",
+    "tags": [
+      "Azure OpenAI",
+      "DALL-E",
+      "image generation",
+      "images API"
+    ]
+  },
+  {
+    "id": "ai102-055",
+    "exam": "AI-102",
+    "domain": "Implement generative AI solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You are implementing Azure OpenAI in your application and need to prevent the model from generating inappropriate content. What built-in Azure OpenAI feature should you configure?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Content Safety filters on the deployment"
+      },
+      {
+        "id": "B",
+        "text": "Azure Policy restrictions"
+      },
+      {
+        "id": "C",
+        "text": "System message only"
+      },
+      {
+        "id": "D",
+        "text": "Azure Monitor alerts"
+      }
+    ],
+    "correctAnswers": [
+      "A"
+    ],
+    "explanation": "Azure OpenAI has built-in content filtering that automatically screens both input (prompts) and output (completions) for hate, sexual, violence, and self-harm content. These filters are enabled by default and can be configured per deployment with different severity thresholds.",
+    "explanationCN": "Azure OpenAI 内置内容过滤功能，自动筛查输入（提示）和输出（完成）中的仇恨、性、暴力和自我伤害内容。这些过滤器默认启用，可以按部署配置不同的严重性阈值。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/content-filter",
+    "difficulty": "medium",
+    "tags": [
+      "Azure OpenAI",
+      "content filtering",
+      "safety",
+      "responsible AI"
+    ]
+  },
+  {
+    "id": "ai102-056",
+    "exam": "AI-102",
+    "domain": "Implement generative AI solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to use Azure OpenAI to build a solution where the AI can call external tools and APIs based on user requests (e.g., check weather, query a database). Which Azure OpenAI capability should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Completions API"
+      },
+      {
+        "id": "B",
+        "text": "Function calling (tools)"
+      },
+      {
+        "id": "C",
+        "text": "Fine-tuning"
+      },
+      {
+        "id": "D",
+        "text": "Embeddings"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure OpenAI function calling (now called 'tools') allows the model to identify when a function should be called and return structured JSON with the function name and parameters. Your application executes the actual function and can return the result to the model for a final response.",
+    "explanationCN": "Azure OpenAI 函数调用（现称为'工具'）允许模型识别何时应调用函数，并返回带有函数名称和参数的结构化 JSON。您的应用程序执行实际函数，并可以将结果返回给模型以获得最终响应。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/function-calling",
+    "difficulty": "medium",
+    "tags": [
+      "Azure OpenAI",
+      "function calling",
+      "tools",
+      "agentic AI"
+    ]
+  },
+  {
+    "id": "ai102-057",
+    "exam": "AI-102",
+    "domain": "Implement generative AI solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You want to fine-tune an Azure OpenAI model to improve its performance on a specific task using your own labeled data. Which model can be fine-tuned in Azure OpenAI Service?",
+    "options": [
+      {
+        "id": "A",
+        "text": "GPT-4 (gpt-4)"
+      },
+      {
+        "id": "B",
+        "text": "GPT-3.5-Turbo (gpt-35-turbo)"
+      },
+      {
+        "id": "C",
+        "text": "All models support fine-tuning"
+      },
+      {
+        "id": "D",
+        "text": "Only embedding models can be fine-tuned"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "In Azure OpenAI Service, GPT-3.5-Turbo is the primary model available for fine-tuning, along with Babbage and Ada for completion tasks. GPT-4 fine-tuning has limited availability. Fine-tuning requires uploading training data in JSONL format with prompt-completion pairs.",
+    "explanationCN": "在 Azure OpenAI 服务中，GPT-3.5-Turbo 是主要可用于微调的模型，以及用于完成任务的 Babbage 和 Ada。GPT-4 微调可用性有限。微调需要以 JSONL 格式上传包含提示-完成对的训练数据。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/fine-tuning",
+    "difficulty": "medium",
+    "tags": [
+      "Azure OpenAI",
+      "fine-tuning",
+      "GPT-3.5",
+      "model customization"
+    ]
+  },
+  {
+    "id": "ai102-058",
+    "exam": "AI-102",
+    "domain": "Implement generative AI solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You are designing prompts for Azure OpenAI and need the model to provide consistent, structured output in JSON format. What prompt engineering technique should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Zero-shot prompting"
+      },
+      {
+        "id": "B",
+        "text": "Few-shot prompting with JSON examples and JSON mode"
+      },
+      {
+        "id": "C",
+        "text": "Chain-of-thought prompting"
+      },
+      {
+        "id": "D",
+        "text": "Temperature reduction only"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "For consistent JSON output, use few-shot prompting to show the model examples of the expected JSON structure, and enable JSON mode (response_format: json_object) to force valid JSON output. This combination ensures structured, parseable responses.",
+    "explanationCN": "对于一致的 JSON 输出，使用少量示例提示向模型展示预期 JSON 结构的示例，并启用 JSON 模式（response_format: json_object）以强制生成有效的 JSON 输出。这种组合确保结构化、可解析的响应。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/json-mode",
+    "difficulty": "medium",
+    "tags": [
+      "Azure OpenAI",
+      "prompt engineering",
+      "JSON mode",
+      "few-shot"
+    ]
+  },
+  {
+    "id": "ai102-059",
+    "exam": "AI-102",
+    "domain": "Implement generative AI solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to generate vector embeddings for text to enable semantic search. Which Azure OpenAI model should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "gpt-4"
+      },
+      {
+        "id": "B",
+        "text": "text-embedding-ada-002 or text-embedding-3-large"
+      },
+      {
+        "id": "C",
+        "text": "gpt-35-turbo"
+      },
+      {
+        "id": "D",
+        "text": "dall-e-3"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure OpenAI text-embedding-ada-002 and text-embedding-3-large are embedding models that convert text into high-dimensional vectors. These vectors can be used for semantic search, similarity comparison, clustering, and as input to other ML systems.",
+    "explanationCN": "Azure OpenAI text-embedding-ada-002 和 text-embedding-3-large 是将文本转换为高维向量的嵌入模型。这些向量可用于语义搜索、相似性比较、聚类，以及作为其他机器学习系统的输入。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/understand-embeddings",
+    "difficulty": "easy",
+    "tags": [
+      "Azure OpenAI",
+      "embeddings",
+      "semantic search",
+      "vector"
+    ]
+  },
+  {
+    "id": "ai102-060",
+    "exam": "AI-102",
+    "domain": "Implement generative AI solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You are building an Azure OpenAI solution and want to ensure the LLM only answers questions based on your company's documentation, not general knowledge. What technique achieves this best?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Set temperature to 0"
+      },
+      {
+        "id": "B",
+        "text": "Implement RAG with Azure AI Search and instruct the model to only use provided context"
+      },
+      {
+        "id": "C",
+        "text": "Fine-tune the model on company documents"
+      },
+      {
+        "id": "D",
+        "text": "Use the completions API instead of chat completions"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "RAG (Retrieval Augmented Generation) combined with prompt instructions to only use provided context is the recommended approach for grounding LLM responses to specific documentation. The system message instructs the model to only answer from the retrieved documents, and to say 'I don't know' if information isn't in the context.",
+    "explanationCN": "RAG（检索增强生成）结合提示指令仅使用提供的上下文是将 LLM 响应锚定到特定文档的推荐方法。系统消息指示模型仅从检索到的文档回答，如果信息不在上下文中则说'我不知道'。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/use-your-data-quickstart",
+    "difficulty": "medium",
+    "tags": [
+      "Azure OpenAI",
+      "RAG",
+      "grounding",
+      "enterprise data"
+    ]
   }
 ]

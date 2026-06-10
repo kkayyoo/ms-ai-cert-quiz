@@ -1,0 +1,2733 @@
+[
+  {
+    "id": "ai102-001",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to create an Azure AI Services resource that provides access to multiple AI capabilities including vision, speech, and language. Which resource type should you create?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A separate resource for each AI service (e.g., Computer Vision, Speech, Language)"
+      },
+      {
+        "id": "B",
+        "text": "An Azure AI Services multi-service resource"
+      },
+      {
+        "id": "C",
+        "text": "An Azure Machine Learning workspace"
+      },
+      {
+        "id": "D",
+        "text": "An Azure Cognitive Search resource"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "An Azure AI Services multi-service resource provides a single endpoint and key for accessing multiple Azure AI capabilities including Vision, Speech, Language, and Decision services. This simplifies management compared to creating individual resources for each service.",
+    "explanationCN": "Azure AI 服务多服务资源提供单一终结点和密钥，可访问多种 Azure AI 功能，包括视觉、语音、语言和决策服务，相比为每个服务单独创建资源更易于管理。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/multi-service-resource",
+    "difficulty": "easy",
+    "tags": [
+      "Azure AI Services",
+      "resource management",
+      "multi-service"
+    ]
+  },
+  {
+    "id": "ai102-002",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You are configuring network security for an Azure AI Services resource. You want to allow access only from specific virtual networks and IP addresses. Which feature should you configure?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure Active Directory conditional access"
+      },
+      {
+        "id": "B",
+        "text": "Managed identity"
+      },
+      {
+        "id": "C",
+        "text": "Virtual network service endpoints and firewall rules"
+      },
+      {
+        "id": "D",
+        "text": "Azure Policy"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Azure AI Services supports virtual network service endpoints and firewall rules to restrict access to specific virtual networks and IP address ranges. This provides network-level security for your AI resources.",
+    "explanationCN": "Azure AI 服务支持虚拟网络服务终结点和防火墙规则，可将访问限制到特定的虚拟网络和 IP 地址范围，为 AI 资源提供网络级安全性。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-virtual-networks",
+    "difficulty": "medium",
+    "tags": [
+      "network security",
+      "virtual networks",
+      "firewall"
+    ]
+  },
+  {
+    "id": "ai102-003",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to authenticate calls to an Azure AI Services REST API from a production application without storing credentials in code. What is the recommended approach?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Embed the subscription key directly in the application code"
+      },
+      {
+        "id": "B",
+        "text": "Use a managed identity and Azure Key Vault"
+      },
+      {
+        "id": "C",
+        "text": "Store the subscription key in a configuration file"
+      },
+      {
+        "id": "D",
+        "text": "Use basic authentication with username and password"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Using a managed identity with Azure Key Vault is the recommended approach for production applications. The managed identity allows the application to authenticate to Azure services without storing credentials in code, and Key Vault securely manages the subscription key.",
+    "explanationCN": "使用托管标识和 Azure Key Vault 是生产应用程序的推荐方法。托管标识允许应用程序在不存储凭据的情况下进行身份验证，Key Vault 安全地管理订阅密钥。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/authentication",
+    "difficulty": "medium",
+    "tags": [
+      "authentication",
+      "managed identity",
+      "Key Vault",
+      "security"
+    ]
+  },
+  {
+    "id": "ai102-004",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You want to monitor the usage and performance of your Azure AI Services resources. Which Azure service should you use to create alerts and view metrics?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure Security Center"
+      },
+      {
+        "id": "B",
+        "text": "Azure Monitor"
+      },
+      {
+        "id": "C",
+        "text": "Azure Advisor"
+      },
+      {
+        "id": "D",
+        "text": "Azure Service Health"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure Monitor provides metrics, logs, and alerting capabilities for Azure AI Services. You can monitor call volumes, latency, errors, and set up alerts for specific thresholds using Azure Monitor.",
+    "explanationCN": "Azure Monitor 为 Azure AI 服务提供指标、日志和警报功能。您可以监控调用量、延迟、错误，并使用 Azure Monitor 为特定阈值设置警报。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/diagnostic-logging",
+    "difficulty": "easy",
+    "tags": [
+      "monitoring",
+      "Azure Monitor",
+      "metrics",
+      "alerts"
+    ]
+  },
+  {
+    "id": "ai102-005",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You are deploying Azure AI Services in a region where data residency requirements mandate that all data stays within that region. Which deployment option ensures this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Use Azure CDN to cache responses globally"
+      },
+      {
+        "id": "B",
+        "text": "Deploy the service in the specific region and disable geo-redundancy"
+      },
+      {
+        "id": "C",
+        "text": "Use the global endpoint for the service"
+      },
+      {
+        "id": "D",
+        "text": "Enable zone redundancy across multiple regions"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "To meet data residency requirements, you should deploy Azure AI Services in the specific required region and ensure you use regional endpoints (not global endpoints). This ensures data processed by the service stays within that region.",
+    "explanationCN": "为满足数据驻留要求，应将 Azure AI 服务部署在特定区域，并使用区域终结点（而非全局终结点），确保服务处理的数据留在该区域内。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-data-encryption-decryption",
+    "difficulty": "medium",
+    "tags": [
+      "data residency",
+      "compliance",
+      "regional deployment"
+    ]
+  },
+  {
+    "id": "ai102-006",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to implement a solution that uses Azure AI Services in a disconnected environment without internet access. Which deployment option should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Standard Azure AI Services with VPN connection"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Services containers"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Services with private endpoints"
+      },
+      {
+        "id": "D",
+        "text": "Azure Arc-enabled AI Services"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Services containers allow you to run the services on-premises or in a disconnected environment. The containers can be deployed on any Docker-compatible host and process data locally, though they still need periodic connectivity to Azure for billing and authentication.",
+    "explanationCN": "Azure AI 服务容器允许您在本地或断开连接的环境中运行服务。容器可以部署在任何兼容 Docker 的主机上并在本地处理数据，但仍需定期连接 Azure 进行计费和身份验证。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-container-support",
+    "difficulty": "medium",
+    "tags": [
+      "containers",
+      "disconnected",
+      "on-premises",
+      "Docker"
+    ]
+  },
+  {
+    "id": "ai102-007",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "multiple",
+    "question": "You are responsible for ensuring responsible AI principles are implemented in your Azure AI solution. Which two actions should you take? (Select TWO)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Implement content filtering to prevent harmful outputs"
+      },
+      {
+        "id": "B",
+        "text": "Maximize model accuracy without considering fairness metrics"
+      },
+      {
+        "id": "C",
+        "text": "Ensure transparency by documenting how the AI system makes decisions"
+      },
+      {
+        "id": "D",
+        "text": "Allow the AI system to make all decisions autonomously without human oversight"
+      }
+    ],
+    "correctAnswers": [
+      "A",
+      "C"
+    ],
+    "explanation": "Microsoft's Responsible AI principles include fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability. Implementing content filtering (safety) and ensuring transparency through documentation are both key responsible AI practices.",
+    "explanationCN": "微软的负责任 AI 原则包括公平性、可靠性与安全性、隐私与安全性、包容性、透明度和问责制。实施内容过滤（安全性）和通过文档确保透明度都是关键的负责任 AI 实践。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai",
+    "difficulty": "medium",
+    "tags": [
+      "responsible AI",
+      "content filtering",
+      "transparency",
+      "ethics"
+    ]
+  },
+  {
+    "id": "ai102-008",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to control costs for an Azure AI Services resource. Which feature allows you to limit the number of API calls per minute to prevent unexpected charges?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure Policy"
+      },
+      {
+        "id": "B",
+        "text": "Quota management and rate limiting"
+      },
+      {
+        "id": "C",
+        "text": "Azure Cost Management budgets"
+      },
+      {
+        "id": "D",
+        "text": "Resource locks"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Services has built-in quota management that limits the number of transactions per minute (TPM) and tokens per minute. You can view and request quota increases through the Azure portal, and the service automatically rate-limits requests that exceed your quota.",
+    "explanationCN": "Azure AI 服务具有内置配额管理功能，可限制每分钟的事务数（TPM）和令牌数。您可以通过 Azure 门户查看和请求增加配额，服务会自动对超过配额的请求进行限速。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/quotas-limits",
+    "difficulty": "easy",
+    "tags": [
+      "cost management",
+      "quota",
+      "rate limiting"
+    ]
+  },
+  {
+    "id": "ai102-009",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You are planning an Azure AI solution and need to choose the appropriate pricing tier for Azure AI Services. What is the key difference between the Free (F0) and Standard (S0) tiers?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Free tier supports all AI services; Standard tier only supports select services"
+      },
+      {
+        "id": "B",
+        "text": "Free tier has limited transactions per minute and monthly limits; Standard tier scales based on usage"
+      },
+      {
+        "id": "C",
+        "text": "Free tier requires a credit card; Standard tier does not"
+      },
+      {
+        "id": "D",
+        "text": "Free tier provides SLA guarantees; Standard tier does not"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "The Free (F0) tier has limited transactions per minute and monthly call limits with no cost, suitable for development and testing. The Standard (S0) tier scales based on usage and charges per call, suitable for production workloads with SLA guarantees.",
+    "explanationCN": "免费 (F0) 层每分钟事务数和每月调用次数有限，适合开发和测试。标准 (S0) 层根据使用量扩展并按调用收费，适合具有 SLA 保证的生产工作负载。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-apis-create-account",
+    "difficulty": "easy",
+    "tags": [
+      "pricing",
+      "tiers",
+      "Free tier",
+      "Standard tier"
+    ]
+  },
+  {
+    "id": "ai102-010",
+    "exam": "AI-102",
+    "domain": "Plan and manage an Azure AI solution",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to implement Customer-Managed Keys (CMK) for an Azure AI Services resource to meet compliance requirements. Which Azure service stores the encryption keys?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure Security Center"
+      },
+      {
+        "id": "B",
+        "text": "Azure Key Vault"
+      },
+      {
+        "id": "C",
+        "text": "Azure Active Directory"
+      },
+      {
+        "id": "D",
+        "text": "Azure Storage"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Customer-managed keys (CMK) for Azure AI Services are stored in Azure Key Vault. This allows you to control the encryption keys used to protect your data at rest, meeting compliance requirements that mandate customer control of encryption keys.",
+    "explanationCN": "Azure AI 服务的客户管理密钥 (CMK) 存储在 Azure Key Vault 中。这允许您控制用于保护静态数据的加密密钥，满足要求客户控制加密密钥的合规性要求。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/encryption/cognitive-services-encryption-keys-portal",
+    "difficulty": "medium",
+    "tags": [
+      "encryption",
+      "CMK",
+      "Key Vault",
+      "compliance",
+      "security"
+    ]
+  },
+  {
+    "id": "ai102-011",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to extract text from images of scanned documents, including handwritten text. Which Azure AI service should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Vision - Image Analysis"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Vision - Read API (OCR)"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Language - Text Analytics"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Translator"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "The Azure AI Vision Read API (OCR) is specifically designed to extract printed and handwritten text from images and documents. It can process images, PDFs, and TIFF files and handles complex layouts, multiple languages, and mixed handwritten/printed text.",
+    "explanationCN": "Azure AI Vision 的 Read API（OCR）专为从图像和文档中提取印刷和手写文本而设计，可处理图像、PDF 和 TIFF 文件，支持复杂布局、多种语言以及手写/印刷混合文本。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-ocr",
+    "difficulty": "easy",
+    "tags": [
+      "Computer Vision",
+      "OCR",
+      "Read API",
+      "handwriting"
+    ]
+  },
+  {
+    "id": "ai102-012",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You are building an application that needs to detect faces in images and determine if two face images belong to the same person. Which Azure AI service should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Vision - Image Analysis"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Face service"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Custom Vision"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Video Indexer"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Face service provides face detection, face verification (comparing two faces), face identification (matching a face to a group), and facial attribute analysis. The Verify operation specifically determines if two faces belong to the same person.",
+    "explanationCN": "Azure AI 人脸服务提供人脸检测、人脸验证（比较两张面孔）、人脸识别（将面孔与群组匹配）和面部属性分析。Verify 操作专门用于确定两张人脸是否属于同一个人。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-identity",
+    "difficulty": "easy",
+    "tags": [
+      "Computer Vision",
+      "Face",
+      "face verification",
+      "biometrics"
+    ]
+  },
+  {
+    "id": "ai102-013",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to train a custom image classification model to identify specific products on a retail shelf. Which Azure AI service allows you to train custom models with your own labeled images?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Vision - Image Analysis"
+      },
+      {
+        "id": "B",
+        "text": "Azure Machine Learning"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Custom Vision"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Face"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Azure AI Custom Vision allows you to train custom image classification and object detection models using your own labeled images. It provides a simple web interface and REST API for training and deploying custom vision models without requiring deep ML expertise.",
+    "explanationCN": "Azure AI 自定义视觉允许您使用自己的标记图像训练自定义图像分类和对象检测模型。它提供简单的 Web 界面和 REST API，无需深度机器学习专业知识即可训练和部署自定义视觉模型。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/overview",
+    "difficulty": "easy",
+    "tags": [
+      "Custom Vision",
+      "image classification",
+      "object detection",
+      "training"
+    ]
+  },
+  {
+    "id": "ai102-014",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You are using Azure AI Custom Vision to build an object detection model. What is the minimum number of images per tag recommended for initial model training?",
+    "options": [
+      {
+        "id": "A",
+        "text": "5 images"
+      },
+      {
+        "id": "B",
+        "text": "15 images"
+      },
+      {
+        "id": "C",
+        "text": "50 images"
+      },
+      {
+        "id": "D",
+        "text": "100 images"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Custom Vision recommends a minimum of 15 images per tag to start training an object detection model, though more images generally lead to better results. For object detection (as opposed to classification), the recommendation is at least 15 images of each object you want to detect.",
+    "explanationCN": "Azure AI 自定义视觉建议每个标签至少 15 张图像来开始训练对象检测模型，但更多图像通常会带来更好的结果。对于对象检测（而非分类），建议每个要检测的对象至少有 15 张图像。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/getting-started-build-a-classifier",
+    "difficulty": "medium",
+    "tags": [
+      "Custom Vision",
+      "object detection",
+      "training data",
+      "best practices"
+    ]
+  },
+  {
+    "id": "ai102-015",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to analyze video content to automatically identify and track objects throughout a video stream. Which Azure service provides this capability?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Vision - Image Analysis"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Video Indexer"
+      },
+      {
+        "id": "C",
+        "text": "Azure Media Services"
+      },
+      {
+        "id": "D",
+        "text": "Azure Stream Analytics"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Video Indexer extracts insights from video and audio files, including object detection, tracking, scene recognition, facial recognition, speech transcription, and topic detection. It provides a comprehensive video analysis solution.",
+    "explanationCN": "Azure AI 视频索引器从视频和音频文件中提取洞察，包括对象检测、跟踪、场景识别、面部识别、语音转录和主题检测，提供全面的视频分析解决方案。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/azure-video-indexer/video-indexer-overview",
+    "difficulty": "easy",
+    "tags": [
+      "Video Indexer",
+      "video analysis",
+      "object tracking"
+    ]
+  },
+  {
+    "id": "ai102-016",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to detect specific objects (cars, people, stop signs) in real-time video frames from traffic cameras. You want to use a pre-trained model without custom training. Which Azure AI Vision feature should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Image Analysis - Detect objects feature"
+      },
+      {
+        "id": "B",
+        "text": "Custom Vision - Object Detection"
+      },
+      {
+        "id": "C",
+        "text": "Face API - Detection"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Vision - Optical Character Recognition"
+      }
+    ],
+    "correctAnswers": [
+      "A"
+    ],
+    "explanation": "The Azure AI Vision Image Analysis API includes an object detection feature that can identify and locate common objects (including people, cars, and various items) in images without requiring custom training. For common object categories, this is sufficient without needing Custom Vision.",
+    "explanationCN": "Azure AI Vision 图像分析 API 包括一个对象检测功能，可以识别和定位图像中的常见对象（包括人、汽车和各种物品），无需自定义训练。对于常见的对象类别，这已足够，无需使用自定义视觉。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/concept-object-detection",
+    "difficulty": "medium",
+    "tags": [
+      "Computer Vision",
+      "object detection",
+      "Image Analysis",
+      "pre-trained"
+    ]
+  },
+  {
+    "id": "ai102-017",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You are building a solution that needs to generate textual descriptions of images for accessibility purposes. Which Azure AI Vision feature should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Image Analysis - Dense captions"
+      },
+      {
+        "id": "B",
+        "text": "Image Analysis - Tags"
+      },
+      {
+        "id": "C",
+        "text": "Image Analysis - Categories"
+      },
+      {
+        "id": "D",
+        "text": "Image Analysis - Smart crops"
+      }
+    ],
+    "correctAnswers": [
+      "A"
+    ],
+    "explanation": "The Dense Captions feature in Azure AI Vision Image Analysis generates detailed, human-readable descriptions of an image and its regions. This is ideal for accessibility applications like alt-text generation, as it provides comprehensive textual descriptions of visual content.",
+    "explanationCN": "Azure AI Vision 图像分析中的密集标题功能可为图像及其区域生成详细的、人类可读的描述。这非常适合无障碍应用程序（如 alt 文本生成），因为它为视觉内容提供全面的文本描述。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/concept-describe-images-40",
+    "difficulty": "medium",
+    "tags": [
+      "Computer Vision",
+      "Image Analysis",
+      "dense captions",
+      "accessibility"
+    ]
+  },
+  {
+    "id": "ai102-018",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to detect inappropriate or adult content in user-uploaded images before storing them. Which Azure AI service provides content moderation capabilities for images?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Content Safety"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Vision - Image Analysis"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Custom Vision"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Anomaly Detector"
+      }
+    ],
+    "correctAnswers": [
+      "A"
+    ],
+    "explanation": "Azure AI Content Safety is specifically designed to detect potentially harmful content across images and text, including sexual content, violence, hate speech, and self-harm content. It provides confidence scores and category-specific filtering.",
+    "explanationCN": "Azure AI 内容安全专为检测图像和文本中潜在有害内容而设计，包括色情内容、暴力、仇恨言论和自我伤害内容，提供置信度分数和特定类别过滤。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview",
+    "difficulty": "medium",
+    "tags": [
+      "Content Safety",
+      "content moderation",
+      "image analysis",
+      "harmful content"
+    ]
+  },
+  {
+    "id": "ai102-019",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to build a spatial analysis solution that monitors foot traffic in a retail store using a camera. Which Azure AI service should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Video Indexer"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Vision - Spatial Analysis"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Face"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Custom Vision"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Vision Spatial Analysis processes live video feeds to understand how people move through physical spaces. It can count people, detect when people enter or exit zones, track distance, and analyze crowd density - ideal for retail foot traffic monitoring.",
+    "explanationCN": "Azure AI Vision 空间分析处理实时视频流，以了解人们如何在物理空间中移动。它可以计数人员、检测人员进出区域、跟踪距离和分析人群密度——非常适合零售店客流监控。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/intro-to-spatial-analysis-public-preview",
+    "difficulty": "medium",
+    "tags": [
+      "Computer Vision",
+      "Spatial Analysis",
+      "foot traffic",
+      "video analytics"
+    ]
+  },
+  {
+    "id": "ai102-020",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "multiple",
+    "question": "You are evaluating an Azure AI Custom Vision model. Which TWO metrics are most important for evaluating object detection model performance?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Precision"
+      },
+      {
+        "id": "B",
+        "text": "Recall"
+      },
+      {
+        "id": "C",
+        "text": "Accuracy"
+      },
+      {
+        "id": "D",
+        "text": "Perplexity"
+      }
+    ],
+    "correctAnswers": [
+      "A",
+      "B"
+    ],
+    "explanation": "Precision (the proportion of correct positive predictions) and Recall (the proportion of actual positives correctly identified) are the key metrics for evaluating object detection models. Together they form the basis of the F1 score, and Custom Vision reports both metrics in its performance evaluation.",
+    "explanationCN": "精确率（正确正预测的比例）和召回率（正确识别的实际正例比例）是评估对象检测模型的关键指标。它们共同构成 F1 分数的基础，自定义视觉在其性能评估中报告这两个指标。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/get-started-build-detector",
+    "difficulty": "medium",
+    "tags": [
+      "Custom Vision",
+      "model evaluation",
+      "precision",
+      "recall"
+    ]
+  },
+  {
+    "id": "ai102-021",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You want to deploy an Azure AI Custom Vision model to an IoT Edge device with limited connectivity. What is the correct approach?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Export the model as a Docker container and deploy it to the IoT Edge device"
+      },
+      {
+        "id": "B",
+        "text": "Use the Custom Vision endpoint URL directly from the IoT device"
+      },
+      {
+        "id": "C",
+        "text": "Set up a VPN connection between the IoT device and Azure"
+      },
+      {
+        "id": "D",
+        "text": "Create a Custom Vision Standard tier resource and enable edge deployment"
+      }
+    ],
+    "correctAnswers": [
+      "A"
+    ],
+    "explanation": "Azure AI Custom Vision supports exporting trained models as Docker containers (for use with IoT Edge), CoreML (for iOS), TensorFlow (for Android), and other formats. Exporting as a Docker container allows the model to run locally on an IoT Edge device without needing constant cloud connectivity.",
+    "explanationCN": "Azure AI 自定义视觉支持将训练好的模型导出为 Docker 容器（用于 IoT Edge）、CoreML（用于 iOS）、TensorFlow（用于 Android）等格式。导出为 Docker 容器允许模型在 IoT Edge 设备上本地运行，无需持续的云连接。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/export-your-model",
+    "difficulty": "medium",
+    "tags": [
+      "Custom Vision",
+      "IoT Edge",
+      "Docker",
+      "export",
+      "edge deployment"
+    ]
+  },
+  {
+    "id": "ai102-022",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to use Azure AI Vision to analyze product images and extract text from packaging. The images are high-resolution and contain both printed text and barcodes. Which API call should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The OCR (synchronous) API"
+      },
+      {
+        "id": "B",
+        "text": "The Read API (asynchronous operation)"
+      },
+      {
+        "id": "C",
+        "text": "The Image Analysis API with visual features"
+      },
+      {
+        "id": "D",
+        "text": "The Custom Vision prediction API"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "For high-resolution images with dense text, the Read API (asynchronous) is recommended. It handles large images better than the synchronous OCR API, supports multi-page documents, and provides detailed positioning information for extracted text. It's the preferred method for production text extraction.",
+    "explanationCN": "对于包含密集文本的高分辨率图像，建议使用 Read API（异步）。它比同步 OCR API 更好地处理大型图像，支持多页文档，并为提取的文本提供详细的位置信息。这是生产文本提取的首选方法。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/call-read-api",
+    "difficulty": "medium",
+    "tags": [
+      "Computer Vision",
+      "OCR",
+      "Read API",
+      "text extraction"
+    ]
+  },
+  {
+    "id": "ai102-023",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You are using Azure AI Vision Image Analysis 4.0. You want to use a custom model with specific product categories instead of the built-in general model. What feature should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Custom Vision with a separate Custom Vision resource"
+      },
+      {
+        "id": "B",
+        "text": "Image Analysis 4.0 with custom model training (Florence-based)"
+      },
+      {
+        "id": "C",
+        "text": "Azure Machine Learning with AutoML Vision"
+      },
+      {
+        "id": "D",
+        "text": "Azure Applied AI Services"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Vision Image Analysis 4.0 supports custom model training using the Florence foundation model. You can train custom image classification and object detection models directly within the Image Analysis API, without needing a separate Custom Vision resource.",
+    "explanationCN": "Azure AI Vision 图像分析 4.0 支持使用 Florence 基础模型进行自定义模型训练。您可以直接在图像分析 API 中训练自定义图像分类和对象检测模型，无需单独的自定义视觉资源。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/model-customization",
+    "difficulty": "hard",
+    "tags": [
+      "Computer Vision",
+      "Image Analysis 4.0",
+      "custom model",
+      "Florence"
+    ]
+  },
+  {
+    "id": "ai102-024",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to detect anomalies in images of manufactured parts on an assembly line. The defects are very rare and you have limited labeled examples. Which Azure AI service is best suited for this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Custom Vision with standard classification"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Vision - Spatial Analysis"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Custom Vision - Compact domain model"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Vision Image Analysis with built-in features"
+      }
+    ],
+    "correctAnswers": [
+      "A"
+    ],
+    "explanation": "For manufacturing defect detection with limited labeled examples, Azure AI Custom Vision with the General (compact) domain or a standard classification approach is appropriate. You would train the classifier with examples of good parts and defective parts. For very few examples, Custom Vision's transfer learning approach works well.",
+    "explanationCN": "对于标记样本有限的制造业缺陷检测，使用 Azure AI 自定义视觉的通用（紧凑）域或标准分类方法是合适的。您可以用好零件和有缺陷零件的示例训练分类器。对于非常少的样本，自定义视觉的迁移学习方法效果很好。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/select-domain",
+    "difficulty": "hard",
+    "tags": [
+      "Custom Vision",
+      "anomaly detection",
+      "manufacturing",
+      "few-shot"
+    ]
+  },
+  {
+    "id": "ai102-025",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You are using the Azure AI Face service and need to find all people in a photo who are from a specific person group. Which operation should you call?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Face - Detect"
+      },
+      {
+        "id": "B",
+        "text": "Face - Verify"
+      },
+      {
+        "id": "C",
+        "text": "Face - Identify"
+      },
+      {
+        "id": "D",
+        "text": "Face - Find Similar"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "The Face - Identify operation takes detected face IDs and searches a Person Group to find the best match for each face. You first create a Person Group, add persons with their face images, train the group, then use Identify to match detected faces against the trained group.",
+    "explanationCN": "人脸识别 (Identify) 操作接受检测到的人脸 ID，并搜索人员组以找到每张人脸的最佳匹配。您首先创建一个人员组，添加带有人脸图像的人员，训练该组，然后使用 Identify 将检测到的人脸与训练好的组进行匹配。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/identity-detect-faces",
+    "difficulty": "medium",
+    "tags": [
+      "Face API",
+      "identify",
+      "person group",
+      "face recognition"
+    ]
+  },
+  {
+    "id": "ai102-026",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You need to analyze customer feedback text to determine if sentiment is positive, negative, neutral, or mixed. Which Azure AI Language feature should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Named Entity Recognition (NER)"
+      },
+      {
+        "id": "B",
+        "text": "Sentiment Analysis and Opinion Mining"
+      },
+      {
+        "id": "C",
+        "text": "Key Phrase Extraction"
+      },
+      {
+        "id": "D",
+        "text": "Language Detection"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Language's Sentiment Analysis feature analyzes text and returns sentiment labels (positive, negative, neutral, or mixed) with confidence scores. The Opinion Mining feature additionally identifies opinions about specific aspects.",
+    "explanationCN": "Azure AI 语言的情感分析功能分析文本并返回情感标签（正面、负面、中性或混合），附带置信度分数。观点挖掘功能还额外识别特定方面的观点。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/overview",
+    "difficulty": "easy",
+    "tags": [
+      "Language Service",
+      "sentiment analysis",
+      "opinion mining",
+      "NLP"
+    ]
+  },
+  {
+    "id": "ai102-027",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You need to build a question-answering system from an existing set of FAQ documents without training a new model. Which Azure AI Language feature is most appropriate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Custom text classification"
+      },
+      {
+        "id": "B",
+        "text": "Custom Question Answering"
+      },
+      {
+        "id": "C",
+        "text": "Conversational Language Understanding (CLU)"
+      },
+      {
+        "id": "D",
+        "text": "Named Entity Recognition"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Language Custom Question Answering allows you to create a knowledge base from existing documents (FAQs, manuals, web pages) and then query it to get relevant answers.",
+    "explanationCN": "Azure AI 语言自定义问答功能允许您从现有文档（FAQ、手册、网页）创建知识库，然后查询以获取相关答案。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/overview",
+    "difficulty": "easy",
+    "tags": [
+      "Language Service",
+      "question answering",
+      "knowledge base",
+      "FAQ"
+    ]
+  },
+  {
+    "id": "ai102-028",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You are building a conversational bot that needs to understand user intentions (intents) and extract relevant information (entities) from natural language. Which Azure AI Language service should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Custom Question Answering"
+      },
+      {
+        "id": "B",
+        "text": "Text Analytics"
+      },
+      {
+        "id": "C",
+        "text": "Conversational Language Understanding (CLU)"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Translator"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Conversational Language Understanding (CLU) is the successor to LUIS. It allows you to train custom intent recognition and entity extraction models for natural language understanding in conversational AI applications.",
+    "explanationCN": "对话语言理解 (CLU) 是 LUIS 的继任者。它允许您训练自定义意图识别和实体提取模型，用于会话 AI 应用程序中的自然语言理解。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/overview",
+    "difficulty": "easy",
+    "tags": [
+      "CLU",
+      "intent recognition",
+      "entity extraction",
+      "conversational AI"
+    ]
+  },
+  {
+    "id": "ai102-029",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You need to translate customer support messages from multiple languages into English in real-time. The messages contain technical jargon specific to your industry. Which Azure AI service should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Language - Language Detection"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Translator with custom translation"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Speech - Speech Translation"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Language - Custom Text Classification"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Translator provides text translation with support for custom translation models (Custom Translator) that can be trained on domain-specific content to accurately handle industry-specific terminology.",
+    "explanationCN": "Azure AI 翻译器提供文本翻译，支持可在领域特定内容上训练的自定义翻译模型（自定义翻译器）以准确处理行业特定术语。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/overview",
+    "difficulty": "medium",
+    "tags": [
+      "Translator",
+      "custom translation",
+      "multilingual",
+      "NLP"
+    ]
+  },
+  {
+    "id": "ai102-030",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You need to convert spoken customer service calls to text for analysis. The audio contains specialized medical terminology. Which Azure AI Speech feature should you configure?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Standard Speech-to-Text with default model"
+      },
+      {
+        "id": "B",
+        "text": "Custom Speech with a domain-adapted model"
+      },
+      {
+        "id": "C",
+        "text": "Speech Translation"
+      },
+      {
+        "id": "D",
+        "text": "Neural Text-to-Speech"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Speech Custom Speech allows you to adapt the standard speech recognition model with your own audio data, transcriptions, and terminology to improve accuracy for domain-specific vocabulary like medical terms.",
+    "explanationCN": "Azure AI 语音自定义语音允许您使用自己的音频数据、转录文本和术语来适配标准语音识别模型，以提高医学术语等特定领域词汇的准确性。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/custom-speech-overview",
+    "difficulty": "medium",
+    "tags": [
+      "Speech",
+      "Custom Speech",
+      "speech-to-text",
+      "domain adaptation"
+    ]
+  },
+  {
+    "id": "ai102-031",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You need to extract structured information such as names, organizations, dates, and locations from unstructured text documents. Which Azure AI Language feature should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Key Phrase Extraction"
+      },
+      {
+        "id": "B",
+        "text": "Named Entity Recognition (NER)"
+      },
+      {
+        "id": "C",
+        "text": "Sentiment Analysis"
+      },
+      {
+        "id": "D",
+        "text": "Language Detection"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Named Entity Recognition (NER) identifies and categorizes entities in text such as Person, Organization, Location, DateTime, and monetary values, returning the entity text and its category.",
+    "explanationCN": "命名实体识别 (NER) 识别并分类文本中的实体，如人员、组织、位置、日期和货币值，返回实体文本及其类别。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/overview",
+    "difficulty": "easy",
+    "tags": [
+      "Language Service",
+      "NER",
+      "entity extraction",
+      "structured information"
+    ]
+  },
+  {
+    "id": "ai102-032",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You are building a system that routes support tickets to the correct team based on content. You need to classify tickets into categories like Billing, Technical Support, Account Management. Which Azure AI Language feature should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Custom Question Answering"
+      },
+      {
+        "id": "B",
+        "text": "Custom Text Classification"
+      },
+      {
+        "id": "C",
+        "text": "Conversational Language Understanding"
+      },
+      {
+        "id": "D",
+        "text": "Named Entity Recognition"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Language Custom Text Classification allows you to train a text classification model with your own categories/labels using labeled training examples, ideal for routing support tickets.",
+    "explanationCN": "Azure AI 语言自定义文本分类允许您使用标记训练示例训练具有自定义类别/标签的文本分类模型，非常适合路由支持票据。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-text-classification/overview",
+    "difficulty": "easy",
+    "tags": [
+      "Language Service",
+      "custom text classification",
+      "routing",
+      "support tickets"
+    ]
+  },
+  {
+    "id": "ai102-033",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You need to synthesize speech for a customer service application with a specific voice that matches your brand identity. Which Azure AI Speech feature allows you to create a custom voice?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Custom Neural Voice (CNV)"
+      },
+      {
+        "id": "B",
+        "text": "Standard Text-to-Speech"
+      },
+      {
+        "id": "C",
+        "text": "Custom Speech"
+      },
+      {
+        "id": "D",
+        "text": "Speech Translation"
+      }
+    ],
+    "correctAnswers": [
+      "A"
+    ],
+    "explanation": "Custom Neural Voice (CNV) allows you to create a unique synthetic voice by training on voice recordings from a specific speaker, enabling brand-specific voices. CNV requires explicit consent from the voice talent.",
+    "explanationCN": "自定义神经语音 (CNV) 允许您通过在特定说话者的录音上训练来创建独特的合成语音，实现品牌专属语音。CNV 需要语音配音人员的明确同意。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/custom-neural-voice",
+    "difficulty": "medium",
+    "tags": [
+      "Speech",
+      "Custom Neural Voice",
+      "TTS",
+      "voice synthesis"
+    ]
+  },
+  {
+    "id": "ai102-034",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You need to identify Personally Identifiable Information (PII) in text documents before storing them. Which Azure AI Language feature should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Named Entity Recognition (NER)"
+      },
+      {
+        "id": "B",
+        "text": "PII Detection and Redaction"
+      },
+      {
+        "id": "C",
+        "text": "Key Phrase Extraction"
+      },
+      {
+        "id": "D",
+        "text": "Text Analytics for Health"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Language PII Detection identifies and optionally redacts sensitive information such as names, phone numbers, email addresses, SSNs, and credit card numbers, returning detected entities with placeholders.",
+    "explanationCN": "Azure AI 语言 PII 检测识别并可选择性地编辑敏感信息，如姓名、电话号码、电子邮件地址、SSN 和信用卡号码，返回带占位符的检测实体。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/overview",
+    "difficulty": "easy",
+    "tags": [
+      "Language Service",
+      "PII detection",
+      "privacy",
+      "redaction"
+    ]
+  },
+  {
+    "id": "ai102-035",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You are using Azure AI Speech for speech-to-text and need to identify which speaker is talking in a multi-speaker audio file. Which feature should you enable?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Speech Translation"
+      },
+      {
+        "id": "B",
+        "text": "Speaker Diarization"
+      },
+      {
+        "id": "C",
+        "text": "Custom Speech"
+      },
+      {
+        "id": "D",
+        "text": "Pronunciation Assessment"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Speaker Diarization separates audio based on who is speaking and assigns speaker labels to each segment, tagging each utterance with a speaker identifier (Speaker 1, Speaker 2, etc.).",
+    "explanationCN": "说话人分离根据说话者分离音频，并为每个片段分配说话者标签，将每个话语标记为说话者标识符（说话者 1、说话者 2 等）。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/get-started-stt-diarization",
+    "difficulty": "medium",
+    "tags": [
+      "Speech",
+      "speaker diarization",
+      "multi-speaker",
+      "transcription"
+    ]
+  },
+  {
+    "id": "ai102-036",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You need to build a solution that transcribes medical conversations and extracts entities like diagnoses and medications. Which combination of services should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Speech - Standard transcription only"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Language - Text Analytics for Health only"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Speech for transcription AND Azure AI Language Text Analytics for Health for entity extraction"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Language - Named Entity Recognition (standard)"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "The complete solution requires both: Azure AI Speech transcribes audio to text, then Azure AI Language Text Analytics for Health extracts medical entities such as diagnoses, medications, anatomy, and symptoms.",
+    "explanationCN": "完整解决方案需要两个服务：Azure AI 语音将音频转录为文本，然后 Azure AI 语言医疗文本分析从转录文本中提取诊断、药物、解剖和症状等医疗实体。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/text-analytics-for-health/overview",
+    "difficulty": "medium",
+    "tags": [
+      "Speech",
+      "Text Analytics for Health",
+      "medical NLP",
+      "healthcare"
+    ]
+  },
+  {
+    "id": "ai102-037",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You need to summarize long legal documents automatically. Which Azure AI Language feature should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Key Phrase Extraction"
+      },
+      {
+        "id": "B",
+        "text": "Document Summarization (extractive or abstractive)"
+      },
+      {
+        "id": "C",
+        "text": "Sentiment Analysis"
+      },
+      {
+        "id": "D",
+        "text": "Custom Text Classification"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Language Document Summarization supports both extractive summarization (selecting key sentences) and abstractive summarization (generating new text capturing main points), ideal for legal documents.",
+    "explanationCN": "Azure AI 语言文档摘要功能支持提取式摘要（选择关键句子）和抽象式摘要（生成捕获主要内容的新文本），非常适合法律文件。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/summarization/overview",
+    "difficulty": "easy",
+    "tags": [
+      "Language Service",
+      "summarization",
+      "extractive",
+      "abstractive"
+    ]
+  },
+  {
+    "id": "ai102-038",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You are building a multilingual chat bot using Azure Bot Service. You want the bot to understand intents in multiple languages using CLU. What is the recommended approach?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Create separate CLU projects for each language"
+      },
+      {
+        "id": "B",
+        "text": "Use CLU multi-language support by training primarily in one language and adding utterances in other languages"
+      },
+      {
+        "id": "C",
+        "text": "Use Azure AI Translator to translate all inputs to English before sending to CLU"
+      },
+      {
+        "id": "D",
+        "text": "Train the model with English only and rely on auto-detection"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "CLU supports multilingual models. You train primarily in one language and can add utterances in multiple languages to improve accuracy across languages without needing separate projects per language.",
+    "explanationCN": "CLU 支持多语言模型。您主要以一种语言训练，可以添加多种语言的话语以提高准确性，无需为每种语言创建单独的项目。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/language-support",
+    "difficulty": "medium",
+    "tags": [
+      "CLU",
+      "multilingual",
+      "Bot Service",
+      "language support"
+    ]
+  },
+  {
+    "id": "ai102-039",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "multiple",
+    "question": "You need to evaluate a CLU model before deploying to production. Which TWO evaluation metrics should you review?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Intent precision and recall"
+      },
+      {
+        "id": "B",
+        "text": "Entity precision and recall"
+      },
+      {
+        "id": "C",
+        "text": "BLEU score"
+      },
+      {
+        "id": "D",
+        "text": "Perplexity"
+      }
+    ],
+    "correctAnswers": [
+      "A",
+      "B"
+    ],
+    "explanation": "For CLU models, review both intent-level metrics (precision, recall, F1 for intent recognition) and entity-level metrics (precision, recall, F1 for entity extraction) in Azure Language Studio.",
+    "explanationCN": "对于 CLU 模型，在 Azure Language Studio 中检查意图级指标（意图识别的精确率、召回率、F1 分数）和实体级指标（实体提取的精确率、召回率、F1 分数）。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/concepts/evaluation-metrics",
+    "difficulty": "medium",
+    "tags": [
+      "CLU",
+      "model evaluation",
+      "precision",
+      "recall",
+      "metrics"
+    ]
+  },
+  {
+    "id": "ai102-040",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You need to build an Azure Bot Service bot that handles ordering and FAQ questions. The bot must route to different handlers based on whether the user is asking a question or placing an order. Which architecture is recommended?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Use Custom Question Answering for all intents"
+      },
+      {
+        "id": "B",
+        "text": "Use CLU for all queries including FAQ"
+      },
+      {
+        "id": "C",
+        "text": "Use Orchestration Workflow to route between CLU and Custom Question Answering"
+      },
+      {
+        "id": "D",
+        "text": "Create two separate bots connected by Azure Service Bus"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Azure AI Language Orchestration Workflow allows you to create a routing layer that automatically directs queries to the appropriate model - CLU for intent/ordering tasks and Custom Question Answering for FAQ questions, all from a single endpoint.",
+    "explanationCN": "Azure AI 语言编排工作流允许创建路由层，自动将查询定向到适当的模型——CLU 用于意图/订购任务，自定义问答用于 FAQ 问题，全部来自单个终结点。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/orchestration-workflow/overview",
+    "difficulty": "hard",
+    "tags": [
+      "CLU",
+      "orchestration workflow",
+      "routing",
+      "Bot Service"
+    ]
+  },
+  {
+    "id": "ai102-041",
+    "exam": "AI-102",
+    "domain": "Implement knowledge mining and document intelligence solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to build a solution that enables users to search across thousands of internal documents, PDFs, and web pages using natural language queries. Which Azure service should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Language - Custom Question Answering"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Search (formerly Cognitive Search)"
+      },
+      {
+        "id": "C",
+        "text": "Azure Blob Storage with indexing"
+      },
+      {
+        "id": "D",
+        "text": "Azure SQL Database with full-text search"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Search (formerly Azure Cognitive Search) provides enterprise-grade search capabilities over heterogeneous content sources. It can index documents from various sources, apply AI enrichments (OCR, entity extraction, sentiment), and provide semantic search capabilities.",
+    "explanationCN": "Azure AI 搜索（以前称为 Azure 认知搜索）为各种内容源提供企业级搜索功能。它可以从各种来源索引文档，应用 AI 扩充（OCR、实体提取、情感分析），并提供语义搜索功能。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search",
+    "difficulty": "easy",
+    "tags": [
+      "Azure AI Search",
+      "knowledge mining",
+      "enterprise search",
+      "indexing"
+    ]
+  },
+  {
+    "id": "ai102-042",
+    "exam": "AI-102",
+    "domain": "Implement knowledge mining and document intelligence solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You are configuring an Azure AI Search skillset that processes documents. You need to extract text from images embedded in PDF files. Which built-in cognitive skill should you add to the skillset?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Language Detection skill"
+      },
+      {
+        "id": "B",
+        "text": "OCR skill"
+      },
+      {
+        "id": "C",
+        "text": "Entity Recognition skill"
+      },
+      {
+        "id": "D",
+        "text": "Key Phrase Extraction skill"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "The OCR (Optical Character Recognition) built-in cognitive skill in Azure AI Search detects and extracts printed and handwritten text from image files, making it essential for extracting text from images embedded in PDF documents.",
+    "explanationCN": "Azure AI 搜索中的 OCR（光学字符识别）内置认知技能从图像文件中检测并提取印刷和手写文本，对于从 PDF 文档中嵌入的图像提取文本至关重要。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-ocr",
+    "difficulty": "medium",
+    "tags": [
+      "Azure AI Search",
+      "OCR skill",
+      "skillset",
+      "cognitive enrichment"
+    ]
+  },
+  {
+    "id": "ai102-043",
+    "exam": "AI-102",
+    "domain": "Implement knowledge mining and document intelligence solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to extract structured data from invoices, including vendor name, invoice number, line items, and total amounts. Which Azure AI Document Intelligence prebuilt model should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prebuilt Read model"
+      },
+      {
+        "id": "B",
+        "text": "Prebuilt Invoice model"
+      },
+      {
+        "id": "C",
+        "text": "Prebuilt Business Card model"
+      },
+      {
+        "id": "D",
+        "text": "Custom template model"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Document Intelligence has a Prebuilt Invoice model specifically designed to extract key fields from invoices, including vendor details, invoice number, dates, line items, taxes, and totals. It works without custom training.",
+    "explanationCN": "Azure AI 文档智能有一个专门设计用于从发票中提取关键字段的预构建发票模型，包括供应商详情、发票号、日期、行项目、税款和总计。无需自定义训练即可使用。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/invoice",
+    "difficulty": "easy",
+    "tags": [
+      "Document Intelligence",
+      "invoice",
+      "prebuilt model",
+      "data extraction"
+    ]
+  },
+  {
+    "id": "ai102-044",
+    "exam": "AI-102",
+    "domain": "Implement knowledge mining and document intelligence solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to extract data from a custom form that your company uses, which has a unique layout not covered by prebuilt models. Which Azure AI Document Intelligence feature should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prebuilt Read model"
+      },
+      {
+        "id": "B",
+        "text": "Prebuilt Invoice model"
+      },
+      {
+        "id": "C",
+        "text": "Custom model (template or neural)"
+      },
+      {
+        "id": "D",
+        "text": "General document model"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Azure AI Document Intelligence Custom Models allow you to train extraction models on your own documents. Custom template models work well for fixed-layout forms, while custom neural models handle variable layouts and are more flexible.",
+    "explanationCN": "Azure AI 文档智能自定义模型允许您在自己的文档上训练提取模型。自定义模板模型适用于固定布局的表单，而自定义神经模型处理可变布局，更加灵活。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/train/custom-model",
+    "difficulty": "medium",
+    "tags": [
+      "Document Intelligence",
+      "custom model",
+      "form extraction",
+      "training"
+    ]
+  },
+  {
+    "id": "ai102-045",
+    "exam": "AI-102",
+    "domain": "Implement knowledge mining and document intelligence solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You have configured Azure AI Search with an indexer and skillset. Users report that search results are not returning the most semantically relevant documents. What should you enable to improve result relevance?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Increase the partition count"
+      },
+      {
+        "id": "B",
+        "text": "Semantic ranker (L2 ranking)"
+      },
+      {
+        "id": "C",
+        "text": "Full-text search scoring profile"
+      },
+      {
+        "id": "D",
+        "text": "Increase replica count"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Search Semantic Ranker uses deep learning models to re-rank the top search results by understanding the semantic meaning of queries and documents. It also generates semantic captions and answers, significantly improving result relevance.",
+    "explanationCN": "Azure AI 搜索语义排名器使用深度学习模型，通过理解查询和文档的语义含义来重新排列顶部搜索结果。它还生成语义标题和答案，显著提高结果相关性。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/search/semantic-search-overview",
+    "difficulty": "medium",
+    "tags": [
+      "Azure AI Search",
+      "semantic ranker",
+      "relevance",
+      "deep learning"
+    ]
+  },
+  {
+    "id": "ai102-046",
+    "exam": "AI-102",
+    "domain": "Implement knowledge mining and document intelligence solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You are building a knowledge mining solution with Azure AI Search. You need to store AI-enriched content like extracted entities and key phrases to allow re-use across multiple indexes. What feature should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure Storage Blob containers"
+      },
+      {
+        "id": "B",
+        "text": "Knowledge Store"
+      },
+      {
+        "id": "C",
+        "text": "Azure Cosmos DB"
+      },
+      {
+        "id": "D",
+        "text": "Azure SQL Database"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "The Knowledge Store feature in Azure AI Search persists AI-enriched data to Azure Storage (as tables or blobs), allowing you to use enriched data outside of the search index - for example, to feed downstream processes, Power BI analysis, or other applications.",
+    "explanationCN": "Azure AI 搜索中的知识存储功能将 AI 扩充数据持久化到 Azure 存储（作为表或 Blob），允许您在搜索索引外使用扩充数据——例如，供下游流程、Power BI 分析或其他应用程序使用。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/search/knowledge-store-concept-intro",
+    "difficulty": "medium",
+    "tags": [
+      "Azure AI Search",
+      "knowledge store",
+      "enrichment",
+      "storage"
+    ]
+  },
+  {
+    "id": "ai102-047",
+    "exam": "AI-102",
+    "domain": "Implement knowledge mining and document intelligence solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to create a custom skill in an Azure AI Search skillset that calls an external API to perform custom data enrichment. What technology should you use to implement this custom skill?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure Logic Apps"
+      },
+      {
+        "id": "B",
+        "text": "Azure Functions (Web API custom skill)"
+      },
+      {
+        "id": "C",
+        "text": "Azure Data Factory"
+      },
+      {
+        "id": "D",
+        "text": "Azure Event Grid"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Custom skills in Azure AI Search are implemented as Web API endpoints, and Azure Functions is the recommended approach. Your Azure Function receives enrichment data from the skillset, processes it, and returns enriched data back to the pipeline.",
+    "explanationCN": "Azure AI 搜索中的自定义技能作为 Web API 终结点实现，Azure Functions 是推荐的方法。您的 Azure 函数从技能集接收扩充数据，处理后将扩充数据返回给管道。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/search/cognitive-search-custom-skill-interface",
+    "difficulty": "medium",
+    "tags": [
+      "Azure AI Search",
+      "custom skill",
+      "Azure Functions",
+      "enrichment pipeline"
+    ]
+  },
+  {
+    "id": "ai102-048",
+    "exam": "AI-102",
+    "domain": "Implement knowledge mining and document intelligence solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You are using Azure AI Document Intelligence to process a batch of 500 scanned forms. You need to process them efficiently. Which approach should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Call the synchronous Analyze API for each form sequentially"
+      },
+      {
+        "id": "B",
+        "text": "Use the batch analysis capability with asynchronous operations"
+      },
+      {
+        "id": "C",
+        "text": "Upload all forms to a single multi-page PDF and analyze once"
+      },
+      {
+        "id": "D",
+        "text": "Use Azure Machine Learning batch inference"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "For batch processing with Azure AI Document Intelligence, use the asynchronous Analyze API which returns an operation ID. You can submit multiple documents in parallel and poll for results. This is more efficient than sequential synchronous calls for large batches.",
+    "explanationCN": "对于 Azure AI 文档智能的批量处理，使用异步分析 API，它返回操作 ID。您可以并行提交多个文档并轮询结果。这比大批量的顺序同步调用更高效。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/use-sdk-rest-api",
+    "difficulty": "medium",
+    "tags": [
+      "Document Intelligence",
+      "batch processing",
+      "async",
+      "performance"
+    ]
+  },
+  {
+    "id": "ai102-049",
+    "exam": "AI-102",
+    "domain": "Implement knowledge mining and document intelligence solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to implement vector search in Azure AI Search to find semantically similar documents. Which step is required before you can perform vector searches?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Enable the semantic ranker tier"
+      },
+      {
+        "id": "B",
+        "text": "Generate vector embeddings for your content and store them in vector fields in the index"
+      },
+      {
+        "id": "C",
+        "text": "Configure an Azure AI Search Standard tier or higher"
+      },
+      {
+        "id": "D",
+        "text": "Enable knowledge store output"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Vector search in Azure AI Search requires your content to be converted to vector embeddings (using embedding models like Azure OpenAI text-embedding-ada-002) and stored in vector fields in your search index. Queries are also converted to vectors at search time.",
+    "explanationCN": "Azure AI 搜索中的向量搜索要求将内容转换为向量嵌入（使用 Azure OpenAI text-embedding-ada-002 等嵌入模型）并存储在搜索索引的向量字段中。查询也在搜索时转换为向量。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/search/vector-search-overview",
+    "difficulty": "hard",
+    "tags": [
+      "Azure AI Search",
+      "vector search",
+      "embeddings",
+      "semantic similarity"
+    ]
+  },
+  {
+    "id": "ai102-050",
+    "exam": "AI-102",
+    "domain": "Implement knowledge mining and document intelligence solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to extract information from contracts that have a consistent structure but with variable text. Which Azure AI Document Intelligence model type is most appropriate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Custom template model"
+      },
+      {
+        "id": "B",
+        "text": "Custom neural model"
+      },
+      {
+        "id": "C",
+        "text": "Prebuilt contract model"
+      },
+      {
+        "id": "D",
+        "text": "General document model"
+      }
+    ],
+    "correctAnswers": [
+      "A"
+    ],
+    "explanation": "Custom template models in Azure AI Document Intelligence work well for documents with consistent, fixed layouts. They use template matching to identify and extract fields at consistent positions. For truly variable layouts, custom neural models would be better.",
+    "explanationCN": "Azure AI 文档智能中的自定义模板模型适用于具有一致固定布局的文档。它们使用模板匹配在一致位置识别和提取字段。对于真正可变的布局，自定义神经模型会更好。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept-custom-template",
+    "difficulty": "medium",
+    "tags": [
+      "Document Intelligence",
+      "custom template model",
+      "contract extraction",
+      "fixed layout"
+    ]
+  },
+  {
+    "id": "ai102-051",
+    "exam": "AI-102",
+    "domain": "Implement generative AI solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to deploy a GPT-4 model in Azure OpenAI Service and want to test it interactively before integrating it into your application. Which Azure OpenAI Studio tool should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure OpenAI Studio - Fine-tuning"
+      },
+      {
+        "id": "B",
+        "text": "Azure OpenAI Studio - Chat playground"
+      },
+      {
+        "id": "C",
+        "text": "Azure OpenAI Studio - DALL-E playground"
+      },
+      {
+        "id": "D",
+        "text": "Azure OpenAI Studio - Deployments"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "The Chat playground in Azure OpenAI Studio allows you to interactively test GPT-3.5 and GPT-4 chat completion models. You can adjust system messages, test different prompts, configure parameters like temperature and max tokens, and experiment with the model before integrating it into your application.",
+    "explanationCN": "Azure OpenAI Studio 中的聊天操场允许您以交互方式测试 GPT-3.5 和 GPT-4 聊天完成模型。您可以调整系统消息、测试不同提示、配置温度和最大令牌数等参数，在集成到应用程序之前进行实验。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/chatgpt-quickstart",
+    "difficulty": "easy",
+    "tags": [
+      "Azure OpenAI",
+      "GPT-4",
+      "playground",
+      "chat completion"
+    ]
+  },
+  {
+    "id": "ai102-052",
+    "exam": "AI-102",
+    "domain": "Implement generative AI solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You are implementing a RAG (Retrieval-Augmented Generation) pattern with Azure OpenAI. What is the primary purpose of the retrieval component in RAG?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To fine-tune the language model with domain-specific data"
+      },
+      {
+        "id": "B",
+        "text": "To fetch relevant context from a knowledge base to include in the prompt"
+      },
+      {
+        "id": "C",
+        "text": "To validate the model output for accuracy"
+      },
+      {
+        "id": "D",
+        "text": "To reduce the model response latency"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "In the RAG pattern, the retrieval component searches a knowledge base (like Azure AI Search) for documents relevant to the user's query. These retrieved documents are then included in the prompt as context, allowing the LLM to generate grounded, accurate responses based on your own data.",
+    "explanationCN": "在 RAG 模式中，检索组件在知识库（如 Azure AI 搜索）中搜索与用户查询相关的文档。这些检索到的文档随后作为上下文包含在提示中，使 LLM 能够根据您自己的数据生成有依据的、准确的响应。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-studio/concepts/retrieval-augmented-generation",
+    "difficulty": "medium",
+    "tags": [
+      "Azure OpenAI",
+      "RAG",
+      "retrieval augmented generation",
+      "grounding"
+    ]
+  },
+  {
+    "id": "ai102-053",
+    "exam": "AI-102",
+    "domain": "Implement generative AI solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to customize an Azure OpenAI model to respond in a specific style and follow company guidelines. The customization is behavioral, not about adding new knowledge. Which approach is most appropriate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fine-tune the model with examples"
+      },
+      {
+        "id": "B",
+        "text": "Craft a detailed system message (system prompt) for each API call"
+      },
+      {
+        "id": "C",
+        "text": "Train a custom model from scratch"
+      },
+      {
+        "id": "D",
+        "text": "Use prompt caching"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "A well-crafted system message (system prompt) is the primary way to customize Azure OpenAI model behavior, including response style, tone, guidelines, and persona. This is preferred over fine-tuning for behavioral changes because it is simpler, free, and can be updated instantly.",
+    "explanationCN": "精心设计的系统消息（系统提示）是自定义 Azure OpenAI 模型行为的主要方式，包括响应风格、语气、指南和角色。对于行为更改，这优于微调，因为它更简单、免费且可以立即更新。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/system-message",
+    "difficulty": "medium",
+    "tags": [
+      "Azure OpenAI",
+      "system message",
+      "prompt engineering",
+      "customization"
+    ]
+  },
+  {
+    "id": "ai102-054",
+    "exam": "AI-102",
+    "domain": "Implement generative AI solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to generate images using Azure OpenAI's DALL-E model. Your application must create product mockups based on text descriptions. Which API endpoint should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The Completions API with a vision model"
+      },
+      {
+        "id": "B",
+        "text": "The Images API (image generation endpoint)"
+      },
+      {
+        "id": "C",
+        "text": "The Chat Completions API with a multimodal model"
+      },
+      {
+        "id": "D",
+        "text": "The Embeddings API"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "The Azure OpenAI Images API (image generation endpoint) is used to generate images from text descriptions using DALL-E models. You provide a prompt and parameters like image size and quality, and the API returns image URLs or base64-encoded images.",
+    "explanationCN": "Azure OpenAI 图像 API（图像生成终结点）用于使用 DALL-E 模型从文本描述生成图像。您提供提示和图像大小、质量等参数，API 返回图像 URL 或 base64 编码的图像。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/dall-e",
+    "difficulty": "easy",
+    "tags": [
+      "Azure OpenAI",
+      "DALL-E",
+      "image generation",
+      "images API"
+    ]
+  },
+  {
+    "id": "ai102-055",
+    "exam": "AI-102",
+    "domain": "Implement generative AI solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You are implementing Azure OpenAI in your application and need to prevent the model from generating inappropriate content. What built-in Azure OpenAI feature should you configure?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Content Safety filters on the deployment"
+      },
+      {
+        "id": "B",
+        "text": "Azure Policy restrictions"
+      },
+      {
+        "id": "C",
+        "text": "System message only"
+      },
+      {
+        "id": "D",
+        "text": "Azure Monitor alerts"
+      }
+    ],
+    "correctAnswers": [
+      "A"
+    ],
+    "explanation": "Azure OpenAI has built-in content filtering that automatically screens both input (prompts) and output (completions) for hate, sexual, violence, and self-harm content. These filters are enabled by default and can be configured per deployment with different severity thresholds.",
+    "explanationCN": "Azure OpenAI 内置内容过滤功能，自动筛查输入（提示）和输出（完成）中的仇恨、性、暴力和自我伤害内容。这些过滤器默认启用，可以按部署配置不同的严重性阈值。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/content-filter",
+    "difficulty": "medium",
+    "tags": [
+      "Azure OpenAI",
+      "content filtering",
+      "safety",
+      "responsible AI"
+    ]
+  },
+  {
+    "id": "ai102-056",
+    "exam": "AI-102",
+    "domain": "Implement generative AI solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to use Azure OpenAI to build a solution where the AI can call external tools and APIs based on user requests (e.g., check weather, query a database). Which Azure OpenAI capability should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Completions API"
+      },
+      {
+        "id": "B",
+        "text": "Function calling (tools)"
+      },
+      {
+        "id": "C",
+        "text": "Fine-tuning"
+      },
+      {
+        "id": "D",
+        "text": "Embeddings"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure OpenAI function calling (now called 'tools') allows the model to identify when a function should be called and return structured JSON with the function name and parameters. Your application executes the actual function and can return the result to the model for a final response.",
+    "explanationCN": "Azure OpenAI 函数调用（现称为'工具'）允许模型识别何时应调用函数，并返回带有函数名称和参数的结构化 JSON。您的应用程序执行实际函数，并可以将结果返回给模型以获得最终响应。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/function-calling",
+    "difficulty": "medium",
+    "tags": [
+      "Azure OpenAI",
+      "function calling",
+      "tools",
+      "agentic AI"
+    ]
+  },
+  {
+    "id": "ai102-057",
+    "exam": "AI-102",
+    "domain": "Implement generative AI solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You want to fine-tune an Azure OpenAI model to improve its performance on a specific task using your own labeled data. Which model can be fine-tuned in Azure OpenAI Service?",
+    "options": [
+      {
+        "id": "A",
+        "text": "GPT-4 (gpt-4)"
+      },
+      {
+        "id": "B",
+        "text": "GPT-3.5-Turbo (gpt-35-turbo)"
+      },
+      {
+        "id": "C",
+        "text": "All models support fine-tuning"
+      },
+      {
+        "id": "D",
+        "text": "Only embedding models can be fine-tuned"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "In Azure OpenAI Service, GPT-3.5-Turbo is the primary model available for fine-tuning, along with Babbage and Ada for completion tasks. GPT-4 fine-tuning has limited availability. Fine-tuning requires uploading training data in JSONL format with prompt-completion pairs.",
+    "explanationCN": "在 Azure OpenAI 服务中，GPT-3.5-Turbo 是主要可用于微调的模型，以及用于完成任务的 Babbage 和 Ada。GPT-4 微调可用性有限。微调需要以 JSONL 格式上传包含提示-完成对的训练数据。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/fine-tuning",
+    "difficulty": "medium",
+    "tags": [
+      "Azure OpenAI",
+      "fine-tuning",
+      "GPT-3.5",
+      "model customization"
+    ]
+  },
+  {
+    "id": "ai102-058",
+    "exam": "AI-102",
+    "domain": "Implement generative AI solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You are designing prompts for Azure OpenAI and need the model to provide consistent, structured output in JSON format. What prompt engineering technique should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Zero-shot prompting"
+      },
+      {
+        "id": "B",
+        "text": "Few-shot prompting with JSON examples and JSON mode"
+      },
+      {
+        "id": "C",
+        "text": "Chain-of-thought prompting"
+      },
+      {
+        "id": "D",
+        "text": "Temperature reduction only"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "For consistent JSON output, use few-shot prompting to show the model examples of the expected JSON structure, and enable JSON mode (response_format: json_object) to force valid JSON output. This combination ensures structured, parseable responses.",
+    "explanationCN": "对于一致的 JSON 输出，使用少量示例提示向模型展示预期 JSON 结构的示例，并启用 JSON 模式（response_format: json_object）以强制生成有效的 JSON 输出。这种组合确保结构化、可解析的响应。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/json-mode",
+    "difficulty": "medium",
+    "tags": [
+      "Azure OpenAI",
+      "prompt engineering",
+      "JSON mode",
+      "few-shot"
+    ]
+  },
+  {
+    "id": "ai102-059",
+    "exam": "AI-102",
+    "domain": "Implement generative AI solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to generate vector embeddings for text to enable semantic search. Which Azure OpenAI model should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "gpt-4"
+      },
+      {
+        "id": "B",
+        "text": "text-embedding-ada-002 or text-embedding-3-large"
+      },
+      {
+        "id": "C",
+        "text": "gpt-35-turbo"
+      },
+      {
+        "id": "D",
+        "text": "dall-e-3"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure OpenAI text-embedding-ada-002 and text-embedding-3-large are embedding models that convert text into high-dimensional vectors. These vectors can be used for semantic search, similarity comparison, clustering, and as input to other ML systems.",
+    "explanationCN": "Azure OpenAI text-embedding-ada-002 和 text-embedding-3-large 是将文本转换为高维向量的嵌入模型。这些向量可用于语义搜索、相似性比较、聚类，以及作为其他机器学习系统的输入。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/understand-embeddings",
+    "difficulty": "easy",
+    "tags": [
+      "Azure OpenAI",
+      "embeddings",
+      "semantic search",
+      "vector"
+    ]
+  },
+  {
+    "id": "ai102-060",
+    "exam": "AI-102",
+    "domain": "Implement generative AI solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You are building an Azure OpenAI solution and want to ensure the LLM only answers questions based on your company's documentation, not general knowledge. What technique achieves this best?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Set temperature to 0"
+      },
+      {
+        "id": "B",
+        "text": "Implement RAG with Azure AI Search and instruct the model to only use provided context"
+      },
+      {
+        "id": "C",
+        "text": "Fine-tune the model on company documents"
+      },
+      {
+        "id": "D",
+        "text": "Use the completions API instead of chat completions"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "RAG (Retrieval Augmented Generation) combined with prompt instructions to only use provided context is the recommended approach for grounding LLM responses to specific documentation. The system message instructs the model to only answer from the retrieved documents, and to say 'I don't know' if information isn't in the context.",
+    "explanationCN": "RAG（检索增强生成）结合提示指令仅使用提供的上下文是将 LLM 响应锚定到特定文档的推荐方法。系统消息指示模型仅从检索到的文档回答，如果信息不在上下文中则说'我不知道'。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/use-your-data-quickstart",
+    "difficulty": "medium",
+    "tags": [
+      "Azure OpenAI",
+      "RAG",
+      "grounding",
+      "enterprise data"
+    ]
+  },
+  {
+    "id": "ai102-061",
+    "exam": "AI-102",
+    "domain": "Implement decision support solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to detect anomalies in time-series data from IoT sensors to identify equipment failures before they occur. Which Azure AI service should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Metrics Advisor"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Anomaly Detector"
+      },
+      {
+        "id": "C",
+        "text": "Azure Machine Learning AutoML"
+      },
+      {
+        "id": "D",
+        "text": "Azure Stream Analytics"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Anomaly Detector detects anomalies in time-series data without needing labeled training data. It uses AI to identify unusual patterns and offers both univariate (single time series) and multivariate (multiple correlated time series) anomaly detection, ideal for IoT sensor monitoring.",
+    "explanationCN": "Azure AI 异常检测器在不需要标记训练数据的情况下检测时序数据中的异常。它使用 AI 识别异常模式，提供单变量（单时序）和多变量（多个相关时序）异常检测，非常适合物联网传感器监控。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/overview",
+    "difficulty": "easy",
+    "tags": [
+      "Anomaly Detector",
+      "time-series",
+      "IoT",
+      "predictive maintenance"
+    ]
+  },
+  {
+    "id": "ai102-062",
+    "exam": "AI-102",
+    "domain": "Implement decision support solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to implement a content recommendation system for an e-commerce website that personalizes product recommendations for each user. Which Azure AI service provides this capability?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Personalizer"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Anomaly Detector"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Metrics Advisor"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Content Moderator"
+      }
+    ],
+    "correctAnswers": [
+      "A"
+    ],
+    "explanation": "Azure AI Personalizer uses reinforcement learning to make real-time, personalized content recommendations. It learns from user interactions (rewards/feedback) to improve recommendations over time, making it ideal for personalized product recommendations.",
+    "explanationCN": "Azure AI 个性化服务使用强化学习进行实时个性化内容推荐。它从用户交互（奖励/反馈）中学习，随时间改进推荐，非常适合个性化产品推荐。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/personalizer/what-is-personalizer",
+    "difficulty": "easy",
+    "tags": [
+      "Personalizer",
+      "recommendation",
+      "reinforcement learning",
+      "personalization"
+    ]
+  },
+  {
+    "id": "ai102-063",
+    "exam": "AI-102",
+    "domain": "Implement decision support solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You are using Azure AI Personalizer in your application. What is the correct sequence of API calls to implement the Personalizer decision loop?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reward -> Rank -> Reward"
+      },
+      {
+        "id": "B",
+        "text": "Rank (to get best action) -> Show content -> Reward (to provide feedback)"
+      },
+      {
+        "id": "C",
+        "text": "Train -> Deploy -> Rank"
+      },
+      {
+        "id": "D",
+        "text": "Reward -> Train -> Rank"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "The Azure AI Personalizer decision loop is: 1) Call Rank API with context and actions to get the best recommended action, 2) Show the recommended content to the user, 3) Call Reward API with a score (0-1) based on user interaction. This loop trains the model over time.",
+    "explanationCN": "Azure AI 个性化服务决策循环是：1) 调用排名 API，提供上下文和操作以获取最佳推荐操作；2) 向用户展示推荐内容；3) 根据用户交互调用奖励 API，提供分数（0-1）。这个循环随时间训练模型。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/personalizer/concepts-reinforcement-learning",
+    "difficulty": "medium",
+    "tags": [
+      "Personalizer",
+      "Rank API",
+      "Reward API",
+      "reinforcement learning loop"
+    ]
+  },
+  {
+    "id": "ai102-064",
+    "exam": "AI-102",
+    "domain": "Implement decision support solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to monitor business KPIs and automatically detect anomalies across multiple metrics simultaneously. Which Azure AI service is specifically designed for this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Anomaly Detector"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Metrics Advisor"
+      },
+      {
+        "id": "C",
+        "text": "Azure Monitor"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Vision"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Metrics Advisor is specifically designed for monitoring business metrics and KPIs. It automatically detects anomalies across multiple time series, performs root cause analysis, and provides a customizable dashboard for business performance monitoring.",
+    "explanationCN": "Azure AI 指标顾问专为监控业务指标和 KPI 而设计。它自动检测多个时序中的异常，执行根本原因分析，并提供用于业务性能监控的可自定义仪表板。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/overview",
+    "difficulty": "medium",
+    "tags": [
+      "Metrics Advisor",
+      "business metrics",
+      "KPI",
+      "anomaly detection"
+    ]
+  },
+  {
+    "id": "ai102-065",
+    "exam": "AI-102",
+    "domain": "Implement decision support solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to implement a content moderation solution for a user-generated content platform that reviews text and images for policy violations. Which Azure AI service should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Language - Sentiment Analysis"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Content Safety"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Vision - Image Analysis"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Personalizer"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Content Safety provides comprehensive content moderation for both text and images, detecting harmful content categories including hate speech, violence, sexual content, and self-harm. It provides severity scores and supports custom blocklists.",
+    "explanationCN": "Azure AI 内容安全为文本和图像提供全面的内容审核，检测有害内容类别，包括仇恨言论、暴力、色情内容和自我伤害。它提供严重性分数并支持自定义阻止列表。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview",
+    "difficulty": "easy",
+    "tags": [
+      "Content Safety",
+      "content moderation",
+      "UGC",
+      "harmful content"
+    ]
+  },
+  {
+    "id": "ai102-066",
+    "exam": "AI-102",
+    "domain": "Implement decision support solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You are configuring Azure AI Anomaly Detector for your time-series data. The data shows clear weekly seasonal patterns. What parameter should you configure to improve anomaly detection accuracy?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Set the sensitivity to maximum"
+      },
+      {
+        "id": "B",
+        "text": "Configure the period (granularity) to match the seasonality of your data"
+      },
+      {
+        "id": "C",
+        "text": "Disable outlier detection"
+      },
+      {
+        "id": "D",
+        "text": "Use batch detection instead of streaming"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "When your time-series data has seasonal patterns (like weekly cycles), configuring the granularity/period parameter helps Anomaly Detector understand the expected seasonal behavior and distinguish seasonal variations from true anomalies, improving detection accuracy.",
+    "explanationCN": "当时序数据具有季节性模式（如每周周期）时，配置粒度/周期参数有助于异常检测器了解预期的季节性行为，区分季节变化和真实异常，提高检测准确性。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/concepts/anomaly-detection-best-practices",
+    "difficulty": "medium",
+    "tags": [
+      "Anomaly Detector",
+      "seasonality",
+      "time-series",
+      "configuration"
+    ]
+  },
+  {
+    "id": "ai102-067",
+    "exam": "AI-102",
+    "domain": "Implement decision support solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You are building a fraud detection system for an e-commerce platform that needs to make real-time decisions about whether a transaction is fraudulent. Which type of AI solution architecture should you implement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Use Azure AI Anomaly Detector for all transactions"
+      },
+      {
+        "id": "B",
+        "text": "Train a custom classification model in Azure Machine Learning and deploy as a real-time endpoint"
+      },
+      {
+        "id": "C",
+        "text": "Use Azure AI Language sentiment analysis to detect fraud"
+      },
+      {
+        "id": "D",
+        "text": "Use Azure AI Personalizer with fraud as a negative reward"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "For fraud detection, a custom trained classification model in Azure Machine Learning, deployed as a real-time inference endpoint, is the appropriate approach. The model is trained on labeled historical transaction data (fraudulent vs. legitimate) and can make real-time predictions for new transactions.",
+    "explanationCN": "对于欺诈检测，在 Azure 机器学习中训练的自定义分类模型，作为实时推理终结点部署，是合适的方法。模型在标记的历史交易数据（欺诈与合法）上训练，并可以对新交易进行实时预测。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-automated-ml-forecast",
+    "difficulty": "hard",
+    "tags": [
+      "Azure ML",
+      "fraud detection",
+      "classification",
+      "real-time inference"
+    ]
+  },
+  {
+    "id": "ai102-068",
+    "exam": "AI-102",
+    "domain": "Implement decision support solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "Azure AI Personalizer uses the concept of 'exploration' and 'exploitation'. What does the exploration rate (epsilon) control?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The rate at which the model downloads new training data"
+      },
+      {
+        "id": "B",
+        "text": "The percentage of requests where Personalizer tries less-certain actions to learn more about them"
+      },
+      {
+        "id": "C",
+        "text": "The speed of model retraining"
+      },
+      {
+        "id": "D",
+        "text": "The maximum number of actions in a Rank request"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "In Azure AI Personalizer, the exploration rate (epsilon) determines what percentage of Rank calls use random action selection (exploration) instead of the best-known action (exploitation). Exploration allows the model to discover potentially better actions that haven't been tried enough.",
+    "explanationCN": "在 Azure AI 个性化服务中，探索率（epsilon）决定了多少百分比的排名调用使用随机动作选择（探索）而非最佳已知动作（利用）。探索允许模型发现尚未充分尝试的潜在更好动作。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/personalizer/concepts-exploration",
+    "difficulty": "hard",
+    "tags": [
+      "Personalizer",
+      "exploration",
+      "exploitation",
+      "reinforcement learning"
+    ]
+  },
+  {
+    "id": "ai102-069",
+    "exam": "AI-102",
+    "domain": "Implement decision support solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to detect multivariate anomalies where an anomaly is only detectable by considering the correlation between multiple sensor readings simultaneously. Which Anomaly Detector mode should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Univariate anomaly detection (entire series mode)"
+      },
+      {
+        "id": "B",
+        "text": "Univariate anomaly detection (last point mode)"
+      },
+      {
+        "id": "C",
+        "text": "Multivariate anomaly detection (MVAD)"
+      },
+      {
+        "id": "D",
+        "text": "Batch anomaly detection"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Multivariate Anomaly Detection (MVAD) in Azure AI Anomaly Detector detects anomalies by analyzing correlations across multiple time series simultaneously. This is essential when an anomaly only becomes apparent when multiple variables deviate from their expected correlated patterns.",
+    "explanationCN": "Azure AI 异常检测器中的多变量异常检测 (MVAD) 通过同时分析多个时序之间的相关性来检测异常。当异常只有在多个变量偏离其预期相关模式时才显现时，这是必不可少的。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/overview#multivariate-anomaly-detection",
+    "difficulty": "hard",
+    "tags": [
+      "Anomaly Detector",
+      "multivariate",
+      "MVAD",
+      "correlation"
+    ]
+  },
+  {
+    "id": "ai102-070",
+    "exam": "AI-102",
+    "domain": "Implement decision support solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to implement counterfactual analysis in Azure AI Personalizer to understand what would have happened if different actions were taken historically. Which Personalizer feature enables this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Online learning mode"
+      },
+      {
+        "id": "B",
+        "text": "Offline evaluation and counterfactual analysis"
+      },
+      {
+        "id": "C",
+        "text": "Exploration rate adjustment"
+      },
+      {
+        "id": "D",
+        "text": "Reward aggregation"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Personalizer's offline evaluation feature allows counterfactual analysis - you can simulate how different policies (e.g., random or custom policies) would have performed on historical data. This helps validate Personalizer's effectiveness and optimize reward parameters.",
+    "explanationCN": "Azure AI 个性化服务的离线评估功能允许反事实分析——您可以模拟不同策略（如随机或自定义策略）在历史数据上的表现。这有助于验证个性化服务的有效性并优化奖励参数。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/personalizer/concepts-offline-evaluation",
+    "difficulty": "hard",
+    "tags": [
+      "Personalizer",
+      "offline evaluation",
+      "counterfactual",
+      "policy evaluation"
+    ]
+  }
+]

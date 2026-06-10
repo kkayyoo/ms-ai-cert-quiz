@@ -1,0 +1,15 @@
+{
+  "exam": "AI-102",
+  "name": "Designing and Implementing a Microsoft Azure AI Solution",
+  "passingScore": 700,
+  "totalQuestions": 60,
+  "duration": 120,
+  "domains": [
+    {"name": "Plan and manage an Azure AI solution", "weight": 0.175},
+    {"name": "Implement decision support solutions", "weight": 0.125},
+    {"name": "Implement computer vision solutions", "weight": 0.175},
+    {"name": "Implement natural language processing solutions", "weight": 0.325},
+    {"name": "Implement knowledge mining and document intelligence solutions", "weight": 0.125},
+    {"name": "Implement generative AI solutions", "weight": 0.125}
+  ]
+}

@@ -10,22 +10,20 @@ import { Question, UserAnswer } from '../types';
 
 const makeQuestion = (overrides: Partial<Question> = {}): Question => ({
   id: 'q1',
-  exam: 'AI-900',
+  examId: 'ai900',
   domain: 'AI Overview',
-  domainWeight: 15,
+  difficulty: 'easy',
   type: 'single',
-  question: 'What is AI?',
+  text: 'What is AI?',
   options: [
     { id: 'A', text: 'Option A' },
     { id: 'B', text: 'Option B' },
     { id: 'C', text: 'Option C' },
   ],
-  correctAnswers: ['A'],
+  correctIds: ['A'],
   explanation: 'AI stands for Artificial Intelligence.',
-  explanationCN: 'AI 代表人工智能。',
-  officialDocUrl: 'https://docs.microsoft.com',
-  difficulty: 'easy',
-  tags: ['ai'],
+  explanationZh: 'AI 代表人工智能。',
+  docsUrl: 'https://docs.microsoft.com',
   ...overrides,
 });
 
@@ -59,19 +57,19 @@ describe('examEngine', () => {
 
   describe('generateExam', () => {
     const questions = [
-      makeQuestion({ id: 'q1', exam: 'AI-900' }),
-      makeQuestion({ id: 'q2', exam: 'AI-900' }),
-      makeQuestion({ id: 'q3', exam: 'AI-102' }),
-      makeQuestion({ id: 'q4', exam: 'AI-102' }),
+      makeQuestion({ id: 'q1', examId: 'ai900' }),
+      makeQuestion({ id: 'q2', examId: 'ai900' }),
+      makeQuestion({ id: 'q3', examId: 'ai102' }),
+      makeQuestion({ id: 'q4', examId: 'ai102' }),
     ];
 
     it('filters by exam', () => {
-      const result = generateExam(questions, 'AI-900', 10);
-      expect(result.every((q) => q.exam === 'AI-900')).toBe(true);
+      const result = generateExam(questions, 'ai900', 10);
+      expect(result.every((q) => q.examId === 'ai900')).toBe(true);
     });
 
     it('respects count limit', () => {
-      const result = generateExam(questions, 'AI-900', 1);
+      const result = generateExam(questions, 'ai900', 1);
       expect(result).toHaveLength(1);
     });
 
@@ -89,17 +87,17 @@ describe('examEngine', () => {
 
   describe('checkAnswer', () => {
     it('returns true for correct single answer', () => {
-      const q = makeQuestion({ correctAnswers: ['A'] });
+      const q = makeQuestion({ correctIds: ['A'] });
       expect(checkAnswer(q, ['A'])).toBe(true);
     });
 
     it('returns false for wrong answer', () => {
-      const q = makeQuestion({ correctAnswers: ['A'] });
+      const q = makeQuestion({ correctIds: ['A'] });
       expect(checkAnswer(q, ['B'])).toBe(false);
     });
 
     it('handles multiple correct answers', () => {
-      const q = makeQuestion({ type: 'multiple', correctAnswers: ['A', 'B'] });
+      const q = makeQuestion({ type: 'multi', correctIds: ['A', 'B'] });
       expect(checkAnswer(q, ['B', 'A'])).toBe(true);
       expect(checkAnswer(q, ['A'])).toBe(false);
     });

@@ -1,4 +1,4 @@
-import { Question, UserAnswer, ExamResult, DomainResult } from '../types';
+import { Question, UserAnswer, ExamResult } from '../types';
 
 export function shuffleArray<T>(arr: T[]): T[] {
   const result = [...arr];
@@ -23,7 +23,7 @@ export function generateExam(
   count: number,
   domain?: string
 ): Question[] {
-  let pool = exam === 'mixed' ? questions : questions.filter((q) => q.exam === exam);
+  let pool = exam === 'mixed' ? questions : questions.filter((q) => q.examId === exam);
   if (domain) {
     pool = pool.filter((q) => q.domain === domain);
   }
@@ -31,41 +31,43 @@ export function generateExam(
   return shuffled.slice(0, Math.min(count, shuffled.length)).map(shuffleOptions);
 }
 
-export function calculateScore(answers: UserAnswer[], questions: Question[]): ExamResult {
+export function calculateScore(
+  answers: UserAnswer[],
+  questions: Question[],
+  sessionId = '',
+  examId: Question['examId'] = 'ai900',
+  duration = 0
+): ExamResult {
   const qMap = new Map(questions.map((q) => [q.id, q]));
-  const domainMap = new Map<string, { correct: number; total: number }>();
+  const domainScores: Record<string, { correct: number; total: number }> = {};
 
   let correctCount = 0;
   for (const answer of answers) {
     const q = qMap.get(answer.questionId);
     if (!q) continue;
-
-    if (!domainMap.has(q.domain)) {
-      domainMap.set(q.domain, { correct: 0, total: 0 });
-    }
-    const d = domainMap.get(q.domain)!;
-    d.total += 1;
+    if (!domainScores[q.domain]) domainScores[q.domain] = { correct: 0, total: 0 };
+    domainScores[q.domain].total += 1;
     if (answer.isCorrect) {
       correctCount += 1;
-      d.correct += 1;
+      domainScores[q.domain].correct += 1;
     }
   }
 
   const total = answers.length;
-  const percentage = total > 0 ? Math.round((correctCount / total) * 100) : 0;
   const score = Math.round((correctCount / Math.max(total, 1)) * 1000);
 
-  const byDomain: DomainResult[] = [];
-  domainMap.forEach((val, domain) => {
-    byDomain.push({
-      domain,
-      correct: val.correct,
-      total: val.total,
-      percentage: Math.round((val.correct / val.total) * 100),
-    });
-  });
-
-  return { score, percentage, passed: isPass(score), correctCount, totalCount: total, byDomain };
+  return {
+    sessionId,
+    examId,
+    totalQuestions: total,
+    correctCount,
+    score,
+    passed: isPass(score),
+    domainScores,
+    wrongAnswers: [],
+    completedAt: Date.now(),
+    duration,
+  };
 }
 
 export function isPass(score: number): boolean {
@@ -73,7 +75,7 @@ export function isPass(score: number): boolean {
 }
 
 export function checkAnswer(question: Question, selectedAnswers: string[]): boolean {
-  const correct = [...(question.correctIds ?? question.correctAnswers ?? [])].sort();
+  const correct = [...question.correctIds].sort();
   const selected = [...selectedAnswers].sort();
   return JSON.stringify(correct) === JSON.stringify(selected);
 }

@@ -45,7 +45,7 @@ export function useQuiz(): UseQuizReturn {
     const timeSpentMs = Date.now() - questionStartRef.current;
     const isCorrect = checkAnswer(q, selectedAnswers);
     const answer: UserAnswer = { questionId, selectedAnswers, isCorrect, timeSpentMs };
-    if (!isCorrect) saveWrongAnswer(q);
+    if (!isCorrect) saveWrongAnswer({ id: `wrong-${q.id}-${Date.now()}`, examId: q.examId, question: q, userAnswer: selectedAnswers, savedAt: Date.now() });
     setAnswers((prev) => [...prev, answer]);
   }, [questions]);
 

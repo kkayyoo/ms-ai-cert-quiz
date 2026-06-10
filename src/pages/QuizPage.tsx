@@ -1,20 +1,37 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import type { ExamId } from '../types'
+import type { ExamId, Question } from '../types'
 import { getQuestions, saveWrongAnswer } from '../utils/quizData'
+import { useQuiz } from '../context/QuizContext'
 import QuestionCard from '../components/Quiz/QuestionCard'
 import FeedbackPanel from '../components/Quiz/FeedbackPanel'
+import LoadingSpinner from '../components/LoadingSpinner'
 import styles from './QuizPage.module.css'
 
 export default function QuizPage() {
   const { examId } = useParams<{ examId: string }>()
   const navigate = useNavigate()
-  const questions = getQuestions((examId ?? 'ai900') as ExamId)
+  const { state, loadExamQuestions } = useQuiz()
+  const id = (examId ?? 'ai900') as ExamId
 
+  const [questions, setQuestions] = useState<Question[]>(() => getQuestions(id))
+  const [loading, setLoading] = useState(true)
   const [currentIdx, setCurrentIdx] = useState(0)
   const [selected, setSelected] = useState<string[]>([])
   const [submitted, setSubmitted] = useState(false)
-  const [results, setResults] = useState<{ correct: boolean; userAnswer: string[] }[]>([])
+  const [results, setResults] = useState<{ correct: boolean; userAnswer: string[]; questionId: string }[]>([])
+
+  useEffect(() => {
+    setLoading(true)
+    loadExamQuestions(id).then((loaded) => {
+      if (loaded.length > 0) setQuestions(loaded)
+      setLoading(false)
+    }).catch(() => setLoading(false))
+  }, [id])
+
+  if (loading) {
+    return <LoadingSpinner text={`Loading ${id.toUpperCase().replace('AI', 'AI-')} questions...`} />
+  }
 
   const question = questions[currentIdx]
   if (!question) {
@@ -28,23 +45,27 @@ export default function QuizPage() {
     )
   }
 
-  const progress = ((currentIdx) / questions.length) * 100
+  const progress = (currentIdx / questions.length) * 100
 
   function handleSubmit() {
     if (selected.length === 0) return
     setSubmitted(true)
-    const correct = question.correctIds.every(id => selected.includes(id)) &&
-      selected.every(id => question.correctIds.includes(id))
-    setResults(prev => [...prev, { correct, userAnswer: selected }])
+    const correct = question.correctIds.every(cid => selected.includes(cid)) &&
+      selected.every(sid => question.correctIds.includes(sid))
+    setResults(prev => [...prev, { correct, userAnswer: selected, questionId: question.id }])
   }
 
   function handleNext() {
     if (currentIdx + 1 >= questions.length) {
-      const correctCount = results.filter(r => r.correct).length + (submitted ? (results.length > 0 ? 0 : 0) : 0)
-      // Pass results via sessionStorage
       const finalResults = [...results]
-      const score = Math.round((finalResults.filter(r => r.correct).length / questions.length) * 1000)
-      sessionStorage.setItem('quizResult', JSON.stringify({ score, correctCount: finalResults.filter(r => r.correct).length, total: questions.length, examId }))
+      const correctCount = finalResults.filter(r => r.correct).length
+      const score = Math.round((correctCount / questions.length) * 1000)
+      sessionStorage.setItem('quizResult', JSON.stringify({
+        score,
+        correctCount,
+        total: questions.length,
+        examId: id,
+      }))
       navigate(`/results/session-${Date.now()}`)
       return
     }

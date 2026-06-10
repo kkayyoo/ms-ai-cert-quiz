@@ -3903,5 +3903,597 @@
       "model evaluation",
       "classification"
     ]
+  },
+  {
+    "id": "ai102-101",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You need to build a solution that understands user intents and extracts entities from natural language input to power a conversational bot. Which Azure AI service should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Language - Sentiment Analysis"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Language - Conversational Language Understanding (CLU)"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Language - Text Analytics"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Translator"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Conversational Language Understanding (CLU) is the successor to LUIS in Azure AI Language. It allows you to define intents and entities, train the model on example utterances, and classify user input to identify the intent and extract entities for conversational applications.",
+    "explanationCN": "对话语言理解（CLU）是 Azure AI 语言服务中 LUIS 的继任者。它允许定义意图和实体，使用示例话语训练模型，并对用户输入进行分类以识别意图和提取实体，用于对话式应用程序。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/overview",
+    "difficulty": "easy",
+    "tags": [
+      "CLU",
+      "LUIS",
+      "intent recognition",
+      "NLU",
+      "conversational AI"
+    ]
+  },
+  {
+    "id": "ai102-102",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You are building a CLU model for a travel booking application. Users may say 'Book a flight to Paris next Friday' or 'I want to fly to Paris on Friday'. What should you define to capture 'Paris' and 'next Friday' as structured data?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Intents with different names for each pattern"
+      },
+      {
+        "id": "B",
+        "text": "Entities - prebuilt entities for dates and custom entities for locations"
+      },
+      {
+        "id": "C",
+        "text": "Multiple models for each variation"
+      },
+      {
+        "id": "D",
+        "text": "Synonyms list in the training data"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "In CLU, entities extract structured data from user utterances. Prebuilt entities (like datetime) can extract dates automatically. Custom entities can be trained to extract domain-specific values like city names. Both utterance variations would share the same intent with different entity values.",
+    "explanationCN": "在 CLU 中，实体从用户话语中提取结构化数据。预构建实体（如 datetime）可以自动提取日期。自定义实体可以训练以提取特定领域的值，如城市名称。两种话语变体将共享相同的意图，但实体值不同。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/concepts/entity-components",
+    "difficulty": "medium",
+    "tags": [
+      "CLU",
+      "entities",
+      "intents",
+      "NLU",
+      "prebuilt entities"
+    ]
+  },
+  {
+    "id": "ai102-103",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You want to create a knowledge base that can answer customer FAQ questions using existing documentation. Which Azure AI Language feature should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Conversational Language Understanding"
+      },
+      {
+        "id": "B",
+        "text": "Custom Text Classification"
+      },
+      {
+        "id": "C",
+        "text": "Custom Question Answering"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Search"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Custom Question Answering (part of Azure AI Language) allows you to create a knowledge base from FAQ documents, URLs, or manual Q&A pairs. It uses NLP to find the best matching answer from the knowledge base for incoming questions.",
+    "explanationCN": "自定义问答（Azure AI 语言的一部分）允许从常见问题文档、URL 或手动问答对创建知识库。它使用 NLP 从知识库中找到对传入问题的最佳匹配答案。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/overview",
+    "difficulty": "easy",
+    "tags": [
+      "Custom Question Answering",
+      "QnA Maker",
+      "knowledge base",
+      "FAQ"
+    ]
+  },
+  {
+    "id": "ai102-104",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You need to automatically categorize customer support tickets into predefined categories like 'Billing', 'Technical Issue', and 'Account Management'. Which Azure AI Language feature should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Custom Question Answering"
+      },
+      {
+        "id": "B",
+        "text": "Custom Text Classification - single-label classification"
+      },
+      {
+        "id": "C",
+        "text": "Sentiment Analysis"
+      },
+      {
+        "id": "D",
+        "text": "Key Phrase Extraction"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Custom Text Classification allows you to train a model to classify text documents into custom categories. Single-label classification assigns each document to exactly one category, which is appropriate for mutually exclusive support ticket categories.",
+    "explanationCN": "自定义文本分类允许训练模型将文本文档分类到自定义类别中。单标签分类将每个文档精确分配到一个类别，适用于互斥的支持工单类别。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-text-classification/overview",
+    "difficulty": "medium",
+    "tags": [
+      "Custom Text Classification",
+      "text classification",
+      "NLP",
+      "support tickets"
+    ]
+  },
+  {
+    "id": "ai102-105",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You are building a bot with Azure Bot Service and need it to handle multiple conversation topics by routing to different skill bots. Which Bot Framework pattern enables this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Adaptive Dialogs"
+      },
+      {
+        "id": "B",
+        "text": "Virtual Assistant / Orchestrator pattern with skill bots"
+      },
+      {
+        "id": "C",
+        "text": "Waterfall Dialogs"
+      },
+      {
+        "id": "D",
+        "text": "Bot Framework Composer"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "The Virtual Assistant template with the Orchestrator pattern allows a root bot to route user requests to specialized skill bots based on intent. Each skill handles a specific domain (e.g., HR, IT, calendar), enabling modular bot development.",
+    "explanationCN": "虚拟助手模板与 Orchestrator 模式允许根机器人根据意图将用户请求路由到专业技能机器人。每个技能处理特定领域（如 HR、IT、日历），实现模块化机器人开发。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/bot-service/skills-conceptual",
+    "difficulty": "hard",
+    "tags": [
+      "Azure Bot Service",
+      "Bot Framework",
+      "skills",
+      "orchestration",
+      "Virtual Assistant"
+    ]
+  },
+  {
+    "id": "ai102-106",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You need to detect the language of user-submitted text messages from around the world before processing them. Which Azure AI Language feature should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sentiment Analysis"
+      },
+      {
+        "id": "B",
+        "text": "Language Detection"
+      },
+      {
+        "id": "C",
+        "text": "Named Entity Recognition"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Translator"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "The Language Detection feature in Azure AI Language identifies the language of a text document and returns a language identifier with a confidence score. It supports over 120 languages and is often used as a first step before applying language-specific NLP features.",
+    "explanationCN": "Azure AI 语言中的语言检测功能识别文本文档的语言，并返回带置信度分数的语言标识符。它支持 120 多种语言，通常作为应用特定语言 NLP 功能前的第一步。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/language-detection/overview",
+    "difficulty": "easy",
+    "tags": [
+      "Language Detection",
+      "multilingual",
+      "Azure AI Language",
+      "NLP"
+    ]
+  },
+  {
+    "id": "ai102-107",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You need to analyze customer reviews to understand overall sentiment and identify which specific aspects (like 'food', 'service', 'ambiance') are mentioned positively or negatively. Which Azure AI Language feature provides this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sentiment Analysis - document-level only"
+      },
+      {
+        "id": "B",
+        "text": "Opinion Mining (aspect-based sentiment analysis)"
+      },
+      {
+        "id": "C",
+        "text": "Key Phrase Extraction"
+      },
+      {
+        "id": "D",
+        "text": "Entity Linking"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Opinion Mining (also called aspect-based sentiment analysis) is a feature of Sentiment Analysis in Azure AI Language. It identifies sentiment at the aspect level - for example, extracting that 'food' has positive sentiment while 'service' has negative sentiment in a restaurant review.",
+    "explanationCN": "观点挖掘（也称为基于方面的情感分析）是 Azure AI 语言中情感分析的一项功能。它在方面级别识别情感——例如，提取餐厅评价中'食物'具有正面情感而'服务'具有负面情感。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/overview",
+    "difficulty": "medium",
+    "tags": [
+      "opinion mining",
+      "aspect-based sentiment",
+      "sentiment analysis",
+      "NLP"
+    ]
+  },
+  {
+    "id": "ai102-108",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You are using Azure AI Language for Named Entity Recognition (NER). A user text contains 'Microsoft announced Azure AI services at Build 2024.' Which entity category would 'Microsoft' be classified as?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Location"
+      },
+      {
+        "id": "B",
+        "text": "DateTime"
+      },
+      {
+        "id": "C",
+        "text": "Organization"
+      },
+      {
+        "id": "D",
+        "text": "Product"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "In Azure AI Language NER, 'Microsoft' is classified as Organization. NER identifies and classifies entities into categories including Person, Organization, Location, DateTime, Quantity, and more. 'Azure AI services' would be classified as Product.",
+    "explanationCN": "在 Azure AI 语言的 NER 中，'Microsoft' 被分类为组织（Organization）。NER 识别并将实体分类到类别中，包括人物、组织、地点、日期时间、数量等。'Azure AI services' 将被分类为产品。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/concepts/named-entity-categories",
+    "difficulty": "easy",
+    "tags": [
+      "NER",
+      "Named Entity Recognition",
+      "entity categories",
+      "Azure AI Language"
+    ]
+  },
+  {
+    "id": "ai102-109",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You need to translate text from multiple source languages to English in real-time for a chat application. Users' languages may be unknown in advance. What is the most efficient approach using Azure AI services?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Detect language with Language Detection, then call Translator for the specific language pair"
+      },
+      {
+        "id": "B",
+        "text": "Use Azure AI Translator directly without specifying a source language - it auto-detects"
+      },
+      {
+        "id": "C",
+        "text": "Use Azure AI Language to translate text"
+      },
+      {
+        "id": "D",
+        "text": "Use Azure AI Speech to transcribe and translate simultaneously"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "The Azure AI Translator service can automatically detect the source language when no 'from' parameter is specified. This eliminates the need for a separate language detection step, making it more efficient for real-time multilingual chat translation.",
+    "explanationCN": "当未指定'from'参数时，Azure AI 翻译服务可以自动检测源语言。这消除了单独进行语言检测步骤的需要，使实时多语言聊天翻译更加高效。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/translator/reference/v3-0-translate",
+    "difficulty": "medium",
+    "tags": [
+      "Translator",
+      "language detection",
+      "auto-detect",
+      "multilingual",
+      "real-time translation"
+    ]
+  },
+  {
+    "id": "ai102-110",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You are building a bot using Azure Bot Service with Bot Framework SDK. Your bot needs to maintain conversation state across multiple turns, such as remembering the user's name after they introduce themselves. How should you implement this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Store state in a global variable in the bot code"
+      },
+      {
+        "id": "B",
+        "text": "Use Bot Framework State Management with UserState or ConversationState stored in Azure Blob Storage or CosmosDB"
+      },
+      {
+        "id": "C",
+        "text": "Ask the user to repeat their name in each message"
+      },
+      {
+        "id": "D",
+        "text": "Use Azure Cache for Redis independently"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Bot Framework provides built-in state management with UserState (persists across conversations) and ConversationState (persists within a conversation). These can be backed by storage providers like Azure Blob Storage, CosmosDB, or in-memory (for testing).",
+    "explanationCN": "Bot Framework 提供内置状态管理，包括 UserState（跨对话持久化）和 ConversationState（在对话内持久化）。这些可以由存储提供程序支持，如 Azure Blob 存储、CosmosDB 或内存（用于测试）。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-concept-state",
+    "difficulty": "medium",
+    "tags": [
+      "Azure Bot Service",
+      "Bot Framework",
+      "state management",
+      "UserState",
+      "ConversationState"
+    ]
+  },
+  {
+    "id": "ai102-111",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You need to enable your Azure Bot to be accessible via Microsoft Teams. Which configuration step is required?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy the bot to Azure Kubernetes Service (AKS)"
+      },
+      {
+        "id": "B",
+        "text": "Configure a Teams channel in the Azure Bot resource channels settings"
+      },
+      {
+        "id": "C",
+        "text": "Install the Bot Framework SDK Teams extension separately"
+      },
+      {
+        "id": "D",
+        "text": "Register the bot with Microsoft Teams Developer Portal only"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "To make an Azure Bot accessible via Microsoft Teams, you configure the Teams channel in the Azure Bot resource's Channels settings. This registers the bot with Teams and provides the necessary connection configuration.",
+    "explanationCN": "要使 Azure Bot 可通过 Microsoft Teams 访问，需要在 Azure Bot 资源的渠道设置中配置 Teams 渠道。这将向 Teams 注册机器人并提供必要的连接配置。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/bot-service/channel-connect-teams",
+    "difficulty": "easy",
+    "tags": [
+      "Azure Bot Service",
+      "Teams channel",
+      "bot deployment",
+      "channels"
+    ]
+  },
+  {
+    "id": "ai102-112",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You are implementing Azure AI Speech service for a call center application. You need to convert audio recordings of customer calls to text with speaker differentiation. Which feature should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Speech-to-Text with language identification"
+      },
+      {
+        "id": "B",
+        "text": "Speaker Recognition - speaker verification"
+      },
+      {
+        "id": "C",
+        "text": "Speech-to-Text with diarization enabled"
+      },
+      {
+        "id": "D",
+        "text": "Custom Speech model"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Speaker diarization is a feature of Azure AI Speech's Speech-to-Text that segments and identifies different speakers in an audio file. When enabled, the transcription output includes speaker labels (Speaker 1, Speaker 2, etc.) for each segment.",
+    "explanationCN": "说话人分离是 Azure AI 语音服务语音转文本功能，可在音频文件中分割和识别不同的说话人。启用后，转录输出会为每个片段包含说话人标签（说话人 1、说话人 2 等）。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/get-started-stt-diarization",
+    "difficulty": "medium",
+    "tags": [
+      "Speech-to-Text",
+      "diarization",
+      "speaker identification",
+      "Azure AI Speech"
+    ]
+  },
+  {
+    "id": "ai102-113",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You need to extract key phrases from a large set of customer feedback documents to identify the most frequently discussed topics. Which Azure AI Language feature should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Named Entity Recognition"
+      },
+      {
+        "id": "B",
+        "text": "Key Phrase Extraction"
+      },
+      {
+        "id": "C",
+        "text": "Text Summarization"
+      },
+      {
+        "id": "D",
+        "text": "Entity Linking"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Key Phrase Extraction in Azure AI Language identifies the main points and topics in a text document by extracting key noun phrases. It is useful for quickly summarizing topics across a large volume of documents.",
+    "explanationCN": "Azure AI 语言中的关键短语提取通过提取关键名词短语来识别文本文档中的主要观点和话题。它对于快速总结大量文档中的主题很有用。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/key-phrase-extraction/overview",
+    "difficulty": "easy",
+    "tags": [
+      "Key Phrase Extraction",
+      "NLP",
+      "text analytics",
+      "Azure AI Language"
+    ]
+  },
+  {
+    "id": "ai102-114",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "Your CLU project contains 1000 training utterances but the model performance is poor on new inputs. You suspect the training data is biased. What should you do to evaluate and improve the model?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Add more intents to cover all possible user statements"
+      },
+      {
+        "id": "B",
+        "text": "Review the confusion matrix and add diverse training utterances for misclassified intents"
+      },
+      {
+        "id": "C",
+        "text": "Increase the confidence threshold to reduce false positives"
+      },
+      {
+        "id": "D",
+        "text": "Export the model and retrain it in Azure Machine Learning"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "The confusion matrix in CLU shows which intents are being confused with each other. By analyzing misclassifications, you can identify where to add more diverse training examples to help the model learn the distinctions between similar intents.",
+    "explanationCN": "CLU 中的混淆矩阵显示哪些意图相互混淆。通过分析错误分类，可以确定在哪里添加更多多样化的训练示例，帮助模型学习相似意图之间的区别。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/how-to/train-model",
+    "difficulty": "hard",
+    "tags": [
+      "CLU",
+      "model evaluation",
+      "confusion matrix",
+      "training data",
+      "NLU"
+    ]
+  },
+  {
+    "id": "ai102-115",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You need to implement text summarization for long legal documents, producing both an abstract summary and a list of extracted key sentences. Which Azure AI Language feature supports both summarization types?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Key Phrase Extraction for sentences"
+      },
+      {
+        "id": "B",
+        "text": "Text Summarization - abstractive and extractive summarization"
+      },
+      {
+        "id": "C",
+        "text": "Custom Text Classification"
+      },
+      {
+        "id": "D",
+        "text": "Document Translation"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Language Text Summarization supports two modes: extractive summarization (selects the most important sentences from the original text) and abstractive summarization (generates new summary text that captures the key ideas). Both can be applied to long documents.",
+    "explanationCN": "Azure AI 语言文本摘要支持两种模式：提取式摘要（从原文中选择最重要的句子）和抽象式摘要（生成捕捉关键思想的新摘要文本）。两者都可以应用于长文档。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/summarization/overview",
+    "difficulty": "medium",
+    "tags": [
+      "text summarization",
+      "extractive",
+      "abstractive",
+      "Azure AI Language",
+      "NLP"
+    ]
   }
 ]

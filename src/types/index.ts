@@ -53,6 +53,7 @@ export interface QuizSession {
   answers: Record<string, string[]>
   startedAt: number
   completedAt?: number
+  isMock?: boolean
 }
 
 /** Legacy session shape used by useQuiz / storage. */
@@ -83,13 +84,15 @@ export interface ExamResult {
   percentage?: number
   passed: boolean
   correctCount: number
-  totalCount: number
+  totalCount?: number
+  totalQuestions?: number
   byDomain?: DomainResult[]
   domainScores?: Record<string, { correct: number; total: number }>
   sessionId?: string
   examId?: ExamId
   completedAt?: number
-  totalQuestions?: number
+  wrongAnswers?: WrongAnswerEntry[]
+  duration?: number
 }
 
 // ── Wrong answers ─────────────────────────────────────────────────────────────

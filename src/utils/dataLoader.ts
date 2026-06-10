@@ -1,39 +1,30 @@
 import { Question } from '../types';
-import { validateQuestion } from './validation';
 
-const DATA_BASE_URL = import.meta.env.BASE_URL + 'data/';
+const DATA_BASE_URL = (typeof import.meta !== 'undefined' ? import.meta.env?.BASE_URL : '') || '/ms-ai-cert-quiz/';
 
-// Map our ExamId format to file path format
-const EXAM_PATH_MAP: Record<string, string> = {
-  'ai900': 'ai-900',
-  'ai102': 'ai-102',
-  'AI-900': 'ai-900',
-  'AI-102': 'ai-102',
-};
-
-async function loadExamQuestions(exam: string): Promise<Question[]> {
-  const pathKey = EXAM_PATH_MAP[exam] ?? exam.toLowerCase();
-  const url = `${DATA_BASE_URL}${pathKey}/questions.json`;
+async function loadExamQuestions(examId: 'ai900' | 'ai102'): Promise<Question[]> {
+  const url = `${DATA_BASE_URL}data/${examId}/questions.json`;
   try {
     const response = await fetch(url);
     if (!response.ok) {
-      console.warn(`Failed to load ${exam} questions: ${response.status}`);
+      console.warn(`Failed to load ${examId} questions: ${response.status}`);
       return [];
     }
     const data: unknown = await response.json();
     if (!Array.isArray(data)) {
-      console.warn(`${exam} questions.json is not an array`);
+      console.warn(`${examId} questions.json is not an array`);
       return [];
     }
-    return data.filter((q) => {
-      const valid = validateQuestion(q);
-      if (!valid) {
-        console.warn('Invalid question skipped:', q);
-      }
-      return valid;
-    }) as Question[];
+    // Normalize exam field for backward compat
+    return data.map((q: Record<string, unknown>) => ({
+      ...q,
+      examId: q.examId ?? (q.exam === 'AI-900' ? 'ai900' : q.exam === 'AI-102' ? 'ai102' : examId),
+      text: q.text ?? q.question ?? '',
+      correctIds: q.correctIds ?? q.correctAnswers ?? [],
+      explanationZh: q.explanationZh ?? q.explanationCN ?? '',
+    })) as Question[];
   } catch (err) {
-    console.warn(`Error loading ${exam} questions:`, err);
+    console.warn(`Error loading ${examId} questions:`, err);
     return [];
   }
 }
@@ -46,8 +37,8 @@ export async function loadAllQuestions(): Promise<Question[]> {
   return [...ai900, ...ai102];
 }
 
-export async function loadQuestionsByExam(exam: string): Promise<Question[]> {
-  return loadExamQuestions(exam);
+export async function loadQuestionsByExam(examId: 'ai900' | 'ai102'): Promise<Question[]> {
+  return loadExamQuestions(examId);
 }
 
 export function getQuestionsByDomain(questions: Question[], domain: string): Question[] {

@@ -168,7 +168,25 @@ export function QuizProvider({ children }: { children: ReactNode }) {
       duration,
     };
 
-    saveSession({ id: sessionId, result });
+    saveSession({
+      id: sessionId,
+      exam: examId === 'ai900' ? 'AI-900' : 'AI-102',
+      startedAt: new Date(startedAt).toISOString(),
+      completedAt: new Date().toISOString(),
+      questions,
+      answers: Object.entries(answers).map(([questionId, selectedAnswers]) => ({
+        questionId,
+        selectedAnswers,
+        isCorrect: selectedAnswers.every((id) => {
+          const q = questions.find((q) => q.id === questionId);
+          return q ? q.correctIds.includes(id) : false;
+        }),
+        timeSpentMs: 0,
+      })),
+      score: result.score,
+      passed: result.passed,
+      totalQuestions: questions.length,
+    });
     dispatch({ type: 'END_SESSION', result });
     return result;
   }, [state]);

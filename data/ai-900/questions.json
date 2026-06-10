@@ -7,17 +7,34 @@
     "type": "single",
     "question": "Which of the following is an example of a computer vision workload?",
     "options": [
-      {"id": "A", "text": "Translating text from one language to another"},
-      {"id": "B", "text": "Detecting objects in images and returning bounding boxes"},
-      {"id": "C", "text": "Predicting future sales based on historical data"},
-      {"id": "D", "text": "Extracting key phrases from customer reviews"}
+      {
+        "id": "A",
+        "text": "Translating text from one language to another"
+      },
+      {
+        "id": "B",
+        "text": "Detecting objects in images and returning bounding boxes"
+      },
+      {
+        "id": "C",
+        "text": "Predicting future sales based on historical data"
+      },
+      {
+        "id": "D",
+        "text": "Extracting key phrases from customer reviews"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Computer vision workloads involve analyzing and interpreting visual data such as images and video. Object detection—identifying objects and their locations in images—is a classic computer vision task.",
     "explanationCN": "计算机视觉工作负载涉及对图像和视频等视觉数据的分析与解释。目标检测（识别图像中的对象及其位置）是典型的计算机视觉任务。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview",
     "difficulty": "easy",
-    "tags": ["computer vision", "AI workloads"]
+    "tags": [
+      "computer vision",
+      "AI workloads"
+    ]
   },
   {
     "id": "ai900-002",
@@ -27,17 +44,34 @@
     "type": "single",
     "question": "Which Microsoft Responsible AI principle focuses on ensuring that AI systems do not disadvantage specific groups of people?",
     "options": [
-      {"id": "A", "text": "Reliability & Safety"},
-      {"id": "B", "text": "Privacy & Security"},
-      {"id": "C", "text": "Fairness"},
-      {"id": "D", "text": "Transparency"}
+      {
+        "id": "A",
+        "text": "Reliability & Safety"
+      },
+      {
+        "id": "B",
+        "text": "Privacy & Security"
+      },
+      {
+        "id": "C",
+        "text": "Fairness"
+      },
+      {
+        "id": "D",
+        "text": "Transparency"
+      }
     ],
-    "correctAnswers": ["C"],
+    "correctAnswers": [
+      "C"
+    ],
     "explanation": "The Fairness principle in Microsoft's Responsible AI framework ensures AI systems treat all people equitably and do not perpetuate bias or discrimination against specific groups.",
-    "explanationCN": "微软负责任 AI 框架中的"公平性"原则确保 AI 系统公平对待所有人，不会对特定群体产生偏见或歧视。",
+    "explanationCN": "微软负责任 AI 框架中的\"公平性\"原则确保 AI 系统公平对待所有人，不会对特定群体产生偏见或歧视。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai",
     "difficulty": "easy",
-    "tags": ["responsible AI", "fairness"]
+    "tags": [
+      "responsible AI",
+      "fairness"
+    ]
   },
   {
     "id": "ai900-003",
@@ -47,17 +81,35 @@
     "type": "single",
     "question": "Which Responsible AI principle ensures that AI systems behave as intended and avoid unexpected harmful behavior?",
     "options": [
-      {"id": "A", "text": "Inclusiveness"},
-      {"id": "B", "text": "Reliability & Safety"},
-      {"id": "C", "text": "Accountability"},
-      {"id": "D", "text": "Fairness"}
+      {
+        "id": "A",
+        "text": "Inclusiveness"
+      },
+      {
+        "id": "B",
+        "text": "Reliability & Safety"
+      },
+      {
+        "id": "C",
+        "text": "Accountability"
+      },
+      {
+        "id": "D",
+        "text": "Fairness"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Reliability & Safety means AI systems should perform consistently under defined conditions and avoid unsafe or unexpected behaviors that could cause harm.",
     "explanationCN": "可靠性与安全性原则意味着 AI 系统应在规定条件下稳定运行，并避免可能造成危害的不安全或意外行为。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai",
     "difficulty": "easy",
-    "tags": ["responsible AI", "reliability", "safety"]
+    "tags": [
+      "responsible AI",
+      "reliability",
+      "safety"
+    ]
   },
   {
     "id": "ai900-004",
@@ -67,17 +119,34 @@
     "type": "single",
     "question": "Which Responsible AI principle ensures that people are empowered and included in the design of AI systems, regardless of ability, background, or experience?",
     "options": [
-      {"id": "A", "text": "Transparency"},
-      {"id": "B", "text": "Fairness"},
-      {"id": "C", "text": "Inclusiveness"},
-      {"id": "D", "text": "Accountability"}
+      {
+        "id": "A",
+        "text": "Transparency"
+      },
+      {
+        "id": "B",
+        "text": "Fairness"
+      },
+      {
+        "id": "C",
+        "text": "Inclusiveness"
+      },
+      {
+        "id": "D",
+        "text": "Accountability"
+      }
     ],
-    "correctAnswers": ["C"],
+    "correctAnswers": [
+      "C"
+    ],
     "explanation": "The Inclusiveness principle ensures AI systems empower everyone and engage people, including those with disabilities, marginalized groups, or those with varying levels of technical expertise.",
     "explanationCN": "包容性原则确保 AI 系统赋予所有人权力，并吸纳各类人群参与，包括残障人士、边缘化群体或技术水平不同的人。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai",
     "difficulty": "easy",
-    "tags": ["responsible AI", "inclusiveness"]
+    "tags": [
+      "responsible AI",
+      "inclusiveness"
+    ]
   },
   {
     "id": "ai900-005",
@@ -87,17 +156,34 @@
     "type": "single",
     "question": "Which of the following best describes a Natural Language Processing (NLP) workload?",
     "options": [
-      {"id": "A", "text": "Identifying faces in photographs"},
-      {"id": "B", "text": "Predicting whether a patient has a disease based on test results"},
-      {"id": "C", "text": "Extracting topics and sentiment from customer reviews"},
-      {"id": "D", "text": "Detecting anomalies in sensor time-series data"}
+      {
+        "id": "A",
+        "text": "Identifying faces in photographs"
+      },
+      {
+        "id": "B",
+        "text": "Predicting whether a patient has a disease based on test results"
+      },
+      {
+        "id": "C",
+        "text": "Extracting topics and sentiment from customer reviews"
+      },
+      {
+        "id": "D",
+        "text": "Detecting anomalies in sensor time-series data"
+      }
     ],
-    "correctAnswers": ["C"],
+    "correctAnswers": [
+      "C"
+    ],
     "explanation": "NLP workloads process and analyze text or speech. Extracting topics and sentiment from customer reviews is a typical NLP task involving text analysis.",
     "explanationCN": "NLP 工作负载处理并分析文本或语音。从客户评论中提取主题和情感是典型的 NLP 文本分析任务。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview",
     "difficulty": "easy",
-    "tags": ["NLP", "AI workloads"]
+    "tags": [
+      "NLP",
+      "AI workloads"
+    ]
   },
   {
     "id": "ai900-006",
@@ -107,17 +193,34 @@
     "type": "single",
     "question": "Which Responsible AI principle states that AI systems should be understandable and that humans should be able to question and monitor AI decisions?",
     "options": [
-      {"id": "A", "text": "Accountability"},
-      {"id": "B", "text": "Transparency"},
-      {"id": "C", "text": "Reliability & Safety"},
-      {"id": "D", "text": "Privacy & Security"}
+      {
+        "id": "A",
+        "text": "Accountability"
+      },
+      {
+        "id": "B",
+        "text": "Transparency"
+      },
+      {
+        "id": "C",
+        "text": "Reliability & Safety"
+      },
+      {
+        "id": "D",
+        "text": "Privacy & Security"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Transparency means AI systems should be explainable. People should understand how AI works so they can identify problems, challenge outputs, and make informed decisions.",
     "explanationCN": "透明性原则意味着 AI 系统应可解释。人们应理解 AI 的工作方式，以便识别问题、质疑输出结果并做出明智决策。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai",
     "difficulty": "easy",
-    "tags": ["responsible AI", "transparency"]
+    "tags": [
+      "responsible AI",
+      "transparency"
+    ]
   },
   {
     "id": "ai900-007",
@@ -127,17 +230,34 @@
     "type": "single",
     "question": "Which of the following is an example of a generative AI workload?",
     "options": [
-      {"id": "A", "text": "Classifying whether an email is spam or not"},
-      {"id": "B", "text": "Generating a human-like response to a user question in a chat interface"},
-      {"id": "C", "text": "Detecting product defects from assembly line images"},
-      {"id": "D", "text": "Predicting customer churn from CRM data"}
+      {
+        "id": "A",
+        "text": "Classifying whether an email is spam or not"
+      },
+      {
+        "id": "B",
+        "text": "Generating a human-like response to a user question in a chat interface"
+      },
+      {
+        "id": "C",
+        "text": "Detecting product defects from assembly line images"
+      },
+      {
+        "id": "D",
+        "text": "Predicting customer churn from CRM data"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Generative AI creates new content such as text, images, code, or audio. Generating a human-like response in a chat interface is a core generative AI use case.",
     "explanationCN": "生成式 AI 创建新内容，如文本、图像、代码或音频。在聊天界面中生成类人回复是生成式 AI 的核心应用场景。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/overview",
     "difficulty": "easy",
-    "tags": ["generative AI", "AI workloads"]
+    "tags": [
+      "generative AI",
+      "AI workloads"
+    ]
   },
   {
     "id": "ai900-008",
@@ -147,17 +267,34 @@
     "type": "single",
     "question": "Which Responsible AI principle ensures that the people responsible for building and deploying AI systems are held answerable for how they operate?",
     "options": [
-      {"id": "A", "text": "Fairness"},
-      {"id": "B", "text": "Transparency"},
-      {"id": "C", "text": "Accountability"},
-      {"id": "D", "text": "Inclusiveness"}
+      {
+        "id": "A",
+        "text": "Fairness"
+      },
+      {
+        "id": "B",
+        "text": "Transparency"
+      },
+      {
+        "id": "C",
+        "text": "Accountability"
+      },
+      {
+        "id": "D",
+        "text": "Inclusiveness"
+      }
     ],
-    "correctAnswers": ["C"],
+    "correctAnswers": [
+      "C"
+    ],
     "explanation": "Accountability means that people who design and deploy AI systems must be responsible for how those systems operate, and there must be mechanisms for humans to override AI decisions.",
     "explanationCN": "责任性原则意味着设计和部署 AI 系统的人员必须对系统的运行方式负责，并且必须有机制让人类能够覆盖 AI 的决策。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai",
     "difficulty": "easy",
-    "tags": ["responsible AI", "accountability"]
+    "tags": [
+      "responsible AI",
+      "accountability"
+    ]
   },
   {
     "id": "ai900-009",
@@ -167,17 +304,34 @@
     "type": "single",
     "question": "Which of the following describes a document processing AI workload?",
     "options": [
-      {"id": "A", "text": "Recognizing and extracting text and structure from invoices and forms"},
-      {"id": "B", "text": "Generating realistic images from text prompts"},
-      {"id": "C", "text": "Translating spoken language to written text in real time"},
-      {"id": "D", "text": "Detecting sentiment in social media posts"}
+      {
+        "id": "A",
+        "text": "Recognizing and extracting text and structure from invoices and forms"
+      },
+      {
+        "id": "B",
+        "text": "Generating realistic images from text prompts"
+      },
+      {
+        "id": "C",
+        "text": "Translating spoken language to written text in real time"
+      },
+      {
+        "id": "D",
+        "text": "Detecting sentiment in social media posts"
+      }
     ],
-    "correctAnswers": ["A"],
+    "correctAnswers": [
+      "A"
+    ],
     "explanation": "Document processing (also known as document intelligence) involves extracting text, structure, and key fields from forms and documents such as invoices, receipts, and contracts.",
     "explanationCN": "文档处理（也称为文档智能）涉及从表单和文档（如发票、收据、合同）中提取文本、结构和关键字段。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview",
     "difficulty": "easy",
-    "tags": ["document processing", "AI workloads"]
+    "tags": [
+      "document processing",
+      "AI workloads"
+    ]
   },
   {
     "id": "ai900-010",
@@ -187,17 +341,35 @@
     "type": "single",
     "question": "Which Responsible AI principle focuses on protecting personal data and ensuring that AI systems are not used to compromise individual privacy?",
     "options": [
-      {"id": "A", "text": "Inclusiveness"},
-      {"id": "B", "text": "Accountability"},
-      {"id": "C", "text": "Fairness"},
-      {"id": "D", "text": "Privacy & Security"}
+      {
+        "id": "A",
+        "text": "Inclusiveness"
+      },
+      {
+        "id": "B",
+        "text": "Accountability"
+      },
+      {
+        "id": "C",
+        "text": "Fairness"
+      },
+      {
+        "id": "D",
+        "text": "Privacy & Security"
+      }
     ],
-    "correctAnswers": ["D"],
+    "correctAnswers": [
+      "D"
+    ],
     "explanation": "The Privacy & Security principle ensures that AI systems protect personal data, comply with data privacy regulations, and are secured against unauthorized access or misuse.",
     "explanationCN": "隐私与安全性原则确保 AI 系统保护个人数据，遵守数据隐私法规，并防止未经授权的访问或滥用。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai",
     "difficulty": "easy",
-    "tags": ["responsible AI", "privacy", "security"]
+    "tags": [
+      "responsible AI",
+      "privacy",
+      "security"
+    ]
   },
   {
     "id": "ai900-011",
@@ -207,17 +379,35 @@
     "type": "single",
     "question": "A company uses an AI solution that automatically approves or denies loan applications. Which Responsible AI consideration is most important to address?",
     "options": [
-      {"id": "A", "text": "Ensuring the model runs with low latency"},
-      {"id": "B", "text": "Ensuring the model does not discriminate based on protected attributes like race or gender"},
-      {"id": "C", "text": "Ensuring the model is trained on the largest dataset available"},
-      {"id": "D", "text": "Ensuring the model is deployed in the cloud"}
+      {
+        "id": "A",
+        "text": "Ensuring the model runs with low latency"
+      },
+      {
+        "id": "B",
+        "text": "Ensuring the model does not discriminate based on protected attributes like race or gender"
+      },
+      {
+        "id": "C",
+        "text": "Ensuring the model is trained on the largest dataset available"
+      },
+      {
+        "id": "D",
+        "text": "Ensuring the model is deployed in the cloud"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "When AI makes high-stakes decisions like loan approvals, Fairness is the most critical concern—the system must not discriminate based on protected characteristics such as race, gender, or age.",
     "explanationCN": "当 AI 做出贷款审批等高风险决策时，公平性是最关键的问题——系统不得基于种族、性别或年龄等受保护特征进行歧视。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai",
     "difficulty": "medium",
-    "tags": ["responsible AI", "fairness", "real-world scenario"]
+    "tags": [
+      "responsible AI",
+      "fairness",
+      "real-world scenario"
+    ]
   },
   {
     "id": "ai900-012",
@@ -227,17 +417,34 @@
     "type": "single",
     "question": "Which of the following is an example of an anomaly detection AI workload?",
     "options": [
-      {"id": "A", "text": "Translating a speech transcript into a summary"},
-      {"id": "B", "text": "Identifying unusual patterns in bank transaction data that may indicate fraud"},
-      {"id": "C", "text": "Generating a product description from a set of features"},
-      {"id": "D", "text": "Classifying customer support tickets into categories"}
+      {
+        "id": "A",
+        "text": "Translating a speech transcript into a summary"
+      },
+      {
+        "id": "B",
+        "text": "Identifying unusual patterns in bank transaction data that may indicate fraud"
+      },
+      {
+        "id": "C",
+        "text": "Generating a product description from a set of features"
+      },
+      {
+        "id": "D",
+        "text": "Classifying customer support tickets into categories"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Anomaly detection identifies unusual patterns or outliers in data. Detecting fraudulent bank transactions by identifying deviations from normal behavior is a classic anomaly detection use case.",
     "explanationCN": "异常检测用于识别数据中的异常模式或离群值。通过识别偏离正常行为的模式来检测银行欺诈交易是典型的异常检测应用场景。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/overview",
     "difficulty": "medium",
-    "tags": ["anomaly detection", "AI workloads"]
+    "tags": [
+      "anomaly detection",
+      "AI workloads"
+    ]
   },
   {
     "id": "ai900-013",
@@ -247,17 +454,34 @@
     "type": "single",
     "question": "Which machine learning technique is best suited for predicting a continuous numerical value such as house prices?",
     "options": [
-      {"id": "A", "text": "Clustering"},
-      {"id": "B", "text": "Classification"},
-      {"id": "C", "text": "Regression"},
-      {"id": "D", "text": "Reinforcement learning"}
+      {
+        "id": "A",
+        "text": "Clustering"
+      },
+      {
+        "id": "B",
+        "text": "Classification"
+      },
+      {
+        "id": "C",
+        "text": "Regression"
+      },
+      {
+        "id": "D",
+        "text": "Reinforcement learning"
+      }
     ],
-    "correctAnswers": ["C"],
+    "correctAnswers": [
+      "C"
+    ],
     "explanation": "Regression is a supervised machine learning technique used to predict continuous numerical values. Predicting house prices based on features like size, location, and age is a regression problem.",
     "explanationCN": "回归是一种监督机器学习技术，用于预测连续数值。根据面积、位置、房龄等特征预测房价是一个典型的回归问题。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml",
     "difficulty": "easy",
-    "tags": ["machine learning", "regression"]
+    "tags": [
+      "machine learning",
+      "regression"
+    ]
   },
   {
     "id": "ai900-014",
@@ -267,17 +491,34 @@
     "type": "single",
     "question": "A machine learning model is trained to determine whether an email is spam or not. Which type of ML technique is this?",
     "options": [
-      {"id": "A", "text": "Regression"},
-      {"id": "B", "text": "Clustering"},
-      {"id": "C", "text": "Binary classification"},
-      {"id": "D", "text": "Deep learning"}
+      {
+        "id": "A",
+        "text": "Regression"
+      },
+      {
+        "id": "B",
+        "text": "Clustering"
+      },
+      {
+        "id": "C",
+        "text": "Binary classification"
+      },
+      {
+        "id": "D",
+        "text": "Deep learning"
+      }
     ],
-    "correctAnswers": ["C"],
+    "correctAnswers": [
+      "C"
+    ],
     "explanation": "Binary classification predicts one of two possible categorical outcomes. Spam detection—spam or not spam—is a classic binary classification problem.",
     "explanationCN": "二分类预测两种可能的分类结果之一。垃圾邮件检测（垃圾邮件或非垃圾邮件）是典型的二分类问题。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml",
     "difficulty": "easy",
-    "tags": ["machine learning", "classification"]
+    "tags": [
+      "machine learning",
+      "classification"
+    ]
   },
   {
     "id": "ai900-015",
@@ -287,17 +528,35 @@
     "type": "single",
     "question": "Which ML technique groups data points by similarities without using predefined labels?",
     "options": [
-      {"id": "A", "text": "Supervised learning - classification"},
-      {"id": "B", "text": "Supervised learning - regression"},
-      {"id": "C", "text": "Unsupervised learning - clustering"},
-      {"id": "D", "text": "Reinforcement learning"}
+      {
+        "id": "A",
+        "text": "Supervised learning - classification"
+      },
+      {
+        "id": "B",
+        "text": "Supervised learning - regression"
+      },
+      {
+        "id": "C",
+        "text": "Unsupervised learning - clustering"
+      },
+      {
+        "id": "D",
+        "text": "Reinforcement learning"
+      }
     ],
-    "correctAnswers": ["C"],
+    "correctAnswers": [
+      "C"
+    ],
     "explanation": "Clustering is an unsupervised machine learning technique that groups data points based on similarity without requiring labeled training data.",
     "explanationCN": "聚类是一种无监督机器学习技术，无需标记的训练数据，根据相似性将数据点分组。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml",
     "difficulty": "easy",
-    "tags": ["machine learning", "clustering", "unsupervised learning"]
+    "tags": [
+      "machine learning",
+      "clustering",
+      "unsupervised learning"
+    ]
   },
   {
     "id": "ai900-016",
@@ -307,17 +566,35 @@
     "type": "single",
     "question": "In machine learning, what is the purpose of a validation dataset?",
     "options": [
-      {"id": "A", "text": "To provide data for the final model evaluation after training is complete"},
-      {"id": "B", "text": "To tune hyperparameters and evaluate model performance during training"},
-      {"id": "C", "text": "To store raw data before preprocessing"},
-      {"id": "D", "text": "To deploy the model to production"}
+      {
+        "id": "A",
+        "text": "To provide data for the final model evaluation after training is complete"
+      },
+      {
+        "id": "B",
+        "text": "To tune hyperparameters and evaluate model performance during training"
+      },
+      {
+        "id": "C",
+        "text": "To store raw data before preprocessing"
+      },
+      {
+        "id": "D",
+        "text": "To deploy the model to production"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "A validation dataset is used during the training process to tune model hyperparameters and evaluate the model's performance, helping to prevent overfitting.",
     "explanationCN": "验证数据集在训练过程中用于调整模型超参数并评估模型性能，有助于防止过拟合。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml",
     "difficulty": "medium",
-    "tags": ["machine learning", "training", "validation"]
+    "tags": [
+      "machine learning",
+      "training",
+      "validation"
+    ]
   },
   {
     "id": "ai900-017",
@@ -327,17 +604,34 @@
     "type": "single",
     "question": "What is Automated Machine Learning (AutoML) in Azure Machine Learning?",
     "options": [
-      {"id": "A", "text": "A feature that automatically deploys ML models to Azure Kubernetes Service"},
-      {"id": "B", "text": "A capability that automates the selection of algorithms and hyperparameter tuning to find the best model"},
-      {"id": "C", "text": "A tool that automatically labels training data using pre-trained models"},
-      {"id": "D", "text": "A service that converts ML models into REST APIs automatically"}
+      {
+        "id": "A",
+        "text": "A feature that automatically deploys ML models to Azure Kubernetes Service"
+      },
+      {
+        "id": "B",
+        "text": "A capability that automates the selection of algorithms and hyperparameter tuning to find the best model"
+      },
+      {
+        "id": "C",
+        "text": "A tool that automatically labels training data using pre-trained models"
+      },
+      {
+        "id": "D",
+        "text": "A service that converts ML models into REST APIs automatically"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "AutoML in Azure Machine Learning automates the iterative process of selecting machine learning algorithms and tuning hyperparameters to find the best-performing model for your data.",
     "explanationCN": "Azure 机器学习中的 AutoML 自动化了选择机器学习算法和调整超参数的迭代过程，从而为您的数据找到性能最佳的模型。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml",
     "difficulty": "easy",
-    "tags": ["Azure ML", "AutoML"]
+    "tags": [
+      "Azure ML",
+      "AutoML"
+    ]
   },
   {
     "id": "ai900-018",
@@ -347,17 +641,35 @@
     "type": "single",
     "question": "What are 'features' in the context of machine learning?",
     "options": [
-      {"id": "A", "text": "The predicted output values that the model learns to produce"},
-      {"id": "B", "text": "The individual measurable properties or characteristics of the data used as model inputs"},
-      {"id": "C", "text": "The performance metrics used to evaluate a trained model"},
-      {"id": "D", "text": "The Azure services used to deploy a machine learning model"}
+      {
+        "id": "A",
+        "text": "The predicted output values that the model learns to produce"
+      },
+      {
+        "id": "B",
+        "text": "The individual measurable properties or characteristics of the data used as model inputs"
+      },
+      {
+        "id": "C",
+        "text": "The performance metrics used to evaluate a trained model"
+      },
+      {
+        "id": "D",
+        "text": "The Azure services used to deploy a machine learning model"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "In machine learning, features (also called input variables or predictors) are the measurable properties of the data that the model uses to make predictions.",
     "explanationCN": "在机器学习中，特征（也称为输入变量或预测变量）是数据的可度量属性，模型使用这些属性进行预测。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml",
     "difficulty": "easy",
-    "tags": ["machine learning", "features", "fundamentals"]
+    "tags": [
+      "machine learning",
+      "features",
+      "fundamentals"
+    ]
   },
   {
     "id": "ai900-019",
@@ -367,17 +679,35 @@
     "type": "single",
     "question": "What is deep learning in machine learning?",
     "options": [
-      {"id": "A", "text": "A method of searching deeply through historical data to find patterns"},
-      {"id": "B", "text": "A subset of machine learning that uses artificial neural networks with many layers to learn complex representations"},
-      {"id": "C", "text": "A technique that uses decision trees to make predictions"},
-      {"id": "D", "text": "A method to perform regression on very large datasets"}
+      {
+        "id": "A",
+        "text": "A method of searching deeply through historical data to find patterns"
+      },
+      {
+        "id": "B",
+        "text": "A subset of machine learning that uses artificial neural networks with many layers to learn complex representations"
+      },
+      {
+        "id": "C",
+        "text": "A technique that uses decision trees to make predictions"
+      },
+      {
+        "id": "D",
+        "text": "A method to perform regression on very large datasets"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Deep learning uses artificial neural networks with many hidden layers (hence 'deep') to learn complex hierarchical representations from raw data, excelling at tasks like image recognition and NLP.",
-    "explanationCN": "深度学习使用具有多个隐藏层（因此称为"深度"）的人工神经网络，从原始数据中学习复杂的层次化表示，在图像识别和 NLP 等任务中表现出色。",
+    "explanationCN": "深度学习使用具有多个隐藏层（因此称为\"深度\"）的人工神经网络，从原始数据中学习复杂的层次化表示，在图像识别和 NLP 等任务中表现出色。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-deep-learning-vs-machine-learning",
     "difficulty": "medium",
-    "tags": ["machine learning", "deep learning", "neural networks"]
+    "tags": [
+      "machine learning",
+      "deep learning",
+      "neural networks"
+    ]
   },
   {
     "id": "ai900-020",
@@ -387,17 +717,34 @@
     "type": "single",
     "question": "Which Azure service provides a cloud-based environment for training, deploying, and managing machine learning models?",
     "options": [
-      {"id": "A", "text": "Azure Cognitive Services"},
-      {"id": "B", "text": "Azure Databricks"},
-      {"id": "C", "text": "Azure Machine Learning"},
-      {"id": "D", "text": "Azure Synapse Analytics"}
+      {
+        "id": "A",
+        "text": "Azure Cognitive Services"
+      },
+      {
+        "id": "B",
+        "text": "Azure Databricks"
+      },
+      {
+        "id": "C",
+        "text": "Azure Machine Learning"
+      },
+      {
+        "id": "D",
+        "text": "Azure Synapse Analytics"
+      }
     ],
-    "correctAnswers": ["C"],
+    "correctAnswers": [
+      "C"
+    ],
     "explanation": "Azure Machine Learning is Microsoft's cloud service specifically designed for the end-to-end machine learning lifecycle: data preparation, model training, evaluation, and deployment.",
     "explanationCN": "Azure 机器学习是微软专为端到端机器学习生命周期设计的云服务，涵盖数据准备、模型训练、评估和部署。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning",
     "difficulty": "easy",
-    "tags": ["Azure ML", "cloud services"]
+    "tags": [
+      "Azure ML",
+      "cloud services"
+    ]
   },
   {
     "id": "ai900-021",
@@ -407,17 +754,35 @@
     "type": "single",
     "question": "Which Azure Machine Learning component provides a managed, scalable compute environment for running training jobs?",
     "options": [
-      {"id": "A", "text": "Azure ML Datastore"},
-      {"id": "B", "text": "Azure ML Compute Cluster"},
-      {"id": "C", "text": "Azure ML Pipeline"},
-      {"id": "D", "text": "Azure ML Model Registry"}
+      {
+        "id": "A",
+        "text": "Azure ML Datastore"
+      },
+      {
+        "id": "B",
+        "text": "Azure ML Compute Cluster"
+      },
+      {
+        "id": "C",
+        "text": "Azure ML Pipeline"
+      },
+      {
+        "id": "D",
+        "text": "Azure ML Model Registry"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Azure ML Compute Clusters are managed clusters of VMs that can automatically scale up and down to run training and batch inference jobs.",
     "explanationCN": "Azure ML 计算集群是托管的虚拟机集群，可以自动扩缩容以运行训练作业和批量推理作业。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-compute-target",
     "difficulty": "medium",
-    "tags": ["Azure ML", "compute", "infrastructure"]
+    "tags": [
+      "Azure ML",
+      "compute",
+      "infrastructure"
+    ]
   },
   {
     "id": "ai900-022",
@@ -427,17 +792,35 @@
     "type": "single",
     "question": "What does the Transformer architecture primarily enable in modern AI models?",
     "options": [
-      {"id": "A", "text": "Processing tabular data more efficiently than decision trees"},
-      {"id": "B", "text": "Processing sequential data using attention mechanisms that capture long-range dependencies"},
-      {"id": "C", "text": "Transforming image pixels into edge maps"},
-      {"id": "D", "text": "Reducing the number of parameters needed to train a model"}
+      {
+        "id": "A",
+        "text": "Processing tabular data more efficiently than decision trees"
+      },
+      {
+        "id": "B",
+        "text": "Processing sequential data using attention mechanisms that capture long-range dependencies"
+      },
+      {
+        "id": "C",
+        "text": "Transforming image pixels into edge maps"
+      },
+      {
+        "id": "D",
+        "text": "Reducing the number of parameters needed to train a model"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "The Transformer architecture uses self-attention mechanisms to process sequential data (like text) and capture long-range dependencies, enabling models like GPT and BERT that power modern NLP and generative AI.",
     "explanationCN": "Transformer 架构使用自注意力机制处理序列数据（如文本）并捕获长距离依赖关系，使 GPT 和 BERT 等模型成为现代 NLP 和生成式 AI 的基础。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-deep-learning-vs-machine-learning",
     "difficulty": "hard",
-    "tags": ["machine learning", "transformer", "deep learning"]
+    "tags": [
+      "machine learning",
+      "transformer",
+      "deep learning"
+    ]
   },
   {
     "id": "ai900-023",
@@ -447,17 +830,35 @@
     "type": "single",
     "question": "In Azure Machine Learning, where are trained model artifacts stored and versioned for governance and reuse?",
     "options": [
-      {"id": "A", "text": "Azure Blob Storage"},
-      {"id": "B", "text": "Azure Machine Learning Model Registry"},
-      {"id": "C", "text": "Azure Key Vault"},
-      {"id": "D", "text": "Azure Container Registry"}
+      {
+        "id": "A",
+        "text": "Azure Blob Storage"
+      },
+      {
+        "id": "B",
+        "text": "Azure Machine Learning Model Registry"
+      },
+      {
+        "id": "C",
+        "text": "Azure Key Vault"
+      },
+      {
+        "id": "D",
+        "text": "Azure Container Registry"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "The Azure Machine Learning Model Registry stores, versions, and manages trained ML models, providing a centralized place for model governance, lineage tracking, and deployment.",
     "explanationCN": "Azure 机器学习模型注册表存储、版本控制和管理已训练的 ML 模型，为模型治理、谱系追踪和部署提供集中管理的地方。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-management-and-deployment",
     "difficulty": "medium",
-    "tags": ["Azure ML", "model registry", "MLOps"]
+    "tags": [
+      "Azure ML",
+      "model registry",
+      "MLOps"
+    ]
   },
   {
     "id": "ai900-024",
@@ -467,17 +868,35 @@
     "type": "single",
     "question": "Which type of machine learning problem would you use to assign customer purchase records to natural groups based on buying behavior, without pre-existing category labels?",
     "options": [
-      {"id": "A", "text": "Supervised regression"},
-      {"id": "B", "text": "Binary classification"},
-      {"id": "C", "text": "Unsupervised clustering"},
-      {"id": "D", "text": "Reinforcement learning"}
+      {
+        "id": "A",
+        "text": "Supervised regression"
+      },
+      {
+        "id": "B",
+        "text": "Binary classification"
+      },
+      {
+        "id": "C",
+        "text": "Unsupervised clustering"
+      },
+      {
+        "id": "D",
+        "text": "Reinforcement learning"
+      }
     ],
-    "correctAnswers": ["C"],
+    "correctAnswers": [
+      "C"
+    ],
     "explanation": "Unsupervised clustering groups data based on natural patterns without labeled data. Grouping customers by purchasing behavior without predefined categories is a clustering problem.",
     "explanationCN": "无监督聚类在没有标记数据的情况下，根据自然模式对数据进行分组。在没有预定义类别的情况下，根据购买行为对客户进行分组就是一个聚类问题。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml",
     "difficulty": "medium",
-    "tags": ["machine learning", "clustering", "unsupervised learning"]
+    "tags": [
+      "machine learning",
+      "clustering",
+      "unsupervised learning"
+    ]
   },
   {
     "id": "ai900-025",
@@ -487,17 +906,34 @@
     "type": "single",
     "question": "Which Azure AI service provides capabilities for analyzing images to detect objects, describe scenes, extract text, and recognize faces?",
     "options": [
-      {"id": "A", "text": "Azure AI Language"},
-      {"id": "B", "text": "Azure AI Vision"},
-      {"id": "C", "text": "Azure AI Speech"},
-      {"id": "D", "text": "Azure AI Search"}
+      {
+        "id": "A",
+        "text": "Azure AI Language"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Vision"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Speech"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Search"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Azure AI Vision (formerly Computer Vision) provides cloud-based APIs for analyzing images, including object detection, image classification, text extraction (OCR), and spatial analysis.",
     "explanationCN": "Azure AI Vision（前身为 Computer Vision）提供基于云的 API，用于分析图像，包括目标检测、图像分类、文本提取 (OCR) 和空间分析。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview",
     "difficulty": "easy",
-    "tags": ["computer vision", "Azure AI Vision"]
+    "tags": [
+      "computer vision",
+      "Azure AI Vision"
+    ]
   },
   {
     "id": "ai900-026",
@@ -507,17 +943,34 @@
     "type": "single",
     "question": "Which computer vision task involves identifying the locations of multiple objects in an image by drawing bounding boxes around them?",
     "options": [
-      {"id": "A", "text": "Image classification"},
-      {"id": "B", "text": "Object detection"},
-      {"id": "C", "text": "Optical character recognition (OCR)"},
-      {"id": "D", "text": "Semantic segmentation"}
+      {
+        "id": "A",
+        "text": "Image classification"
+      },
+      {
+        "id": "B",
+        "text": "Object detection"
+      },
+      {
+        "id": "C",
+        "text": "Optical character recognition (OCR)"
+      },
+      {
+        "id": "D",
+        "text": "Semantic segmentation"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Object detection identifies and locates specific objects within an image, typically returning bounding box coordinates, class labels, and confidence scores for each detected object.",
     "explanationCN": "目标检测识别并定位图像中的特定对象，通常返回每个检测到的对象的边界框坐标、类别标签和置信度分数。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/concept-object-detection",
     "difficulty": "easy",
-    "tags": ["computer vision", "object detection"]
+    "tags": [
+      "computer vision",
+      "object detection"
+    ]
   },
   {
     "id": "ai900-027",
@@ -527,17 +980,35 @@
     "type": "single",
     "question": "Which Azure service is specifically designed to detect, analyze, and recognize human faces in images?",
     "options": [
-      {"id": "A", "text": "Azure AI Vision"},
-      {"id": "B", "text": "Azure AI Document Intelligence"},
-      {"id": "C", "text": "Azure AI Face"},
-      {"id": "D", "text": "Azure AI Custom Vision"}
+      {
+        "id": "A",
+        "text": "Azure AI Vision"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Document Intelligence"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Face"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Custom Vision"
+      }
     ],
-    "correctAnswers": ["C"],
+    "correctAnswers": [
+      "C"
+    ],
     "explanation": "Azure AI Face service provides face detection, face verification, face identification, and analysis of facial attributes such as age, emotion, and accessories.",
     "explanationCN": "Azure AI 人脸服务提供人脸检测、人脸验证、人脸识别以及年龄、情绪、配饰等面部属性分析。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-identity",
     "difficulty": "easy",
-    "tags": ["computer vision", "face detection", "Azure AI Face"]
+    "tags": [
+      "computer vision",
+      "face detection",
+      "Azure AI Face"
+    ]
   },
   {
     "id": "ai900-028",
@@ -547,17 +1018,34 @@
     "type": "single",
     "question": "What is Optical Character Recognition (OCR)?",
     "options": [
-      {"id": "A", "text": "A technology that detects faces in images and matches them to a database"},
-      {"id": "B", "text": "A computer vision technique that extracts printed or handwritten text from images and documents"},
-      {"id": "C", "text": "A technique that classifies images into predefined categories"},
-      {"id": "D", "text": "A method that removes background from product images automatically"}
+      {
+        "id": "A",
+        "text": "A technology that detects faces in images and matches them to a database"
+      },
+      {
+        "id": "B",
+        "text": "A computer vision technique that extracts printed or handwritten text from images and documents"
+      },
+      {
+        "id": "C",
+        "text": "A technique that classifies images into predefined categories"
+      },
+      {
+        "id": "D",
+        "text": "A method that removes background from product images automatically"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "OCR (Optical Character Recognition) converts printed or handwritten text in images and scanned documents into machine-readable text that can be processed, searched, and stored.",
     "explanationCN": "OCR（光学字符识别）将图像和扫描文档中的印刷或手写文字转换为可处理、搜索和存储的机器可读文本。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-ocr",
     "difficulty": "easy",
-    "tags": ["computer vision", "OCR"]
+    "tags": [
+      "computer vision",
+      "OCR"
+    ]
   },
   {
     "id": "ai900-029",
@@ -567,17 +1055,35 @@
     "type": "single",
     "question": "Which Azure service allows you to train a custom image classification model using your own labeled images without writing ML code?",
     "options": [
-      {"id": "A", "text": "Azure AI Vision"},
-      {"id": "B", "text": "Azure Machine Learning AutoML"},
-      {"id": "C", "text": "Azure AI Custom Vision"},
-      {"id": "D", "text": "Azure AI Face"}
+      {
+        "id": "A",
+        "text": "Azure AI Vision"
+      },
+      {
+        "id": "B",
+        "text": "Azure Machine Learning AutoML"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Custom Vision"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Face"
+      }
     ],
-    "correctAnswers": ["C"],
+    "correctAnswers": [
+      "C"
+    ],
     "explanation": "Azure AI Custom Vision (part of Azure AI Vision) provides a no-code/low-code interface to train custom image classification and object detection models using your own labeled images.",
     "explanationCN": "Azure AI 自定义视觉（Azure AI Vision 的一部分）提供无代码/低代码界面，使用您自己的标记图像训练自定义图像分类和目标检测模型。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/overview",
     "difficulty": "easy",
-    "tags": ["computer vision", "Custom Vision", "image classification"]
+    "tags": [
+      "computer vision",
+      "Custom Vision",
+      "image classification"
+    ]
   },
   {
     "id": "ai900-030",
@@ -587,17 +1093,34 @@
     "type": "single",
     "question": "In image classification, what does the model output?",
     "options": [
-      {"id": "A", "text": "The coordinates of a bounding box around each object"},
-      {"id": "B", "text": "A single label identifying what the entire image depicts"},
-      {"id": "C", "text": "A pixel-by-pixel map identifying which object each pixel belongs to"},
-      {"id": "D", "text": "A text description of the image scene"}
+      {
+        "id": "A",
+        "text": "The coordinates of a bounding box around each object"
+      },
+      {
+        "id": "B",
+        "text": "A single label identifying what the entire image depicts"
+      },
+      {
+        "id": "C",
+        "text": "A pixel-by-pixel map identifying which object each pixel belongs to"
+      },
+      {
+        "id": "D",
+        "text": "A text description of the image scene"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Image classification assigns a single label (or a ranked list of labels) to an entire image, identifying the primary subject or category of the image.",
     "explanationCN": "图像分类为整张图像分配单个标签（或排名标签列表），识别图像的主要主题或类别。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/overview",
     "difficulty": "easy",
-    "tags": ["computer vision", "image classification"]
+    "tags": [
+      "computer vision",
+      "image classification"
+    ]
   },
   {
     "id": "ai900-031",
@@ -607,17 +1130,35 @@
     "type": "single",
     "question": "Which Azure AI Vision capability analyzes live video feeds to understand people's spatial positions and movements in a physical space?",
     "options": [
-      {"id": "A", "text": "Custom Vision training"},
-      {"id": "B", "text": "Spatial analysis"},
-      {"id": "C", "text": "Image captioning"},
-      {"id": "D", "text": "OCR for dense text"}
+      {
+        "id": "A",
+        "text": "Custom Vision training"
+      },
+      {
+        "id": "B",
+        "text": "Spatial analysis"
+      },
+      {
+        "id": "C",
+        "text": "Image captioning"
+      },
+      {
+        "id": "D",
+        "text": "OCR for dense text"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Spatial analysis in Azure AI Vision processes live or recorded video to understand people's presence and movement in physical spaces, enabling use cases like occupancy monitoring and social distancing compliance.",
     "explanationCN": "Azure AI Vision 中的空间分析处理实时或录制的视频，以了解人员在物理空间中的存在和移动情况，支持占用监控和社交距离合规等应用场景。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/intro-to-spatial-analysis-public-preview",
     "difficulty": "medium",
-    "tags": ["computer vision", "Azure AI Vision", "spatial analysis"]
+    "tags": [
+      "computer vision",
+      "Azure AI Vision",
+      "spatial analysis"
+    ]
   },
   {
     "id": "ai900-032",
@@ -627,17 +1168,35 @@
     "type": "single",
     "question": "What is facial detection (as opposed to facial recognition)?",
     "options": [
-      {"id": "A", "text": "Identifying a specific person's identity from their face"},
-      {"id": "B", "text": "Locating faces in an image and returning their positions, without identifying who they are"},
-      {"id": "C", "text": "Analyzing facial expressions to determine emotion"},
-      {"id": "D", "text": "Comparing two face images to verify if they are the same person"}
+      {
+        "id": "A",
+        "text": "Identifying a specific person's identity from their face"
+      },
+      {
+        "id": "B",
+        "text": "Locating faces in an image and returning their positions, without identifying who they are"
+      },
+      {
+        "id": "C",
+        "text": "Analyzing facial expressions to determine emotion"
+      },
+      {
+        "id": "D",
+        "text": "Comparing two face images to verify if they are the same person"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Facial detection locates and identifies the presence of human faces in images, returning bounding boxes, without determining the identity of the person. Facial recognition goes further by matching a face to a known identity.",
     "explanationCN": "人脸检测定位并识别图像中人脸的存在，返回边界框，而不确定人物身份。人脸识别则进一步将人脸与已知身份进行匹配。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-identity",
     "difficulty": "medium",
-    "tags": ["computer vision", "face detection", "facial recognition"]
+    "tags": [
+      "computer vision",
+      "face detection",
+      "facial recognition"
+    ]
   },
   {
     "id": "ai900-033",
@@ -647,17 +1206,34 @@
     "type": "single",
     "question": "Which Azure AI service provides features like sentiment analysis, key phrase extraction, named entity recognition, and language detection?",
     "options": [
-      {"id": "A", "text": "Azure AI Speech"},
-      {"id": "B", "text": "Azure AI Translator"},
-      {"id": "C", "text": "Azure AI Language"},
-      {"id": "D", "text": "Azure AI Search"}
+      {
+        "id": "A",
+        "text": "Azure AI Speech"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Translator"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Language"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Search"
+      }
     ],
-    "correctAnswers": ["C"],
+    "correctAnswers": [
+      "C"
+    ],
     "explanation": "Azure AI Language (formerly Text Analytics, LUIS, and QnA Maker combined) provides NLP features including sentiment analysis, key phrase extraction, named entity recognition, and language detection.",
     "explanationCN": "Azure AI 语言服务（前身为 Text Analytics、LUIS 和 QnA Maker 的合并）提供 NLP 功能，包括情感分析、关键短语提取、命名实体识别和语言检测。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview",
     "difficulty": "easy",
-    "tags": ["NLP", "Azure AI Language"]
+    "tags": [
+      "NLP",
+      "Azure AI Language"
+    ]
   },
   {
     "id": "ai900-034",
@@ -667,17 +1243,34 @@
     "type": "single",
     "question": "Which NLP task involves automatically identifying important words and phrases in a piece of text?",
     "options": [
-      {"id": "A", "text": "Sentiment analysis"},
-      {"id": "B", "text": "Language detection"},
-      {"id": "C", "text": "Key phrase extraction"},
-      {"id": "D", "text": "Named entity recognition"}
+      {
+        "id": "A",
+        "text": "Sentiment analysis"
+      },
+      {
+        "id": "B",
+        "text": "Language detection"
+      },
+      {
+        "id": "C",
+        "text": "Key phrase extraction"
+      },
+      {
+        "id": "D",
+        "text": "Named entity recognition"
+      }
     ],
-    "correctAnswers": ["C"],
+    "correctAnswers": [
+      "C"
+    ],
     "explanation": "Key phrase extraction identifies the most important words and phrases in text, summarizing the main topics discussed without reading the full document.",
     "explanationCN": "关键短语提取识别文本中最重要的词汇和短语，无需阅读完整文档即可概括所讨论的主要主题。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/key-phrase-extraction/overview",
     "difficulty": "easy",
-    "tags": ["NLP", "key phrase extraction"]
+    "tags": [
+      "NLP",
+      "key phrase extraction"
+    ]
   },
   {
     "id": "ai900-035",
@@ -687,17 +1280,35 @@
     "type": "single",
     "question": "Which Azure AI service converts spoken language into written text and vice versa?",
     "options": [
-      {"id": "A", "text": "Azure AI Language"},
-      {"id": "B", "text": "Azure AI Translator"},
-      {"id": "C", "text": "Azure AI Speech"},
-      {"id": "D", "text": "Azure AI Vision"}
+      {
+        "id": "A",
+        "text": "Azure AI Language"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Translator"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Speech"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Vision"
+      }
     ],
-    "correctAnswers": ["C"],
+    "correctAnswers": [
+      "C"
+    ],
     "explanation": "Azure AI Speech provides speech-to-text, text-to-speech, speech translation, and speaker recognition capabilities, enabling voice-enabled applications.",
     "explanationCN": "Azure AI 语音服务提供语音转文本、文本转语音、语音翻译和说话人识别功能，支持语音启用的应用程序。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/overview",
     "difficulty": "easy",
-    "tags": ["NLP", "Azure AI Speech", "speech recognition"]
+    "tags": [
+      "NLP",
+      "Azure AI Speech",
+      "speech recognition"
+    ]
   },
   {
     "id": "ai900-036",
@@ -707,17 +1318,34 @@
     "type": "single",
     "question": "What does Named Entity Recognition (NER) do?",
     "options": [
-      {"id": "A", "text": "Identifies the overall sentiment of a text as positive, negative, or neutral"},
-      {"id": "B", "text": "Identifies and categorizes entities such as people, organizations, locations, and dates in text"},
-      {"id": "C", "text": "Translates text from one language to another"},
-      {"id": "D", "text": "Generates a summary of a long document"}
+      {
+        "id": "A",
+        "text": "Identifies the overall sentiment of a text as positive, negative, or neutral"
+      },
+      {
+        "id": "B",
+        "text": "Identifies and categorizes entities such as people, organizations, locations, and dates in text"
+      },
+      {
+        "id": "C",
+        "text": "Translates text from one language to another"
+      },
+      {
+        "id": "D",
+        "text": "Generates a summary of a long document"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Named Entity Recognition (NER) identifies and classifies key entities in text into predefined categories such as persons, organizations, locations, dates, and monetary values.",
     "explanationCN": "命名实体识别 (NER) 识别文本中的关键实体，并将其分类为预定义类别，如人员、组织、地点、日期和货币金额。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/overview",
     "difficulty": "easy",
-    "tags": ["NLP", "named entity recognition"]
+    "tags": [
+      "NLP",
+      "named entity recognition"
+    ]
   },
   {
     "id": "ai900-037",
@@ -727,17 +1355,35 @@
     "type": "single",
     "question": "Which Azure service provides neural machine translation to translate text between hundreds of languages?",
     "options": [
-      {"id": "A", "text": "Azure AI Language"},
-      {"id": "B", "text": "Azure AI Speech"},
-      {"id": "C", "text": "Azure AI Translator"},
-      {"id": "D", "text": "Azure AI Search"}
+      {
+        "id": "A",
+        "text": "Azure AI Language"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Speech"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Translator"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Search"
+      }
     ],
-    "correctAnswers": ["C"],
+    "correctAnswers": [
+      "C"
+    ],
     "explanation": "Azure AI Translator is a cloud-based neural machine translation service that supports text translation across 100+ languages, document translation, and custom translation models.",
     "explanationCN": "Azure AI 翻译器是一项基于云的神经机器翻译服务，支持 100 多种语言的文本翻译、文档翻译和自定义翻译模型。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/translator/overview",
     "difficulty": "easy",
-    "tags": ["NLP", "Azure AI Translator", "translation"]
+    "tags": [
+      "NLP",
+      "Azure AI Translator",
+      "translation"
+    ]
   },
   {
     "id": "ai900-038",
@@ -747,17 +1393,35 @@
     "type": "single",
     "question": "Which Azure AI Language feature allows you to build conversational question-answering knowledge bases from existing FAQs and documents?",
     "options": [
-      {"id": "A", "text": "Sentiment analysis"},
-      {"id": "B", "text": "Custom question answering"},
-      {"id": "C", "text": "Key phrase extraction"},
-      {"id": "D", "text": "Language detection"}
+      {
+        "id": "A",
+        "text": "Sentiment analysis"
+      },
+      {
+        "id": "B",
+        "text": "Custom question answering"
+      },
+      {
+        "id": "C",
+        "text": "Key phrase extraction"
+      },
+      {
+        "id": "D",
+        "text": "Language detection"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Custom question answering (part of Azure AI Language, formerly QnA Maker) lets you build a knowledge base from FAQ documents, websites, and manuals, enabling conversational bots to answer user questions.",
     "explanationCN": "自定义问答（Azure AI 语言服务的一部分，前身为 QnA Maker）允许您从常见问题文档、网站和手册构建知识库，使对话机器人能够回答用户问题。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/overview",
     "difficulty": "medium",
-    "tags": ["NLP", "Azure AI Language", "question answering"]
+    "tags": [
+      "NLP",
+      "Azure AI Language",
+      "question answering"
+    ]
   },
   {
     "id": "ai900-039",
@@ -767,17 +1431,34 @@
     "type": "single",
     "question": "What is sentiment analysis in NLP?",
     "options": [
-      {"id": "A", "text": "Identifying the language of a given text input"},
-      {"id": "B", "text": "Detecting and classifying the emotional tone of text as positive, negative, or neutral"},
-      {"id": "C", "text": "Extracting key terms that represent the main topics in a text"},
-      {"id": "D", "text": "Identifying people, places, and organizations mentioned in text"}
+      {
+        "id": "A",
+        "text": "Identifying the language of a given text input"
+      },
+      {
+        "id": "B",
+        "text": "Detecting and classifying the emotional tone of text as positive, negative, or neutral"
+      },
+      {
+        "id": "C",
+        "text": "Extracting key terms that represent the main topics in a text"
+      },
+      {
+        "id": "D",
+        "text": "Identifying people, places, and organizations mentioned in text"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Sentiment analysis determines the overall emotional tone or opinion in a piece of text, typically classifying it as positive, negative, or neutral, and can also provide aspect-level sentiment.",
     "explanationCN": "情感分析确定文本中的整体情感基调或观点，通常将其分类为正面、负面或中性，也可以提供方面级情感分析。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/overview",
     "difficulty": "easy",
-    "tags": ["NLP", "sentiment analysis"]
+    "tags": [
+      "NLP",
+      "sentiment analysis"
+    ]
   },
   {
     "id": "ai900-040",
@@ -787,17 +1468,35 @@
     "type": "single",
     "question": "Which capability of Azure AI Speech allows you to create a customized voice that sounds like a specific person or brand voice?",
     "options": [
-      {"id": "A", "text": "Speaker recognition"},
-      {"id": "B", "text": "Speech translation"},
-      {"id": "C", "text": "Custom neural voice"},
-      {"id": "D", "text": "Batch transcription"}
+      {
+        "id": "A",
+        "text": "Speaker recognition"
+      },
+      {
+        "id": "B",
+        "text": "Speech translation"
+      },
+      {
+        "id": "C",
+        "text": "Custom neural voice"
+      },
+      {
+        "id": "D",
+        "text": "Batch transcription"
+      }
     ],
-    "correctAnswers": ["C"],
+    "correctAnswers": [
+      "C"
+    ],
     "explanation": "Custom Neural Voice allows organizations to create synthetic voices tailored to their brand or specific speakers, producing natural-sounding speech for applications, virtual assistants, and accessibility tools.",
     "explanationCN": "自定义神经语音允许组织创建适合其品牌或特定说话人的合成语音，为应用程序、虚拟助手和辅助功能工具生成自然的语音。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/custom-neural-voice",
     "difficulty": "medium",
-    "tags": ["NLP", "Azure AI Speech", "text-to-speech"]
+    "tags": [
+      "NLP",
+      "Azure AI Speech",
+      "text-to-speech"
+    ]
   },
   {
     "id": "ai900-041",
@@ -807,17 +1506,35 @@
     "type": "single",
     "question": "What does language modeling refer to in the context of NLP?",
     "options": [
-      {"id": "A", "text": "Training a model to detect the country of origin of a language"},
-      {"id": "B", "text": "Building models that understand and generate text based on learned statistical patterns of language"},
-      {"id": "C", "text": "Translating business documents into multiple languages simultaneously"},
-      {"id": "D", "text": "Transcribing audio recordings into structured meeting notes"}
+      {
+        "id": "A",
+        "text": "Training a model to detect the country of origin of a language"
+      },
+      {
+        "id": "B",
+        "text": "Building models that understand and generate text based on learned statistical patterns of language"
+      },
+      {
+        "id": "C",
+        "text": "Translating business documents into multiple languages simultaneously"
+      },
+      {
+        "id": "D",
+        "text": "Transcribing audio recordings into structured meeting notes"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Language modeling involves training models to understand the statistical patterns of language—predicting the next word, understanding context, and generating coherent text. Large language models (LLMs) like GPT are based on this concept.",
     "explanationCN": "语言建模涉及训练模型理解语言的统计规律——预测下一个词、理解上下文并生成连贯文本。GPT 等大型语言模型 (LLM) 就基于这一概念。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models",
     "difficulty": "medium",
-    "tags": ["NLP", "language modeling", "LLM"]
+    "tags": [
+      "NLP",
+      "language modeling",
+      "LLM"
+    ]
   },
   {
     "id": "ai900-042",
@@ -827,17 +1544,35 @@
     "type": "single",
     "question": "Which Azure AI Language feature identifies the main topics or themes across a collection of documents without predefined categories?",
     "options": [
-      {"id": "A", "text": "Sentiment analysis"},
-      {"id": "B", "text": "Custom text classification"},
-      {"id": "C", "text": "Extractive summarization"},
-      {"id": "D", "text": "Topic modeling / abstractive summarization"}
+      {
+        "id": "A",
+        "text": "Sentiment analysis"
+      },
+      {
+        "id": "B",
+        "text": "Custom text classification"
+      },
+      {
+        "id": "C",
+        "text": "Extractive summarization"
+      },
+      {
+        "id": "D",
+        "text": "Topic modeling / abstractive summarization"
+      }
     ],
-    "correctAnswers": ["D"],
+    "correctAnswers": [
+      "D"
+    ],
     "explanation": "Abstractive summarization and topic modeling identify the main themes in documents. Azure AI Language provides summarization capabilities that can surface key topics from a collection of documents.",
     "explanationCN": "抽象摘要和主题建模识别文档中的主要主题。Azure AI 语言服务提供摘要功能，可以从文档集合中提取关键主题。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/summarization/overview",
     "difficulty": "medium",
-    "tags": ["NLP", "Azure AI Language", "summarization"]
+    "tags": [
+      "NLP",
+      "Azure AI Language",
+      "summarization"
+    ]
   },
   {
     "id": "ai900-043",
@@ -847,17 +1582,35 @@
     "type": "single",
     "question": "Which Azure service provides access to OpenAI's powerful language models including GPT-4, DALL-E, and Codex?",
     "options": [
-      {"id": "A", "text": "Azure AI Language"},
-      {"id": "B", "text": "Azure Machine Learning"},
-      {"id": "C", "text": "Azure OpenAI Service"},
-      {"id": "D", "text": "Azure AI Search"}
+      {
+        "id": "A",
+        "text": "Azure AI Language"
+      },
+      {
+        "id": "B",
+        "text": "Azure Machine Learning"
+      },
+      {
+        "id": "C",
+        "text": "Azure OpenAI Service"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Search"
+      }
     ],
-    "correctAnswers": ["C"],
+    "correctAnswers": [
+      "C"
+    ],
     "explanation": "Azure OpenAI Service provides access to OpenAI's powerful language models including GPT-4, DALL-E, Codex, and Embeddings models, with Azure's enterprise security, compliance, and regional availability.",
     "explanationCN": "Azure OpenAI 服务提供对 OpenAI 强大语言模型的访问，包括 GPT-4、DALL-E、Codex 和 Embeddings 模型，同时具备 Azure 的企业级安全性、合规性和区域可用性。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/overview",
     "difficulty": "easy",
-    "tags": ["generative AI", "Azure OpenAI", "GPT"]
+    "tags": [
+      "generative AI",
+      "Azure OpenAI",
+      "GPT"
+    ]
   },
   {
     "id": "ai900-044",
@@ -867,17 +1620,35 @@
     "type": "single",
     "question": "What is a 'prompt' in the context of generative AI?",
     "options": [
-      {"id": "A", "text": "A performance metric that measures how accurate a model's outputs are"},
-      {"id": "B", "text": "The input text or instruction provided to a language model to guide the generation of a response"},
-      {"id": "C", "text": "A pre-trained model checkpoint stored in Azure"},
-      {"id": "D", "text": "A system notification sent when model training is complete"}
+      {
+        "id": "A",
+        "text": "A performance metric that measures how accurate a model's outputs are"
+      },
+      {
+        "id": "B",
+        "text": "The input text or instruction provided to a language model to guide the generation of a response"
+      },
+      {
+        "id": "C",
+        "text": "A pre-trained model checkpoint stored in Azure"
+      },
+      {
+        "id": "D",
+        "text": "A system notification sent when model training is complete"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "A prompt is the input text, question, or instruction provided to a generative AI model. The quality and structure of the prompt significantly influences the model's output—a practice known as prompt engineering.",
     "explanationCN": "提示词是提供给生成式 AI 模型的输入文本、问题或指令。提示词的质量和结构对模型的输出有重大影响——这种实践被称为提示工程。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/prompt-engineering",
     "difficulty": "easy",
-    "tags": ["generative AI", "prompt engineering", "LLM"]
+    "tags": [
+      "generative AI",
+      "prompt engineering",
+      "LLM"
+    ]
   },
   {
     "id": "ai900-045",
@@ -887,17 +1658,35 @@
     "type": "single",
     "question": "What is Azure AI Foundry (formerly Azure AI Studio)?",
     "options": [
-      {"id": "A", "text": "A service for training custom computer vision models"},
-      {"id": "B", "text": "A unified platform for building, testing, and deploying generative AI applications using Azure AI services and models"},
-      {"id": "C", "text": "An Azure monitoring service for tracking AI model performance in production"},
-      {"id": "D", "text": "A data labeling service for preparing training datasets"}
+      {
+        "id": "A",
+        "text": "A service for training custom computer vision models"
+      },
+      {
+        "id": "B",
+        "text": "A unified platform for building, testing, and deploying generative AI applications using Azure AI services and models"
+      },
+      {
+        "id": "C",
+        "text": "An Azure monitoring service for tracking AI model performance in production"
+      },
+      {
+        "id": "D",
+        "text": "A data labeling service for preparing training datasets"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Azure AI Foundry is a unified platform that provides tools, pre-built AI models, and services to build end-to-end generative AI applications—including model selection, fine-tuning, prompt flow, and deployment.",
     "explanationCN": "Azure AI Foundry 是一个统一平台，提供工具、预建 AI 模型和服务，用于构建端到端生成式 AI 应用程序——包括模型选择、微调、提示流和部署。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-ai-foundry",
     "difficulty": "easy",
-    "tags": ["generative AI", "Azure AI Foundry", "Azure OpenAI"]
+    "tags": [
+      "generative AI",
+      "Azure AI Foundry",
+      "Azure OpenAI"
+    ]
   },
   {
     "id": "ai900-046",
@@ -907,17 +1696,35 @@
     "type": "single",
     "question": "What is a large language model (LLM)?",
     "options": [
-      {"id": "A", "text": "A classical database system optimized for storing large text documents"},
-      {"id": "B", "text": "A deep learning model trained on vast amounts of text data that can understand and generate human-like language"},
-      {"id": "C", "text": "A machine learning model limited to processing documents in a single language"},
-      {"id": "D", "text": "An Azure service for translating large volumes of text"}
+      {
+        "id": "A",
+        "text": "A classical database system optimized for storing large text documents"
+      },
+      {
+        "id": "B",
+        "text": "A deep learning model trained on vast amounts of text data that can understand and generate human-like language"
+      },
+      {
+        "id": "C",
+        "text": "A machine learning model limited to processing documents in a single language"
+      },
+      {
+        "id": "D",
+        "text": "An Azure service for translating large volumes of text"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Large language models (LLMs) are deep learning models trained on massive text datasets. They can understand context, generate coherent text, write code, answer questions, and perform many NLP tasks without task-specific training.",
     "explanationCN": "大型语言模型 (LLM) 是在大量文本数据集上训练的深度学习模型。它们能够理解上下文、生成连贯文本、编写代码、回答问题，并在无需任务特定训练的情况下执行许多 NLP 任务。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models",
     "difficulty": "easy",
-    "tags": ["generative AI", "LLM", "foundation models"]
+    "tags": [
+      "generative AI",
+      "LLM",
+      "foundation models"
+    ]
   },
   {
     "id": "ai900-047",
@@ -927,17 +1734,36 @@
     "type": "single",
     "question": "What is 'grounding' in the context of Retrieval-Augmented Generation (RAG)?",
     "options": [
-      {"id": "A", "text": "Reducing the size of an LLM model to make it run faster"},
-      {"id": "B", "text": "Providing the LLM with relevant, up-to-date context from external data sources to improve response accuracy"},
-      {"id": "C", "text": "Fine-tuning a model on a specific domain dataset"},
-      {"id": "D", "text": "Setting the temperature parameter to zero for deterministic outputs"}
+      {
+        "id": "A",
+        "text": "Reducing the size of an LLM model to make it run faster"
+      },
+      {
+        "id": "B",
+        "text": "Providing the LLM with relevant, up-to-date context from external data sources to improve response accuracy"
+      },
+      {
+        "id": "C",
+        "text": "Fine-tuning a model on a specific domain dataset"
+      },
+      {
+        "id": "D",
+        "text": "Setting the temperature parameter to zero for deterministic outputs"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Grounding in RAG involves retrieving relevant documents or data from external sources (like a vector database or search index) and including them as context in the prompt, so the LLM's response is based on factual, up-to-date information.",
     "explanationCN": "RAG 中的接地技术涉及从外部来源（如向量数据库或搜索索引）检索相关文档或数据，并将其作为上下文包含在提示词中，使 LLM 的响应基于真实、最新的信息。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/grounding",
     "difficulty": "medium",
-    "tags": ["generative AI", "RAG", "grounding", "Azure OpenAI"]
+    "tags": [
+      "generative AI",
+      "RAG",
+      "grounding",
+      "Azure OpenAI"
+    ]
   },
   {
     "id": "ai900-048",
@@ -947,17 +1773,35 @@
     "type": "single",
     "question": "Which responsible AI concern is most critical when deploying a generative AI chatbot that could produce harmful or offensive content?",
     "options": [
-      {"id": "A", "text": "Model compression to reduce inference costs"},
-      {"id": "B", "text": "Content safety and harm prevention through content filtering"},
-      {"id": "C", "text": "Using the largest available model for better accuracy"},
-      {"id": "D", "text": "Ensuring the chatbot supports 100+ languages"}
+      {
+        "id": "A",
+        "text": "Model compression to reduce inference costs"
+      },
+      {
+        "id": "B",
+        "text": "Content safety and harm prevention through content filtering"
+      },
+      {
+        "id": "C",
+        "text": "Using the largest available model for better accuracy"
+      },
+      {
+        "id": "D",
+        "text": "Ensuring the chatbot supports 100+ languages"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "When deploying generative AI, content safety is critical. Azure AI Content Safety provides content filtering to detect and block harmful, violent, sexual, or hate speech content from AI model outputs.",
     "explanationCN": "部署生成式 AI 时，内容安全至关重要。Azure AI 内容安全提供内容过滤功能，用于检测和屏蔽 AI 模型输出中的有害、暴力、色情或仇恨言论内容。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview",
     "difficulty": "medium",
-    "tags": ["generative AI", "responsible AI", "content safety"]
+    "tags": [
+      "generative AI",
+      "responsible AI",
+      "content safety"
+    ]
   },
   {
     "id": "ai900-049",
@@ -967,17 +1811,35 @@
     "type": "single",
     "question": "What is the Azure AI Foundry model catalog?",
     "options": [
-      {"id": "A", "text": "A gallery of pre-trained ML models from Microsoft and partners that can be deployed directly or fine-tuned"},
-      {"id": "B", "text": "A storage service for trained model files and artifacts"},
-      {"id": "C", "text": "A code repository containing sample notebooks for Azure AI services"},
-      {"id": "D", "text": "A service for monitoring deployed AI models for performance drift"}
+      {
+        "id": "A",
+        "text": "A gallery of pre-trained ML models from Microsoft and partners that can be deployed directly or fine-tuned"
+      },
+      {
+        "id": "B",
+        "text": "A storage service for trained model files and artifacts"
+      },
+      {
+        "id": "C",
+        "text": "A code repository containing sample notebooks for Azure AI services"
+      },
+      {
+        "id": "D",
+        "text": "A service for monitoring deployed AI models for performance drift"
+      }
     ],
-    "correctAnswers": ["A"],
+    "correctAnswers": [
+      "A"
+    ],
     "explanation": "The Azure AI Foundry model catalog provides a curated collection of pre-trained foundation models from Microsoft, OpenAI, Meta, Mistral, and others, which can be evaluated, fine-tuned, and deployed directly.",
     "explanationCN": "Azure AI Foundry 模型目录提供来自微软、OpenAI、Meta、Mistral 等公司的精选预训练基础模型集合，这些模型可以直接进行评估、微调和部署。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/model-catalog-overview",
     "difficulty": "medium",
-    "tags": ["generative AI", "Azure AI Foundry", "model catalog"]
+    "tags": [
+      "generative AI",
+      "Azure AI Foundry",
+      "model catalog"
+    ]
   },
   {
     "id": "ai900-050",
@@ -987,17 +1849,35 @@
     "type": "single",
     "question": "What does Microsoft Copilot refer to in the context of generative AI?",
     "options": [
-      {"id": "A", "text": "A code quality checker that reviews pull requests on GitHub"},
-      {"id": "B", "text": "AI-powered features embedded in Microsoft products that assist users with tasks using natural language"},
-      {"id": "C", "text": "An Azure deployment tool for shipping containerized applications"},
-      {"id": "D", "text": "A machine learning model that predicts aircraft navigation paths"}
+      {
+        "id": "A",
+        "text": "A code quality checker that reviews pull requests on GitHub"
+      },
+      {
+        "id": "B",
+        "text": "AI-powered features embedded in Microsoft products that assist users with tasks using natural language"
+      },
+      {
+        "id": "C",
+        "text": "An Azure deployment tool for shipping containerized applications"
+      },
+      {
+        "id": "D",
+        "text": "A machine learning model that predicts aircraft navigation paths"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Microsoft Copilot refers to AI assistant features embedded across Microsoft products (Microsoft 365, GitHub, Azure, Bing, etc.) that use large language models to help users accomplish tasks through natural language.",
     "explanationCN": "Microsoft Copilot 是嵌入到微软各产品（Microsoft 365、GitHub、Azure、Bing 等）中的 AI 助手功能，使用大型语言模型帮助用户通过自然语言完成任务。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-overview",
     "difficulty": "easy",
-    "tags": ["generative AI", "Microsoft Copilot", "LLM"]
+    "tags": [
+      "generative AI",
+      "Microsoft Copilot",
+      "LLM"
+    ]
   },
   {
     "id": "ai900-051",
@@ -1007,17 +1887,36 @@
     "type": "single",
     "question": "What is 'hallucination' in large language models?",
     "options": [
-      {"id": "A", "text": "When the model generates an error due to exceeding the token context limit"},
-      {"id": "B", "text": "When the model generates plausible-sounding but factually incorrect or fabricated information"},
-      {"id": "C", "text": "When the model produces random outputs due to high temperature settings"},
-      {"id": "D", "text": "When the model refuses to answer a question due to content filters"}
+      {
+        "id": "A",
+        "text": "When the model generates an error due to exceeding the token context limit"
+      },
+      {
+        "id": "B",
+        "text": "When the model generates plausible-sounding but factually incorrect or fabricated information"
+      },
+      {
+        "id": "C",
+        "text": "When the model produces random outputs due to high temperature settings"
+      },
+      {
+        "id": "D",
+        "text": "When the model refuses to answer a question due to content filters"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Hallucination in LLMs refers to the model generating confident, fluent text that is factually incorrect or completely fabricated. It is a key challenge in responsible generative AI deployment.",
     "explanationCN": "LLM 中的幻觉是指模型生成看似可信但事实上不正确或完全捏造的文本。这是负责任地部署生成式 AI 的主要挑战之一。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/grounding",
     "difficulty": "medium",
-    "tags": ["generative AI", "responsible AI", "hallucination", "LLM"]
+    "tags": [
+      "generative AI",
+      "responsible AI",
+      "hallucination",
+      "LLM"
+    ]
   },
   {
     "id": "ai900-052",
@@ -1027,17 +1926,35 @@
     "type": "single",
     "question": "Which type of generative AI model is designed to create realistic images from text descriptions?",
     "options": [
-      {"id": "A", "text": "Large language model (LLM) like GPT-4"},
-      {"id": "B", "text": "Text-to-image model like DALL-E"},
-      {"id": "C", "text": "Speech synthesis model like Azure Neural TTS"},
-      {"id": "D", "text": "Embedding model like text-embedding-ada-002"}
+      {
+        "id": "A",
+        "text": "Large language model (LLM) like GPT-4"
+      },
+      {
+        "id": "B",
+        "text": "Text-to-image model like DALL-E"
+      },
+      {
+        "id": "C",
+        "text": "Speech synthesis model like Azure Neural TTS"
+      },
+      {
+        "id": "D",
+        "text": "Embedding model like text-embedding-ada-002"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Text-to-image models like DALL-E generate realistic images from text prompts. DALL-E is available through Azure OpenAI Service and is used for creative content generation.",
     "explanationCN": "DALL-E 等文本转图像模型根据文本提示词生成逼真的图像。DALL-E 可通过 Azure OpenAI 服务获得，用于创意内容生成。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models#dall-e",
     "difficulty": "easy",
-    "tags": ["generative AI", "DALL-E", "text-to-image"]
+    "tags": [
+      "generative AI",
+      "DALL-E",
+      "text-to-image"
+    ]
   },
   {
     "id": "ai900-053",
@@ -1047,17 +1964,35 @@
     "type": "single",
     "question": "In Azure OpenAI Service, what does 'fine-tuning' a model mean?",
     "options": [
-      {"id": "A", "text": "Adjusting the model's response format using system prompts"},
-      {"id": "B", "text": "Training a base model further on domain-specific data to improve performance on specific tasks"},
-      {"id": "C", "text": "Reducing model size for faster inference on edge devices"},
-      {"id": "D", "text": "Enabling the model to access real-time internet data"}
+      {
+        "id": "A",
+        "text": "Adjusting the model's response format using system prompts"
+      },
+      {
+        "id": "B",
+        "text": "Training a base model further on domain-specific data to improve performance on specific tasks"
+      },
+      {
+        "id": "C",
+        "text": "Reducing model size for faster inference on edge devices"
+      },
+      {
+        "id": "D",
+        "text": "Enabling the model to access real-time internet data"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Fine-tuning adapts a pre-trained model to a specific task or domain by training it further on a smaller, domain-specific dataset. This can improve accuracy and consistency for targeted use cases.",
     "explanationCN": "微调通过在较小的领域特定数据集上进一步训练，将预训练模型适配到特定任务或领域。这可以提高针对特定用例的准确性和一致性。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/fine-tuning-considerations",
     "difficulty": "medium",
-    "tags": ["generative AI", "Azure OpenAI", "fine-tuning"]
+    "tags": [
+      "generative AI",
+      "Azure OpenAI",
+      "fine-tuning"
+    ]
   },
   {
     "id": "ai900-054",
@@ -1067,17 +2002,35 @@
     "type": "single",
     "question": "Which Responsible AI principle is most relevant when an AI model's outputs could be used to generate misinformation or deceptive content?",
     "options": [
-      {"id": "A", "text": "Reliability & Safety"},
-      {"id": "B", "text": "Transparency"},
-      {"id": "C", "text": "Fairness"},
-      {"id": "D", "text": "Privacy & Security"}
+      {
+        "id": "A",
+        "text": "Reliability & Safety"
+      },
+      {
+        "id": "B",
+        "text": "Transparency"
+      },
+      {
+        "id": "C",
+        "text": "Fairness"
+      },
+      {
+        "id": "D",
+        "text": "Privacy & Security"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Transparency is critical when AI outputs could be used for deception or misinformation—users should understand that they are interacting with AI, and AI-generated content should be clearly identified.",
     "explanationCN": "当 AI 输出可能被用于欺骗或虚假信息时，透明性至关重要——用户应了解他们正在与 AI 交互，AI 生成的内容应清晰标识。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai",
     "difficulty": "medium",
-    "tags": ["generative AI", "responsible AI", "transparency"]
+    "tags": [
+      "generative AI",
+      "responsible AI",
+      "transparency"
+    ]
   },
   {
     "id": "ai900-055",
@@ -1087,17 +2040,35 @@
     "type": "single",
     "question": "What does the 'temperature' parameter control in a generative AI language model?",
     "options": [
-      {"id": "A", "text": "The maximum number of tokens the model will generate in a response"},
-      {"id": "B", "text": "The randomness or creativity of the model's responses—higher values produce more varied outputs"},
-      {"id": "C", "text": "The processing speed of the model on Azure GPU infrastructure"},
-      {"id": "D", "text": "The minimum confidence score required for a response to be returned"}
+      {
+        "id": "A",
+        "text": "The maximum number of tokens the model will generate in a response"
+      },
+      {
+        "id": "B",
+        "text": "The randomness or creativity of the model's responses—higher values produce more varied outputs"
+      },
+      {
+        "id": "C",
+        "text": "The processing speed of the model on Azure GPU infrastructure"
+      },
+      {
+        "id": "D",
+        "text": "The minimum confidence score required for a response to be returned"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Temperature controls the randomness of a model's output. A temperature of 0 makes outputs deterministic and focused; higher temperatures (e.g., 0.8–1.0) produce more creative and diverse responses.",
     "explanationCN": "温度参数控制模型输出的随机性。温度为 0 使输出具有确定性且集中；更高的温度（例如 0.8-1.0）产生更具创意和多样性的响应。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/prompt-engineering",
     "difficulty": "medium",
-    "tags": ["generative AI", "Azure OpenAI", "model parameters"]
+    "tags": [
+      "generative AI",
+      "Azure OpenAI",
+      "model parameters"
+    ]
   },
   {
     "id": "ai900-056",
@@ -1107,17 +2078,34 @@
     "type": "single",
     "question": "Which of the following is NOT one of Microsoft's six Responsible AI principles?",
     "options": [
-      {"id": "A", "text": "Fairness"},
-      {"id": "B", "text": "Profitability"},
-      {"id": "C", "text": "Accountability"},
-      {"id": "D", "text": "Transparency"}
+      {
+        "id": "A",
+        "text": "Fairness"
+      },
+      {
+        "id": "B",
+        "text": "Profitability"
+      },
+      {
+        "id": "C",
+        "text": "Accountability"
+      },
+      {
+        "id": "D",
+        "text": "Transparency"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Microsoft's six Responsible AI principles are: Fairness, Reliability & Safety, Privacy & Security, Inclusiveness, Transparency, and Accountability. Profitability is not one of the principles.",
     "explanationCN": "微软的六项负责任 AI 原则是：公平性、可靠性与安全性、隐私与安全性、包容性、透明性和责任性。盈利性不是其中一项原则。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai",
     "difficulty": "easy",
-    "tags": ["responsible AI", "principles"]
+    "tags": [
+      "responsible AI",
+      "principles"
+    ]
   },
   {
     "id": "ai900-057",
@@ -1127,17 +2115,35 @@
     "type": "single",
     "question": "What is the purpose of a 'label' in a supervised machine learning dataset?",
     "options": [
-      {"id": "A", "text": "A name tag added to an Azure Machine Learning resource for billing purposes"},
-      {"id": "B", "text": "The known output or target value that the model is trained to predict"},
-      {"id": "C", "text": "A feature column added during data preprocessing"},
-      {"id": "D", "text": "A metadata tag applied to a model version in the model registry"}
+      {
+        "id": "A",
+        "text": "A name tag added to an Azure Machine Learning resource for billing purposes"
+      },
+      {
+        "id": "B",
+        "text": "The known output or target value that the model is trained to predict"
+      },
+      {
+        "id": "C",
+        "text": "A feature column added during data preprocessing"
+      },
+      {
+        "id": "D",
+        "text": "A metadata tag applied to a model version in the model registry"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "In supervised learning, a label (also called the target variable or ground truth) is the known output value associated with each training example. The model learns to predict this label for new, unseen data.",
     "explanationCN": "在监督学习中，标签（也称为目标变量或真实值）是与每个训练样本关联的已知输出值。模型学习为新的、未见过的数据预测此标签。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml",
     "difficulty": "easy",
-    "tags": ["machine learning", "supervised learning", "labels"]
+    "tags": [
+      "machine learning",
+      "supervised learning",
+      "labels"
+    ]
   },
   {
     "id": "ai900-058",
@@ -1147,17 +2153,35 @@
     "type": "single",
     "question": "Which Azure AI service is used to extract text, key-value pairs, tables, and structure from documents like invoices, receipts, and contracts?",
     "options": [
-      {"id": "A", "text": "Azure AI Vision (OCR)"},
-      {"id": "B", "text": "Azure AI Document Intelligence"},
-      {"id": "C", "text": "Azure AI Language"},
-      {"id": "D", "text": "Azure AI Search"}
+      {
+        "id": "A",
+        "text": "Azure AI Vision (OCR)"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Document Intelligence"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Language"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Search"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Azure AI Document Intelligence (formerly Form Recognizer) extracts text, key-value pairs, tables, and structure from documents and forms, supporting pre-built models for common document types and custom models.",
     "explanationCN": "Azure AI 文档智能（前身为 Form Recognizer）从文档和表单中提取文本、键值对、表格和结构，支持常见文档类型的预建模型和自定义模型。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview",
     "difficulty": "medium",
-    "tags": ["computer vision", "document intelligence", "OCR"]
+    "tags": [
+      "computer vision",
+      "document intelligence",
+      "OCR"
+    ]
   },
   {
     "id": "ai900-059",
@@ -1167,17 +2191,35 @@
     "type": "single",
     "question": "What is 'prompt engineering' in the context of working with large language models?",
     "options": [
-      {"id": "A", "text": "The process of retraining a model from scratch for a specific task"},
-      {"id": "B", "text": "The practice of crafting and refining input prompts to get better, more accurate responses from AI models"},
-      {"id": "C", "text": "An Azure DevOps pipeline that automates AI model deployments"},
-      {"id": "D", "text": "A method to compress model weights for faster inference"}
+      {
+        "id": "A",
+        "text": "The process of retraining a model from scratch for a specific task"
+      },
+      {
+        "id": "B",
+        "text": "The practice of crafting and refining input prompts to get better, more accurate responses from AI models"
+      },
+      {
+        "id": "C",
+        "text": "An Azure DevOps pipeline that automates AI model deployments"
+      },
+      {
+        "id": "D",
+        "text": "A method to compress model weights for faster inference"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Prompt engineering is the practice of designing and refining input prompts to maximize the quality and relevance of a generative AI model's outputs. It involves techniques like few-shot examples, role assignment, and chain-of-thought prompting.",
     "explanationCN": "提示工程是设计和优化输入提示词以最大化生成式 AI 模型输出质量和相关性的实践。它涉及少样本示例、角色分配和思维链提示等技术。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/prompt-engineering",
     "difficulty": "medium",
-    "tags": ["generative AI", "prompt engineering", "LLM"]
+    "tags": [
+      "generative AI",
+      "prompt engineering",
+      "LLM"
+    ]
   },
   {
     "id": "ai900-060",
@@ -1187,17 +2229,35 @@
     "type": "single",
     "question": "Which Azure AI Foundry feature allows you to chain together multiple AI model calls and data retrieval steps into an automated workflow for building complex AI applications?",
     "options": [
-      {"id": "A", "text": "Azure AI Content Safety"},
-      {"id": "B", "text": "Prompt flow"},
-      {"id": "C", "text": "Azure ML AutoML"},
-      {"id": "D", "text": "Azure AI Custom Vision"}
+      {
+        "id": "A",
+        "text": "Azure AI Content Safety"
+      },
+      {
+        "id": "B",
+        "text": "Prompt flow"
+      },
+      {
+        "id": "C",
+        "text": "Azure ML AutoML"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Custom Vision"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Prompt flow in Azure AI Foundry is a development tool that allows you to create, test, and optimize complex LLM applications by chaining prompts, tools, and Python code into executable workflows.",
     "explanationCN": "Azure AI Foundry 中的 Prompt Flow 是一种开发工具，允许您通过将提示词、工具和 Python 代码链接成可执行工作流来创建、测试和优化复杂的 LLM 应用程序。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/prompt-flow",
     "difficulty": "medium",
-    "tags": ["generative AI", "Azure AI Foundry", "prompt flow"]
+    "tags": [
+      "generative AI",
+      "Azure AI Foundry",
+      "prompt flow"
+    ]
   },
   {
     "id": "ai900-061",
@@ -1207,17 +2267,35 @@
     "type": "single",
     "question": "A hospital wants to use AI to help radiologists identify tumors in X-ray images. Which type of AI workload does this represent?",
     "options": [
-      {"id": "A", "text": "Natural Language Processing"},
-      {"id": "B", "text": "Computer Vision"},
-      {"id": "C", "text": "Anomaly Detection"},
-      {"id": "D", "text": "Forecasting"}
+      {
+        "id": "A",
+        "text": "Natural Language Processing"
+      },
+      {
+        "id": "B",
+        "text": "Computer Vision"
+      },
+      {
+        "id": "C",
+        "text": "Anomaly Detection"
+      },
+      {
+        "id": "D",
+        "text": "Forecasting"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Identifying tumors in X-ray images requires analyzing visual data (medical images), which is a computer vision workload. AI systems can be trained to detect abnormalities in medical imaging.",
     "explanationCN": "在 X 光图像中识别肿瘤需要分析视觉数据（医学图像），这是一个计算机视觉工作负载。AI 系统可以被训练来检测医学影像中的异常。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview",
     "difficulty": "easy",
-    "tags": ["computer vision", "AI workloads", "healthcare"]
+    "tags": [
+      "computer vision",
+      "AI workloads",
+      "healthcare"
+    ]
   },
   {
     "id": "ai900-062",
@@ -1227,17 +2305,35 @@
     "type": "single",
     "question": "What problem does overfitting describe in machine learning?",
     "options": [
-      {"id": "A", "text": "The model takes too long to train due to insufficient compute resources"},
-      {"id": "B", "text": "The model learns the training data too well, including noise, and fails to generalize to new data"},
-      {"id": "C", "text": "The model is too simple to capture the patterns in the training data"},
-      {"id": "D", "text": "The model is deployed to a region with insufficient GPU resources"}
+      {
+        "id": "A",
+        "text": "The model takes too long to train due to insufficient compute resources"
+      },
+      {
+        "id": "B",
+        "text": "The model learns the training data too well, including noise, and fails to generalize to new data"
+      },
+      {
+        "id": "C",
+        "text": "The model is too simple to capture the patterns in the training data"
+      },
+      {
+        "id": "D",
+        "text": "The model is deployed to a region with insufficient GPU resources"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Overfitting occurs when a model memorizes the training data, including noise and random variation, resulting in high training accuracy but poor performance on new, unseen data (poor generalization).",
     "explanationCN": "过拟合发生在模型记忆训练数据（包括噪声和随机变化）时，导致训练准确率高，但在新的未见数据上表现差（泛化能力弱）。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml",
     "difficulty": "medium",
-    "tags": ["machine learning", "overfitting", "model evaluation"]
+    "tags": [
+      "machine learning",
+      "overfitting",
+      "model evaluation"
+    ]
   },
   {
     "id": "ai900-063",
@@ -1247,17 +2343,35 @@
     "type": "single",
     "question": "Which Azure AI Language feature can be used to build a custom model that classifies customer support tickets into predefined categories?",
     "options": [
-      {"id": "A", "text": "Sentiment analysis"},
-      {"id": "B", "text": "Custom text classification"},
-      {"id": "C", "text": "Entity linking"},
-      {"id": "D", "text": "Extractive summarization"}
+      {
+        "id": "A",
+        "text": "Sentiment analysis"
+      },
+      {
+        "id": "B",
+        "text": "Custom text classification"
+      },
+      {
+        "id": "C",
+        "text": "Entity linking"
+      },
+      {
+        "id": "D",
+        "text": "Extractive summarization"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Custom text classification in Azure AI Language allows you to train models to classify text documents into your own defined categories, such as routing support tickets to the correct department.",
     "explanationCN": "Azure AI 语言中的自定义文本分类允许您训练模型，将文本文档分类到您自己定义的类别中，例如将支持工单路由到正确的部门。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-text-classification/overview",
     "difficulty": "medium",
-    "tags": ["NLP", "Azure AI Language", "text classification"]
+    "tags": [
+      "NLP",
+      "Azure AI Language",
+      "text classification"
+    ]
   },
   {
     "id": "ai900-064",
@@ -1267,17 +2381,35 @@
     "type": "single",
     "question": "What is an 'embedding' in the context of generative AI and language models?",
     "options": [
-      {"id": "A", "text": "Adding a watermark to AI-generated images for copyright protection"},
-      {"id": "B", "text": "A numerical vector representation of text that captures semantic meaning, enabling similarity comparisons"},
-      {"id": "C", "text": "Embedding a language model inside a mobile application"},
-      {"id": "D", "text": "Converting structured data into a text format for LLM processing"}
+      {
+        "id": "A",
+        "text": "Adding a watermark to AI-generated images for copyright protection"
+      },
+      {
+        "id": "B",
+        "text": "A numerical vector representation of text that captures semantic meaning, enabling similarity comparisons"
+      },
+      {
+        "id": "C",
+        "text": "Embedding a language model inside a mobile application"
+      },
+      {
+        "id": "D",
+        "text": "Converting structured data into a text format for LLM processing"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Embeddings are dense numerical vector representations of text (or other data) that capture semantic meaning. Similar texts have similar embedding vectors, making them useful for semantic search, recommendation, and RAG applications.",
     "explanationCN": "嵌入是文本（或其他数据）的密集数值向量表示，捕获语义含义。相似的文本具有相似的嵌入向量，使其适用于语义搜索、推荐和 RAG 应用程序。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/understand-embeddings",
     "difficulty": "hard",
-    "tags": ["generative AI", "embeddings", "Azure OpenAI"]
+    "tags": [
+      "generative AI",
+      "embeddings",
+      "Azure OpenAI"
+    ]
   },
   {
     "id": "ai900-065",
@@ -1287,17 +2419,35 @@
     "type": "single",
     "question": "Which of the following scenarios best represents a 'prediction' workload in AI?",
     "options": [
-      {"id": "A", "text": "Using AI to automatically generate product images for an e-commerce website"},
-      {"id": "B", "text": "Using AI to forecast equipment failure based on sensor readings from IoT devices"},
-      {"id": "C", "text": "Using AI to transcribe a customer support phone call"},
-      {"id": "D", "text": "Using AI to read text from a scanned insurance form"}
+      {
+        "id": "A",
+        "text": "Using AI to automatically generate product images for an e-commerce website"
+      },
+      {
+        "id": "B",
+        "text": "Using AI to forecast equipment failure based on sensor readings from IoT devices"
+      },
+      {
+        "id": "C",
+        "text": "Using AI to transcribe a customer support phone call"
+      },
+      {
+        "id": "D",
+        "text": "Using AI to read text from a scanned insurance form"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Predictive maintenance uses ML models to forecast when equipment is likely to fail based on sensor data, enabling proactive maintenance. This is a prediction/forecasting AI workload.",
     "explanationCN": "预测性维护使用 ML 模型，根据传感器数据预测设备何时可能发生故障，从而实现主动维护。这是一个预测/预报 AI 工作负载。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml",
     "difficulty": "easy",
-    "tags": ["AI workloads", "prediction", "machine learning"]
+    "tags": [
+      "AI workloads",
+      "prediction",
+      "machine learning"
+    ]
   },
   {
     "id": "ai900-066",
@@ -1307,17 +2457,35 @@
     "type": "single",
     "question": "Which Azure AI Vision feature generates a human-readable description of what is depicted in an image?",
     "options": [
-      {"id": "A", "text": "Object detection"},
-      {"id": "B", "text": "OCR (Read API)"},
-      {"id": "C", "text": "Image captioning (dense captions)"},
-      {"id": "D", "text": "Custom Vision classification"}
+      {
+        "id": "A",
+        "text": "Object detection"
+      },
+      {
+        "id": "B",
+        "text": "OCR (Read API)"
+      },
+      {
+        "id": "C",
+        "text": "Image captioning (dense captions)"
+      },
+      {
+        "id": "D",
+        "text": "Custom Vision classification"
+      }
     ],
-    "correctAnswers": ["C"],
+    "correctAnswers": [
+      "C"
+    ],
     "explanation": "Image captioning in Azure AI Vision generates natural language descriptions of images, useful for accessibility features (alt text), content moderation, and search indexing of visual content.",
     "explanationCN": "Azure AI Vision 中的图像字幕生成功能为图像生成自然语言描述，适用于辅助功能（替代文本）、内容审核和视觉内容搜索索引。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/concept-describing-images",
     "difficulty": "medium",
-    "tags": ["computer vision", "Azure AI Vision", "image captioning"]
+    "tags": [
+      "computer vision",
+      "Azure AI Vision",
+      "image captioning"
+    ]
   },
   {
     "id": "ai900-067",
@@ -1327,17 +2495,35 @@
     "type": "single",
     "question": "What does the Azure AI Speech service's 'speaker recognition' capability do?",
     "options": [
-      {"id": "A", "text": "Converts spoken language into written text"},
-      {"id": "B", "text": "Identifies or verifies a person's identity based on their voice characteristics"},
-      {"id": "C", "text": "Translates spoken audio from one language to another in real time"},
-      {"id": "D", "text": "Generates natural-sounding speech from written text"}
+      {
+        "id": "A",
+        "text": "Converts spoken language into written text"
+      },
+      {
+        "id": "B",
+        "text": "Identifies or verifies a person's identity based on their voice characteristics"
+      },
+      {
+        "id": "C",
+        "text": "Translates spoken audio from one language to another in real time"
+      },
+      {
+        "id": "D",
+        "text": "Generates natural-sounding speech from written text"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Speaker recognition uses voice biometrics to identify or verify who is speaking. It enables scenarios like voice-based authentication, call center analytics, and multi-speaker meeting transcription.",
     "explanationCN": "说话人识别使用声纹生物特征来识别或验证说话人身份。它支持基于语音的身份验证、呼叫中心分析和多说话人会议转录等场景。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speaker-recognition-overview",
     "difficulty": "medium",
-    "tags": ["NLP", "Azure AI Speech", "speaker recognition"]
+    "tags": [
+      "NLP",
+      "Azure AI Speech",
+      "speaker recognition"
+    ]
   },
   {
     "id": "ai900-068",
@@ -1347,17 +2533,35 @@
     "type": "single",
     "question": "What is a 'system prompt' (system message) in an Azure OpenAI chat completion?",
     "options": [
-      {"id": "A", "text": "An error message displayed when the model fails to generate a response"},
-      {"id": "B", "text": "Instructions provided to the model before the conversation that define its persona, behavior, and constraints"},
-      {"id": "C", "text": "A background process that monitors token usage during inference"},
-      {"id": "D", "text": "The first user message that kicks off a conversation with the model"}
+      {
+        "id": "A",
+        "text": "An error message displayed when the model fails to generate a response"
+      },
+      {
+        "id": "B",
+        "text": "Instructions provided to the model before the conversation that define its persona, behavior, and constraints"
+      },
+      {
+        "id": "C",
+        "text": "A background process that monitors token usage during inference"
+      },
+      {
+        "id": "D",
+        "text": "The first user message that kicks off a conversation with the model"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "A system prompt (system message) is an instruction given to the model at the start of a conversation that defines its persona, response style, topic constraints, and guardrails. It shapes the model's behavior throughout the interaction.",
     "explanationCN": "系统提示词（系统消息）是在对话开始时给予模型的指令，定义其角色、响应风格、主题约束和护栏。它在整个交互过程中塑造模型的行为。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/system-message",
     "difficulty": "medium",
-    "tags": ["generative AI", "Azure OpenAI", "system prompt"]
+    "tags": [
+      "generative AI",
+      "Azure OpenAI",
+      "system prompt"
+    ]
   },
   {
     "id": "ai900-069",
@@ -1367,17 +2571,35 @@
     "type": "single",
     "question": "In Azure Machine Learning, what is a 'pipeline'?",
     "options": [
-      {"id": "A", "text": "A CI/CD pipeline for deploying web applications to Azure App Service"},
-      {"id": "B", "text": "A reusable, automated sequence of data processing and ML training steps"},
-      {"id": "C", "text": "A network connection between Azure regions for data replication"},
-      {"id": "D", "text": "A dashboard for monitoring deployed model performance"}
+      {
+        "id": "A",
+        "text": "A CI/CD pipeline for deploying web applications to Azure App Service"
+      },
+      {
+        "id": "B",
+        "text": "A reusable, automated sequence of data processing and ML training steps"
+      },
+      {
+        "id": "C",
+        "text": "A network connection between Azure regions for data replication"
+      },
+      {
+        "id": "D",
+        "text": "A dashboard for monitoring deployed model performance"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "An Azure ML pipeline is a reusable workflow of machine learning tasks (e.g., data preparation, feature engineering, training, evaluation) that can be automated, scheduled, and versioned.",
     "explanationCN": "Azure ML 管道是机器学习任务（例如数据准备、特征工程、训练、评估）的可重用工作流，可以自动化、调度和版本控制。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-ml-pipelines",
     "difficulty": "medium",
-    "tags": ["Azure ML", "pipelines", "MLOps"]
+    "tags": [
+      "Azure ML",
+      "pipelines",
+      "MLOps"
+    ]
   },
   {
     "id": "ai900-070",
@@ -1387,17 +2609,35 @@
     "type": "single",
     "question": "Which Azure service provides AI-powered content moderation to detect harmful content such as violence, hate speech, and adult content?",
     "options": [
-      {"id": "A", "text": "Azure AI Language"},
-      {"id": "B", "text": "Azure AI Content Safety"},
-      {"id": "C", "text": "Azure Policy"},
-      {"id": "D", "text": "Azure Defender for AI"}
+      {
+        "id": "A",
+        "text": "Azure AI Language"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Content Safety"
+      },
+      {
+        "id": "C",
+        "text": "Azure Policy"
+      },
+      {
+        "id": "D",
+        "text": "Azure Defender for AI"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Azure AI Content Safety analyzes text and images to detect harmful content including violence, hate speech, self-harm, and sexual content, returning severity scores that applications can use to filter or moderate content.",
     "explanationCN": "Azure AI 内容安全分析文本和图像以检测有害内容，包括暴力、仇恨言论、自我伤害和色情内容，返回应用程序可用于过滤或审核内容的严重性分数。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview",
     "difficulty": "medium",
-    "tags": ["generative AI", "responsible AI", "content safety"]
+    "tags": [
+      "generative AI",
+      "responsible AI",
+      "content safety"
+    ]
   },
   {
     "id": "ai900-071",
@@ -1407,17 +2647,35 @@
     "type": "single",
     "question": "A chatbot answers customer support questions by matching user queries to a knowledge base of FAQs. Which AI capability is primarily being used?",
     "options": [
-      {"id": "A", "text": "Computer Vision"},
-      {"id": "B", "text": "Anomaly Detection"},
-      {"id": "C", "text": "Natural Language Processing"},
-      {"id": "D", "text": "Predictive Analytics"}
+      {
+        "id": "A",
+        "text": "Computer Vision"
+      },
+      {
+        "id": "B",
+        "text": "Anomaly Detection"
+      },
+      {
+        "id": "C",
+        "text": "Natural Language Processing"
+      },
+      {
+        "id": "D",
+        "text": "Predictive Analytics"
+      }
     ],
-    "correctAnswers": ["C"],
+    "correctAnswers": [
+      "C"
+    ],
     "explanation": "A chatbot matching user queries to a knowledge base uses NLP capabilities—understanding the meaning of natural language input and matching it to relevant answers.",
     "explanationCN": "将用户查询与知识库匹配的聊天机器人使用 NLP 功能——理解自然语言输入的含义，并将其与相关答案匹配。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/overview",
     "difficulty": "easy",
-    "tags": ["NLP", "AI workloads", "chatbot"]
+    "tags": [
+      "NLP",
+      "AI workloads",
+      "chatbot"
+    ]
   },
   {
     "id": "ai900-072",
@@ -1427,17 +2685,35 @@
     "type": "single",
     "question": "When using Azure AI Custom Vision for object detection, what does the training output provide for each detected object?",
     "options": [
-      {"id": "A", "text": "Only the name of the object class"},
-      {"id": "B", "text": "The object class, a bounding box indicating the object's location, and a confidence score"},
-      {"id": "C", "text": "A text description of the object's appearance"},
-      {"id": "D", "text": "A pixel-level mask of the object's shape"}
+      {
+        "id": "A",
+        "text": "Only the name of the object class"
+      },
+      {
+        "id": "B",
+        "text": "The object class, a bounding box indicating the object's location, and a confidence score"
+      },
+      {
+        "id": "C",
+        "text": "A text description of the object's appearance"
+      },
+      {
+        "id": "D",
+        "text": "A pixel-level mask of the object's shape"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Object detection models return three pieces of information for each detected object: the predicted class label, the bounding box coordinates (location and size), and a confidence score indicating prediction certainty.",
     "explanationCN": "目标检测模型为每个检测到的对象返回三条信息：预测的类别标签、边界框坐标（位置和大小）以及表示预测确定性的置信度分数。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/get-started-build-detector",
     "difficulty": "medium",
-    "tags": ["computer vision", "object detection", "Custom Vision"]
+    "tags": [
+      "computer vision",
+      "object detection",
+      "Custom Vision"
+    ]
   },
   {
     "id": "ai900-073",
@@ -1447,17 +2723,36 @@
     "type": "multiple",
     "question": "Which TWO of the following are common use cases for Azure OpenAI Service? (Select all that apply)",
     "options": [
-      {"id": "A", "text": "Generating code from natural language descriptions"},
-      {"id": "B", "text": "Training custom image classification models from scratch"},
-      {"id": "C", "text": "Summarizing long documents into concise bullet points"},
-      {"id": "D", "text": "Running SQL queries on Azure SQL Database"}
+      {
+        "id": "A",
+        "text": "Generating code from natural language descriptions"
+      },
+      {
+        "id": "B",
+        "text": "Training custom image classification models from scratch"
+      },
+      {
+        "id": "C",
+        "text": "Summarizing long documents into concise bullet points"
+      },
+      {
+        "id": "D",
+        "text": "Running SQL queries on Azure SQL Database"
+      }
     ],
-    "correctAnswers": ["A", "C"],
+    "correctAnswers": [
+      "A",
+      "C"
+    ],
     "explanation": "Azure OpenAI Service (GPT models, Codex) excels at code generation from natural language and text summarization. Training custom image classification models uses Azure Custom Vision or Azure ML, and SQL query execution uses Azure SQL.",
     "explanationCN": "Azure OpenAI 服务（GPT 模型、Codex）擅长从自然语言生成代码和文本摘要。训练自定义图像分类模型使用 Azure 自定义视觉或 Azure ML，SQL 查询执行使用 Azure SQL。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/overview",
     "difficulty": "medium",
-    "tags": ["generative AI", "Azure OpenAI", "use cases"]
+    "tags": [
+      "generative AI",
+      "Azure OpenAI",
+      "use cases"
+    ]
   },
   {
     "id": "ai900-074",
@@ -1467,17 +2762,35 @@
     "type": "single",
     "question": "What is the primary purpose of the test dataset in a machine learning project?",
     "options": [
-      {"id": "A", "text": "To train the initial model weights"},
-      {"id": "B", "text": "To tune hyperparameters during training"},
-      {"id": "C", "text": "To provide a final, unbiased evaluation of the trained model's performance"},
-      {"id": "D", "text": "To store production data for real-time inference"}
+      {
+        "id": "A",
+        "text": "To train the initial model weights"
+      },
+      {
+        "id": "B",
+        "text": "To tune hyperparameters during training"
+      },
+      {
+        "id": "C",
+        "text": "To provide a final, unbiased evaluation of the trained model's performance"
+      },
+      {
+        "id": "D",
+        "text": "To store production data for real-time inference"
+      }
     ],
-    "correctAnswers": ["C"],
+    "correctAnswers": [
+      "C"
+    ],
     "explanation": "The test dataset is held out completely until training and validation are complete. It provides an unbiased, final assessment of the model's performance on data it has never seen before.",
     "explanationCN": "测试数据集在训练和验证完成之前完全保留不用。它对模型在从未见过的数据上的性能提供无偏、最终的评估。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml",
     "difficulty": "medium",
-    "tags": ["machine learning", "evaluation", "test dataset"]
+    "tags": [
+      "machine learning",
+      "evaluation",
+      "test dataset"
+    ]
   },
   {
     "id": "ai900-075",
@@ -1487,17 +2800,34 @@
     "type": "single",
     "question": "What is 'Responsible AI for Generative AI' primarily concerned with?",
     "options": [
-      {"id": "A", "text": "Maximizing token throughput to reduce API costs"},
-      {"id": "B", "text": "Ensuring AI-generated content does not cause harm, spread misinformation, or violate privacy"},
-      {"id": "C", "text": "Optimizing GPU utilization in Azure data centers"},
-      {"id": "D", "text": "Selecting the best model size for a given task"}
+      {
+        "id": "A",
+        "text": "Maximizing token throughput to reduce API costs"
+      },
+      {
+        "id": "B",
+        "text": "Ensuring AI-generated content does not cause harm, spread misinformation, or violate privacy"
+      },
+      {
+        "id": "C",
+        "text": "Optimizing GPU utilization in Azure data centers"
+      },
+      {
+        "id": "D",
+        "text": "Selecting the best model size for a given task"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Responsible AI for generative AI focuses on preventing harm from AI-generated content—this includes content safety, preventing misinformation and hallucinations, protecting privacy, ensuring transparency (disclosing AI use), and maintaining human oversight.",
     "explanationCN": "生成式 AI 的负责任 AI 专注于防止 AI 生成内容造成的危害——这包括内容安全、防止虚假信息和幻觉、保护隐私、确保透明性（披露 AI 使用情况）以及维护人类监督。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/responsible-ai",
     "difficulty": "easy",
-    "tags": ["generative AI", "responsible AI"]
+    "tags": [
+      "generative AI",
+      "responsible AI"
+    ]
   },
   {
     "id": "ai900-076",
@@ -1507,17 +2837,35 @@
     "type": "single",
     "question": "Azure AI Speech's real-time speech translation feature allows you to do which of the following?",
     "options": [
-      {"id": "A", "text": "Identify the language of a written text document"},
-      {"id": "B", "text": "Convert spoken words in one language into spoken or written output in another language in real time"},
-      {"id": "C", "text": "Extract key phrases from transcribed meeting recordings"},
-      {"id": "D", "text": "Generate a voice profile for speaker verification"}
+      {
+        "id": "A",
+        "text": "Identify the language of a written text document"
+      },
+      {
+        "id": "B",
+        "text": "Convert spoken words in one language into spoken or written output in another language in real time"
+      },
+      {
+        "id": "C",
+        "text": "Extract key phrases from transcribed meeting recordings"
+      },
+      {
+        "id": "D",
+        "text": "Generate a voice profile for speaker verification"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Azure AI Speech's speech translation converts spoken audio in a source language into translated text or synthesized speech in a target language in real time, enabling multilingual communication.",
     "explanationCN": "Azure AI 语音服务的语音翻译功能将源语言的口语音频实时转换为目标语言的翻译文本或合成语音，支持多语言通信。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-translation",
     "difficulty": "easy",
-    "tags": ["NLP", "Azure AI Speech", "speech translation"]
+    "tags": [
+      "NLP",
+      "Azure AI Speech",
+      "speech translation"
+    ]
   },
   {
     "id": "ai900-077",
@@ -1527,17 +2875,35 @@
     "type": "single",
     "question": "What does Azure AI Foundry's 'evaluation' feature help developers assess?",
     "options": [
-      {"id": "A", "text": "The financial cost of running an AI model at scale"},
-      {"id": "B", "text": "The quality, safety, and performance of generative AI application outputs using metrics like groundedness and coherence"},
-      {"id": "C", "text": "The network latency between Azure regions for a deployed model"},
-      {"id": "D", "text": "The number of active users in an AI application"}
+      {
+        "id": "A",
+        "text": "The financial cost of running an AI model at scale"
+      },
+      {
+        "id": "B",
+        "text": "The quality, safety, and performance of generative AI application outputs using metrics like groundedness and coherence"
+      },
+      {
+        "id": "C",
+        "text": "The network latency between Azure regions for a deployed model"
+      },
+      {
+        "id": "D",
+        "text": "The number of active users in an AI application"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Azure AI Foundry's evaluation capabilities help measure the quality of LLM application outputs using metrics such as groundedness (factual accuracy), coherence, fluency, relevance, and safety.",
     "explanationCN": "Azure AI Foundry 的评估功能帮助使用接地性（事实准确性）、连贯性、流畅性、相关性和安全性等指标来衡量 LLM 应用程序输出的质量。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/evaluation-approach-gen-ai",
     "difficulty": "hard",
-    "tags": ["generative AI", "Azure AI Foundry", "evaluation"]
+    "tags": [
+      "generative AI",
+      "Azure AI Foundry",
+      "evaluation"
+    ]
   },
   {
     "id": "ai900-078",
@@ -1547,17 +2913,35 @@
     "type": "single",
     "question": "Which Azure AI Document Intelligence model can be used 'out of the box' without custom training to extract data from receipts?",
     "options": [
-      {"id": "A", "text": "Custom neural model"},
-      {"id": "B", "text": "Prebuilt receipt model"},
-      {"id": "C", "text": "General document model"},
-      {"id": "D", "text": "Composed model"}
+      {
+        "id": "A",
+        "text": "Custom neural model"
+      },
+      {
+        "id": "B",
+        "text": "Prebuilt receipt model"
+      },
+      {
+        "id": "C",
+        "text": "General document model"
+      },
+      {
+        "id": "D",
+        "text": "Composed model"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Azure AI Document Intelligence provides prebuilt models for common document types including receipts, invoices, ID documents, and tax forms. These work without custom training by leveraging Microsoft's pre-trained models.",
     "explanationCN": "Azure AI 文档智能为常见文档类型（包括收据、发票、身份证件和税务表格）提供预建模型。这些模型无需自定义训练，利用微软的预训练模型即可工作。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept-receipt",
     "difficulty": "medium",
-    "tags": ["computer vision", "document intelligence", "prebuilt models"]
+    "tags": [
+      "computer vision",
+      "document intelligence",
+      "prebuilt models"
+    ]
   },
   {
     "id": "ai900-079",
@@ -1567,17 +2951,35 @@
     "type": "single",
     "question": "What is the purpose of 'model deployment' in Azure Machine Learning?",
     "options": [
-      {"id": "A", "text": "To store the model training code in version control"},
-      {"id": "B", "text": "To make the trained model available as an API endpoint so applications can call it for real-time predictions"},
-      {"id": "C", "text": "To move the training data to a different storage account"},
-      {"id": "D", "text": "To optimize the model's hyperparameters using new data"}
+      {
+        "id": "A",
+        "text": "To store the model training code in version control"
+      },
+      {
+        "id": "B",
+        "text": "To make the trained model available as an API endpoint so applications can call it for real-time predictions"
+      },
+      {
+        "id": "C",
+        "text": "To move the training data to a different storage account"
+      },
+      {
+        "id": "D",
+        "text": "To optimize the model's hyperparameters using new data"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Model deployment in Azure Machine Learning makes a trained model accessible as a REST API endpoint (real-time or batch), enabling applications to send data and receive predictions.",
     "explanationCN": "Azure 机器学习中的模型部署将训练好的模型作为 REST API 端点（实时或批量）提供访问，使应用程序能够发送数据并接收预测结果。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-management-and-deployment",
     "difficulty": "easy",
-    "tags": ["Azure ML", "model deployment", "MLOps"]
+    "tags": [
+      "Azure ML",
+      "model deployment",
+      "MLOps"
+    ]
   },
   {
     "id": "ai900-080",
@@ -1587,17 +2989,36 @@
     "type": "single",
     "question": "What is a 'token' in the context of large language models?",
     "options": [
-      {"id": "A", "text": "An authentication credential used to access Azure OpenAI Service"},
-      {"id": "B", "text": "A unit of text (word, subword, or character) that the model processes and generates"},
-      {"id": "C", "text": "A billing unit representing one API request to the model"},
-      {"id": "D", "text": "A security token used for user identity verification in Azure AI"}
+      {
+        "id": "A",
+        "text": "An authentication credential used to access Azure OpenAI Service"
+      },
+      {
+        "id": "B",
+        "text": "A unit of text (word, subword, or character) that the model processes and generates"
+      },
+      {
+        "id": "C",
+        "text": "A billing unit representing one API request to the model"
+      },
+      {
+        "id": "D",
+        "text": "A security token used for user identity verification in Azure AI"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "In LLMs, tokens are the basic units of text processing. A token is roughly 4 characters or 0.75 words in English. Models have a maximum context window measured in tokens, and API pricing is based on token consumption.",
     "explanationCN": "在 LLM 中，token 是文本处理的基本单位。一个 token 大约是英语中的 4 个字符或 0.75 个单词。模型有以 token 为单位的最大上下文窗口，API 定价基于 token 消耗量。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/tokens",
     "difficulty": "medium",
-    "tags": ["generative AI", "LLM", "tokens", "Azure OpenAI"]
+    "tags": [
+      "generative AI",
+      "LLM",
+      "tokens",
+      "Azure OpenAI"
+    ]
   },
   {
     "id": "ai900-081",
@@ -1607,17 +3028,35 @@
     "type": "single",
     "question": "Which Responsible AI principle is most concerned with ensuring AI systems do not expose individuals' private information without consent?",
     "options": [
-      {"id": "A", "text": "Fairness"},
-      {"id": "B", "text": "Accountability"},
-      {"id": "C", "text": "Privacy & Security"},
-      {"id": "D", "text": "Inclusiveness"}
+      {
+        "id": "A",
+        "text": "Fairness"
+      },
+      {
+        "id": "B",
+        "text": "Accountability"
+      },
+      {
+        "id": "C",
+        "text": "Privacy & Security"
+      },
+      {
+        "id": "D",
+        "text": "Inclusiveness"
+      }
     ],
-    "correctAnswers": ["C"],
+    "correctAnswers": [
+      "C"
+    ],
     "explanation": "Privacy & Security ensures that AI systems protect people's personal data, respect their right to privacy, and are secured against unauthorized access, data breaches, and misuse.",
     "explanationCN": "隐私与安全性原则确保 AI 系统保护人们的个人数据，尊重其隐私权，并防止未经授权的访问、数据泄露和滥用。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai",
     "difficulty": "easy",
-    "tags": ["responsible AI", "privacy", "security"]
+    "tags": [
+      "responsible AI",
+      "privacy",
+      "security"
+    ]
   },
   {
     "id": "ai900-082",
@@ -1627,17 +3066,35 @@
     "type": "single",
     "question": "Which Azure AI Language capability links entities mentioned in text to their corresponding Wikipedia or Bing Knowledge Base entries?",
     "options": [
-      {"id": "A", "text": "Named Entity Recognition (NER)"},
-      {"id": "B", "text": "Entity linking"},
-      {"id": "C", "text": "Key phrase extraction"},
-      {"id": "D", "text": "Sentiment analysis"}
+      {
+        "id": "A",
+        "text": "Named Entity Recognition (NER)"
+      },
+      {
+        "id": "B",
+        "text": "Entity linking"
+      },
+      {
+        "id": "C",
+        "text": "Key phrase extraction"
+      },
+      {
+        "id": "D",
+        "text": "Sentiment analysis"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Entity linking identifies and disambiguates entities mentioned in text by linking them to their entries in a knowledge base (such as Wikipedia), distinguishing between entities with the same name based on context.",
     "explanationCN": "实体链接通过将文本中提到的实体链接到知识库（如维基百科）中的对应条目来识别和消除歧义，根据上下文区分同名实体。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/entity-linking/overview",
     "difficulty": "hard",
-    "tags": ["NLP", "Azure AI Language", "entity linking"]
+    "tags": [
+      "NLP",
+      "Azure AI Language",
+      "entity linking"
+    ]
   },
   {
     "id": "ai900-083",
@@ -1647,17 +3104,36 @@
     "type": "single",
     "question": "Which Azure OpenAI model capability is best suited for generating, explaining, and debugging code?",
     "options": [
-      {"id": "A", "text": "DALL-E (image generation models)"},
-      {"id": "B", "text": "Whisper (speech-to-text model)"},
-      {"id": "C", "text": "GPT-4 and Codex (language models)"},
-      {"id": "D", "text": "text-embedding-ada-002 (embedding model)"}
+      {
+        "id": "A",
+        "text": "DALL-E (image generation models)"
+      },
+      {
+        "id": "B",
+        "text": "Whisper (speech-to-text model)"
+      },
+      {
+        "id": "C",
+        "text": "GPT-4 and Codex (language models)"
+      },
+      {
+        "id": "D",
+        "text": "text-embedding-ada-002 (embedding model)"
+      }
     ],
-    "correctAnswers": ["C"],
+    "correctAnswers": [
+      "C"
+    ],
     "explanation": "GPT-4 and Codex (now integrated into GPT-4) are the Azure OpenAI models best suited for code generation, code explanation, debugging, and code completion across many programming languages.",
     "explanationCN": "GPT-4 和 Codex（现已集成到 GPT-4 中）是最适合代码生成、代码解释、调试和多种编程语言代码补全的 Azure OpenAI 模型。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models",
     "difficulty": "easy",
-    "tags": ["generative AI", "Azure OpenAI", "code generation", "GPT"]
+    "tags": [
+      "generative AI",
+      "Azure OpenAI",
+      "code generation",
+      "GPT"
+    ]
   },
   {
     "id": "ai900-084",
@@ -1667,16 +3143,35 @@
     "type": "single",
     "question": "What is the primary purpose of 'content filtering' in Azure OpenAI Service?",
     "options": [
-      {"id": "A", "text": "Compressing API responses to reduce bandwidth usage"},
-      {"id": "B", "text": "Detecting and blocking harmful or inappropriate content in both model inputs and outputs"},
-      {"id": "C", "text": "Caching common model responses to improve latency"},
-      {"id": "D", "text": "Routing requests to the nearest Azure region for the model"}
+      {
+        "id": "A",
+        "text": "Compressing API responses to reduce bandwidth usage"
+      },
+      {
+        "id": "B",
+        "text": "Detecting and blocking harmful or inappropriate content in both model inputs and outputs"
+      },
+      {
+        "id": "C",
+        "text": "Caching common model responses to improve latency"
+      },
+      {
+        "id": "D",
+        "text": "Routing requests to the nearest Azure region for the model"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Content filtering in Azure OpenAI Service automatically detects and blocks harmful content categories (hate speech, violence, sexual content, self-harm) in both the prompts sent to the model and the responses generated by the model.",
     "explanationCN": "Azure OpenAI 服务中的内容过滤自动检测并屏蔽发送给模型的提示词和模型生成的响应中的有害内容类别（仇恨言论、暴力、色情内容、自我伤害）。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/content-filter",
     "difficulty": "medium",
-    "tags": ["generative AI", "responsible AI", "Azure OpenAI", "content filtering"]
+    "tags": [
+      "generative AI",
+      "responsible AI",
+      "Azure OpenAI",
+      "content filtering"
+    ]
   }
 ]

@@ -84,3 +84,39 @@ export function exportWrongAnswersToMD(examId?: string): string {
   }
   return lines.join('\n');
 }
+
+// ── Practice Progress (resume from last position) ────────────────────────────
+const PRACTICE_PROGRESS_KEY = 'ms_quiz_practice_progress';
+
+export interface PracticeProgress {
+  examId: string;
+  currentIdx: number;
+  results: { correct: boolean; userAnswer: string[]; questionId: string }[];
+  savedAt: number;
+}
+
+export function savePracticeProgress(progress: PracticeProgress): void {
+  const all = getPracticeProgressAll();
+  all[progress.examId] = progress;
+  localStorage.setItem(PRACTICE_PROGRESS_KEY, JSON.stringify(all));
+}
+
+export function getPracticeProgress(examId: string): PracticeProgress | null {
+  const all = getPracticeProgressAll();
+  return all[examId] ?? null;
+}
+
+export function clearPracticeProgress(examId: string): void {
+  const all = getPracticeProgressAll();
+  delete all[examId];
+  localStorage.setItem(PRACTICE_PROGRESS_KEY, JSON.stringify(all));
+}
+
+function getPracticeProgressAll(): Record<string, PracticeProgress> {
+  try {
+    const raw = localStorage.getItem(PRACTICE_PROGRESS_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}

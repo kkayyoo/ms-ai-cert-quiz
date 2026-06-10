@@ -12,8 +12,17 @@ interface Props {
 
 export default function FeedbackPanel({ question, userAnswer, onNext, onSaveWrong, isLast }: Props) {
   const [zhOpen, setZhOpen] = useState(false)
+  const [saved, setSaved] = useState(false)
+
   const correct = question.correctIds.every(id => userAnswer.includes(id)) &&
     userAnswer.every(id => question.correctIds.includes(id))
+
+  function handleSaveWrong() {
+    if (onSaveWrong) {
+      onSaveWrong()
+      setSaved(true)
+    }
+  }
 
   return (
     <div className={`${styles.panel} ${correct ? styles.panelCorrect : styles.panelWrong}`}>
@@ -41,9 +50,9 @@ export default function FeedbackPanel({ question, userAnswer, onNext, onSaveWron
         </div>
       )}
 
-      {question.docsUrl && (
+      {(question.docsUrl || question.officialDocUrl) && (
         <a
-          href={question.docsUrl}
+          href={question.docsUrl ?? question.officialDocUrl}
           target="_blank"
           rel="noopener noreferrer"
           className={styles.docsLink}
@@ -54,8 +63,21 @@ export default function FeedbackPanel({ question, userAnswer, onNext, onSaveWron
 
       <div className={styles.actions}>
         {onSaveWrong && !correct && (
-          <button className="btn-secondary" onClick={onSaveWrong}>
-            🔖 Save to Wrong Answer Book
+          <button
+            className={saved ? styles.savedBtn : 'btn-secondary'}
+            onClick={handleSaveWrong}
+            disabled={saved}
+            style={saved ? {
+              backgroundColor: '#107C10',
+              color: '#fff',
+              border: 'none',
+              padding: '8px 16px',
+              borderRadius: '4px',
+              cursor: 'default',
+              fontWeight: 600,
+            } : {}}
+          >
+            {saved ? '✅ Saved to Wrong Answer Book' : '🔖 Save to Wrong Answer Book'}
           </button>
         )}
         <button className="btn-primary" onClick={onNext}>

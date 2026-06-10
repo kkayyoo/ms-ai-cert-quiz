@@ -972,5 +972,592 @@
       "person group",
       "face recognition"
     ]
+  },
+  {
+    "id": "ai102-026",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You need to analyze customer feedback text to determine if sentiment is positive, negative, neutral, or mixed. Which Azure AI Language feature should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Named Entity Recognition (NER)"
+      },
+      {
+        "id": "B",
+        "text": "Sentiment Analysis and Opinion Mining"
+      },
+      {
+        "id": "C",
+        "text": "Key Phrase Extraction"
+      },
+      {
+        "id": "D",
+        "text": "Language Detection"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Language's Sentiment Analysis feature analyzes text and returns sentiment labels (positive, negative, neutral, or mixed) with confidence scores. The Opinion Mining feature additionally identifies opinions about specific aspects.",
+    "explanationCN": "Azure AI 语言的情感分析功能分析文本并返回情感标签（正面、负面、中性或混合），附带置信度分数。观点挖掘功能还额外识别特定方面的观点。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/overview",
+    "difficulty": "easy",
+    "tags": [
+      "Language Service",
+      "sentiment analysis",
+      "opinion mining",
+      "NLP"
+    ]
+  },
+  {
+    "id": "ai102-027",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You need to build a question-answering system from an existing set of FAQ documents without training a new model. Which Azure AI Language feature is most appropriate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Custom text classification"
+      },
+      {
+        "id": "B",
+        "text": "Custom Question Answering"
+      },
+      {
+        "id": "C",
+        "text": "Conversational Language Understanding (CLU)"
+      },
+      {
+        "id": "D",
+        "text": "Named Entity Recognition"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Language Custom Question Answering allows you to create a knowledge base from existing documents (FAQs, manuals, web pages) and then query it to get relevant answers.",
+    "explanationCN": "Azure AI 语言自定义问答功能允许您从现有文档（FAQ、手册、网页）创建知识库，然后查询以获取相关答案。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/overview",
+    "difficulty": "easy",
+    "tags": [
+      "Language Service",
+      "question answering",
+      "knowledge base",
+      "FAQ"
+    ]
+  },
+  {
+    "id": "ai102-028",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You are building a conversational bot that needs to understand user intentions (intents) and extract relevant information (entities) from natural language. Which Azure AI Language service should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Custom Question Answering"
+      },
+      {
+        "id": "B",
+        "text": "Text Analytics"
+      },
+      {
+        "id": "C",
+        "text": "Conversational Language Understanding (CLU)"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Translator"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Conversational Language Understanding (CLU) is the successor to LUIS. It allows you to train custom intent recognition and entity extraction models for natural language understanding in conversational AI applications.",
+    "explanationCN": "对话语言理解 (CLU) 是 LUIS 的继任者。它允许您训练自定义意图识别和实体提取模型，用于会话 AI 应用程序中的自然语言理解。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/overview",
+    "difficulty": "easy",
+    "tags": [
+      "CLU",
+      "intent recognition",
+      "entity extraction",
+      "conversational AI"
+    ]
+  },
+  {
+    "id": "ai102-029",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You need to translate customer support messages from multiple languages into English in real-time. The messages contain technical jargon specific to your industry. Which Azure AI service should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Language - Language Detection"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Translator with custom translation"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Speech - Speech Translation"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Language - Custom Text Classification"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Translator provides text translation with support for custom translation models (Custom Translator) that can be trained on domain-specific content to accurately handle industry-specific terminology.",
+    "explanationCN": "Azure AI 翻译器提供文本翻译，支持可在领域特定内容上训练的自定义翻译模型（自定义翻译器）以准确处理行业特定术语。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/overview",
+    "difficulty": "medium",
+    "tags": [
+      "Translator",
+      "custom translation",
+      "multilingual",
+      "NLP"
+    ]
+  },
+  {
+    "id": "ai102-030",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You need to convert spoken customer service calls to text for analysis. The audio contains specialized medical terminology. Which Azure AI Speech feature should you configure?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Standard Speech-to-Text with default model"
+      },
+      {
+        "id": "B",
+        "text": "Custom Speech with a domain-adapted model"
+      },
+      {
+        "id": "C",
+        "text": "Speech Translation"
+      },
+      {
+        "id": "D",
+        "text": "Neural Text-to-Speech"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Speech Custom Speech allows you to adapt the standard speech recognition model with your own audio data, transcriptions, and terminology to improve accuracy for domain-specific vocabulary like medical terms.",
+    "explanationCN": "Azure AI 语音自定义语音允许您使用自己的音频数据、转录文本和术语来适配标准语音识别模型，以提高医学术语等特定领域词汇的准确性。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/custom-speech-overview",
+    "difficulty": "medium",
+    "tags": [
+      "Speech",
+      "Custom Speech",
+      "speech-to-text",
+      "domain adaptation"
+    ]
+  },
+  {
+    "id": "ai102-031",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You need to extract structured information such as names, organizations, dates, and locations from unstructured text documents. Which Azure AI Language feature should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Key Phrase Extraction"
+      },
+      {
+        "id": "B",
+        "text": "Named Entity Recognition (NER)"
+      },
+      {
+        "id": "C",
+        "text": "Sentiment Analysis"
+      },
+      {
+        "id": "D",
+        "text": "Language Detection"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Named Entity Recognition (NER) identifies and categorizes entities in text such as Person, Organization, Location, DateTime, and monetary values, returning the entity text and its category.",
+    "explanationCN": "命名实体识别 (NER) 识别并分类文本中的实体，如人员、组织、位置、日期和货币值，返回实体文本及其类别。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/overview",
+    "difficulty": "easy",
+    "tags": [
+      "Language Service",
+      "NER",
+      "entity extraction",
+      "structured information"
+    ]
+  },
+  {
+    "id": "ai102-032",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You are building a system that routes support tickets to the correct team based on content. You need to classify tickets into categories like Billing, Technical Support, Account Management. Which Azure AI Language feature should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Custom Question Answering"
+      },
+      {
+        "id": "B",
+        "text": "Custom Text Classification"
+      },
+      {
+        "id": "C",
+        "text": "Conversational Language Understanding"
+      },
+      {
+        "id": "D",
+        "text": "Named Entity Recognition"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Language Custom Text Classification allows you to train a text classification model with your own categories/labels using labeled training examples, ideal for routing support tickets.",
+    "explanationCN": "Azure AI 语言自定义文本分类允许您使用标记训练示例训练具有自定义类别/标签的文本分类模型，非常适合路由支持票据。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-text-classification/overview",
+    "difficulty": "easy",
+    "tags": [
+      "Language Service",
+      "custom text classification",
+      "routing",
+      "support tickets"
+    ]
+  },
+  {
+    "id": "ai102-033",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You need to synthesize speech for a customer service application with a specific voice that matches your brand identity. Which Azure AI Speech feature allows you to create a custom voice?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Custom Neural Voice (CNV)"
+      },
+      {
+        "id": "B",
+        "text": "Standard Text-to-Speech"
+      },
+      {
+        "id": "C",
+        "text": "Custom Speech"
+      },
+      {
+        "id": "D",
+        "text": "Speech Translation"
+      }
+    ],
+    "correctAnswers": [
+      "A"
+    ],
+    "explanation": "Custom Neural Voice (CNV) allows you to create a unique synthetic voice by training on voice recordings from a specific speaker, enabling brand-specific voices. CNV requires explicit consent from the voice talent.",
+    "explanationCN": "自定义神经语音 (CNV) 允许您通过在特定说话者的录音上训练来创建独特的合成语音，实现品牌专属语音。CNV 需要语音配音人员的明确同意。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/custom-neural-voice",
+    "difficulty": "medium",
+    "tags": [
+      "Speech",
+      "Custom Neural Voice",
+      "TTS",
+      "voice synthesis"
+    ]
+  },
+  {
+    "id": "ai102-034",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You need to identify Personally Identifiable Information (PII) in text documents before storing them. Which Azure AI Language feature should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Named Entity Recognition (NER)"
+      },
+      {
+        "id": "B",
+        "text": "PII Detection and Redaction"
+      },
+      {
+        "id": "C",
+        "text": "Key Phrase Extraction"
+      },
+      {
+        "id": "D",
+        "text": "Text Analytics for Health"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Language PII Detection identifies and optionally redacts sensitive information such as names, phone numbers, email addresses, SSNs, and credit card numbers, returning detected entities with placeholders.",
+    "explanationCN": "Azure AI 语言 PII 检测识别并可选择性地编辑敏感信息，如姓名、电话号码、电子邮件地址、SSN 和信用卡号码，返回带占位符的检测实体。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/overview",
+    "difficulty": "easy",
+    "tags": [
+      "Language Service",
+      "PII detection",
+      "privacy",
+      "redaction"
+    ]
+  },
+  {
+    "id": "ai102-035",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You are using Azure AI Speech for speech-to-text and need to identify which speaker is talking in a multi-speaker audio file. Which feature should you enable?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Speech Translation"
+      },
+      {
+        "id": "B",
+        "text": "Speaker Diarization"
+      },
+      {
+        "id": "C",
+        "text": "Custom Speech"
+      },
+      {
+        "id": "D",
+        "text": "Pronunciation Assessment"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Speaker Diarization separates audio based on who is speaking and assigns speaker labels to each segment, tagging each utterance with a speaker identifier (Speaker 1, Speaker 2, etc.).",
+    "explanationCN": "说话人分离根据说话者分离音频，并为每个片段分配说话者标签，将每个话语标记为说话者标识符（说话者 1、说话者 2 等）。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/get-started-stt-diarization",
+    "difficulty": "medium",
+    "tags": [
+      "Speech",
+      "speaker diarization",
+      "multi-speaker",
+      "transcription"
+    ]
+  },
+  {
+    "id": "ai102-036",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You need to build a solution that transcribes medical conversations and extracts entities like diagnoses and medications. Which combination of services should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Speech - Standard transcription only"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Language - Text Analytics for Health only"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Speech for transcription AND Azure AI Language Text Analytics for Health for entity extraction"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Language - Named Entity Recognition (standard)"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "The complete solution requires both: Azure AI Speech transcribes audio to text, then Azure AI Language Text Analytics for Health extracts medical entities such as diagnoses, medications, anatomy, and symptoms.",
+    "explanationCN": "完整解决方案需要两个服务：Azure AI 语音将音频转录为文本，然后 Azure AI 语言医疗文本分析从转录文本中提取诊断、药物、解剖和症状等医疗实体。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/text-analytics-for-health/overview",
+    "difficulty": "medium",
+    "tags": [
+      "Speech",
+      "Text Analytics for Health",
+      "medical NLP",
+      "healthcare"
+    ]
+  },
+  {
+    "id": "ai102-037",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You need to summarize long legal documents automatically. Which Azure AI Language feature should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Key Phrase Extraction"
+      },
+      {
+        "id": "B",
+        "text": "Document Summarization (extractive or abstractive)"
+      },
+      {
+        "id": "C",
+        "text": "Sentiment Analysis"
+      },
+      {
+        "id": "D",
+        "text": "Custom Text Classification"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Language Document Summarization supports both extractive summarization (selecting key sentences) and abstractive summarization (generating new text capturing main points), ideal for legal documents.",
+    "explanationCN": "Azure AI 语言文档摘要功能支持提取式摘要（选择关键句子）和抽象式摘要（生成捕获主要内容的新文本），非常适合法律文件。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/summarization/overview",
+    "difficulty": "easy",
+    "tags": [
+      "Language Service",
+      "summarization",
+      "extractive",
+      "abstractive"
+    ]
+  },
+  {
+    "id": "ai102-038",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You are building a multilingual chat bot using Azure Bot Service. You want the bot to understand intents in multiple languages using CLU. What is the recommended approach?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Create separate CLU projects for each language"
+      },
+      {
+        "id": "B",
+        "text": "Use CLU multi-language support by training primarily in one language and adding utterances in other languages"
+      },
+      {
+        "id": "C",
+        "text": "Use Azure AI Translator to translate all inputs to English before sending to CLU"
+      },
+      {
+        "id": "D",
+        "text": "Train the model with English only and rely on auto-detection"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "CLU supports multilingual models. You train primarily in one language and can add utterances in multiple languages to improve accuracy across languages without needing separate projects per language.",
+    "explanationCN": "CLU 支持多语言模型。您主要以一种语言训练，可以添加多种语言的话语以提高准确性，无需为每种语言创建单独的项目。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/language-support",
+    "difficulty": "medium",
+    "tags": [
+      "CLU",
+      "multilingual",
+      "Bot Service",
+      "language support"
+    ]
+  },
+  {
+    "id": "ai102-039",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "multiple",
+    "question": "You need to evaluate a CLU model before deploying to production. Which TWO evaluation metrics should you review?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Intent precision and recall"
+      },
+      {
+        "id": "B",
+        "text": "Entity precision and recall"
+      },
+      {
+        "id": "C",
+        "text": "BLEU score"
+      },
+      {
+        "id": "D",
+        "text": "Perplexity"
+      }
+    ],
+    "correctAnswers": [
+      "A",
+      "B"
+    ],
+    "explanation": "For CLU models, review both intent-level metrics (precision, recall, F1 for intent recognition) and entity-level metrics (precision, recall, F1 for entity extraction) in Azure Language Studio.",
+    "explanationCN": "对于 CLU 模型，在 Azure Language Studio 中检查意图级指标（意图识别的精确率、召回率、F1 分数）和实体级指标（实体提取的精确率、召回率、F1 分数）。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/concepts/evaluation-metrics",
+    "difficulty": "medium",
+    "tags": [
+      "CLU",
+      "model evaluation",
+      "precision",
+      "recall",
+      "metrics"
+    ]
+  },
+  {
+    "id": "ai102-040",
+    "exam": "AI-102",
+    "domain": "Implement natural language processing solutions",
+    "domainWeight": 0.325,
+    "type": "single",
+    "question": "You need to build an Azure Bot Service bot that handles ordering and FAQ questions. The bot must route to different handlers based on whether the user is asking a question or placing an order. Which architecture is recommended?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Use Custom Question Answering for all intents"
+      },
+      {
+        "id": "B",
+        "text": "Use CLU for all queries including FAQ"
+      },
+      {
+        "id": "C",
+        "text": "Use Orchestration Workflow to route between CLU and Custom Question Answering"
+      },
+      {
+        "id": "D",
+        "text": "Create two separate bots connected by Azure Service Bus"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Azure AI Language Orchestration Workflow allows you to create a routing layer that automatically directs queries to the appropriate model - CLU for intent/ordering tasks and Custom Question Answering for FAQ questions, all from a single endpoint.",
+    "explanationCN": "Azure AI 语言编排工作流允许创建路由层，自动将查询定向到适当的模型——CLU 用于意图/订购任务，自定义问答用于 FAQ 问题，全部来自单个终结点。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/orchestration-workflow/overview",
+    "difficulty": "hard",
+    "tags": [
+      "CLU",
+      "orchestration workflow",
+      "routing",
+      "Bot Service"
+    ]
   }
 ]

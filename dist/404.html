@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+  // Redirect from 404.html back to the SPA with the original path preserved
+  var redirect = sessionStorage.redirect;
+  delete sessionStorage.redirect;
+  if (redirect && redirect !== location.href) {
+    history.replaceState(null, null, redirect);
+  }
+</script>
+<meta http-equiv="refresh" content="0;URL='/ms-ai-cert-quiz/'">
+</head>
+</html>

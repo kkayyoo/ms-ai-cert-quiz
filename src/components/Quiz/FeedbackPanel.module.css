@@ -1,0 +1,75 @@
+.panel {
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+  margin-top: 16px;
+  border-left: 4px solid transparent;
+  animation: slideIn 200ms ease;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.panelCorrect {
+  background: var(--color-success-light);
+  border-left-color: var(--color-success);
+}
+
+.panelWrong {
+  background: var(--color-error-light);
+  border-left-color: var(--color-error);
+}
+
+.verdict {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.verdictCorrect { color: var(--color-success); }
+.verdictWrong { color: var(--color-error); }
+
+.explanation {
+  font-size: 14px;
+  color: var(--color-text);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.zhSection {
+  border-top: 1px solid var(--color-border);
+  padding-top: 12px;
+  margin-bottom: 12px;
+}
+
+.zhToggle {
+  background: transparent;
+  border: none;
+  color: var(--color-primary);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.zhText {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
+.docsLink {
+  display: inline-block;
+  font-size: 13px;
+  color: var(--color-primary);
+  margin-bottom: 16px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}

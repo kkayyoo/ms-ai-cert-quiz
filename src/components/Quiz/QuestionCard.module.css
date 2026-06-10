@@ -1,0 +1,129 @@
+.card {
+  background: var(--color-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 24px;
+}
+
+.questionText {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  color: var(--color-text);
+}
+
+.hint {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  margin-bottom: 16px;
+  font-style: italic;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.option {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  border: 2px solid var(--color-border);
+  background: var(--color-card);
+  text-align: left;
+  font-size: 14px;
+  color: var(--color-text);
+  transition: border-color var(--transition), background var(--transition);
+  cursor: pointer;
+  width: 100%;
+}
+
+.option:not(:disabled):hover {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+}
+
+.option:disabled {
+  cursor: default;
+}
+
+.optionSelected {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+}
+
+.optionCorrect {
+  border-color: var(--color-success);
+  background: var(--color-success-light);
+}
+
+.optionWrong {
+  border-color: var(--color-error);
+  background: var(--color-error-light);
+}
+
+.optionIndicator {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.radio, .checkbox {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--color-border-dark);
+  border-radius: 50%;
+  position: relative;
+}
+
+.checkbox {
+  border-radius: 3px;
+}
+
+.radioChecked {
+  border-color: var(--color-primary);
+}
+
+.radioChecked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-primary);
+}
+
+.checked {
+  border-color: var(--color-primary);
+  background: var(--color-primary);
+}
+
+.checked::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 11px;
+  line-height: 1;
+}
+
+.optionText {
+  flex: 1;
+  line-height: 1.5;
+}
+
+.correctMark {
+  color: var(--color-success);
+  font-weight: 700;
+  flex-shrink: 0;
+}

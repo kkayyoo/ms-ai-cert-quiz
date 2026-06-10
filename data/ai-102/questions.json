@@ -4495,5 +4495,603 @@
       "Azure AI Language",
       "NLP"
     ]
+  },
+  {
+    "id": "ai102-116",
+    "exam": "AI-102",
+    "domain": "Implement generative AI solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to deploy a GPT-4 model in Azure OpenAI Service and make it available for your application. What is the correct process?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Create an Azure OpenAI resource, then deploy a model in Azure OpenAI Studio"
+      },
+      {
+        "id": "B",
+        "text": "Download the GPT-4 model weights and host them on Azure VM"
+      },
+      {
+        "id": "C",
+        "text": "Use Azure Machine Learning to import GPT-4 from Hugging Face"
+      },
+      {
+        "id": "D",
+        "text": "Create an Azure AI services multi-service resource which includes GPT-4 automatically"
+      }
+    ],
+    "correctAnswers": [
+      "A"
+    ],
+    "explanation": "To use Azure OpenAI, you first create an Azure OpenAI resource (which requires approved access). Then in Azure OpenAI Studio (or via API), you create a model deployment selecting the model type (e.g., gpt-4) and deployment name. Your application uses the deployment name to make API calls.",
+    "explanationCN": "要使用 Azure OpenAI，首先需要创建 Azure OpenAI 资源（需要获得批准访问）。然后在 Azure OpenAI Studio（或通过 API）中创建模型部署，选择模型类型（如 gpt-4）和部署名称。您的应用程序使用部署名称进行 API 调用。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource",
+    "difficulty": "easy",
+    "tags": [
+      "Azure OpenAI",
+      "model deployment",
+      "GPT-4",
+      "generative AI"
+    ]
+  },
+  {
+    "id": "ai102-117",
+    "exam": "AI-102",
+    "domain": "Implement generative AI solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You are designing a prompt for Azure OpenAI to summarize customer feedback. You want the model to always respond in a specific JSON format. Which prompt engineering technique is most appropriate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Zero-shot prompting with no format instructions"
+      },
+      {
+        "id": "B",
+        "text": "System message specifying the required JSON output format with an example"
+      },
+      {
+        "id": "C",
+        "text": "Fine-tuning the model with summarization examples"
+      },
+      {
+        "id": "D",
+        "text": "Increasing the temperature parameter to 1.0"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Using the system message to specify the exact output format (including a JSON schema example) is an effective prompt engineering technique. The system message sets persistent instructions for the model's behavior, ensuring consistent JSON-formatted responses across all interactions.",
+    "explanationCN": "使用系统消息指定确切的输出格式（包括 JSON 模式示例）是一种有效的提示工程技术。系统消息为模型行为设置持久性指令，确保所有交互都有一致的 JSON 格式响应。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/prompt-engineering",
+    "difficulty": "medium",
+    "tags": [
+      "prompt engineering",
+      "system message",
+      "Azure OpenAI",
+      "JSON output",
+      "generative AI"
+    ]
+  },
+  {
+    "id": "ai102-118",
+    "exam": "AI-102",
+    "domain": "Implement generative AI solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to implement a Retrieval-Augmented Generation (RAG) solution where Azure OpenAI answers questions based on your company's proprietary documents. Which combination of Azure services enables this pattern?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure OpenAI + Azure AI Search (as the retrieval component)"
+      },
+      {
+        "id": "B",
+        "text": "Azure OpenAI + Azure SQL Database"
+      },
+      {
+        "id": "C",
+        "text": "Azure OpenAI + Azure Blob Storage"
+      },
+      {
+        "id": "D",
+        "text": "Azure OpenAI fine-tuning on company documents"
+      }
+    ],
+    "correctAnswers": [
+      "A"
+    ],
+    "explanation": "The RAG pattern uses Azure AI Search to index and retrieve relevant document chunks, which are then included in the prompt sent to Azure OpenAI. Azure OpenAI's 'Add your data' feature natively supports Azure AI Search as a data source for RAG scenarios.",
+    "explanationCN": "RAG 模式使用 Azure AI 搜索来索引和检索相关文档块，然后将其包含在发送给 Azure OpenAI 的提示中。Azure OpenAI 的'添加数据'功能原生支持将 Azure AI 搜索作为 RAG 场景的数据源。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/use-your-data",
+    "difficulty": "medium",
+    "tags": [
+      "RAG",
+      "Azure OpenAI",
+      "Azure AI Search",
+      "generative AI",
+      "document QA"
+    ]
+  },
+  {
+    "id": "ai102-119",
+    "exam": "AI-102",
+    "domain": "Implement generative AI solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You are using Azure OpenAI's chat completions API. You want the model to be more creative and generate varied responses. Which parameter should you adjust?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Increase max_tokens"
+      },
+      {
+        "id": "B",
+        "text": "Increase the temperature parameter (e.g., to 0.8-1.0)"
+      },
+      {
+        "id": "C",
+        "text": "Set top_p to 0"
+      },
+      {
+        "id": "D",
+        "text": "Decrease frequency_penalty"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "The temperature parameter controls randomness in the model's output. A higher temperature (closer to 1.0 or above) produces more varied and creative responses. A lower temperature (closer to 0) produces more deterministic, focused responses. For creative tasks, increase temperature.",
+    "explanationCN": "temperature 参数控制模型输出的随机性。更高的温度（接近 1.0 或以上）产生更多样化和有创意的响应。更低的温度（接近 0）产生更确定性、更专注的响应。对于创意任务，应增加温度。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/reference",
+    "difficulty": "easy",
+    "tags": [
+      "Azure OpenAI",
+      "temperature",
+      "model parameters",
+      "chat completions",
+      "generative AI"
+    ]
+  },
+  {
+    "id": "ai102-120",
+    "exam": "AI-102",
+    "domain": "Implement knowledge mining and document intelligence solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to build an Azure AI Search solution that makes document content searchable by extracting text, images, and metadata from PDFs and Office documents. What component enables this content extraction?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Search indexer with an AI enrichment skillset"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Search semantic ranker"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Search suggester"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Search scoring profiles"
+      }
+    ],
+    "correctAnswers": [
+      "A"
+    ],
+    "explanation": "An Azure AI Search indexer with an AI enrichment skillset enables document cracking (extracting text and images from files) and AI enrichment (applying cognitive skills like OCR, entity extraction, key phrase extraction). The skillset processes content before it is stored in the search index.",
+    "explanationCN": "带有 AI 扩充技能集的 Azure AI 搜索索引器支持文档拆解（从文件中提取文本和图像）和 AI 扩充（应用认知技能，如 OCR、实体提取、关键短语提取）。技能集在内容存储到搜索索引之前处理内容。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/search/cognitive-search-concept-intro",
+    "difficulty": "medium",
+    "tags": [
+      "Azure AI Search",
+      "cognitive search",
+      "skillset",
+      "indexer",
+      "knowledge mining"
+    ]
+  },
+  {
+    "id": "ai102-121",
+    "exam": "AI-102",
+    "domain": "Implement knowledge mining and document intelligence solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You are building an Azure AI Search index for an e-commerce product catalog. Users should be able to filter products by category, price range, and brand, and also perform full-text search on product descriptions. Which field attribute configuration is required?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mark all fields as Searchable only"
+      },
+      {
+        "id": "B",
+        "text": "Mark description as Searchable; mark category, price, and brand as Filterable and/or Facetable"
+      },
+      {
+        "id": "C",
+        "text": "Mark all fields as Retrievable only"
+      },
+      {
+        "id": "D",
+        "text": "Enable semantic search on all fields"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Search field attributes control how fields can be used. 'Searchable' enables full-text search (for product descriptions). 'Filterable' enables exact-match filtering (for category, brand). 'Facetable' enables faceted navigation (for categories and brands). 'price' should be Filterable for range queries.",
+    "explanationCN": "Azure AI 搜索字段属性控制字段的使用方式。'Searchable' 启用全文搜索（用于产品描述）。'Filterable' 启用精确匹配过滤（用于类别、品牌）。'Facetable' 启用分面导航（用于类别和品牌）。'price' 应设为 Filterable 以支持范围查询。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/search/search-what-is-an-index",
+    "difficulty": "medium",
+    "tags": [
+      "Azure AI Search",
+      "index fields",
+      "filterable",
+      "facetable",
+      "searchable"
+    ]
+  },
+  {
+    "id": "ai102-122",
+    "exam": "AI-102",
+    "domain": "Implement knowledge mining and document intelligence solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to implement Azure AI Search to return results ordered by relevance, considering both keyword matching and semantic meaning of the query. Which Azure AI Search feature enables this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Scoring profiles with field boosting"
+      },
+      {
+        "id": "B",
+        "text": "Semantic ranker (semantic search)"
+      },
+      {
+        "id": "C",
+        "text": "Suggester and autocomplete"
+      },
+      {
+        "id": "D",
+        "text": "Synonym maps"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Search semantic ranker uses deep learning models to understand the semantic meaning of both the query and documents. It re-ranks results based on semantic relevance, not just keyword frequency, providing more contextually accurate results for natural language queries.",
+    "explanationCN": "Azure AI 搜索语义排名器使用深度学习模型理解查询和文档的语义含义。它基于语义相关性（而不仅仅是关键字频率）对结果进行重新排序，为自然语言查询提供更准确的上下文结果。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/search/semantic-search-overview",
+    "difficulty": "medium",
+    "tags": [
+      "Azure AI Search",
+      "semantic search",
+      "semantic ranker",
+      "relevance",
+      "ranking"
+    ]
+  },
+  {
+    "id": "ai102-123",
+    "exam": "AI-102",
+    "domain": "Implement knowledge mining and document intelligence solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You are implementing an Azure AI Search knowledge store to persist AI enrichment output for downstream analytics. Which storage options does the knowledge store support?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure Blob Storage only"
+      },
+      {
+        "id": "B",
+        "text": "Azure Table Storage only"
+      },
+      {
+        "id": "C",
+        "text": "Azure Blob Storage and Azure Table Storage"
+      },
+      {
+        "id": "D",
+        "text": "Azure SQL Database and Azure Cosmos DB"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Azure AI Search knowledge store supports persisting enriched content to both Azure Blob Storage (for document projections and complex objects) and Azure Table Storage (for tabular projections). This allows downstream analysis using tools like Power BI or custom applications.",
+    "explanationCN": "Azure AI 搜索知识存储支持将丰富内容持久化到 Azure Blob 存储（用于文档投影和复杂对象）和 Azure 表存储（用于表格投影）。这允许使用 Power BI 或自定义应用程序进行下游分析。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/search/knowledge-store-concept-intro",
+    "difficulty": "medium",
+    "tags": [
+      "knowledge store",
+      "Azure AI Search",
+      "Blob Storage",
+      "Table Storage",
+      "knowledge mining"
+    ]
+  },
+  {
+    "id": "ai102-124",
+    "exam": "AI-102",
+    "domain": "Implement knowledge mining and document intelligence solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to add a custom AI skill to your Azure AI Search skillset that calls an external API to perform specialized entity extraction not available in built-in skills. Which skill type should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Conditional skill"
+      },
+      {
+        "id": "B",
+        "text": "Custom Web API skill"
+      },
+      {
+        "id": "C",
+        "text": "Azure Machine Learning skill"
+      },
+      {
+        "id": "D",
+        "text": "Shaper skill"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "The Custom Web API skill in Azure AI Search allows you to call any external HTTP endpoint (like an Azure Function or custom REST API) as part of the skillset pipeline. This enables integration of custom AI models or proprietary processing logic into the enrichment pipeline.",
+    "explanationCN": "Azure AI 搜索中的自定义 Web API 技能允许将任何外部 HTTP 终结点（如 Azure Function 或自定义 REST API）作为技能集管道的一部分进行调用。这使得可以将自定义 AI 模型或专有处理逻辑集成到扩充管道中。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/search/cognitive-search-custom-skill-web-api",
+    "difficulty": "medium",
+    "tags": [
+      "Azure AI Search",
+      "custom skill",
+      "Web API skill",
+      "skillset",
+      "cognitive search"
+    ]
+  },
+  {
+    "id": "ai102-125",
+    "exam": "AI-102",
+    "domain": "Implement generative AI solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to use Azure OpenAI's DALL-E model to generate images based on text descriptions. What API endpoint should your application use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The chat completions endpoint with image generation instructions"
+      },
+      {
+        "id": "B",
+        "text": "The image generation endpoint (/openai/deployments/{deployment-id}/images/generations)"
+      },
+      {
+        "id": "C",
+        "text": "The Azure AI Vision image analysis endpoint"
+      },
+      {
+        "id": "D",
+        "text": "The embeddings endpoint with image prompts"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure OpenAI DALL-E uses a dedicated image generation endpoint. You send a POST request to the images/generations endpoint with a text prompt, and the API returns URLs to generated images. DALL-E 3 is available in Azure OpenAI with specific regional availability.",
+    "explanationCN": "Azure OpenAI DALL-E 使用专用的图像生成终结点。您向 images/generations 终结点发送 POST 请求，并附带文本提示，API 返回生成图像的 URL。DALL-E 3 在 Azure OpenAI 中可用，具体区域可用性有所不同。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/dall-e-quickstart",
+    "difficulty": "medium",
+    "tags": [
+      "DALL-E",
+      "Azure OpenAI",
+      "image generation",
+      "generative AI"
+    ]
+  },
+  {
+    "id": "ai102-126",
+    "exam": "AI-102",
+    "domain": "Implement generative AI solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You are implementing Azure OpenAI with function calling to integrate with external APIs. When the model decides to call a function, what does the API response contain?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The API automatically calls the function and returns the final answer"
+      },
+      {
+        "id": "B",
+        "text": "The response includes finish_reason 'tool_calls' with the function name and arguments as JSON"
+      },
+      {
+        "id": "C",
+        "text": "The response contains an error that you must handle"
+      },
+      {
+        "id": "D",
+        "text": "The model generates a code snippet that you must execute"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "When Azure OpenAI decides to call a function (tool), the API response has finish_reason set to 'tool_calls' and includes the tool_calls array with the function name and arguments as JSON. Your application is responsible for actually calling the function and sending the result back to the model.",
+    "explanationCN": "当 Azure OpenAI 决定调用函数（工具）时，API 响应的 finish_reason 设置为 'tool_calls'，并包含带有函数名称和参数（JSON 格式）的 tool_calls 数组。您的应用程序负责实际调用该函数并将结果发送回模型。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/function-calling",
+    "difficulty": "hard",
+    "tags": [
+      "Azure OpenAI",
+      "function calling",
+      "tool calls",
+      "generative AI",
+      "API integration"
+    ]
+  },
+  {
+    "id": "ai102-127",
+    "exam": "AI-102",
+    "domain": "Implement knowledge mining and document intelligence solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to enable vector search in Azure AI Search to support semantic similarity searches for a RAG application. What must you configure in the index?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Enable semantic ranker on text fields"
+      },
+      {
+        "id": "B",
+        "text": "Add a vector field with the appropriate dimensions and configure a vector search algorithm (HNSW or ExhaustiveKNN)"
+      },
+      {
+        "id": "C",
+        "text": "Enable full-text search with BM25 scoring"
+      },
+      {
+        "id": "D",
+        "text": "Configure a knowledge store with vector projections"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Vector search in Azure AI Search requires defining a vector field in the index with the correct number of dimensions (matching your embedding model's output) and configuring a vector search configuration with an algorithm like HNSW (Hierarchical Navigable Small World) for approximate nearest neighbor search.",
+    "explanationCN": "Azure AI 搜索中的向量搜索需要在索引中定义具有正确维度数（与嵌入模型输出匹配）的向量字段，并使用 HNSW（层次可导航小世界）等算法配置向量搜索配置，以进行近似最近邻搜索。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/search/vector-search-overview",
+    "difficulty": "hard",
+    "tags": [
+      "Azure AI Search",
+      "vector search",
+      "HNSW",
+      "embeddings",
+      "RAG"
+    ]
+  },
+  {
+    "id": "ai102-128",
+    "exam": "AI-102",
+    "domain": "Implement generative AI solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to generate text embeddings for documents to store in Azure AI Search for vector search. Which Azure OpenAI model should you use to generate embeddings?",
+    "options": [
+      {
+        "id": "A",
+        "text": "gpt-4 or gpt-35-turbo"
+      },
+      {
+        "id": "B",
+        "text": "text-embedding-ada-002 or text-embedding-3-large"
+      },
+      {
+        "id": "C",
+        "text": "dall-e-3"
+      },
+      {
+        "id": "D",
+        "text": "whisper"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure OpenAI embedding models (text-embedding-ada-002, text-embedding-3-small, text-embedding-3-large) convert text into numerical vector representations. These vectors capture semantic meaning and are used for similarity search in vector databases like Azure AI Search.",
+    "explanationCN": "Azure OpenAI 嵌入模型（text-embedding-ada-002、text-embedding-3-small、text-embedding-3-large）将文本转换为数字向量表示。这些向量捕获语义含义，用于在 Azure AI 搜索等向量数据库中进行相似性搜索。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/understand-embeddings",
+    "difficulty": "easy",
+    "tags": [
+      "embeddings",
+      "Azure OpenAI",
+      "text-embedding-ada-002",
+      "vector search",
+      "RAG"
+    ]
+  },
+  {
+    "id": "ai102-129",
+    "exam": "AI-102",
+    "domain": "Implement knowledge mining and document intelligence solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You have an Azure AI Search indexer that processes new documents from Azure Blob Storage. You need the indexer to automatically process new documents as they are uploaded. How should you configure this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manually trigger the indexer via API after each upload"
+      },
+      {
+        "id": "B",
+        "text": "Set an indexer schedule (e.g., every 5 minutes) or use the change detection policy"
+      },
+      {
+        "id": "C",
+        "text": "Create an Azure Event Grid trigger that rebuilds the entire index"
+      },
+      {
+        "id": "D",
+        "text": "Enable the indexer's real-time mode which is enabled by default"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Search indexers can be scheduled to run at regular intervals (e.g., every 5 minutes, hourly). For Blob Storage, the change detection policy tracks newly added or modified blobs using their metadata, so only new/changed documents are processed on each run.",
+    "explanationCN": "Azure AI 搜索索引器可以按定期间隔运行（如每 5 分钟、每小时）。对于 Blob 存储，更改检测策略使用元数据跟踪新添加或修改的 blob，因此每次运行时只处理新的/更改的文档。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/search/search-howto-schedule-indexers",
+    "difficulty": "medium",
+    "tags": [
+      "Azure AI Search",
+      "indexer",
+      "schedule",
+      "change detection",
+      "Blob Storage"
+    ]
+  },
+  {
+    "id": "ai102-130",
+    "exam": "AI-102",
+    "domain": "Implement generative AI solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to prevent your Azure OpenAI deployment from generating harmful content. Azure OpenAI Service has built-in content filtering. Which content categories are filtered by default?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Only explicit sexual content"
+      },
+      {
+        "id": "B",
+        "text": "Hate, sexual, violence, and self-harm content in both prompts and completions"
+      },
+      {
+        "id": "C",
+        "text": "Competitor product mentions and politically sensitive content"
+      },
+      {
+        "id": "D",
+        "text": "Only content that violates copyright"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure OpenAI Service includes a default content filtering system that screens both inputs (prompts) and outputs (completions) for four categories: hate, sexual, violence, and self-harm. Each category has severity levels and can be configured. Additional filters include jailbreak detection.",
+    "explanationCN": "Azure OpenAI 服务包含默认内容过滤系统，对输入（提示）和输出（完成内容）筛查四个类别：仇恨、性、暴力和自残。每个类别都有严重性级别，可以配置。其他过滤器包括越狱检测。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/content-filter",
+    "difficulty": "easy",
+    "tags": [
+      "content filtering",
+      "Azure OpenAI",
+      "Responsible AI",
+      "safety",
+      "generative AI"
+    ]
   }
 ]

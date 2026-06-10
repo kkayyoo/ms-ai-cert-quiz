@@ -4702,5 +4702,582 @@
       "use-case",
       "retail"
     ]
+  },
+  {
+    "id": "ai900-125",
+    "exam": "AI-900",
+    "domain": "Describe features of Natural Language Processing workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "Which Azure AI service provides features like sentiment analysis, key phrase extraction, and named entity recognition?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Translator"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Language"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Speech"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Bot Service"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Language (formerly Text Analytics) provides NLP features including sentiment analysis, key phrase extraction, language detection, named entity recognition, and more.",
+    "explanationCN": "Azure AI Language（原Text Analytics）提供NLP功能，包括情感分析、关键短语提取、语言检测、命名实体识别等，是Azure主要的文本分析服务。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview",
+    "difficulty": "easy",
+    "tags": [
+      "azure-ai-language",
+      "nlp",
+      "sentiment-analysis",
+      "ner"
+    ]
+  },
+  {
+    "id": "ai900-126",
+    "exam": "AI-900",
+    "domain": "Describe features of Natural Language Processing workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "What does the Azure AI Translator service provide?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Converting speech to text"
+      },
+      {
+        "id": "B",
+        "text": "Translating text between languages"
+      },
+      {
+        "id": "C",
+        "text": "Generating images from text prompts"
+      },
+      {
+        "id": "D",
+        "text": "Extracting entities from text documents"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Translator provides real-time text translation between over 100 languages and dialects, including document translation and custom translation capabilities.",
+    "explanationCN": "Azure AI Translator提供100多种语言和方言之间的实时文本翻译，包括文档翻译和自定义翻译功能，是专注于语言翻译的服务。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/translator/translator-overview",
+    "difficulty": "easy",
+    "tags": [
+      "translator",
+      "text-translation",
+      "multilingual"
+    ]
+  },
+  {
+    "id": "ai900-127",
+    "exam": "AI-900",
+    "domain": "Describe features of Natural Language Processing workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "Which Azure AI Speech feature converts spoken audio into written text?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Text-to-Speech"
+      },
+      {
+        "id": "B",
+        "text": "Speech Translation"
+      },
+      {
+        "id": "C",
+        "text": "Speech-to-Text"
+      },
+      {
+        "id": "D",
+        "text": "Speaker Recognition"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Speech-to-Text (also called speech recognition) in Azure AI Speech converts spoken audio input into written text, supporting real-time and batch transcription.",
+    "explanationCN": "Azure AI Speech中的语音转文字（Speech-to-Text，也称语音识别）将口头音频输入转换为书面文本，支持实时和批量转录。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-to-text",
+    "difficulty": "easy",
+    "tags": [
+      "speech-to-text",
+      "azure-ai-speech",
+      "speech-recognition"
+    ]
+  },
+  {
+    "id": "ai900-128",
+    "exam": "AI-900",
+    "domain": "Describe features of Natural Language Processing workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "What is the purpose of the Azure AI Language \"Conversational Language Understanding\" (CLU) feature?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To translate conversations between languages"
+      },
+      {
+        "id": "B",
+        "text": "To train a model to understand user intents and extract entities from natural language input"
+      },
+      {
+        "id": "C",
+        "text": "To generate automated responses to customer emails"
+      },
+      {
+        "id": "D",
+        "text": "To summarize long text documents"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Conversational Language Understanding (CLU) allows you to train a natural language understanding model that identifies user intents and extracts entities from conversational input.",
+    "explanationCN": "对话语言理解（CLU）允许您训练自然语言理解模型，从对话输入中识别用户意图并提取实体，是构建智能对话应用的核心组件。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/overview",
+    "difficulty": "medium",
+    "tags": [
+      "clu",
+      "intent-recognition",
+      "entity-extraction",
+      "conversational-ai"
+    ]
+  },
+  {
+    "id": "ai900-129",
+    "exam": "AI-900",
+    "domain": "Describe features of Natural Language Processing workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "Which Azure AI Language feature creates a knowledge base from FAQ documents and web pages to answer natural language questions?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sentiment Analysis"
+      },
+      {
+        "id": "B",
+        "text": "Question Answering"
+      },
+      {
+        "id": "C",
+        "text": "Named Entity Recognition"
+      },
+      {
+        "id": "D",
+        "text": "Text Summarization"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "The Question Answering feature (formerly QnA Maker) in Azure AI Language creates a knowledge base from documents, FAQs, and web pages to answer natural language questions.",
+    "explanationCN": "Azure AI Language的问答（Question Answering）功能（原QnA Maker）从文档、FAQ和网页创建知识库，以回答自然语言问题，常用于构建FAQ机器人。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/overview",
+    "difficulty": "easy",
+    "tags": [
+      "question-answering",
+      "qna-maker",
+      "knowledge-base",
+      "nlp"
+    ]
+  },
+  {
+    "id": "ai900-130",
+    "exam": "AI-900",
+    "domain": "Describe features of Natural Language Processing workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "In Azure AI Language, what does sentiment analysis return for a text document?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The translation of the text into another language"
+      },
+      {
+        "id": "B",
+        "text": "A label (positive, negative, neutral, mixed) and confidence scores indicating the sentiment expressed in the text"
+      },
+      {
+        "id": "C",
+        "text": "A list of named entities found in the text"
+      },
+      {
+        "id": "D",
+        "text": "The key topics discussed in the text"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Sentiment analysis returns a sentiment label (positive, negative, neutral, or mixed) and confidence scores for each sentiment class, indicating the overall tone of the text.",
+    "explanationCN": "情感分析返回情感标签（正面、负面、中性或混合）以及每个情感类别的置信度分数，指示文本的整体语气，常用于分析客户反馈。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/overview",
+    "difficulty": "easy",
+    "tags": [
+      "sentiment-analysis",
+      "azure-ai-language",
+      "text-analytics"
+    ]
+  },
+  {
+    "id": "ai900-131",
+    "exam": "AI-900",
+    "domain": "Describe features of Natural Language Processing workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "What is the Azure AI Speech Text-to-Speech feature used for?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transcribing meeting recordings into text"
+      },
+      {
+        "id": "B",
+        "text": "Converting written text into natural-sounding spoken audio"
+      },
+      {
+        "id": "C",
+        "text": "Translating speech from one language to another"
+      },
+      {
+        "id": "D",
+        "text": "Identifying who is speaking in an audio recording"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Text-to-Speech (speech synthesis) in Azure AI Speech converts written text into natural-sounding spoken audio using neural voices, enabling voice-enabled applications.",
+    "explanationCN": "Azure AI Speech的文字转语音（Text-to-Speech，语音合成）使用神经语音将书面文本转换为自然发音的口语音频，支持构建语音驱动的应用程序。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech",
+    "difficulty": "easy",
+    "tags": [
+      "text-to-speech",
+      "speech-synthesis",
+      "azure-ai-speech",
+      "neural-voice"
+    ]
+  },
+  {
+    "id": "ai900-132",
+    "exam": "AI-900",
+    "domain": "Describe features of Natural Language Processing workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "Which Azure AI Language feature identifies people, places, organizations, and dates in unstructured text?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Key phrase extraction"
+      },
+      {
+        "id": "B",
+        "text": "Sentiment analysis"
+      },
+      {
+        "id": "C",
+        "text": "Named entity recognition (NER)"
+      },
+      {
+        "id": "D",
+        "text": "Language detection"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Named Entity Recognition (NER) identifies and categorizes entities in text such as people, organizations, locations, dates, quantities, and more.",
+    "explanationCN": "命名实体识别（NER）识别并分类文本中的实体，如人员、组织、地点、日期、数量等，帮助从非结构化文本中提取结构化信息。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/overview",
+    "difficulty": "easy",
+    "tags": [
+      "ner",
+      "named-entity-recognition",
+      "azure-ai-language",
+      "text-analytics"
+    ]
+  },
+  {
+    "id": "ai900-133",
+    "exam": "AI-900",
+    "domain": "Describe features of Natural Language Processing workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "What is the Azure AI Speech Translation feature used for?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transcribing speech in a single language to text"
+      },
+      {
+        "id": "B",
+        "text": "Translating spoken audio from one language into text or speech in another language"
+      },
+      {
+        "id": "C",
+        "text": "Identifying the speaker in a multi-person conversation"
+      },
+      {
+        "id": "D",
+        "text": "Generating a custom voice model"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Speech Translation in Azure AI Speech enables real-time translation of spoken audio from one language into text or synthesized speech in another language.",
+    "explanationCN": "Azure AI Speech的语音翻译（Speech Translation）支持将口头音频从一种语言实时翻译成另一种语言的文本或合成语音，适用于多语言交流场景。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-translation",
+    "difficulty": "medium",
+    "tags": [
+      "speech-translation",
+      "azure-ai-speech",
+      "multilingual"
+    ]
+  },
+  {
+    "id": "ai900-134",
+    "exam": "AI-900",
+    "domain": "Describe features of Natural Language Processing workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "Which Azure service would you use to build a chatbot that can answer questions about a company's product catalog from a PDF document?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Vision"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Language with Question Answering"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Translator"
+      },
+      {
+        "id": "D",
+        "text": "Azure Machine Learning AutoML"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Language Question Answering can create a knowledge base from PDF documents and other sources, enabling a chatbot to answer natural language questions about the content.",
+    "explanationCN": "Azure AI Language的问答功能可以从PDF文档和其他来源创建知识库，使聊天机器人能够回答有关内容的自然语言问题，非常适合产品目录问答场景。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/overview",
+    "difficulty": "medium",
+    "tags": [
+      "question-answering",
+      "chatbot",
+      "knowledge-base",
+      "use-case"
+    ]
+  },
+  {
+    "id": "ai900-135",
+    "exam": "AI-900",
+    "domain": "Describe features of Natural Language Processing workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "What is key phrase extraction in Azure AI Language?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Identifying the main language of a text document"
+      },
+      {
+        "id": "B",
+        "text": "Identifying the main talking points or topics in a text document"
+      },
+      {
+        "id": "C",
+        "text": "Classifying the sentiment expressed in a text"
+      },
+      {
+        "id": "D",
+        "text": "Translating keywords into multiple languages"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Key phrase extraction identifies and extracts the main talking points and key topics from text, helping to summarize what the text is about.",
+    "explanationCN": "关键短语提取从文本中识别和提取主要谈话要点和关键主题，帮助快速了解文本的主要内容，常用于文档摘要和搜索索引。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/key-phrase-extraction/overview",
+    "difficulty": "easy",
+    "tags": [
+      "key-phrase-extraction",
+      "azure-ai-language",
+      "text-analytics"
+    ]
+  },
+  {
+    "id": "ai900-136",
+    "exam": "AI-900",
+    "domain": "Describe features of Natural Language Processing workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "Which Azure AI Language feature can summarize a lengthy article into a few key sentences?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Named Entity Recognition"
+      },
+      {
+        "id": "B",
+        "text": "Text Summarization"
+      },
+      {
+        "id": "C",
+        "text": "Sentiment Analysis"
+      },
+      {
+        "id": "D",
+        "text": "Language Detection"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Text Summarization in Azure AI Language can generate extractive or abstractive summaries of long documents, condensing key information into a shorter format.",
+    "explanationCN": "Azure AI Language的文本摘要（Text Summarization）可以生成长文档的抽取式或生成式摘要，将关键信息压缩成更短的格式，节省阅读时间。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/summarization/overview",
+    "difficulty": "easy",
+    "tags": [
+      "text-summarization",
+      "azure-ai-language",
+      "document-summarization"
+    ]
+  },
+  {
+    "id": "ai900-137",
+    "exam": "AI-900",
+    "domain": "Describe features of Natural Language Processing workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "What is the purpose of the Azure AI Language Detection feature?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To detect whether text contains profanity or hate speech"
+      },
+      {
+        "id": "B",
+        "text": "To identify which language a text document is written in"
+      },
+      {
+        "id": "C",
+        "text": "To detect the named entities in text"
+      },
+      {
+        "id": "D",
+        "text": "To detect whether text is machine-generated or human-written"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Language Detection in Azure AI Language identifies which language a piece of text is written in, returning the language name and an ISO 639-1 code with a confidence score.",
+    "explanationCN": "Azure AI Language的语言检测功能识别一段文本是用哪种语言写的，返回语言名称、ISO 639-1代码和置信度分数，常用于多语言内容路由。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/language-detection/overview",
+    "difficulty": "easy",
+    "tags": [
+      "language-detection",
+      "azure-ai-language",
+      "multilingual"
+    ]
+  },
+  {
+    "id": "ai900-138",
+    "exam": "AI-900",
+    "domain": "Describe features of Natural Language Processing workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "Which Azure service provides a customizable neural text-to-speech voice called Custom Neural Voice?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Language"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Translator"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Speech"
+      },
+      {
+        "id": "D",
+        "text": "Azure Bot Service"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Azure AI Speech provides Custom Neural Voice, which allows you to create a unique, customized synthetic voice for your brand by training on recorded voice samples.",
+    "explanationCN": "Azure AI Speech提供自定义神经语音（Custom Neural Voice），允许您通过对录制的语音样本进行训练，为您的品牌创建独特的定制合成语音。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/custom-neural-voice",
+    "difficulty": "medium",
+    "tags": [
+      "custom-neural-voice",
+      "azure-ai-speech",
+      "text-to-speech",
+      "customization"
+    ]
+  },
+  {
+    "id": "ai900-139",
+    "exam": "AI-900",
+    "domain": "Describe features of Natural Language Processing workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "In NLP, what does tokenization refer to?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encrypting text data for secure transmission"
+      },
+      {
+        "id": "B",
+        "text": "Converting words or characters into security tokens for API authentication"
+      },
+      {
+        "id": "C",
+        "text": "Breaking text into smaller units such as words or subwords for processing by an NLP model"
+      },
+      {
+        "id": "D",
+        "text": "Translating tokens from one language to another"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Tokenization is the process of splitting text into smaller units (tokens) such as words, subwords, or characters that can be processed by NLP models.",
+    "explanationCN": "分词（Tokenization）是将文本分割成更小单元（令牌/token）的过程，如单词、子词或字符，这些单元可以被NLP模型处理。这是NLP流程的基础步骤。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/tokenization",
+    "difficulty": "medium",
+    "tags": [
+      "tokenization",
+      "nlp",
+      "text-processing"
+    ]
   }
 ]

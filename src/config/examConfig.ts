@@ -1,7 +1,16 @@
-import { ExamConfig, ExamId } from '../types';
+import { ExamId } from '../types';
+
+export interface ExamConfig {
+  name: string;
+  passingScore: number;
+  totalQuestions: number;
+  duration: number; // minutes
+  dataPath: string;
+  syllabusPath: string;
+}
 
 export const EXAM_CONFIG: Record<ExamId, ExamConfig> = {
-  'AI-900': {
+  'ai900': {
     name: 'Azure AI Fundamentals',
     passingScore: 700,
     totalQuestions: 60,
@@ -9,7 +18,7 @@ export const EXAM_CONFIG: Record<ExamId, ExamConfig> = {
     dataPath: '/data/ai-900/questions.json',
     syllabusPath: '/data/ai-900/syllabus.json',
   },
-  'AI-102': {
+  'ai102': {
     name: 'Azure AI Engineer',
     passingScore: 700,
     totalQuestions: 60,
@@ -20,6 +29,7 @@ export const EXAM_CONFIG: Record<ExamId, ExamConfig> = {
 };
 
 export const BASE_URL = '/ms-ai-cert-quiz';
+
 export const STORAGE_KEYS = {
   WRONG_ANSWERS: 'ms_quiz_wrong_answers',
   SESSION_HISTORY: 'ms_quiz_session_history',

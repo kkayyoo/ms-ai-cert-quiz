@@ -1,0 +1,57 @@
+.page {
+  padding: 48px 0;
+}
+
+.card {
+  background: var(--color-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 40px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.scoreBig {
+  font-size: 64px;
+  font-weight: 800;
+  color: var(--color-text);
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.scoreMax {
+  font-size: 32px;
+  color: var(--color-text-secondary);
+}
+
+.badge {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 6px 24px;
+  border-radius: 24px;
+  margin-bottom: 12px;
+}
+
+.pass { background: var(--color-success-light); color: var(--color-success); }
+.fail { background: var(--color-error-light); color: var(--color-error); }
+
+.detail {
+  font-size: 15px;
+  color: var(--color-text-secondary);
+  margin-bottom: 24px;
+}
+
+.ring {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}

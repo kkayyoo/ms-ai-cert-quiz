@@ -3,8 +3,17 @@ import { validateQuestion } from './validation';
 
 const DATA_BASE_URL = import.meta.env.BASE_URL + 'data/';
 
-async function loadExamQuestions(exam: 'AI-900' | 'AI-102'): Promise<Question[]> {
-  const url = `${DATA_BASE_URL}${exam.toLowerCase()}/questions.json`;
+// Map our ExamId format to file path format
+const EXAM_PATH_MAP: Record<string, string> = {
+  'ai900': 'ai-900',
+  'ai102': 'ai-102',
+  'AI-900': 'ai-900',
+  'AI-102': 'ai-102',
+};
+
+async function loadExamQuestions(exam: string): Promise<Question[]> {
+  const pathKey = EXAM_PATH_MAP[exam] ?? exam.toLowerCase();
+  const url = `${DATA_BASE_URL}${pathKey}/questions.json`;
   try {
     const response = await fetch(url);
     if (!response.ok) {
@@ -31,13 +40,13 @@ async function loadExamQuestions(exam: 'AI-900' | 'AI-102'): Promise<Question[]>
 
 export async function loadAllQuestions(): Promise<Question[]> {
   const [ai900, ai102] = await Promise.all([
-    loadExamQuestions('AI-900'),
-    loadExamQuestions('AI-102'),
+    loadExamQuestions('ai900'),
+    loadExamQuestions('ai102'),
   ]);
   return [...ai900, ...ai102];
 }
 
-export async function loadQuestionsByExam(exam: 'AI-900' | 'AI-102'): Promise<Question[]> {
+export async function loadQuestionsByExam(exam: string): Promise<Question[]> {
   return loadExamQuestions(exam);
 }
 
@@ -46,7 +55,7 @@ export function getQuestionsByDomain(questions: Question[], domain: string): Que
 }
 
 export function getUniqueExams(questions: Question[]): string[] {
-  return [...new Set(questions.map((q) => q.exam))];
+  return [...new Set(questions.map((q) => q.examId))];
 }
 
 export function getUniqueDomains(questions: Question[]): string[] {

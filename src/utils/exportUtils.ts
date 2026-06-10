@@ -1,49 +1,53 @@
-import { WrongAnswer } from '../types';
+import { WrongAnswerEntry } from '../types';
 
-export function exportWrongAnswersAsMarkdown(answers: WrongAnswer[], exam?: string): string {
-  const filtered = exam ? answers.filter((q) => q.exam === exam) : answers;
+export function exportWrongAnswersToMarkdown(wrongAnswers: WrongAnswerEntry[]): void {
+  if (wrongAnswers.length === 0) return;
 
-  if (filtered.length === 0) {
-    return '# Wrong Answer Collection\n\nNo wrong answers recorded.\n';
-  }
+  const lines: string[] = [
+    '# Wrong Answer Review',
+    '',
+    `_Exported: ${new Date().toLocaleString()}_`,
+    '',
+  ];
 
-  const grouped = new Map<string, WrongAnswer[]>();
-  for (const q of filtered) {
-    const key = q.exam;
-    if (!grouped.has(key)) grouped.set(key, []);
-    grouped.get(key)!.push(q);
-  }
-
-  const lines = ['# Wrong Answer Collection', ''];
-  grouped.forEach((qs, examName) => {
-    lines.push(`## ${examName}`, '');
-    for (const q of qs) {
-      lines.push(`### Question ID: ${q.id}`);
-      lines.push(`**Question:** ${q.question}`, '');
-      const optText = q.options.map((o) => `- **${o.id}**: ${o.text}`).join('\n');
-      lines.push('**Options:**');
-      lines.push(optText, '');
-      lines.push(`**Your Answer:** _(see review count: ${q.reviewCount})_`, '');
-      lines.push(`**Correct Answer:** ${q.correctAnswers.join(', ')}`, '');
-      lines.push(`**Explanation:** ${q.explanation}`, '');
-      lines.push(`**中文解析:** ${q.explanationCN}`, '');
-      lines.push(`**Official Docs:** [link](${q.officialDocUrl})`, '');
-      lines.push(`_Added: ${q.addedAt} | Domain: ${q.domain} | Difficulty: ${q.difficulty}_`, '');
-      lines.push('---', '');
-    }
+  const byExam: Record<string, WrongAnswerEntry[]> = {};
+  wrongAnswers.forEach((wa) => {
+    const key = wa.examId;
+    if (!byExam[key]) byExam[key] = [];
+    byExam[key].push(wa);
   });
 
-  return lines.join('\n');
-}
+  for (const examId of Object.keys(byExam)) {
+    lines.push(`## ${examId.toUpperCase()}`, '');
+    byExam[examId].forEach((wa, i) => {
+      lines.push(
+        `### ${i + 1}. ${wa.question.text}`,
+        '',
+        `**Domain:** ${wa.question.domain}`,
+        '',
+        '**Options:**',
+        ...wa.question.options.map(
+          (o) =>
+            `- ${wa.question.correctIds.includes(o.id) ? '✅' : wa.userAnswer.includes(o.id) ? '❌' : '  '} ${o.text}`
+        ),
+        '',
+        `**Your answers:** ${wa.userAnswer.join(', ')}`,
+        `**Correct answers:** ${wa.question.correctIds.join(', ')}`,
+        '',
+        `**Explanation:** ${wa.question.explanation}`,
+        '',
+        '---',
+        ''
+      );
+    });
+  }
 
-export function downloadMarkdown(content: string, filename = 'wrong-answers.md'): void {
-  const blob = new Blob([content], { type: 'text/markdown;charset=utf-8' });
+  const markdown = lines.join('\n');
+  const blob = new Blob([markdown], { type: 'text/markdown' });
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = filename;
-  document.body.appendChild(a);
+  a.download = `wrong-answers-${new Date().toISOString().split('T')[0]}.md`;
   a.click();
-  document.body.removeChild(a);
   URL.revokeObjectURL(url);
 }

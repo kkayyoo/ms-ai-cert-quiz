@@ -73,7 +73,7 @@ export function isPass(score: number): boolean {
 }
 
 export function checkAnswer(question: Question, selectedAnswers: string[]): boolean {
-  const correct = [...question.correctAnswers].sort();
+  const correct = [...(question.correctIds ?? question.correctAnswers ?? [])].sort();
   const selected = [...selectedAnswers].sort();
   return JSON.stringify(correct) === JSON.stringify(selected);
 }

@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useReducer, useCallback, ReactNode } from 'react';
-import { Question, QuizSession, ExamResult, WrongAnswer, ExamId } from '../types';
+import { Question, QuizSession, ExamResult, WrongAnswerEntry, ExamId } from '../types';
 import { loadQuestionsByExam } from '../utils/dataLoader';
 import { MOCK_QUESTIONS } from '../data/mockData';
 import { EXAM_CONFIG } from '../config/examConfig';
@@ -10,6 +10,7 @@ interface QuizState {
   loadingExam: string | null;
   loadError: string | null;
   session: QuizSession | null;
+  lastResult: ExamResult | null;
 }
 
 type QuizAction =
@@ -19,13 +20,14 @@ type QuizAction =
   | { type: 'START_SESSION'; session: QuizSession }
   | { type: 'SUBMIT_ANSWER'; questionId: string; selectedIds: string[] }
   | { type: 'NEXT_QUESTION' }
-  | { type: 'END_SESSION' };
+  | { type: 'END_SESSION'; result: ExamResult };
 
 const initialState: QuizState = {
   questionsByExam: {},
   loadingExam: null,
   loadError: null,
   session: null,
+  lastResult: null,
 };
 
 function quizReducer(state: QuizState, action: QuizAction): QuizState {
@@ -41,7 +43,7 @@ function quizReducer(state: QuizState, action: QuizAction): QuizState {
     case 'LOAD_ERROR':
       return { ...state, loadingExam: null, loadError: action.error };
     case 'START_SESSION':
-      return { ...state, session: action.session };
+      return { ...state, session: action.session, lastResult: null };
     case 'SUBMIT_ANSWER':
       if (!state.session) return state;
       return {
@@ -52,13 +54,9 @@ function quizReducer(state: QuizState, action: QuizAction): QuizState {
         },
       };
     case 'NEXT_QUESTION':
-      if (!state.session) return state;
-      return {
-        ...state,
-        session: { ...state.session, currentIndex: state.session.currentIndex + 1 },
-      };
+      return state; // navigation handled by page component
     case 'END_SESSION':
-      return { ...state, session: null };
+      return { ...state, session: null, lastResult: action.result };
     default:
       return state;
   }
@@ -66,7 +64,7 @@ function quizReducer(state: QuizState, action: QuizAction): QuizState {
 
 interface QuizContextValue {
   state: QuizState;
-  loadExamQuestions: (examId: ExamId) => Promise<void>;
+  loadExamQuestions: (examId: ExamId) => Promise<Question[]>;
   startExam: (examId: ExamId, isMock?: boolean) => Promise<void>;
   submitAnswer: (questionId: string, selectedIds: string[]) => void;
   nextQuestion: () => void;
@@ -78,40 +76,32 @@ const QuizContext = createContext<QuizContextValue | null>(null);
 export function QuizProvider({ children }: { children: ReactNode }) {
   const [state, dispatch] = useReducer(quizReducer, initialState);
 
-  const loadExamQuestions = useCallback(async (examId: ExamId) => {
-    if (state.questionsByExam[examId]) return; // already loaded
+  const loadExamQuestions = useCallback(async (examId: ExamId): Promise<Question[]> => {
+    if (state.questionsByExam[examId]?.length) return state.questionsByExam[examId];
     dispatch({ type: 'LOAD_START', examId });
     try {
       let questions = await loadQuestionsByExam(examId);
       if (!questions.length) {
-        // fallback to mock data
         questions = MOCK_QUESTIONS[examId] ?? [];
       }
       dispatch({ type: 'LOAD_SUCCESS', examId, questions });
-    } catch (err) {
+      return questions;
+    } catch {
       const fallback = MOCK_QUESTIONS[examId] ?? [];
       dispatch({ type: 'LOAD_SUCCESS', examId, questions: fallback });
+      return fallback;
     }
   }, [state.questionsByExam]);
 
   const startExam = useCallback(async (examId: ExamId, isMock = false) => {
-    await loadExamQuestions(examId);
-    // Questions may now be in state after loadExamQuestions, but we need the updated ref
-    // Re-read from local variable approach
-    let questions: Question[] = [];
-    try {
-      questions = await loadQuestionsByExam(examId);
-      if (!questions.length) questions = MOCK_QUESTIONS[examId] ?? [];
-    } catch {
-      questions = MOCK_QUESTIONS[examId] ?? [];
-    }
-
+    const questions = await loadExamQuestions(examId);
+    const sessionId = `session-${Date.now()}`;
     const session: QuizSession = {
+      id: sessionId,
       examId,
       questions,
-      currentIndex: 0,
       answers: {},
-      startTime: Date.now(),
+      startedAt: Date.now(),
       isMock,
     };
     dispatch({ type: 'START_SESSION', session });
@@ -129,32 +119,33 @@ export function QuizProvider({ children }: { children: ReactNode }) {
     const { session } = state;
     if (!session) return null;
 
-    const { questions, answers, examId, startTime } = session;
+    const { questions, answers, examId, startedAt, id: sessionId } = session;
     const config = EXAM_CONFIG[examId];
-    const duration = Math.round((Date.now() - startTime) / 1000);
+    const duration = Math.round((Date.now() - startedAt) / 1000);
 
     let correctCount = 0;
-    const wrongAnswers: WrongAnswer[] = [];
-    const domainMap: Record<string, { correct: number; total: number }> = {};
+    const wrongAnswers: WrongAnswerEntry[] = [];
+    const domainScores: Record<string, { correct: number; total: number }> = {};
 
     questions.forEach((q) => {
       const selected = answers[q.id] ?? [];
       const isCorrect =
-        selected.length === q.correctAnswers.length &&
-        selected.every((id) => q.correctAnswers.includes(id));
+        selected.length === q.correctIds.length &&
+        selected.every((id) => q.correctIds.includes(id));
 
-      if (!domainMap[q.domain]) domainMap[q.domain] = { correct: 0, total: 0 };
-      domainMap[q.domain].total++;
+      if (!domainScores[q.domain]) domainScores[q.domain] = { correct: 0, total: 0 };
+      domainScores[q.domain].total++;
 
       if (isCorrect) {
         correctCount++;
-        domainMap[q.domain].correct++;
+        domainScores[q.domain].correct++;
       } else {
-        const wa: WrongAnswer = {
+        const wa: WrongAnswerEntry = {
           id: `${q.id}-${Date.now()}`,
+          examId,
           question: q,
-          userAnswers: selected,
-          date: new Date().toISOString(),
+          userAnswer: selected,
+          savedAt: Date.now(),
         };
         wrongAnswers.push(wa);
         saveWrongAnswer(wa);
@@ -164,28 +155,21 @@ export function QuizProvider({ children }: { children: ReactNode }) {
     const rawScore = questions.length > 0 ? correctCount / questions.length : 0;
     const score = Math.round(rawScore * 1000);
 
-    const domainBreakdown = Object.entries(domainMap).map(([domain, stats]) => ({
-      domain,
-      correct: stats.correct,
-      total: stats.total,
-      percentage: stats.total > 0 ? Math.round((stats.correct / stats.total) * 100) : 0,
-    }));
-
     const result: ExamResult = {
+      sessionId,
       examId,
       score,
       passed: score >= config.passingScore,
       totalQuestions: questions.length,
       correctCount,
       wrongAnswers,
-      domainBreakdown,
+      domainScores,
+      completedAt: Date.now(),
       duration,
-      date: new Date().toISOString(),
     };
 
-    const sessionId = `session-${Date.now()}`;
     saveSession({ id: sessionId, result });
-    dispatch({ type: 'END_SESSION' });
+    dispatch({ type: 'END_SESSION', result });
     return result;
   }, [state]);
 

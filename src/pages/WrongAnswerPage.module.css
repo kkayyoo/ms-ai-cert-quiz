@@ -1,0 +1,149 @@
+.page {
+  padding: 32px 0 48px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.filter {
+  font-family: var(--font-family);
+  font-size: 14px;
+  padding: 6px 12px;
+  border: 1px solid var(--color-border-dark);
+  border-radius: var(--radius-sm);
+  background: var(--color-card);
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.empty {
+  text-align: center;
+  padding: 80px 24px;
+  color: var(--color-text-secondary);
+}
+
+.emptyIcon {
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+
+.emptyHint {
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item {
+  background: var(--color-card);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.itemHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.itemHeader:hover {
+  background: var(--color-background);
+}
+
+.examBadge {
+  flex-shrink: 0;
+  font-size: 11px;
+  font-weight: 700;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.questionPreview {
+  flex: 1;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.expand {
+  color: var(--color-text-secondary);
+  font-size: 12px;
+}
+
+.itemBody {
+  padding: 0 16px 16px;
+  border-top: 1px solid var(--color-border);
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 12px 0 6px;
+}
+
+.correctList {
+  list-style: none;
+  padding: 0;
+}
+
+.correctList li {
+  font-size: 14px;
+  color: var(--color-success);
+  padding: 2px 0;
+}
+
+.correctList li::before {
+  content: '✓ ';
+}
+
+.explText {
+  font-size: 14px;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.deleteBtn {
+  margin-top: 12px;
+  background: transparent;
+  color: var(--color-error);
+  border: 1px solid var(--color-error);
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  transition: background var(--transition);
+}
+
+.deleteBtn:hover {
+  background: var(--color-error-light);
+}

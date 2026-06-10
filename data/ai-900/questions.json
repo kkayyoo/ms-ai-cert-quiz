@@ -3935,5 +3935,772 @@
       "monitoring",
       "deployment"
     ]
+  },
+  {
+    "id": "ai900-105",
+    "exam": "AI-900",
+    "domain": "Describe features of computer vision workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "Which Azure AI service provides pre-built capabilities for analyzing images, including object detection, image captioning, and optical character recognition?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Custom Vision"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Vision (Computer Vision)"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Face"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Form Recognizer"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Vision (formerly Computer Vision) provides pre-built image analysis capabilities including object detection, image captioning, OCR, and more through a REST API.",
+    "explanationCN": "Azure AI Vision（原Computer Vision）通过REST API提供预构建的图像分析功能，包括对象检测、图像描述、OCR等，无需自定义训练。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview",
+    "difficulty": "easy",
+    "tags": [
+      "computer-vision",
+      "azure-ai-vision",
+      "image-analysis"
+    ]
+  },
+  {
+    "id": "ai900-106",
+    "exam": "AI-900",
+    "domain": "Describe features of computer vision workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "What is the primary use case for Azure AI Custom Vision?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Extracting text from documents and forms"
+      },
+      {
+        "id": "B",
+        "text": "Training image classification or object detection models on your own custom images"
+      },
+      {
+        "id": "C",
+        "text": "Detecting faces and emotions in photos"
+      },
+      {
+        "id": "D",
+        "text": "Generating image captions automatically"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Custom Vision allows you to train custom image classification and object detection models using your own labeled images, without needing deep ML expertise.",
+    "explanationCN": "Azure AI Custom Vision允许您使用自己的标记图像训练自定义图像分类和对象检测模型，无需深入的机器学习专业知识，适合特定业务场景。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/overview",
+    "difficulty": "easy",
+    "tags": [
+      "custom-vision",
+      "image-classification",
+      "object-detection",
+      "training"
+    ]
+  },
+  {
+    "id": "ai900-107",
+    "exam": "AI-900",
+    "domain": "Describe features of computer vision workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "Which Azure AI service is specifically designed for detecting, identifying, and analyzing human faces in images?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Vision"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Custom Vision"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Face"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Video Indexer"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Azure AI Face service is specifically designed for face detection, face recognition, facial attribute analysis, and face verification.",
+    "explanationCN": "Azure AI Face服务专门用于人脸检测、人脸识别、面部属性分析（如年龄、表情）和人脸验证，是专注于人脸分析的服务。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-identity",
+    "difficulty": "easy",
+    "tags": [
+      "face-api",
+      "face-detection",
+      "face-recognition"
+    ]
+  },
+  {
+    "id": "ai900-108",
+    "exam": "AI-900",
+    "domain": "Describe features of computer vision workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "What does OCR (Optical Character Recognition) do in the context of Azure AI Vision?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Detects objects and their positions in an image"
+      },
+      {
+        "id": "B",
+        "text": "Extracts and recognizes text from images and documents"
+      },
+      {
+        "id": "C",
+        "text": "Identifies faces and their attributes"
+      },
+      {
+        "id": "D",
+        "text": "Generates descriptive captions for images"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "OCR (Optical Character Recognition) technology extracts and recognizes printed or handwritten text from images and documents.",
+    "explanationCN": "OCR（光学字符识别）技术从图像和文档中提取并识别印刷或手写文本。Azure AI Vision的Read API提供强大的OCR功能。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-ocr",
+    "difficulty": "easy",
+    "tags": [
+      "ocr",
+      "text-extraction",
+      "azure-ai-vision",
+      "read-api"
+    ]
+  },
+  {
+    "id": "ai900-109",
+    "exam": "AI-900",
+    "domain": "Describe features of computer vision workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "In object detection, what information does a bounding box provide?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The name and probability score of the identified class only"
+      },
+      {
+        "id": "B",
+        "text": "The location and size of a detected object within an image"
+      },
+      {
+        "id": "C",
+        "text": "The pixel-level mask of a detected object"
+      },
+      {
+        "id": "D",
+        "text": "The 3D coordinates of an object"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "A bounding box defines the location and size of a detected object in an image using coordinates (x, y, width, height), along with the class label and confidence score.",
+    "explanationCN": "边界框（bounding box）通过坐标（x, y, 宽度, 高度）定义图像中检测到的对象的位置和大小，通常还包含类别标签和置信度分数。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/get-started-build-detector",
+    "difficulty": "easy",
+    "tags": [
+      "object-detection",
+      "bounding-box",
+      "computer-vision"
+    ]
+  },
+  {
+    "id": "ai900-110",
+    "exam": "AI-900",
+    "domain": "Describe features of computer vision workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "Which feature of Azure AI Vision can identify landmarks, celebrities, and generate a text description of an image?",
+    "options": [
+      {
+        "id": "A",
+        "text": "OCR / Read"
+      },
+      {
+        "id": "B",
+        "text": "Image Analysis"
+      },
+      {
+        "id": "C",
+        "text": "Spatial Analysis"
+      },
+      {
+        "id": "D",
+        "text": "Face Detection"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "The Image Analysis feature of Azure AI Vision can generate image descriptions (captions), detect objects, identify landmarks and celebrities, and generate image tags.",
+    "explanationCN": "Azure AI Vision的图像分析（Image Analysis）功能可以生成图像描述（标题）、检测对象、识别地标和名人，以及生成图像标签。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/concept-describe-images-40",
+    "difficulty": "medium",
+    "tags": [
+      "image-analysis",
+      "captioning",
+      "azure-ai-vision",
+      "tagging"
+    ]
+  },
+  {
+    "id": "ai900-111",
+    "exam": "AI-900",
+    "domain": "Describe features of computer vision workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "What is the difference between image classification and object detection in computer vision?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Image classification assigns a label to the entire image; object detection identifies and locates specific objects within an image"
+      },
+      {
+        "id": "B",
+        "text": "Image classification locates objects with bounding boxes; object detection assigns labels to entire images"
+      },
+      {
+        "id": "C",
+        "text": "Image classification uses neural networks; object detection uses decision trees"
+      },
+      {
+        "id": "D",
+        "text": "Image classification works on videos; object detection works on static images"
+      }
+    ],
+    "correctAnswers": [
+      "A"
+    ],
+    "explanation": "Image classification assigns one or more labels to an entire image (e.g., cat). Object detection identifies multiple objects within an image and provides their locations via bounding boxes.",
+    "explanationCN": "图像分类为整个图像分配一个或多个标签（如猫）。对象检测在图像中识别多个对象，并通过边界框提供它们的位置。两者功能不同。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/overview",
+    "difficulty": "easy",
+    "tags": [
+      "image-classification",
+      "object-detection",
+      "computer-vision"
+    ]
+  },
+  {
+    "id": "ai900-112",
+    "exam": "AI-900",
+    "domain": "Describe features of computer vision workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "Which Azure service can analyze video content to extract insights such as scene detection, speaker identification, and transcript generation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Vision"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Custom Vision"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Video Indexer"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Face"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Azure AI Video Indexer (part of Azure Video Indexer) analyzes video content to extract insights including scene detection, speaker identification, transcription, and sentiment analysis.",
+    "explanationCN": "Azure AI Video Indexer分析视频内容以提取洞察，包括场景检测、说话人识别、转录和情感分析，专注于视频的深度理解。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/azure-video-indexer/video-indexer-overview",
+    "difficulty": "medium",
+    "tags": [
+      "video-indexer",
+      "video-analysis",
+      "media-intelligence"
+    ]
+  },
+  {
+    "id": "ai900-113",
+    "exam": "AI-900",
+    "domain": "Describe features of computer vision workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "In Azure AI Custom Vision, what are the two types of projects you can create?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Image segmentation and video classification"
+      },
+      {
+        "id": "B",
+        "text": "Image classification and object detection"
+      },
+      {
+        "id": "C",
+        "text": "Face detection and OCR"
+      },
+      {
+        "id": "D",
+        "text": "Sentiment analysis and entity recognition"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Custom Vision supports two project types: Image Classification (assigns labels to images) and Object Detection (identifies and locates objects with bounding boxes).",
+    "explanationCN": "Azure AI Custom Vision支持两种项目类型：图像分类（为图像分配标签）和对象检测（通过边界框识别和定位对象）。根据业务需求选择合适类型。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/overview",
+    "difficulty": "easy",
+    "tags": [
+      "custom-vision",
+      "image-classification",
+      "object-detection",
+      "project-types"
+    ]
+  },
+  {
+    "id": "ai900-114",
+    "exam": "AI-900",
+    "domain": "Describe features of computer vision workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "What is semantic segmentation in computer vision?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Assigning a single label to the entire image"
+      },
+      {
+        "id": "B",
+        "text": "Detecting faces and their attributes"
+      },
+      {
+        "id": "C",
+        "text": "Classifying every pixel in an image into a category"
+      },
+      {
+        "id": "D",
+        "text": "Extracting text from images"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Semantic segmentation classifies every pixel in an image into a predefined category, providing a detailed understanding of the image content at the pixel level.",
+    "explanationCN": "语义分割将图像中的每个像素分类到预定义类别中，提供像素级别的图像内容详细理解，比对象检测（边界框）提供更精细的信息。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview",
+    "difficulty": "medium",
+    "tags": [
+      "semantic-segmentation",
+      "pixel-classification",
+      "computer-vision"
+    ]
+  },
+  {
+    "id": "ai900-115",
+    "exam": "AI-900",
+    "domain": "Describe features of computer vision workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "Which Azure AI Face API capability can be used to verify whether two faces in different photos belong to the same person?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Face detection"
+      },
+      {
+        "id": "B",
+        "text": "Face verification"
+      },
+      {
+        "id": "C",
+        "text": "Face grouping"
+      },
+      {
+        "id": "D",
+        "text": "Similar face search"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Face verification in Azure AI Face API determines whether two faces belong to the same person by comparing facial features and returning a confidence score.",
+    "explanationCN": "Azure AI Face API的人脸验证（Face verification）通过比较面部特征来确定两张脸是否属于同一人，并返回置信度分数，常用于身份验证场景。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/concept-face-verification",
+    "difficulty": "medium",
+    "tags": [
+      "face-api",
+      "face-verification",
+      "identity"
+    ]
+  },
+  {
+    "id": "ai900-116",
+    "exam": "AI-900",
+    "domain": "Describe features of computer vision workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "What is the purpose of Azure AI Document Intelligence (Form Recognizer)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To detect and recognize human faces in documents"
+      },
+      {
+        "id": "B",
+        "text": "To extract structured data such as key-value pairs, tables, and text from forms and documents"
+      },
+      {
+        "id": "C",
+        "text": "To generate summary captions for images"
+      },
+      {
+        "id": "D",
+        "text": "To classify documents into categories"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Document Intelligence (formerly Form Recognizer) uses machine learning to extract structured data including key-value pairs, tables, and text from forms and documents.",
+    "explanationCN": "Azure AI Document Intelligence（原Form Recognizer）使用机器学习从表单和文档中提取结构化数据，包括键值对、表格和文本，大幅减少手动数据录入工作。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview",
+    "difficulty": "easy",
+    "tags": [
+      "document-intelligence",
+      "form-recognizer",
+      "ocr",
+      "data-extraction"
+    ]
+  },
+  {
+    "id": "ai900-117",
+    "exam": "AI-900",
+    "domain": "Describe features of computer vision workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "In Azure AI Custom Vision, what is the minimum recommended number of images per tag to train a classification model?",
+    "options": [
+      {
+        "id": "A",
+        "text": "5 images"
+      },
+      {
+        "id": "B",
+        "text": "15 images"
+      },
+      {
+        "id": "C",
+        "text": "50 images"
+      },
+      {
+        "id": "D",
+        "text": "100 images"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Custom Vision recommends a minimum of 15 images per tag for image classification to achieve reasonable model performance.",
+    "explanationCN": "Azure AI Custom Vision建议每个标签至少15张图像进行图像分类训练，以达到合理的模型性能。图像越多、多样性越高，模型效果越好。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/getting-started-improving-your-classifier",
+    "difficulty": "medium",
+    "tags": [
+      "custom-vision",
+      "training-data",
+      "best-practices"
+    ]
+  },
+  {
+    "id": "ai900-118",
+    "exam": "AI-900",
+    "domain": "Describe features of computer vision workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "What does Azure AI Vision's Spatial Analysis feature do?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reads and extracts text from documents"
+      },
+      {
+        "id": "B",
+        "text": "Analyzes video streams to understand how people move and interact in a physical space"
+      },
+      {
+        "id": "C",
+        "text": "Detects objects in satellite imagery"
+      },
+      {
+        "id": "D",
+        "text": "Creates 3D models from 2D images"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Spatial Analysis in Azure AI Vision analyzes live video feeds to understand and measure the movement and presence of people in physical spaces, such as tracking occupancy or social distancing.",
+    "explanationCN": "Azure AI Vision的空间分析（Spatial Analysis）分析实时视频流，了解和测量人们在物理空间中的移动和存在，如跟踪人员占用率或社交距离。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/intro-to-spatial-analysis-public-preview",
+    "difficulty": "medium",
+    "tags": [
+      "spatial-analysis",
+      "video-analysis",
+      "people-counting"
+    ]
+  },
+  {
+    "id": "ai900-119",
+    "exam": "AI-900",
+    "domain": "Describe features of computer vision workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "Which Azure service would you use to automatically extract invoice data such as vendor name, total amount, and line items from scanned invoices?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Vision (Read API)"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Document Intelligence with the Invoice model"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Custom Vision"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Language"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Document Intelligence has a pre-built Invoice model that can automatically extract key invoice fields like vendor name, invoice total, and line items from scanned invoices.",
+    "explanationCN": "Azure AI Document Intelligence有一个预构建的发票模型，可以自动从扫描发票中提取关键字段，如供应商名称、发票总额和行项目，专为发票处理设计。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept-invoice",
+    "difficulty": "medium",
+    "tags": [
+      "document-intelligence",
+      "invoice",
+      "prebuilt-model",
+      "data-extraction"
+    ]
+  },
+  {
+    "id": "ai900-120",
+    "exam": "AI-900",
+    "domain": "Describe features of computer vision workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "What is image tagging in Azure AI Vision?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Adding metadata to image files on disk"
+      },
+      {
+        "id": "B",
+        "text": "Automatically generating descriptive keywords that represent objects, actions, and concepts in an image"
+      },
+      {
+        "id": "C",
+        "text": "Drawing bounding boxes around objects in an image"
+      },
+      {
+        "id": "D",
+        "text": "Classifying images into predefined categories using custom training"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Image tagging in Azure AI Vision automatically generates descriptive keywords (tags) representing objects, actions, settings, and concepts detected in an image.",
+    "explanationCN": "Azure AI Vision中的图像标记（Image tagging）自动生成描述性关键词（标签），代表图像中检测到的对象、动作、设置和概念，无需自定义训练。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/concept-tagging-images-40",
+    "difficulty": "easy",
+    "tags": [
+      "image-tagging",
+      "azure-ai-vision",
+      "image-analysis"
+    ]
+  },
+  {
+    "id": "ai900-121",
+    "exam": "AI-900",
+    "domain": "Describe features of computer vision workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "In Azure AI Custom Vision, what is the Prediction Key used for?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Training new models in the Custom Vision portal"
+      },
+      {
+        "id": "B",
+        "text": "Authenticating API requests to get predictions from a published model"
+      },
+      {
+        "id": "C",
+        "text": "Managing user access to the Custom Vision project"
+      },
+      {
+        "id": "D",
+        "text": "Exporting the model for offline use"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "The Prediction Key in Azure AI Custom Vision is used to authenticate API calls when sending images to a published model endpoint to get classification predictions.",
+    "explanationCN": "自定义视觉中的预测密钥（Prediction Key）用于在向已发布的模型端点发送图像以获取分类预测时进行API调用身份验证。训练密钥用于训练操作。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/quickstarts/image-classification",
+    "difficulty": "medium",
+    "tags": [
+      "custom-vision",
+      "prediction-key",
+      "api-authentication"
+    ]
+  },
+  {
+    "id": "ai900-122",
+    "exam": "AI-900",
+    "domain": "Describe features of computer vision workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "Which computer vision task detects whether there are any people present in an image and their approximate positions, without identifying who they are?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Face identification"
+      },
+      {
+        "id": "B",
+        "text": "Face verification"
+      },
+      {
+        "id": "C",
+        "text": "People detection"
+      },
+      {
+        "id": "D",
+        "text": "Facial attribute analysis"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "People detection identifies and locates human figures in images using bounding boxes, without performing face recognition or identification.",
+    "explanationCN": "人员检测（People detection）使用边界框识别和定位图像中的人物，无需进行人脸识别或身份鉴定，是更注重隐私的检测方式。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/concept-people-detection",
+    "difficulty": "medium",
+    "tags": [
+      "people-detection",
+      "object-detection",
+      "privacy"
+    ]
+  },
+  {
+    "id": "ai900-123",
+    "exam": "AI-900",
+    "domain": "Describe features of computer vision workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "What does the Azure AI Vision Image Analysis 4.0 \"dense captions\" feature provide?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Generates a single caption for the entire image"
+      },
+      {
+        "id": "B",
+        "text": "Generates captions for specific regions and objects within an image"
+      },
+      {
+        "id": "C",
+        "text": "Extracts text from all regions of a document"
+      },
+      {
+        "id": "D",
+        "text": "Detects all faces in an image with attribute information"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Dense captions in Azure AI Vision Image Analysis 4.0 generates descriptive captions for specific regions and objects detected throughout an image, not just the overall scene.",
+    "explanationCN": "Azure AI Vision 4.0的密集字幕（dense captions）为图像中检测到的特定区域和对象生成描述性字幕，提供比单一图像级字幕更丰富的图像理解。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/concept-describe-images-40",
+    "difficulty": "hard",
+    "tags": [
+      "dense-captions",
+      "image-analysis-4",
+      "azure-ai-vision"
+    ]
+  },
+  {
+    "id": "ai900-124",
+    "exam": "AI-900",
+    "domain": "Describe features of computer vision workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "You need to build a solution to count the number of products on store shelves from photos. Which Azure service is most appropriate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Language"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Custom Vision with an object detection project"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Document Intelligence"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Speech"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Custom Vision with an object detection project is ideal for detecting and counting specific objects (products) in images by training on your own labeled images.",
+    "explanationCN": "使用对象检测项目的Azure AI Custom Vision最适合通过对自己标记的图像进行训练来检测和计数图像中的特定对象（产品）。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/get-started-build-detector",
+    "difficulty": "medium",
+    "tags": [
+      "custom-vision",
+      "object-detection",
+      "use-case",
+      "retail"
+    ]
   }
 ]

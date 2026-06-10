@@ -23,7 +23,7 @@ function optionClass(opt: Option, props: Props): string {
 
 export default function QuestionCard(props: Props) {
   const { question, selected, submitted, onChange } = props
-  const isMulti = question.type === 'multi'
+  const isMulti = question.type === 'multi' || question.type === 'multiple'
 
   function toggle(id: string) {
     if (submitted) return

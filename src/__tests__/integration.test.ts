@@ -1,5 +1,5 @@
-import { validateQuestion } from '../utils/validation';
 import { getUniqueDomains, getQuestionsByDomain } from '../utils/dataLoader';
+import { validateQuestion } from '../utils/validation';
 import { Question } from '../types';
 import * as fs from 'fs';
 import * as path from 'path';

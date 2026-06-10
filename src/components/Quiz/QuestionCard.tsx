@@ -9,6 +9,17 @@ interface Props {
 }
 
 function optionClass(opt: Option, props: Props): string {
+  const { selected, submitted, question } = props
+  const isSelected = selected.includes(opt.id)
+  const isCorrect = question.correctIds.includes(opt.id)
+
+  if (!submitted) {
+    return `${styles.option} ${isSelected ? styles.optionSelected : ''}`
+  }
+  if (isCorrect) return `${styles.option} ${styles.optionCorrect}`
+  if (isSelected && !isCorrect) return `${styles.option} ${styles.optionWrong}`
+  return styles.option
+}
 
 export default function QuestionCard(props: Props) {
   const { question, selected, submitted, onChange } = props

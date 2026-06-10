@@ -5279,5 +5279,590 @@
       "nlp",
       "text-processing"
     ]
+  },
+  {
+    "id": "ai900-140",
+    "exam": "AI-900",
+    "domain": "Describe features of generative AI workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "What is Azure OpenAI Service?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A service for training custom machine learning models from scratch"
+      },
+      {
+        "id": "B",
+        "text": "A service that provides access to OpenAI's powerful language models (GPT-4, DALL-E, etc.) via Azure's secure infrastructure"
+      },
+      {
+        "id": "C",
+        "text": "A service for detecting and filtering inappropriate content"
+      },
+      {
+        "id": "D",
+        "text": "A service that automatically translates text between languages"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure OpenAI Service provides access to OpenAI's models including GPT-4, GPT-3.5, DALL-E, and Embeddings via Azure's infrastructure with enterprise security and compliance.",
+    "explanationCN": "Azure OpenAI Service通过Azure的基础设施提供对OpenAI模型（包括GPT-4、GPT-3.5、DALL-E和嵌入模型）的访问，具备企业级安全性和合规性。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/overview",
+    "difficulty": "easy",
+    "tags": [
+      "azure-openai",
+      "gpt",
+      "generative-ai",
+      "llm"
+    ]
+  },
+  {
+    "id": "ai900-141",
+    "exam": "AI-900",
+    "domain": "Describe features of generative AI workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "What is a large language model (LLM)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A machine learning model trained on large amounts of image data"
+      },
+      {
+        "id": "B",
+        "text": "A deep learning model trained on vast amounts of text data, capable of understanding and generating human language"
+      },
+      {
+        "id": "C",
+        "text": "A model that translates audio files into text"
+      },
+      {
+        "id": "D",
+        "text": "A model that classifies documents into categories"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "A large language model (LLM) is a type of deep learning model trained on massive text datasets that can understand, summarize, generate, and interact in natural language.",
+    "explanationCN": "大语言模型（LLM）是一种在海量文本数据上训练的深度学习模型，能够理解、摘要、生成和以自然语言交互，是GPT等模型的基础。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models",
+    "difficulty": "easy",
+    "tags": [
+      "llm",
+      "large-language-model",
+      "generative-ai",
+      "deep-learning"
+    ]
+  },
+  {
+    "id": "ai900-142",
+    "exam": "AI-900",
+    "domain": "Describe features of generative AI workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "What is prompt engineering in the context of generative AI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Writing code to train a new language model"
+      },
+      {
+        "id": "B",
+        "text": "The practice of crafting effective input instructions to guide an AI model to produce desired outputs"
+      },
+      {
+        "id": "C",
+        "text": "Optimizing the hardware used to run AI models"
+      },
+      {
+        "id": "D",
+        "text": "Testing AI models for security vulnerabilities"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Prompt engineering is the practice of designing and refining input prompts to effectively guide generative AI models to produce accurate, relevant, and high-quality outputs.",
+    "explanationCN": "提示词工程（Prompt Engineering）是设计和改进输入提示的实践，以有效引导生成式AI模型产生准确、相关和高质量的输出，是使用LLM的关键技能。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/prompt-engineering",
+    "difficulty": "easy",
+    "tags": [
+      "prompt-engineering",
+      "generative-ai",
+      "llm",
+      "azure-openai"
+    ]
+  },
+  {
+    "id": "ai900-143",
+    "exam": "AI-900",
+    "domain": "Describe features of generative AI workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "What is Microsoft Copilot?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A custom vision model for detecting objects in images"
+      },
+      {
+        "id": "B",
+        "text": "An AI-powered assistant integrated into Microsoft products that uses LLMs to help users with tasks"
+      },
+      {
+        "id": "C",
+        "text": "A cloud service for training machine learning models"
+      },
+      {
+        "id": "D",
+        "text": "A tool for monitoring AI model performance"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Microsoft Copilot is an AI-powered assistant built on large language models and integrated into Microsoft products (like Microsoft 365, Windows, Bing) to help users with everyday tasks.",
+    "explanationCN": "Microsoft Copilot是基于大语言模型构建的AI助手，集成在Microsoft产品（如Microsoft 365、Windows、Bing）中，帮助用户完成日常任务。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-overview",
+    "difficulty": "easy",
+    "tags": [
+      "microsoft-copilot",
+      "ai-assistant",
+      "generative-ai",
+      "microsoft-365"
+    ]
+  },
+  {
+    "id": "ai900-144",
+    "exam": "AI-900",
+    "domain": "Describe features of generative AI workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "What are \"hallucinations\" in the context of generative AI models?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Errors in image generation that create blurry visuals"
+      },
+      {
+        "id": "B",
+        "text": "When an AI model generates plausible-sounding but factually incorrect or fabricated information"
+      },
+      {
+        "id": "C",
+        "text": "When an AI model refuses to answer a question"
+      },
+      {
+        "id": "D",
+        "text": "Security vulnerabilities in AI model deployments"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Hallucinations in AI refer to when generative models produce confident-sounding but factually incorrect, unsupported, or completely fabricated information.",
+    "explanationCN": "AI中的幻觉是指生成式模型产生听起来自信但实际上事实不正确、无依据或完全捏造的信息。这是LLM的已知局限性，需要用户验证重要信息。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/content-filter",
+    "difficulty": "easy",
+    "tags": [
+      "hallucination",
+      "llm-limitations",
+      "generative-ai",
+      "reliability"
+    ]
+  },
+  {
+    "id": "ai900-145",
+    "exam": "AI-900",
+    "domain": "Describe features of generative AI workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "Which Microsoft Responsible AI principle ensures that AI systems work correctly, safely, and consistently under expected conditions?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fairness"
+      },
+      {
+        "id": "B",
+        "text": "Reliability and Safety"
+      },
+      {
+        "id": "C",
+        "text": "Privacy and Security"
+      },
+      {
+        "id": "D",
+        "text": "Inclusiveness"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "The Reliability and Safety principle ensures that AI systems perform reliably and safely under expected conditions, fail gracefully under unexpected conditions, and resist manipulation.",
+    "explanationCN": "可靠性和安全性原则确保AI系统在预期条件下可靠且安全地运行，在意外情况下优雅地失败，并能抵抗操纵。这是微软六大负责任AI原则之一。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai",
+    "difficulty": "easy",
+    "tags": [
+      "responsible-ai",
+      "reliability",
+      "safety",
+      "microsoft-ai-principles"
+    ]
+  },
+  {
+    "id": "ai900-146",
+    "exam": "AI-900",
+    "domain": "Describe features of generative AI workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "Which Microsoft Responsible AI principle addresses ensuring that AI does not treat people unfairly based on race, gender, or other characteristics?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reliability and Safety"
+      },
+      {
+        "id": "B",
+        "text": "Transparency"
+      },
+      {
+        "id": "C",
+        "text": "Fairness"
+      },
+      {
+        "id": "D",
+        "text": "Accountability"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "The Fairness principle addresses ensuring that AI systems treat all people equally and do not discriminate based on characteristics like race, gender, age, disability, or other protected attributes.",
+    "explanationCN": "公平性原则确保AI系统平等对待所有人，不基于种族、性别、年龄、残疾或其他受保护属性进行歧视。这是微软负责任AI框架的核心原则。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-fairness-ml",
+    "difficulty": "easy",
+    "tags": [
+      "fairness",
+      "responsible-ai",
+      "bias",
+      "microsoft-ai-principles"
+    ]
+  },
+  {
+    "id": "ai900-147",
+    "exam": "AI-900",
+    "domain": "Describe features of generative AI workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "What does the Transparency principle in Microsoft's Responsible AI framework require?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Making all AI model source code publicly available"
+      },
+      {
+        "id": "B",
+        "text": "Ensuring that AI systems are understandable and that people can make informed decisions about their use"
+      },
+      {
+        "id": "C",
+        "text": "Sharing all training data with users"
+      },
+      {
+        "id": "D",
+        "text": "Publishing AI performance metrics annually"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Transparency means AI systems should be understandable, with people able to know how they work and make informed decisions about engaging with them.",
+    "explanationCN": "透明度原则意味着AI系统应该是可理解的，人们能够了解它们如何工作，并能就是否使用它们做出明智的决定，包括提供可解释性和可解读性。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai",
+    "difficulty": "medium",
+    "tags": [
+      "transparency",
+      "responsible-ai",
+      "explainability",
+      "microsoft-ai-principles"
+    ]
+  },
+  {
+    "id": "ai900-148",
+    "exam": "AI-900",
+    "domain": "Describe features of generative AI workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "What is Retrieval-Augmented Generation (RAG) in the context of Azure OpenAI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A technique to fine-tune a model on domain-specific data"
+      },
+      {
+        "id": "B",
+        "text": "A pattern that combines a search system with a language model to ground responses in specific retrieved documents"
+      },
+      {
+        "id": "C",
+        "text": "A method to detect hallucinations in AI responses"
+      },
+      {
+        "id": "D",
+        "text": "A process for automatically updating model weights with new data"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "RAG (Retrieval-Augmented Generation) combines information retrieval with language model generation, retrieving relevant documents from a knowledge base and using them to ground LLM responses.",
+    "explanationCN": "检索增强生成（RAG）结合信息检索和语言模型生成，从知识库检索相关文档并用它们来支撑LLM响应，减少幻觉并提供基于来源的答案。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview",
+    "difficulty": "medium",
+    "tags": [
+      "rag",
+      "retrieval-augmented-generation",
+      "azure-openai",
+      "grounding"
+    ]
+  },
+  {
+    "id": "ai900-149",
+    "exam": "AI-900",
+    "domain": "Describe features of generative AI workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "Which Microsoft Responsible AI principle protects personal data and ensures AI systems respect privacy?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fairness"
+      },
+      {
+        "id": "B",
+        "text": "Inclusiveness"
+      },
+      {
+        "id": "C",
+        "text": "Privacy and Security"
+      },
+      {
+        "id": "D",
+        "text": "Accountability"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "The Privacy and Security principle requires that AI systems protect personal data, maintain data confidentiality, and ensure that AI systems are secure from attacks and misuse.",
+    "explanationCN": "隐私和安全原则要求AI系统保护个人数据，维护数据机密性，确保AI系统免受攻击和滥用。这是微软六大负责任AI原则之一。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai",
+    "difficulty": "easy",
+    "tags": [
+      "privacy",
+      "security",
+      "responsible-ai",
+      "microsoft-ai-principles"
+    ]
+  },
+  {
+    "id": "ai900-150",
+    "exam": "AI-900",
+    "domain": "Describe features of generative AI workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "What is the Azure OpenAI content filtering system designed to do?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Translate content into multiple languages before processing"
+      },
+      {
+        "id": "B",
+        "text": "Detect and block harmful content categories like hate speech, violence, and sexual content in inputs and outputs"
+      },
+      {
+        "id": "C",
+        "text": "Compress model outputs to reduce API costs"
+      },
+      {
+        "id": "D",
+        "text": "Cache model responses to improve latency"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure OpenAI content filtering detects and blocks harmful content categories (hate, sexual, violence, self-harm) in both user inputs (prompts) and model outputs (completions).",
+    "explanationCN": "Azure OpenAI内容过滤系统检测并阻止有害内容类别（仇恨、性、暴力、自我伤害），同时应用于用户输入（提示）和模型输出（补全），确保负责任的AI使用。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/content-filter",
+    "difficulty": "medium",
+    "tags": [
+      "content-filtering",
+      "azure-openai",
+      "responsible-ai",
+      "safety"
+    ]
+  },
+  {
+    "id": "ai900-151",
+    "exam": "AI-900",
+    "domain": "Describe features of generative AI workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "Which Responsible AI principle ensures AI benefits are accessible to all people, including those with disabilities?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Accountability"
+      },
+      {
+        "id": "B",
+        "text": "Fairness"
+      },
+      {
+        "id": "C",
+        "text": "Inclusiveness"
+      },
+      {
+        "id": "D",
+        "text": "Transparency"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Inclusiveness means AI systems should empower everyone and engage people, ensuring that AI benefits are accessible to all, including those with disabilities.",
+    "explanationCN": "包容性意味着AI系统应赋能每个人并与人们互动，确保AI惠益对所有人可及，包括残疾人士。包容性设计考虑多样化的用户需求和背景。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai",
+    "difficulty": "easy",
+    "tags": [
+      "inclusiveness",
+      "responsible-ai",
+      "accessibility",
+      "microsoft-ai-principles"
+    ]
+  },
+  {
+    "id": "ai900-152",
+    "exam": "AI-900",
+    "domain": "Describe features of generative AI workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "What is fine-tuning in the context of large language models?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Adjusting the hardware configuration for faster inference"
+      },
+      {
+        "id": "B",
+        "text": "Training a pre-trained model on a smaller, domain-specific dataset to improve performance on specific tasks"
+      },
+      {
+        "id": "C",
+        "text": "Reducing the size of a model to run on mobile devices"
+      },
+      {
+        "id": "D",
+        "text": "Filtering inappropriate content from model outputs"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Fine-tuning involves taking a pre-trained LLM and further training it on a smaller, task-specific or domain-specific dataset to improve its performance on specific tasks.",
+    "explanationCN": "微调（Fine-tuning）是将预训练的LLM在较小的任务特定或领域特定数据集上进一步训练，以提高其在特定任务上的性能，比从头训练更高效。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/fine-tuning-considerations",
+    "difficulty": "medium",
+    "tags": [
+      "fine-tuning",
+      "llm",
+      "azure-openai",
+      "customization"
+    ]
+  },
+  {
+    "id": "ai900-153",
+    "exam": "AI-900",
+    "domain": "Describe features of generative AI workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "Which Responsible AI principle requires that the people who design and deploy AI systems are responsible for how they operate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transparency"
+      },
+      {
+        "id": "B",
+        "text": "Fairness"
+      },
+      {
+        "id": "C",
+        "text": "Accountability"
+      },
+      {
+        "id": "D",
+        "text": "Reliability and Safety"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "The Accountability principle requires that people are responsible for AI systems they create and deploy, with governance structures and oversight mechanisms to ensure AI is used appropriately.",
+    "explanationCN": "责任制（Accountability）原则要求创建和部署AI系统的人员对其负责，需要建立治理结构和监督机制以确保AI被适当使用。这强调人类对AI的监督。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai",
+    "difficulty": "easy",
+    "tags": [
+      "accountability",
+      "responsible-ai",
+      "governance",
+      "microsoft-ai-principles"
+    ]
+  },
+  {
+    "id": "ai900-154",
+    "exam": "AI-900",
+    "domain": "Describe features of generative AI workloads on Azure",
+    "domainWeight": 0.15,
+    "type": "single",
+    "question": "What is the primary capability of DALL-E in Azure OpenAI Service?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Generating natural language text from prompts"
+      },
+      {
+        "id": "B",
+        "text": "Generating realistic images from text descriptions"
+      },
+      {
+        "id": "C",
+        "text": "Translating text between different languages"
+      },
+      {
+        "id": "D",
+        "text": "Converting speech audio to text transcripts"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "DALL-E is an AI model in Azure OpenAI Service that generates realistic images and artwork from natural language text descriptions (prompts).",
+    "explanationCN": "DALL-E是Azure OpenAI Service中的AI模型，能够根据自然语言文本描述（提示词）生成逼真的图像和艺术作品，是图像生成领域的代表性模型。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models#dall-e",
+    "difficulty": "easy",
+    "tags": [
+      "dall-e",
+      "image-generation",
+      "azure-openai",
+      "generative-ai"
+    ]
   }
 ]

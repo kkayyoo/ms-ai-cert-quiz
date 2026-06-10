@@ -1,0 +1,90 @@
+.page {
+  padding-bottom: 48px;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0078D4 0%, #005A9E 100%);
+  color: #fff;
+  padding: 48px 0 40px;
+  margin-bottom: 40px;
+}
+
+.heroTitle {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.heroSubtitle {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: var(--color-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: 24px;
+  border-top: 4px solid transparent;
+  transition: box-shadow var(--transition);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.cardHeader {
+  border-top: 4px solid;
+  margin: -24px -24px 16px;
+  padding: 20px 24px 0;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.badge {
+  display: inline-block;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 12px;
+}
+
+.cardDesc {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.cardMeta {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.cardActions {
+  display: flex;
+  gap: 12px;
+}
+
+@media (max-width: 480px) {
+  .heroTitle { font-size: 24px; }
+  .cards { grid-template-columns: 1fr; }
+}

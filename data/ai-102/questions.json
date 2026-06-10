@@ -1559,5 +1559,395 @@
       "routing",
       "Bot Service"
     ]
+  },
+  {
+    "id": "ai102-041",
+    "exam": "AI-102",
+    "domain": "Implement knowledge mining and document intelligence solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to build a solution that enables users to search across thousands of internal documents, PDFs, and web pages using natural language queries. Which Azure service should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Language - Custom Question Answering"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Search (formerly Cognitive Search)"
+      },
+      {
+        "id": "C",
+        "text": "Azure Blob Storage with indexing"
+      },
+      {
+        "id": "D",
+        "text": "Azure SQL Database with full-text search"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Search (formerly Azure Cognitive Search) provides enterprise-grade search capabilities over heterogeneous content sources. It can index documents from various sources, apply AI enrichments (OCR, entity extraction, sentiment), and provide semantic search capabilities.",
+    "explanationCN": "Azure AI 搜索（以前称为 Azure 认知搜索）为各种内容源提供企业级搜索功能。它可以从各种来源索引文档，应用 AI 扩充（OCR、实体提取、情感分析），并提供语义搜索功能。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search",
+    "difficulty": "easy",
+    "tags": [
+      "Azure AI Search",
+      "knowledge mining",
+      "enterprise search",
+      "indexing"
+    ]
+  },
+  {
+    "id": "ai102-042",
+    "exam": "AI-102",
+    "domain": "Implement knowledge mining and document intelligence solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You are configuring an Azure AI Search skillset that processes documents. You need to extract text from images embedded in PDF files. Which built-in cognitive skill should you add to the skillset?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Language Detection skill"
+      },
+      {
+        "id": "B",
+        "text": "OCR skill"
+      },
+      {
+        "id": "C",
+        "text": "Entity Recognition skill"
+      },
+      {
+        "id": "D",
+        "text": "Key Phrase Extraction skill"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "The OCR (Optical Character Recognition) built-in cognitive skill in Azure AI Search detects and extracts printed and handwritten text from image files, making it essential for extracting text from images embedded in PDF documents.",
+    "explanationCN": "Azure AI 搜索中的 OCR（光学字符识别）内置认知技能从图像文件中检测并提取印刷和手写文本，对于从 PDF 文档中嵌入的图像提取文本至关重要。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-ocr",
+    "difficulty": "medium",
+    "tags": [
+      "Azure AI Search",
+      "OCR skill",
+      "skillset",
+      "cognitive enrichment"
+    ]
+  },
+  {
+    "id": "ai102-043",
+    "exam": "AI-102",
+    "domain": "Implement knowledge mining and document intelligence solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to extract structured data from invoices, including vendor name, invoice number, line items, and total amounts. Which Azure AI Document Intelligence prebuilt model should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prebuilt Read model"
+      },
+      {
+        "id": "B",
+        "text": "Prebuilt Invoice model"
+      },
+      {
+        "id": "C",
+        "text": "Prebuilt Business Card model"
+      },
+      {
+        "id": "D",
+        "text": "Custom template model"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Document Intelligence has a Prebuilt Invoice model specifically designed to extract key fields from invoices, including vendor details, invoice number, dates, line items, taxes, and totals. It works without custom training.",
+    "explanationCN": "Azure AI 文档智能有一个专门设计用于从发票中提取关键字段的预构建发票模型，包括供应商详情、发票号、日期、行项目、税款和总计。无需自定义训练即可使用。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/invoice",
+    "difficulty": "easy",
+    "tags": [
+      "Document Intelligence",
+      "invoice",
+      "prebuilt model",
+      "data extraction"
+    ]
+  },
+  {
+    "id": "ai102-044",
+    "exam": "AI-102",
+    "domain": "Implement knowledge mining and document intelligence solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to extract data from a custom form that your company uses, which has a unique layout not covered by prebuilt models. Which Azure AI Document Intelligence feature should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prebuilt Read model"
+      },
+      {
+        "id": "B",
+        "text": "Prebuilt Invoice model"
+      },
+      {
+        "id": "C",
+        "text": "Custom model (template or neural)"
+      },
+      {
+        "id": "D",
+        "text": "General document model"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Azure AI Document Intelligence Custom Models allow you to train extraction models on your own documents. Custom template models work well for fixed-layout forms, while custom neural models handle variable layouts and are more flexible.",
+    "explanationCN": "Azure AI 文档智能自定义模型允许您在自己的文档上训练提取模型。自定义模板模型适用于固定布局的表单，而自定义神经模型处理可变布局，更加灵活。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/train/custom-model",
+    "difficulty": "medium",
+    "tags": [
+      "Document Intelligence",
+      "custom model",
+      "form extraction",
+      "training"
+    ]
+  },
+  {
+    "id": "ai102-045",
+    "exam": "AI-102",
+    "domain": "Implement knowledge mining and document intelligence solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You have configured Azure AI Search with an indexer and skillset. Users report that search results are not returning the most semantically relevant documents. What should you enable to improve result relevance?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Increase the partition count"
+      },
+      {
+        "id": "B",
+        "text": "Semantic ranker (L2 ranking)"
+      },
+      {
+        "id": "C",
+        "text": "Full-text search scoring profile"
+      },
+      {
+        "id": "D",
+        "text": "Increase replica count"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Search Semantic Ranker uses deep learning models to re-rank the top search results by understanding the semantic meaning of queries and documents. It also generates semantic captions and answers, significantly improving result relevance.",
+    "explanationCN": "Azure AI 搜索语义排名器使用深度学习模型，通过理解查询和文档的语义含义来重新排列顶部搜索结果。它还生成语义标题和答案，显著提高结果相关性。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/search/semantic-search-overview",
+    "difficulty": "medium",
+    "tags": [
+      "Azure AI Search",
+      "semantic ranker",
+      "relevance",
+      "deep learning"
+    ]
+  },
+  {
+    "id": "ai102-046",
+    "exam": "AI-102",
+    "domain": "Implement knowledge mining and document intelligence solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You are building a knowledge mining solution with Azure AI Search. You need to store AI-enriched content like extracted entities and key phrases to allow re-use across multiple indexes. What feature should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure Storage Blob containers"
+      },
+      {
+        "id": "B",
+        "text": "Knowledge Store"
+      },
+      {
+        "id": "C",
+        "text": "Azure Cosmos DB"
+      },
+      {
+        "id": "D",
+        "text": "Azure SQL Database"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "The Knowledge Store feature in Azure AI Search persists AI-enriched data to Azure Storage (as tables or blobs), allowing you to use enriched data outside of the search index - for example, to feed downstream processes, Power BI analysis, or other applications.",
+    "explanationCN": "Azure AI 搜索中的知识存储功能将 AI 扩充数据持久化到 Azure 存储（作为表或 Blob），允许您在搜索索引外使用扩充数据——例如，供下游流程、Power BI 分析或其他应用程序使用。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/search/knowledge-store-concept-intro",
+    "difficulty": "medium",
+    "tags": [
+      "Azure AI Search",
+      "knowledge store",
+      "enrichment",
+      "storage"
+    ]
+  },
+  {
+    "id": "ai102-047",
+    "exam": "AI-102",
+    "domain": "Implement knowledge mining and document intelligence solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to create a custom skill in an Azure AI Search skillset that calls an external API to perform custom data enrichment. What technology should you use to implement this custom skill?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure Logic Apps"
+      },
+      {
+        "id": "B",
+        "text": "Azure Functions (Web API custom skill)"
+      },
+      {
+        "id": "C",
+        "text": "Azure Data Factory"
+      },
+      {
+        "id": "D",
+        "text": "Azure Event Grid"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Custom skills in Azure AI Search are implemented as Web API endpoints, and Azure Functions is the recommended approach. Your Azure Function receives enrichment data from the skillset, processes it, and returns enriched data back to the pipeline.",
+    "explanationCN": "Azure AI 搜索中的自定义技能作为 Web API 终结点实现，Azure Functions 是推荐的方法。您的 Azure 函数从技能集接收扩充数据，处理后将扩充数据返回给管道。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/search/cognitive-search-custom-skill-interface",
+    "difficulty": "medium",
+    "tags": [
+      "Azure AI Search",
+      "custom skill",
+      "Azure Functions",
+      "enrichment pipeline"
+    ]
+  },
+  {
+    "id": "ai102-048",
+    "exam": "AI-102",
+    "domain": "Implement knowledge mining and document intelligence solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You are using Azure AI Document Intelligence to process a batch of 500 scanned forms. You need to process them efficiently. Which approach should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Call the synchronous Analyze API for each form sequentially"
+      },
+      {
+        "id": "B",
+        "text": "Use the batch analysis capability with asynchronous operations"
+      },
+      {
+        "id": "C",
+        "text": "Upload all forms to a single multi-page PDF and analyze once"
+      },
+      {
+        "id": "D",
+        "text": "Use Azure Machine Learning batch inference"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "For batch processing with Azure AI Document Intelligence, use the asynchronous Analyze API which returns an operation ID. You can submit multiple documents in parallel and poll for results. This is more efficient than sequential synchronous calls for large batches.",
+    "explanationCN": "对于 Azure AI 文档智能的批量处理，使用异步分析 API，它返回操作 ID。您可以并行提交多个文档并轮询结果。这比大批量的顺序同步调用更高效。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/use-sdk-rest-api",
+    "difficulty": "medium",
+    "tags": [
+      "Document Intelligence",
+      "batch processing",
+      "async",
+      "performance"
+    ]
+  },
+  {
+    "id": "ai102-049",
+    "exam": "AI-102",
+    "domain": "Implement knowledge mining and document intelligence solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to implement vector search in Azure AI Search to find semantically similar documents. Which step is required before you can perform vector searches?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Enable the semantic ranker tier"
+      },
+      {
+        "id": "B",
+        "text": "Generate vector embeddings for your content and store them in vector fields in the index"
+      },
+      {
+        "id": "C",
+        "text": "Configure an Azure AI Search Standard tier or higher"
+      },
+      {
+        "id": "D",
+        "text": "Enable knowledge store output"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Vector search in Azure AI Search requires your content to be converted to vector embeddings (using embedding models like Azure OpenAI text-embedding-ada-002) and stored in vector fields in your search index. Queries are also converted to vectors at search time.",
+    "explanationCN": "Azure AI 搜索中的向量搜索要求将内容转换为向量嵌入（使用 Azure OpenAI text-embedding-ada-002 等嵌入模型）并存储在搜索索引的向量字段中。查询也在搜索时转换为向量。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/search/vector-search-overview",
+    "difficulty": "hard",
+    "tags": [
+      "Azure AI Search",
+      "vector search",
+      "embeddings",
+      "semantic similarity"
+    ]
+  },
+  {
+    "id": "ai102-050",
+    "exam": "AI-102",
+    "domain": "Implement knowledge mining and document intelligence solutions",
+    "domainWeight": 0.125,
+    "type": "single",
+    "question": "You need to extract information from contracts that have a consistent structure but with variable text. Which Azure AI Document Intelligence model type is most appropriate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Custom template model"
+      },
+      {
+        "id": "B",
+        "text": "Custom neural model"
+      },
+      {
+        "id": "C",
+        "text": "Prebuilt contract model"
+      },
+      {
+        "id": "D",
+        "text": "General document model"
+      }
+    ],
+    "correctAnswers": [
+      "A"
+    ],
+    "explanation": "Custom template models in Azure AI Document Intelligence work well for documents with consistent, fixed layouts. They use template matching to identify and extract fields at consistent positions. For truly variable layouts, custom neural models would be better.",
+    "explanationCN": "Azure AI 文档智能中的自定义模板模型适用于具有一致固定布局的文档。它们使用模板匹配在一致位置识别和提取字段。对于真正可变的布局，自定义神经模型会更好。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept-custom-template",
+    "difficulty": "medium",
+    "tags": [
+      "Document Intelligence",
+      "custom template model",
+      "contract extraction",
+      "fixed layout"
+    ]
   }
 ]

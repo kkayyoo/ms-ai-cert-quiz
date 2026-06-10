@@ -7,17 +7,35 @@
     "type": "single",
     "question": "You need to create an Azure AI Services resource that provides access to multiple AI capabilities including vision, speech, and language. Which resource type should you create?",
     "options": [
-      { "id": "A", "text": "A separate resource for each AI service (e.g., Computer Vision, Speech, Language)" },
-      { "id": "B", "text": "An Azure AI Services multi-service resource" },
-      { "id": "C", "text": "An Azure Machine Learning workspace" },
-      { "id": "D", "text": "An Azure Cognitive Search resource" }
+      {
+        "id": "A",
+        "text": "A separate resource for each AI service (e.g., Computer Vision, Speech, Language)"
+      },
+      {
+        "id": "B",
+        "text": "An Azure AI Services multi-service resource"
+      },
+      {
+        "id": "C",
+        "text": "An Azure Machine Learning workspace"
+      },
+      {
+        "id": "D",
+        "text": "An Azure Cognitive Search resource"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "An Azure AI Services multi-service resource provides a single endpoint and key for accessing multiple Azure AI capabilities including Vision, Speech, Language, and Decision services. This simplifies management compared to creating individual resources for each service.",
     "explanationCN": "Azure AI 服务多服务资源提供单一终结点和密钥，可访问多种 Azure AI 功能，包括视觉、语音、语言和决策服务，相比为每个服务单独创建资源更易于管理。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/multi-service-resource",
     "difficulty": "easy",
-    "tags": ["Azure AI Services", "resource management", "multi-service"]
+    "tags": [
+      "Azure AI Services",
+      "resource management",
+      "multi-service"
+    ]
   },
   {
     "id": "ai102-002",
@@ -27,17 +45,35 @@
     "type": "single",
     "question": "You are configuring network security for an Azure AI Services resource. You want to allow access only from specific virtual networks and IP addresses. Which feature should you configure?",
     "options": [
-      { "id": "A", "text": "Azure Active Directory conditional access" },
-      { "id": "B", "text": "Managed identity" },
-      { "id": "C", "text": "Virtual network service endpoints and firewall rules" },
-      { "id": "D", "text": "Azure Policy" }
+      {
+        "id": "A",
+        "text": "Azure Active Directory conditional access"
+      },
+      {
+        "id": "B",
+        "text": "Managed identity"
+      },
+      {
+        "id": "C",
+        "text": "Virtual network service endpoints and firewall rules"
+      },
+      {
+        "id": "D",
+        "text": "Azure Policy"
+      }
     ],
-    "correctAnswers": ["C"],
+    "correctAnswers": [
+      "C"
+    ],
     "explanation": "Azure AI Services supports virtual network service endpoints and firewall rules to restrict access to specific virtual networks and IP address ranges. This provides network-level security for your AI resources.",
     "explanationCN": "Azure AI 服务支持虚拟网络服务终结点和防火墙规则，可将访问限制到特定的虚拟网络和 IP 地址范围，为 AI 资源提供网络级安全性。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-virtual-networks",
     "difficulty": "medium",
-    "tags": ["network security", "virtual networks", "firewall"]
+    "tags": [
+      "network security",
+      "virtual networks",
+      "firewall"
+    ]
   },
   {
     "id": "ai102-003",
@@ -47,17 +83,36 @@
     "type": "single",
     "question": "You need to authenticate calls to an Azure AI Services REST API from a production application without storing credentials in code. What is the recommended approach?",
     "options": [
-      { "id": "A", "text": "Embed the subscription key directly in the application code" },
-      { "id": "B", "text": "Use a managed identity and Azure Key Vault" },
-      { "id": "C", "text": "Store the subscription key in a configuration file" },
-      { "id": "D", "text": "Use basic authentication with username and password" }
+      {
+        "id": "A",
+        "text": "Embed the subscription key directly in the application code"
+      },
+      {
+        "id": "B",
+        "text": "Use a managed identity and Azure Key Vault"
+      },
+      {
+        "id": "C",
+        "text": "Store the subscription key in a configuration file"
+      },
+      {
+        "id": "D",
+        "text": "Use basic authentication with username and password"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Using a managed identity with Azure Key Vault is the recommended approach for production applications. The managed identity allows the application to authenticate to Azure services without storing credentials in code, and Key Vault securely manages the subscription key.",
     "explanationCN": "使用托管标识和 Azure Key Vault 是生产应用程序的推荐方法。托管标识允许应用程序在不存储凭据的情况下进行身份验证，Key Vault 安全地管理订阅密钥。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/authentication",
     "difficulty": "medium",
-    "tags": ["authentication", "managed identity", "Key Vault", "security"]
+    "tags": [
+      "authentication",
+      "managed identity",
+      "Key Vault",
+      "security"
+    ]
   },
   {
     "id": "ai102-004",
@@ -67,17 +122,36 @@
     "type": "single",
     "question": "You want to monitor the usage and performance of your Azure AI Services resources. Which Azure service should you use to create alerts and view metrics?",
     "options": [
-      { "id": "A", "text": "Azure Security Center" },
-      { "id": "B", "text": "Azure Monitor" },
-      { "id": "C", "text": "Azure Advisor" },
-      { "id": "D", "text": "Azure Service Health" }
+      {
+        "id": "A",
+        "text": "Azure Security Center"
+      },
+      {
+        "id": "B",
+        "text": "Azure Monitor"
+      },
+      {
+        "id": "C",
+        "text": "Azure Advisor"
+      },
+      {
+        "id": "D",
+        "text": "Azure Service Health"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Azure Monitor provides metrics, logs, and alerting capabilities for Azure AI Services. You can monitor call volumes, latency, errors, and set up alerts for specific thresholds using Azure Monitor.",
     "explanationCN": "Azure Monitor 为 Azure AI 服务提供指标、日志和警报功能。您可以监控调用量、延迟、错误，并使用 Azure Monitor 为特定阈值设置警报。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/diagnostic-logging",
     "difficulty": "easy",
-    "tags": ["monitoring", "Azure Monitor", "metrics", "alerts"]
+    "tags": [
+      "monitoring",
+      "Azure Monitor",
+      "metrics",
+      "alerts"
+    ]
   },
   {
     "id": "ai102-005",
@@ -87,17 +161,35 @@
     "type": "single",
     "question": "You are deploying Azure AI Services in a region where data residency requirements mandate that all data stays within that region. Which deployment option ensures this?",
     "options": [
-      { "id": "A", "text": "Use Azure CDN to cache responses globally" },
-      { "id": "B", "text": "Deploy the service in the specific region and disable geo-redundancy" },
-      { "id": "C", "text": "Use the global endpoint for the service" },
-      { "id": "D", "text": "Enable zone redundancy across multiple regions" }
+      {
+        "id": "A",
+        "text": "Use Azure CDN to cache responses globally"
+      },
+      {
+        "id": "B",
+        "text": "Deploy the service in the specific region and disable geo-redundancy"
+      },
+      {
+        "id": "C",
+        "text": "Use the global endpoint for the service"
+      },
+      {
+        "id": "D",
+        "text": "Enable zone redundancy across multiple regions"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "To meet data residency requirements, you should deploy Azure AI Services in the specific required region and ensure you use regional endpoints (not global endpoints). This ensures data processed by the service stays within that region.",
     "explanationCN": "为满足数据驻留要求，应将 Azure AI 服务部署在特定区域，并使用区域终结点（而非全局终结点），确保服务处理的数据留在该区域内。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-data-encryption-decryption",
     "difficulty": "medium",
-    "tags": ["data residency", "compliance", "regional deployment"]
+    "tags": [
+      "data residency",
+      "compliance",
+      "regional deployment"
+    ]
   },
   {
     "id": "ai102-006",
@@ -107,17 +199,36 @@
     "type": "single",
     "question": "You need to implement a solution that uses Azure AI Services in a disconnected environment without internet access. Which deployment option should you use?",
     "options": [
-      { "id": "A", "text": "Standard Azure AI Services with VPN connection" },
-      { "id": "B", "text": "Azure AI Services containers" },
-      { "id": "C", "text": "Azure AI Services with private endpoints" },
-      { "id": "D", "text": "Azure Arc-enabled AI Services" }
+      {
+        "id": "A",
+        "text": "Standard Azure AI Services with VPN connection"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Services containers"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Services with private endpoints"
+      },
+      {
+        "id": "D",
+        "text": "Azure Arc-enabled AI Services"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Azure AI Services containers allow you to run the services on-premises or in a disconnected environment. The containers can be deployed on any Docker-compatible host and process data locally, though they still need periodic connectivity to Azure for billing and authentication.",
     "explanationCN": "Azure AI 服务容器允许您在本地或断开连接的环境中运行服务。容器可以部署在任何兼容 Docker 的主机上并在本地处理数据，但仍需定期连接 Azure 进行计费和身份验证。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-container-support",
     "difficulty": "medium",
-    "tags": ["containers", "disconnected", "on-premises", "Docker"]
+    "tags": [
+      "containers",
+      "disconnected",
+      "on-premises",
+      "Docker"
+    ]
   },
   {
     "id": "ai102-007",
@@ -127,17 +238,37 @@
     "type": "multiple",
     "question": "You are responsible for ensuring responsible AI principles are implemented in your Azure AI solution. Which two actions should you take? (Select TWO)",
     "options": [
-      { "id": "A", "text": "Implement content filtering to prevent harmful outputs" },
-      { "id": "B", "text": "Maximize model accuracy without considering fairness metrics" },
-      { "id": "C", "text": "Ensure transparency by documenting how the AI system makes decisions" },
-      { "id": "D", "text": "Allow the AI system to make all decisions autonomously without human oversight" }
+      {
+        "id": "A",
+        "text": "Implement content filtering to prevent harmful outputs"
+      },
+      {
+        "id": "B",
+        "text": "Maximize model accuracy without considering fairness metrics"
+      },
+      {
+        "id": "C",
+        "text": "Ensure transparency by documenting how the AI system makes decisions"
+      },
+      {
+        "id": "D",
+        "text": "Allow the AI system to make all decisions autonomously without human oversight"
+      }
     ],
-    "correctAnswers": ["A", "C"],
+    "correctAnswers": [
+      "A",
+      "C"
+    ],
     "explanation": "Microsoft's Responsible AI principles include fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability. Implementing content filtering (safety) and ensuring transparency through documentation are both key responsible AI practices.",
     "explanationCN": "微软的负责任 AI 原则包括公平性、可靠性与安全性、隐私与安全性、包容性、透明度和问责制。实施内容过滤（安全性）和通过文档确保透明度都是关键的负责任 AI 实践。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai",
     "difficulty": "medium",
-    "tags": ["responsible AI", "content filtering", "transparency", "ethics"]
+    "tags": [
+      "responsible AI",
+      "content filtering",
+      "transparency",
+      "ethics"
+    ]
   },
   {
     "id": "ai102-008",
@@ -147,17 +278,35 @@
     "type": "single",
     "question": "You need to control costs for an Azure AI Services resource. Which feature allows you to limit the number of API calls per minute to prevent unexpected charges?",
     "options": [
-      { "id": "A", "text": "Azure Policy" },
-      { "id": "B", "text": "Quota management and rate limiting" },
-      { "id": "C", "text": "Azure Cost Management budgets" },
-      { "id": "D", "text": "Resource locks" }
+      {
+        "id": "A",
+        "text": "Azure Policy"
+      },
+      {
+        "id": "B",
+        "text": "Quota management and rate limiting"
+      },
+      {
+        "id": "C",
+        "text": "Azure Cost Management budgets"
+      },
+      {
+        "id": "D",
+        "text": "Resource locks"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Azure AI Services has built-in quota management that limits the number of transactions per minute (TPM) and tokens per minute. You can view and request quota increases through the Azure portal, and the service automatically rate-limits requests that exceed your quota.",
     "explanationCN": "Azure AI 服务具有内置配额管理功能，可限制每分钟的事务数（TPM）和令牌数。您可以通过 Azure 门户查看和请求增加配额，服务会自动对超过配额的请求进行限速。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/quotas-limits",
     "difficulty": "easy",
-    "tags": ["cost management", "quota", "rate limiting"]
+    "tags": [
+      "cost management",
+      "quota",
+      "rate limiting"
+    ]
   },
   {
     "id": "ai102-009",
@@ -167,17 +316,36 @@
     "type": "single",
     "question": "You are planning an Azure AI solution and need to choose the appropriate pricing tier for Azure AI Services. What is the key difference between the Free (F0) and Standard (S0) tiers?",
     "options": [
-      { "id": "A", "text": "Free tier supports all AI services; Standard tier only supports select services" },
-      { "id": "B", "text": "Free tier has limited transactions per minute and monthly limits; Standard tier scales based on usage" },
-      { "id": "C", "text": "Free tier requires a credit card; Standard tier does not" },
-      { "id": "D", "text": "Free tier provides SLA guarantees; Standard tier does not" }
+      {
+        "id": "A",
+        "text": "Free tier supports all AI services; Standard tier only supports select services"
+      },
+      {
+        "id": "B",
+        "text": "Free tier has limited transactions per minute and monthly limits; Standard tier scales based on usage"
+      },
+      {
+        "id": "C",
+        "text": "Free tier requires a credit card; Standard tier does not"
+      },
+      {
+        "id": "D",
+        "text": "Free tier provides SLA guarantees; Standard tier does not"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "The Free (F0) tier has limited transactions per minute and monthly call limits with no cost, suitable for development and testing. The Standard (S0) tier scales based on usage and charges per call, suitable for production workloads with SLA guarantees.",
     "explanationCN": "免费 (F0) 层每分钟事务数和每月调用次数有限，适合开发和测试。标准 (S0) 层根据使用量扩展并按调用收费，适合具有 SLA 保证的生产工作负载。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-apis-create-account",
     "difficulty": "easy",
-    "tags": ["pricing", "tiers", "Free tier", "Standard tier"]
+    "tags": [
+      "pricing",
+      "tiers",
+      "Free tier",
+      "Standard tier"
+    ]
   },
   {
     "id": "ai102-010",
@@ -187,16 +355,622 @@
     "type": "single",
     "question": "You need to implement Customer-Managed Keys (CMK) for an Azure AI Services resource to meet compliance requirements. Which Azure service stores the encryption keys?",
     "options": [
-      { "id": "A", "text": "Azure Security Center" },
-      { "id": "B", "text": "Azure Key Vault" },
-      { "id": "C", "text": "Azure Active Directory" },
-      { "id": "D", "text": "Azure Storage" }
+      {
+        "id": "A",
+        "text": "Azure Security Center"
+      },
+      {
+        "id": "B",
+        "text": "Azure Key Vault"
+      },
+      {
+        "id": "C",
+        "text": "Azure Active Directory"
+      },
+      {
+        "id": "D",
+        "text": "Azure Storage"
+      }
     ],
-    "correctAnswers": ["B"],
+    "correctAnswers": [
+      "B"
+    ],
     "explanation": "Customer-managed keys (CMK) for Azure AI Services are stored in Azure Key Vault. This allows you to control the encryption keys used to protect your data at rest, meeting compliance requirements that mandate customer control of encryption keys.",
     "explanationCN": "Azure AI 服务的客户管理密钥 (CMK) 存储在 Azure Key Vault 中。这允许您控制用于保护静态数据的加密密钥，满足要求客户控制加密密钥的合规性要求。",
     "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/encryption/cognitive-services-encryption-keys-portal",
     "difficulty": "medium",
-    "tags": ["encryption", "CMK", "Key Vault", "compliance", "security"]
+    "tags": [
+      "encryption",
+      "CMK",
+      "Key Vault",
+      "compliance",
+      "security"
+    ]
+  },
+  {
+    "id": "ai102-011",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to extract text from images of scanned documents, including handwritten text. Which Azure AI service should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Vision - Image Analysis"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Vision - Read API (OCR)"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Language - Text Analytics"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Translator"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "The Azure AI Vision Read API (OCR) is specifically designed to extract printed and handwritten text from images and documents. It can process images, PDFs, and TIFF files and handles complex layouts, multiple languages, and mixed handwritten/printed text.",
+    "explanationCN": "Azure AI Vision 的 Read API（OCR）专为从图像和文档中提取印刷和手写文本而设计，可处理图像、PDF 和 TIFF 文件，支持复杂布局、多种语言以及手写/印刷混合文本。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-ocr",
+    "difficulty": "easy",
+    "tags": [
+      "Computer Vision",
+      "OCR",
+      "Read API",
+      "handwriting"
+    ]
+  },
+  {
+    "id": "ai102-012",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You are building an application that needs to detect faces in images and determine if two face images belong to the same person. Which Azure AI service should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Vision - Image Analysis"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Face service"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Custom Vision"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Video Indexer"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Face service provides face detection, face verification (comparing two faces), face identification (matching a face to a group), and facial attribute analysis. The Verify operation specifically determines if two faces belong to the same person.",
+    "explanationCN": "Azure AI 人脸服务提供人脸检测、人脸验证（比较两张面孔）、人脸识别（将面孔与群组匹配）和面部属性分析。Verify 操作专门用于确定两张人脸是否属于同一个人。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-identity",
+    "difficulty": "easy",
+    "tags": [
+      "Computer Vision",
+      "Face",
+      "face verification",
+      "biometrics"
+    ]
+  },
+  {
+    "id": "ai102-013",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to train a custom image classification model to identify specific products on a retail shelf. Which Azure AI service allows you to train custom models with your own labeled images?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Vision - Image Analysis"
+      },
+      {
+        "id": "B",
+        "text": "Azure Machine Learning"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Custom Vision"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Face"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Azure AI Custom Vision allows you to train custom image classification and object detection models using your own labeled images. It provides a simple web interface and REST API for training and deploying custom vision models without requiring deep ML expertise.",
+    "explanationCN": "Azure AI 自定义视觉允许您使用自己的标记图像训练自定义图像分类和对象检测模型。它提供简单的 Web 界面和 REST API，无需深度机器学习专业知识即可训练和部署自定义视觉模型。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/overview",
+    "difficulty": "easy",
+    "tags": [
+      "Custom Vision",
+      "image classification",
+      "object detection",
+      "training"
+    ]
+  },
+  {
+    "id": "ai102-014",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You are using Azure AI Custom Vision to build an object detection model. What is the minimum number of images per tag recommended for initial model training?",
+    "options": [
+      {
+        "id": "A",
+        "text": "5 images"
+      },
+      {
+        "id": "B",
+        "text": "15 images"
+      },
+      {
+        "id": "C",
+        "text": "50 images"
+      },
+      {
+        "id": "D",
+        "text": "100 images"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Custom Vision recommends a minimum of 15 images per tag to start training an object detection model, though more images generally lead to better results. For object detection (as opposed to classification), the recommendation is at least 15 images of each object you want to detect.",
+    "explanationCN": "Azure AI 自定义视觉建议每个标签至少 15 张图像来开始训练对象检测模型，但更多图像通常会带来更好的结果。对于对象检测（而非分类），建议每个要检测的对象至少有 15 张图像。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/getting-started-build-a-classifier",
+    "difficulty": "medium",
+    "tags": [
+      "Custom Vision",
+      "object detection",
+      "training data",
+      "best practices"
+    ]
+  },
+  {
+    "id": "ai102-015",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to analyze video content to automatically identify and track objects throughout a video stream. Which Azure service provides this capability?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Vision - Image Analysis"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Video Indexer"
+      },
+      {
+        "id": "C",
+        "text": "Azure Media Services"
+      },
+      {
+        "id": "D",
+        "text": "Azure Stream Analytics"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Video Indexer extracts insights from video and audio files, including object detection, tracking, scene recognition, facial recognition, speech transcription, and topic detection. It provides a comprehensive video analysis solution.",
+    "explanationCN": "Azure AI 视频索引器从视频和音频文件中提取洞察，包括对象检测、跟踪、场景识别、面部识别、语音转录和主题检测，提供全面的视频分析解决方案。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/azure-video-indexer/video-indexer-overview",
+    "difficulty": "easy",
+    "tags": [
+      "Video Indexer",
+      "video analysis",
+      "object tracking"
+    ]
+  },
+  {
+    "id": "ai102-016",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to detect specific objects (cars, people, stop signs) in real-time video frames from traffic cameras. You want to use a pre-trained model without custom training. Which Azure AI Vision feature should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Image Analysis - Detect objects feature"
+      },
+      {
+        "id": "B",
+        "text": "Custom Vision - Object Detection"
+      },
+      {
+        "id": "C",
+        "text": "Face API - Detection"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Vision - Optical Character Recognition"
+      }
+    ],
+    "correctAnswers": [
+      "A"
+    ],
+    "explanation": "The Azure AI Vision Image Analysis API includes an object detection feature that can identify and locate common objects (including people, cars, and various items) in images without requiring custom training. For common object categories, this is sufficient without needing Custom Vision.",
+    "explanationCN": "Azure AI Vision 图像分析 API 包括一个对象检测功能，可以识别和定位图像中的常见对象（包括人、汽车和各种物品），无需自定义训练。对于常见的对象类别，这已足够，无需使用自定义视觉。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/concept-object-detection",
+    "difficulty": "medium",
+    "tags": [
+      "Computer Vision",
+      "object detection",
+      "Image Analysis",
+      "pre-trained"
+    ]
+  },
+  {
+    "id": "ai102-017",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You are building a solution that needs to generate textual descriptions of images for accessibility purposes. Which Azure AI Vision feature should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Image Analysis - Dense captions"
+      },
+      {
+        "id": "B",
+        "text": "Image Analysis - Tags"
+      },
+      {
+        "id": "C",
+        "text": "Image Analysis - Categories"
+      },
+      {
+        "id": "D",
+        "text": "Image Analysis - Smart crops"
+      }
+    ],
+    "correctAnswers": [
+      "A"
+    ],
+    "explanation": "The Dense Captions feature in Azure AI Vision Image Analysis generates detailed, human-readable descriptions of an image and its regions. This is ideal for accessibility applications like alt-text generation, as it provides comprehensive textual descriptions of visual content.",
+    "explanationCN": "Azure AI Vision 图像分析中的密集标题功能可为图像及其区域生成详细的、人类可读的描述。这非常适合无障碍应用程序（如 alt 文本生成），因为它为视觉内容提供全面的文本描述。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/concept-describe-images-40",
+    "difficulty": "medium",
+    "tags": [
+      "Computer Vision",
+      "Image Analysis",
+      "dense captions",
+      "accessibility"
+    ]
+  },
+  {
+    "id": "ai102-018",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to detect inappropriate or adult content in user-uploaded images before storing them. Which Azure AI service provides content moderation capabilities for images?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Content Safety"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Vision - Image Analysis"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Custom Vision"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Anomaly Detector"
+      }
+    ],
+    "correctAnswers": [
+      "A"
+    ],
+    "explanation": "Azure AI Content Safety is specifically designed to detect potentially harmful content across images and text, including sexual content, violence, hate speech, and self-harm content. It provides confidence scores and category-specific filtering.",
+    "explanationCN": "Azure AI 内容安全专为检测图像和文本中潜在有害内容而设计，包括色情内容、暴力、仇恨言论和自我伤害内容，提供置信度分数和特定类别过滤。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview",
+    "difficulty": "medium",
+    "tags": [
+      "Content Safety",
+      "content moderation",
+      "image analysis",
+      "harmful content"
+    ]
+  },
+  {
+    "id": "ai102-019",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to build a spatial analysis solution that monitors foot traffic in a retail store using a camera. Which Azure AI service should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Video Indexer"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Vision - Spatial Analysis"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Face"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Custom Vision"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Vision Spatial Analysis processes live video feeds to understand how people move through physical spaces. It can count people, detect when people enter or exit zones, track distance, and analyze crowd density - ideal for retail foot traffic monitoring.",
+    "explanationCN": "Azure AI Vision 空间分析处理实时视频流，以了解人们如何在物理空间中移动。它可以计数人员、检测人员进出区域、跟踪距离和分析人群密度——非常适合零售店客流监控。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/intro-to-spatial-analysis-public-preview",
+    "difficulty": "medium",
+    "tags": [
+      "Computer Vision",
+      "Spatial Analysis",
+      "foot traffic",
+      "video analytics"
+    ]
+  },
+  {
+    "id": "ai102-020",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "multiple",
+    "question": "You are evaluating an Azure AI Custom Vision model. Which TWO metrics are most important for evaluating object detection model performance?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Precision"
+      },
+      {
+        "id": "B",
+        "text": "Recall"
+      },
+      {
+        "id": "C",
+        "text": "Accuracy"
+      },
+      {
+        "id": "D",
+        "text": "Perplexity"
+      }
+    ],
+    "correctAnswers": [
+      "A",
+      "B"
+    ],
+    "explanation": "Precision (the proportion of correct positive predictions) and Recall (the proportion of actual positives correctly identified) are the key metrics for evaluating object detection models. Together they form the basis of the F1 score, and Custom Vision reports both metrics in its performance evaluation.",
+    "explanationCN": "精确率（正确正预测的比例）和召回率（正确识别的实际正例比例）是评估对象检测模型的关键指标。它们共同构成 F1 分数的基础，自定义视觉在其性能评估中报告这两个指标。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/get-started-build-detector",
+    "difficulty": "medium",
+    "tags": [
+      "Custom Vision",
+      "model evaluation",
+      "precision",
+      "recall"
+    ]
+  },
+  {
+    "id": "ai102-021",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You want to deploy an Azure AI Custom Vision model to an IoT Edge device with limited connectivity. What is the correct approach?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Export the model as a Docker container and deploy it to the IoT Edge device"
+      },
+      {
+        "id": "B",
+        "text": "Use the Custom Vision endpoint URL directly from the IoT device"
+      },
+      {
+        "id": "C",
+        "text": "Set up a VPN connection between the IoT device and Azure"
+      },
+      {
+        "id": "D",
+        "text": "Create a Custom Vision Standard tier resource and enable edge deployment"
+      }
+    ],
+    "correctAnswers": [
+      "A"
+    ],
+    "explanation": "Azure AI Custom Vision supports exporting trained models as Docker containers (for use with IoT Edge), CoreML (for iOS), TensorFlow (for Android), and other formats. Exporting as a Docker container allows the model to run locally on an IoT Edge device without needing constant cloud connectivity.",
+    "explanationCN": "Azure AI 自定义视觉支持将训练好的模型导出为 Docker 容器（用于 IoT Edge）、CoreML（用于 iOS）、TensorFlow（用于 Android）等格式。导出为 Docker 容器允许模型在 IoT Edge 设备上本地运行，无需持续的云连接。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/export-your-model",
+    "difficulty": "medium",
+    "tags": [
+      "Custom Vision",
+      "IoT Edge",
+      "Docker",
+      "export",
+      "edge deployment"
+    ]
+  },
+  {
+    "id": "ai102-022",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to use Azure AI Vision to analyze product images and extract text from packaging. The images are high-resolution and contain both printed text and barcodes. Which API call should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The OCR (synchronous) API"
+      },
+      {
+        "id": "B",
+        "text": "The Read API (asynchronous operation)"
+      },
+      {
+        "id": "C",
+        "text": "The Image Analysis API with visual features"
+      },
+      {
+        "id": "D",
+        "text": "The Custom Vision prediction API"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "For high-resolution images with dense text, the Read API (asynchronous) is recommended. It handles large images better than the synchronous OCR API, supports multi-page documents, and provides detailed positioning information for extracted text. It's the preferred method for production text extraction.",
+    "explanationCN": "对于包含密集文本的高分辨率图像，建议使用 Read API（异步）。它比同步 OCR API 更好地处理大型图像，支持多页文档，并为提取的文本提供详细的位置信息。这是生产文本提取的首选方法。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/call-read-api",
+    "difficulty": "medium",
+    "tags": [
+      "Computer Vision",
+      "OCR",
+      "Read API",
+      "text extraction"
+    ]
+  },
+  {
+    "id": "ai102-023",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You are using Azure AI Vision Image Analysis 4.0. You want to use a custom model with specific product categories instead of the built-in general model. What feature should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Custom Vision with a separate Custom Vision resource"
+      },
+      {
+        "id": "B",
+        "text": "Image Analysis 4.0 with custom model training (Florence-based)"
+      },
+      {
+        "id": "C",
+        "text": "Azure Machine Learning with AutoML Vision"
+      },
+      {
+        "id": "D",
+        "text": "Azure Applied AI Services"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Vision Image Analysis 4.0 supports custom model training using the Florence foundation model. You can train custom image classification and object detection models directly within the Image Analysis API, without needing a separate Custom Vision resource.",
+    "explanationCN": "Azure AI Vision 图像分析 4.0 支持使用 Florence 基础模型进行自定义模型训练。您可以直接在图像分析 API 中训练自定义图像分类和对象检测模型，无需单独的自定义视觉资源。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/model-customization",
+    "difficulty": "hard",
+    "tags": [
+      "Computer Vision",
+      "Image Analysis 4.0",
+      "custom model",
+      "Florence"
+    ]
+  },
+  {
+    "id": "ai102-024",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to detect anomalies in images of manufactured parts on an assembly line. The defects are very rare and you have limited labeled examples. Which Azure AI service is best suited for this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Custom Vision with standard classification"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Vision - Spatial Analysis"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Custom Vision - Compact domain model"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Vision Image Analysis with built-in features"
+      }
+    ],
+    "correctAnswers": [
+      "A"
+    ],
+    "explanation": "For manufacturing defect detection with limited labeled examples, Azure AI Custom Vision with the General (compact) domain or a standard classification approach is appropriate. You would train the classifier with examples of good parts and defective parts. For very few examples, Custom Vision's transfer learning approach works well.",
+    "explanationCN": "对于标记样本有限的制造业缺陷检测，使用 Azure AI 自定义视觉的通用（紧凑）域或标准分类方法是合适的。您可以用好零件和有缺陷零件的示例训练分类器。对于非常少的样本，自定义视觉的迁移学习方法效果很好。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/select-domain",
+    "difficulty": "hard",
+    "tags": [
+      "Custom Vision",
+      "anomaly detection",
+      "manufacturing",
+      "few-shot"
+    ]
+  },
+  {
+    "id": "ai102-025",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You are using the Azure AI Face service and need to find all people in a photo who are from a specific person group. Which operation should you call?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Face - Detect"
+      },
+      {
+        "id": "B",
+        "text": "Face - Verify"
+      },
+      {
+        "id": "C",
+        "text": "Face - Identify"
+      },
+      {
+        "id": "D",
+        "text": "Face - Find Similar"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "The Face - Identify operation takes detected face IDs and searches a Person Group to find the best match for each face. You first create a Person Group, add persons with their face images, train the group, then use Identify to match detected faces against the trained group.",
+    "explanationCN": "人脸识别 (Identify) 操作接受检测到的人脸 ID，并搜索人员组以找到每张人脸的最佳匹配。您首先创建一个人员组，添加带有人脸图像的人员，训练该组，然后使用 Identify 将检测到的人脸与训练好的组进行匹配。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/identity-detect-faces",
+    "difficulty": "medium",
+    "tags": [
+      "Face API",
+      "identify",
+      "person group",
+      "face recognition"
+    ]
   }
 ]

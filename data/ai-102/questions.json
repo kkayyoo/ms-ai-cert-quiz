@@ -3316,5 +3316,592 @@
       "Key Vault",
       "security"
     ]
+  },
+  {
+    "id": "ai102-086",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to extract printed and handwritten text from scanned invoice images. Which Azure AI Vision feature should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Image Analysis - caption generation"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Vision Read OCR"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Vision - object detection"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Vision - smart crop"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "The Azure AI Vision Read API (OCR) is optimized for extracting printed and handwritten text from images and PDFs. It handles complex documents with mixed text types and returns structured output including bounding boxes and confidence scores.",
+    "explanationCN": "Azure AI 视觉 Read API（OCR）专为从图像和 PDF 中提取印刷体和手写文本而优化。它处理包含混合文本类型的复杂文档，并返回包括边界框和置信度分数的结构化输出。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-ocr",
+    "difficulty": "easy",
+    "tags": [
+      "OCR",
+      "Read API",
+      "text extraction",
+      "Azure AI Vision"
+    ]
+  },
+  {
+    "id": "ai102-087",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You are building a solution to detect whether products on a factory conveyor belt are defective by analyzing images. The defect patterns are unique to your products. Which Azure AI service should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Vision Image Analysis with pre-built models"
+      },
+      {
+        "id": "B",
+        "text": "Custom Vision - object detection project"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Face service"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Vision - background removal"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Custom Vision's object detection capability allows you to train models with your own labeled images to detect specific objects or defects. For domain-specific visual recognition tasks not covered by pre-built models, Custom Vision provides the necessary customization.",
+    "explanationCN": "自定义视觉的对象检测功能允许使用自己的标记图像训练模型，以检测特定对象或缺陷。对于预建模型无法覆盖的特定领域视觉识别任务，自定义视觉提供了必要的自定义能力。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/overview",
+    "difficulty": "medium",
+    "tags": [
+      "Custom Vision",
+      "object detection",
+      "custom model",
+      "computer vision"
+    ]
+  },
+  {
+    "id": "ai102-088",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You have trained a Custom Vision model and want to make it available for predictions. What is the correct sequence of actions to publish the model?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Export then Deploy then Publish"
+      },
+      {
+        "id": "B",
+        "text": "Train then Evaluate then Publish the iteration"
+      },
+      {
+        "id": "C",
+        "text": "Train then Export then Upload to Azure Storage"
+      },
+      {
+        "id": "D",
+        "text": "Label then Train then Delete previous iterations then Publish"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "In Custom Vision, after training you evaluate the model's performance (checking precision and recall metrics), then publish a specific iteration to make it available for predictions via the prediction endpoint. Each training run creates a new iteration.",
+    "explanationCN": "在自定义视觉中，训练后需要评估模型性能（检查精确率和召回率指标），然后发布特定迭代，使其可通过预测终结点进行预测。每次训练运行都会创建一个新的迭代版本。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/test-your-model",
+    "difficulty": "medium",
+    "tags": [
+      "Custom Vision",
+      "model publishing",
+      "iteration",
+      "prediction endpoint"
+    ]
+  },
+  {
+    "id": "ai102-089",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to detect and identify faces in images and verify whether two face images belong to the same person. Which Azure AI service should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Vision - person detection"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Face service"
+      },
+      {
+        "id": "C",
+        "text": "Custom Vision - image classification"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Vision - image analysis"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "The Azure AI Face service provides face detection, face verification (comparing two face images), face identification (matching faces against a group), and facial attribute analysis. Face verification determines if two face images belong to the same person.",
+    "explanationCN": "Azure AI 人脸服务提供人脸检测、人脸验证（比较两张人脸图像）、人脸识别（将人脸与群组匹配）和面部属性分析。人脸验证确定两张人脸图像是否属于同一人。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-identity",
+    "difficulty": "easy",
+    "tags": [
+      "Face API",
+      "face verification",
+      "face detection",
+      "biometrics"
+    ]
+  },
+  {
+    "id": "ai102-090",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You are using Azure AI Document Intelligence (Form Recognizer) to extract data from purchase orders. The purchase orders have a consistent structure with labeled fields. Which model type is most appropriate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prebuilt receipt model"
+      },
+      {
+        "id": "B",
+        "text": "Custom template model (formerly custom form model)"
+      },
+      {
+        "id": "C",
+        "text": "Read model"
+      },
+      {
+        "id": "D",
+        "text": "General document model"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "The custom template model in Azure AI Document Intelligence is designed for forms with a fixed layout and consistent field positions. It requires labeled training data but provides high accuracy for extracting specific fields from forms with predictable structure.",
+    "explanationCN": "Azure AI 文档智能中的自定义模板模型专为具有固定布局和一致字段位置的表单设计。它需要带标签的训练数据，但对于从具有可预测结构的表单中提取特定字段提供了高准确性。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept-custom",
+    "difficulty": "medium",
+    "tags": [
+      "Document Intelligence",
+      "Form Recognizer",
+      "custom template model",
+      "data extraction"
+    ]
+  },
+  {
+    "id": "ai102-091",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "Which Azure AI Document Intelligence prebuilt model should you use to extract line items, subtotals, tax, and totals from vendor invoices?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prebuilt receipt model"
+      },
+      {
+        "id": "B",
+        "text": "Prebuilt business card model"
+      },
+      {
+        "id": "C",
+        "text": "Prebuilt invoice model"
+      },
+      {
+        "id": "D",
+        "text": "Prebuilt ID document model"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "The prebuilt invoice model in Azure AI Document Intelligence is specifically trained to extract common invoice fields including vendor name, billing address, invoice date, due date, line items, subtotals, tax, and total amounts from vendor invoices.",
+    "explanationCN": "Azure AI 文档智能中的预构建发票模型专门用于从供应商发票中提取常见发票字段，包括供应商名称、账单地址、发票日期、到期日期、行项目、小计、税和总金额。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept-invoice",
+    "difficulty": "easy",
+    "tags": [
+      "Document Intelligence",
+      "prebuilt invoice model",
+      "data extraction",
+      "Form Recognizer"
+    ]
+  },
+  {
+    "id": "ai102-092",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to analyze video content to automatically generate transcripts, identify people, extract key moments, and detect brands. Which Azure AI service provides all these capabilities?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure Media Services"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Video Indexer"
+      },
+      {
+        "id": "C",
+        "text": "Azure Stream Analytics"
+      },
+      {
+        "id": "D",
+        "text": "Azure AI Vision - video analysis"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Video Indexer analyzes video and audio to extract insights including automatic transcription, speaker identification, visual text detection (OCR), brand detection, scene detection, key frame extraction, and content moderation.",
+    "explanationCN": "Azure AI 视频索引器分析视频和音频以提取见解，包括自动转录、说话人识别、视觉文本检测（OCR）、品牌检测、场景检测、关键帧提取和内容审核。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/azure-video-indexer/video-indexer-overview",
+    "difficulty": "easy",
+    "tags": [
+      "Video Indexer",
+      "video analysis",
+      "transcription",
+      "media AI"
+    ]
+  },
+  {
+    "id": "ai102-093",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You are implementing an Azure AI Vision solution to analyze product images and generate descriptive captions. The captions should describe the main subjects and scene. Which API feature should you call?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Image Analysis - tag generation"
+      },
+      {
+        "id": "B",
+        "text": "Image Analysis - dense captioning or caption"
+      },
+      {
+        "id": "C",
+        "text": "Image Analysis - object detection"
+      },
+      {
+        "id": "D",
+        "text": "Image Analysis - background removal"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Vision Image Analysis 4.0 includes a caption feature that generates a natural language description of the image content. Dense captioning extends this by generating captions for multiple regions within an image.",
+    "explanationCN": "Azure AI 视觉图像分析 4.0 包含描述功能，可生成图像内容的自然语言描述。密集描述通过为图像内的多个区域生成描述来扩展此功能。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/concept-describe-images-40",
+    "difficulty": "easy",
+    "tags": [
+      "Image Analysis",
+      "captioning",
+      "dense caption",
+      "Azure AI Vision"
+    ]
+  },
+  {
+    "id": "ai102-094",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to train a Custom Vision model for image classification but only have 20 labeled images per class. What should you do to improve model performance?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Switch to the object detection project type"
+      },
+      {
+        "id": "B",
+        "text": "Apply data augmentation and use transfer learning with the default domain"
+      },
+      {
+        "id": "C",
+        "text": "Use the compact domain to enable mobile deployment"
+      },
+      {
+        "id": "D",
+        "text": "Reduce the number of classes to improve accuracy"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Custom Vision uses transfer learning which allows good performance even with limited training data (minimum 5 images per class, but 50+ recommended). Data augmentation (flips, rotations) in Custom Vision helps compensate for small datasets.",
+    "explanationCN": "自定义视觉使用迁移学习，即使训练数据有限（每类最少 5 张图像，但建议 50+ 张）也能表现良好。自定义视觉中的数据增强（翻转、旋转）有助于弥补数据集小的问题。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/getting-started-improving-your-classifier",
+    "difficulty": "medium",
+    "tags": [
+      "Custom Vision",
+      "training data",
+      "transfer learning",
+      "data augmentation"
+    ]
+  },
+  {
+    "id": "ai102-095",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to deploy a Custom Vision model to an IoT Edge device that has limited connectivity. Which export format is compatible with deployment on IoT Edge?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ONNX or TensorFlow format from a Compact domain project"
+      },
+      {
+        "id": "B",
+        "text": "The prediction URL from the published iteration"
+      },
+      {
+        "id": "C",
+        "text": "Docker container with Standard domain"
+      },
+      {
+        "id": "D",
+        "text": "Azure ML pipeline"
+      }
+    ],
+    "correctAnswers": [
+      "A"
+    ],
+    "explanation": "To export a Custom Vision model for edge deployment, you must use a Compact domain when creating the project. Compact domain models can be exported to formats including ONNX, TensorFlow, CoreML, and Docker container for offline/edge use.",
+    "explanationCN": "要导出自定义视觉模型以进行边缘部署，必须在创建项目时使用紧凑域。紧凑域模型可以导出为 ONNX、TensorFlow、CoreML 和 Docker 容器等格式，用于离线/边缘使用。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/export-model-on-device",
+    "difficulty": "medium",
+    "tags": [
+      "Custom Vision",
+      "export",
+      "IoT Edge",
+      "compact domain",
+      "ONNX"
+    ]
+  },
+  {
+    "id": "ai102-096",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You are using Azure AI Document Intelligence to process documents and need to extract tables from financial reports. Which API model should you use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The prebuilt-read model"
+      },
+      {
+        "id": "B",
+        "text": "The prebuilt-layout model"
+      },
+      {
+        "id": "C",
+        "text": "The prebuilt-receipt model"
+      },
+      {
+        "id": "D",
+        "text": "The prebuilt-businessCard model"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "The prebuilt-layout model in Azure AI Document Intelligence extracts text, tables, selection marks, and structural information from documents. It is specifically designed to identify and extract table structures with their cell contents.",
+    "explanationCN": "Azure AI 文档智能中的预构建布局模型从文档中提取文本、表格、选择标记和结构信息。它专门设计用于识别和提取表格结构及其单元格内容。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept-layout",
+    "difficulty": "medium",
+    "tags": [
+      "Document Intelligence",
+      "layout model",
+      "table extraction",
+      "structured data"
+    ]
+  },
+  {
+    "id": "ai102-097",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "Azure AI Video Indexer detects a person speaking in a video. You want to identify this person across multiple videos in your archive. Which Video Indexer feature enables this cross-video person identification?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transcript insights"
+      },
+      {
+        "id": "B",
+        "text": "People models - custom people model trained with face images"
+      },
+      {
+        "id": "C",
+        "text": "Brand detection"
+      },
+      {
+        "id": "D",
+        "text": "Scene segmentation"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Video Indexer supports custom people models where you can add reference face images for specific individuals. Once trained, the model can identify those people across all indexed videos, enabling cross-video person tracking.",
+    "explanationCN": "Azure AI 视频索引器支持自定义人物模型，可以为特定个人添加参考人脸图像。训练后，模型可以在所有索引视频中识别这些人，实现跨视频的人物跟踪。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/azure-video-indexer/customize-person-model-overview",
+    "difficulty": "hard",
+    "tags": [
+      "Video Indexer",
+      "people model",
+      "face recognition",
+      "person identification"
+    ]
+  },
+  {
+    "id": "ai102-098",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to analyze images to identify whether they contain adult content or racy content for content moderation. Which Azure service provides this capability?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure AI Vision Image Analysis - adult content detection"
+      },
+      {
+        "id": "B",
+        "text": "Azure AI Content Safety"
+      },
+      {
+        "id": "C",
+        "text": "Azure AI Face service"
+      },
+      {
+        "id": "D",
+        "text": "Both A and B provide this capability"
+      }
+    ],
+    "correctAnswers": [
+      "D"
+    ],
+    "explanation": "Both Azure AI Vision Image Analysis (adult content feature) and Azure AI Content Safety can detect adult/racy content in images. Azure AI Vision provides isAdultContent and isRacyContent properties. Azure AI Content Safety provides dedicated content moderation with category scores.",
+    "explanationCN": "Azure AI 视觉图像分析（成人内容功能）和 Azure AI 内容安全都可以检测图像中的成人/不雅内容。Azure AI 视觉提供 isAdultContent 和 isRacyContent 属性。Azure AI 内容安全提供带有类别分数的专用内容审核 API。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/concept-detecting-adult-content",
+    "difficulty": "medium",
+    "tags": [
+      "content moderation",
+      "adult content",
+      "Image Analysis",
+      "Content Safety"
+    ]
+  },
+  {
+    "id": "ai102-099",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "You need to use Azure AI Document Intelligence to process a batch of 500 scanned PDF documents asynchronously. What is the correct approach?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Use the synchronous analyze endpoint which supports batch processing"
+      },
+      {
+        "id": "B",
+        "text": "POST to begin analysis, receive an operation URL, then poll with GET until status is succeeded"
+      },
+      {
+        "id": "C",
+        "text": "Upload all PDFs to Blob Storage and use a single API call to process them all"
+      },
+      {
+        "id": "D",
+        "text": "Use the Document Intelligence Studio to process batch files"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure AI Document Intelligence uses an asynchronous pattern for document analysis. You POST the document to begin analysis and receive an operation URL. You then poll that URL with GET requests until the status is 'succeeded' and retrieve the results.",
+    "explanationCN": "Azure AI 文档智能使用异步模式进行文档分析。需要 POST 文档以开始分析并接收操作 URL，然后使用 GET 请求轮询该 URL，直到状态变为已完成（succeeded）并检索结果。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/use-sdk-rest-api",
+    "difficulty": "medium",
+    "tags": [
+      "Document Intelligence",
+      "async processing",
+      "batch processing",
+      "REST API"
+    ]
+  },
+  {
+    "id": "ai102-100",
+    "exam": "AI-102",
+    "domain": "Implement computer vision solutions",
+    "domainWeight": 0.175,
+    "type": "single",
+    "question": "When evaluating a Custom Vision classification model, you notice high precision but low recall. What does this indicate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The model correctly classifies most images but frequently misclassifies them"
+      },
+      {
+        "id": "B",
+        "text": "The model makes few false positives but misses many true positives (high miss rate)"
+      },
+      {
+        "id": "C",
+        "text": "The model has too many training images"
+      },
+      {
+        "id": "D",
+        "text": "The model probability threshold is too low"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "High precision means when the model predicts a class, it is usually correct (few false positives). Low recall means the model misses many actual instances of a class (many false negatives). This often indicates the probability threshold is too high.",
+    "explanationCN": "高精确率意味着当模型预测某个类时通常是正确的（假正例少）。低召回率意味着模型错过了很多实际的类实例（假负例多）。这通常表明概率阈值太高，或者模型需要更多样化的训练示例。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/getting-started-improving-your-classifier",
+    "difficulty": "hard",
+    "tags": [
+      "Custom Vision",
+      "precision",
+      "recall",
+      "model evaluation",
+      "classification"
+    ]
   }
 ]

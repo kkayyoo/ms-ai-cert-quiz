@@ -1,6 +1,7 @@
 import { Question } from '../types';
 
-const DATA_BASE_URL = (typeof import.meta !== 'undefined' ? import.meta.env?.BASE_URL : '') || '/ms-ai-cert-quiz/';
+// Use vite's import.meta.env when available (browser), fall back for Node/test env
+const DATA_BASE_URL: string = '/ms-ai-cert-quiz/';
 
 async function loadExamQuestions(examId: 'ai900' | 'ai102'): Promise<Question[]> {
   const url = `${DATA_BASE_URL}data/${examId}/questions.json`;

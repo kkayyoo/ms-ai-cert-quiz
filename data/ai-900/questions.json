@@ -3173,5 +3173,767 @@
       "Azure OpenAI",
       "content filtering"
     ]
+  },
+  {
+    "id": "ai900-085",
+    "exam": "AI-900",
+    "domain": "Describe fundamental principles of machine learning on Azure",
+    "domainWeight": 0.2,
+    "type": "single",
+    "question": "Which type of machine learning algorithm is used when the training data includes both features and known labels?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Unsupervised learning"
+      },
+      {
+        "id": "B",
+        "text": "Supervised learning"
+      },
+      {
+        "id": "C",
+        "text": "Reinforcement learning"
+      },
+      {
+        "id": "D",
+        "text": "Semi-supervised learning"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Supervised learning uses labeled training data (features and known labels) to train a model that can predict labels for new data.",
+    "explanationCN": "监督学习使用带标签的训练数据（特征和已知标签）来训练模型，使其能预测新数据的标签。这是最常见的机器学习类型。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-supervised-learning",
+    "difficulty": "easy",
+    "tags": [
+      "supervised-learning",
+      "machine-learning-types",
+      "training"
+    ]
+  },
+  {
+    "id": "ai900-086",
+    "exam": "AI-900",
+    "domain": "Describe fundamental principles of machine learning on Azure",
+    "domainWeight": 0.2,
+    "type": "single",
+    "question": "Which type of machine learning is used when a model learns by receiving rewards or penalties based on actions it takes?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Supervised learning"
+      },
+      {
+        "id": "B",
+        "text": "Unsupervised learning"
+      },
+      {
+        "id": "C",
+        "text": "Reinforcement learning"
+      },
+      {
+        "id": "D",
+        "text": "Transfer learning"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Reinforcement learning involves an agent that learns by interacting with an environment and receiving rewards or penalties for actions taken.",
+    "explanationCN": "强化学习中，智能体通过与环境交互，根据所采取的行动获得奖励或惩罚来学习。它不需要标记的训练数据。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-reinforcement-learning",
+    "difficulty": "easy",
+    "tags": [
+      "reinforcement-learning",
+      "machine-learning-types"
+    ]
+  },
+  {
+    "id": "ai900-087",
+    "exam": "AI-900",
+    "domain": "Describe fundamental principles of machine learning on Azure",
+    "domainWeight": 0.2,
+    "type": "single",
+    "question": "In machine learning, what is the term for when a model performs well on training data but poorly on new, unseen data?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Underfitting"
+      },
+      {
+        "id": "B",
+        "text": "Overfitting"
+      },
+      {
+        "id": "C",
+        "text": "Normalization"
+      },
+      {
+        "id": "D",
+        "text": "Regularization"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Overfitting occurs when a model learns the training data too well, including noise, resulting in poor performance on new data.",
+    "explanationCN": "过拟合发生在模型过度学习训练数据（包括噪声）时，导致在新的未见数据上表现不佳。过拟合是机器学习中的常见问题。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-explainability",
+    "difficulty": "easy",
+    "tags": [
+      "overfitting",
+      "model-evaluation",
+      "training"
+    ]
+  },
+  {
+    "id": "ai900-088",
+    "exam": "AI-900",
+    "domain": "Describe fundamental principles of machine learning on Azure",
+    "domainWeight": 0.2,
+    "type": "single",
+    "question": "Which Azure Machine Learning feature automatically selects the best algorithm and hyperparameters for a given dataset?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure ML Pipelines"
+      },
+      {
+        "id": "B",
+        "text": "AutoML"
+      },
+      {
+        "id": "C",
+        "text": "Azure ML Designer"
+      },
+      {
+        "id": "D",
+        "text": "Azure ML Compute"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "AutoML (Automated Machine Learning) in Azure ML automatically tries multiple algorithms and hyperparameter combinations to find the best model for your data.",
+    "explanationCN": "AutoML（自动化机器学习）在Azure ML中自动尝试多种算法和超参数组合，为您的数据找到最佳模型，无需手动调参。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml",
+    "difficulty": "easy",
+    "tags": [
+      "automl",
+      "azure-machine-learning",
+      "automated"
+    ]
+  },
+  {
+    "id": "ai900-089",
+    "exam": "AI-900",
+    "domain": "Describe fundamental principles of machine learning on Azure",
+    "domainWeight": 0.2,
+    "type": "single",
+    "question": "What type of machine learning task predicts a continuous numeric value?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Classification"
+      },
+      {
+        "id": "B",
+        "text": "Clustering"
+      },
+      {
+        "id": "C",
+        "text": "Regression"
+      },
+      {
+        "id": "D",
+        "text": "Anomaly detection"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Regression is a supervised learning task that predicts a continuous numeric value, such as price, temperature, or sales figures.",
+    "explanationCN": "回归是一种监督学习任务，用于预测连续数值，例如价格、温度或销售数字。与分类（预测离散类别）不同，回归输出连续值。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml#regression",
+    "difficulty": "easy",
+    "tags": [
+      "regression",
+      "supervised-learning",
+      "prediction"
+    ]
+  },
+  {
+    "id": "ai900-090",
+    "exam": "AI-900",
+    "domain": "Describe fundamental principles of machine learning on Azure",
+    "domainWeight": 0.2,
+    "type": "single",
+    "question": "What is the purpose of splitting data into training and validation sets in machine learning?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To increase the size of the training dataset"
+      },
+      {
+        "id": "B",
+        "text": "To evaluate model performance on data not used during training"
+      },
+      {
+        "id": "C",
+        "text": "To remove duplicate records from the dataset"
+      },
+      {
+        "id": "D",
+        "text": "To reduce the number of features in the model"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Splitting data into training and validation sets allows you to evaluate how well the model generalizes to unseen data by testing it on the validation set.",
+    "explanationCN": "将数据拆分为训练集和验证集的目的是通过在验证集上测试来评估模型对未见数据的泛化能力，从而检测过拟合问题。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml",
+    "difficulty": "easy",
+    "tags": [
+      "train-test-split",
+      "model-evaluation",
+      "validation"
+    ]
+  },
+  {
+    "id": "ai900-091",
+    "exam": "AI-900",
+    "domain": "Describe fundamental principles of machine learning on Azure",
+    "domainWeight": 0.2,
+    "type": "single",
+    "question": "Which Azure Machine Learning tool provides a drag-and-drop interface to build machine learning pipelines without writing code?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure ML Studio notebooks"
+      },
+      {
+        "id": "B",
+        "text": "Azure ML Designer"
+      },
+      {
+        "id": "C",
+        "text": "Azure ML CLI"
+      },
+      {
+        "id": "D",
+        "text": "Azure ML SDK"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure ML Designer provides a visual, drag-and-drop interface to build, train, and deploy machine learning models without writing code.",
+    "explanationCN": "Azure ML Designer提供可视化的拖放界面，允许用户在不编写代码的情况下构建、训练和部署机器学习模型，适合初学者。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-designer",
+    "difficulty": "easy",
+    "tags": [
+      "azure-ml-designer",
+      "no-code",
+      "azure-machine-learning"
+    ]
+  },
+  {
+    "id": "ai900-092",
+    "exam": "AI-900",
+    "domain": "Describe fundamental principles of machine learning on Azure",
+    "domainWeight": 0.2,
+    "type": "single",
+    "question": "Which metric is most appropriate for evaluating a binary classification model when the dataset is imbalanced?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Accuracy"
+      },
+      {
+        "id": "B",
+        "text": "AUC-ROC"
+      },
+      {
+        "id": "C",
+        "text": "Mean Squared Error"
+      },
+      {
+        "id": "D",
+        "text": "R-squared"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "AUC-ROC (Area Under the Receiver Operating Characteristic curve) is better than accuracy for imbalanced datasets as it measures the model's ability to distinguish between classes regardless of class distribution.",
+    "explanationCN": "AUC-ROC（接收者操作特征曲线下面积）比准确率更适合评估不平衡数据集上的分类模型，因为它衡量模型区分类别的能力，不受类别分布影响。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-understand-automated-ml",
+    "difficulty": "medium",
+    "tags": [
+      "classification",
+      "model-evaluation",
+      "auc-roc",
+      "imbalanced"
+    ]
+  },
+  {
+    "id": "ai900-093",
+    "exam": "AI-900",
+    "domain": "Describe fundamental principles of machine learning on Azure",
+    "domainWeight": 0.2,
+    "type": "single",
+    "question": "In Azure Machine Learning, what is an endpoint used for?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Storing training datasets"
+      },
+      {
+        "id": "B",
+        "text": "Deploying a model to make predictions via an API"
+      },
+      {
+        "id": "C",
+        "text": "Scheduling automated training jobs"
+      },
+      {
+        "id": "D",
+        "text": "Monitoring model drift"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "An endpoint in Azure ML is a deployed instance of a model that exposes an API (REST endpoint) to make real-time or batch predictions.",
+    "explanationCN": "在Azure ML中，端点（endpoint）是模型的已部署实例，通过REST API提供实时或批量预测服务，是将训练好的模型投入生产使用的方式。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-endpoints",
+    "difficulty": "medium",
+    "tags": [
+      "endpoint",
+      "deployment",
+      "azure-machine-learning",
+      "inference"
+    ]
+  },
+  {
+    "id": "ai900-094",
+    "exam": "AI-900",
+    "domain": "Describe fundamental principles of machine learning on Azure",
+    "domainWeight": 0.2,
+    "type": "single",
+    "question": "Which type of machine learning groups similar data points together without using labeled data?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Supervised learning"
+      },
+      {
+        "id": "B",
+        "text": "Reinforcement learning"
+      },
+      {
+        "id": "C",
+        "text": "Unsupervised learning"
+      },
+      {
+        "id": "D",
+        "text": "Transfer learning"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Unsupervised learning works with unlabeled data and discovers patterns or groupings (such as clustering) without predefined labels.",
+    "explanationCN": "无监督学习使用未标记的数据，通过发现数据中的模式或分组（如聚类）来工作，无需预定义标签。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml#unsupervised-learning",
+    "difficulty": "easy",
+    "tags": [
+      "unsupervised-learning",
+      "clustering",
+      "machine-learning-types"
+    ]
+  },
+  {
+    "id": "ai900-095",
+    "exam": "AI-900",
+    "domain": "Describe fundamental principles of machine learning on Azure",
+    "domainWeight": 0.2,
+    "type": "single",
+    "question": "What is feature engineering in the context of machine learning?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Selecting the best machine learning algorithm"
+      },
+      {
+        "id": "B",
+        "text": "The process of using domain knowledge to create or transform input variables to improve model performance"
+      },
+      {
+        "id": "C",
+        "text": "Deploying a trained model to production"
+      },
+      {
+        "id": "D",
+        "text": "Monitoring a deployed model for performance degradation"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Feature engineering involves using domain knowledge to create, transform, or select relevant input variables (features) to improve model accuracy and performance.",
+    "explanationCN": "特征工程是利用领域知识创建、转换或选择相关输入变量（特征）的过程，以提高模型的准确性和性能。它是机器学习流程中的关键步骤。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml#featurization",
+    "difficulty": "medium",
+    "tags": [
+      "feature-engineering",
+      "data-preparation",
+      "machine-learning"
+    ]
+  },
+  {
+    "id": "ai900-096",
+    "exam": "AI-900",
+    "domain": "Describe fundamental principles of machine learning on Azure",
+    "domainWeight": 0.2,
+    "type": "single",
+    "question": "Which Azure service provides a managed environment for data scientists to build, train, and deploy machine learning models at scale?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azure Cognitive Services"
+      },
+      {
+        "id": "B",
+        "text": "Azure Machine Learning"
+      },
+      {
+        "id": "C",
+        "text": "Azure Databricks"
+      },
+      {
+        "id": "D",
+        "text": "Azure Synapse Analytics"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Azure Machine Learning is a cloud service for accelerating and managing the machine learning project lifecycle, including training, deploying, and monitoring models.",
+    "explanationCN": "Azure Machine Learning是用于加速和管理机器学习项目生命周期的云服务，包括构建、训练、部署和监控模型，是数据科学家的主要工作平台。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning",
+    "difficulty": "easy",
+    "tags": [
+      "azure-machine-learning",
+      "platform",
+      "cloud"
+    ]
+  },
+  {
+    "id": "ai900-097",
+    "exam": "AI-900",
+    "domain": "Describe fundamental principles of machine learning on Azure",
+    "domainWeight": 0.2,
+    "type": "single",
+    "question": "What does the term \"inference\" mean in the context of machine learning?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The process of training a model on a dataset"
+      },
+      {
+        "id": "B",
+        "text": "Using a trained model to make predictions on new data"
+      },
+      {
+        "id": "C",
+        "text": "Evaluating a model's performance on test data"
+      },
+      {
+        "id": "D",
+        "text": "Selecting features for a training dataset"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Inference refers to the process of using a trained machine learning model to make predictions on new, previously unseen data.",
+    "explanationCN": "推理（inference）是指使用已训练好的机器学习模型对新的、未见过的数据进行预测的过程。训练和推理是机器学习的两个主要阶段。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-endpoints",
+    "difficulty": "easy",
+    "tags": [
+      "inference",
+      "deployment",
+      "prediction"
+    ]
+  },
+  {
+    "id": "ai900-098",
+    "exam": "AI-900",
+    "domain": "Describe fundamental principles of machine learning on Azure",
+    "domainWeight": 0.2,
+    "type": "single",
+    "question": "In Azure AutoML, which task type should you select to predict whether an email is spam or not spam?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Regression"
+      },
+      {
+        "id": "B",
+        "text": "Forecasting"
+      },
+      {
+        "id": "C",
+        "text": "Classification"
+      },
+      {
+        "id": "D",
+        "text": "Clustering"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Classification is used to predict which category data belongs to. Predicting spam/not spam is a binary classification problem.",
+    "explanationCN": "分类（Classification）用于预测数据属于哪个类别。判断邮件是否为垃圾邮件是一个二分类问题，应选择Classification任务类型。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml#classification",
+    "difficulty": "easy",
+    "tags": [
+      "classification",
+      "automl",
+      "binary-classification"
+    ]
+  },
+  {
+    "id": "ai900-099",
+    "exam": "AI-900",
+    "domain": "Describe fundamental principles of machine learning on Azure",
+    "domainWeight": 0.2,
+    "type": "single",
+    "question": "What is a confusion matrix used for in machine learning?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To visualize the distribution of features in a dataset"
+      },
+      {
+        "id": "B",
+        "text": "To summarize the performance of a classification model by showing correct and incorrect predictions"
+      },
+      {
+        "id": "C",
+        "text": "To select the best algorithm for a regression task"
+      },
+      {
+        "id": "D",
+        "text": "To monitor model drift in production"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "A confusion matrix summarizes the performance of a classification model by showing the number of true positives, true negatives, false positives, and false negatives.",
+    "explanationCN": "混淆矩阵通过显示真正例、真负例、假正例和假负例的数量来总结分类模型的性能，帮助评估模型在各个类别上的预测情况。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-understand-automated-ml",
+    "difficulty": "medium",
+    "tags": [
+      "confusion-matrix",
+      "model-evaluation",
+      "classification"
+    ]
+  },
+  {
+    "id": "ai900-100",
+    "exam": "AI-900",
+    "domain": "Describe fundamental principles of machine learning on Azure",
+    "domainWeight": 0.2,
+    "type": "single",
+    "question": "Which Azure Machine Learning compute type is best suited for running short experiments interactively?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Compute clusters"
+      },
+      {
+        "id": "B",
+        "text": "Inference clusters"
+      },
+      {
+        "id": "C",
+        "text": "Compute instances"
+      },
+      {
+        "id": "D",
+        "text": "Attached compute"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Compute instances are fully managed cloud-based workstations for data scientists to run experiments interactively using Jupyter notebooks.",
+    "explanationCN": "计算实例（Compute instances）是为数据科学家提供的全托管云工作站，适合使用Jupyter笔记本进行交互式实验，而计算集群适合批量训练。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-compute-instance",
+    "difficulty": "medium",
+    "tags": [
+      "compute-instance",
+      "azure-machine-learning",
+      "development"
+    ]
+  },
+  {
+    "id": "ai900-101",
+    "exam": "AI-900",
+    "domain": "Describe fundamental principles of machine learning on Azure",
+    "domainWeight": 0.2,
+    "type": "single",
+    "question": "What is the purpose of data normalization in machine learning preprocessing?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To increase the number of training samples"
+      },
+      {
+        "id": "B",
+        "text": "To scale features to a common range so no single feature dominates the model"
+      },
+      {
+        "id": "C",
+        "text": "To remove all outliers from the dataset"
+      },
+      {
+        "id": "D",
+        "text": "To convert categorical data to numerical data"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Data normalization scales features to a common range (e.g., 0-1) so that features with larger numeric ranges do not dominate the learning algorithm.",
+    "explanationCN": "数据归一化将特征缩放到共同范围（如0-1），确保数值范围较大的特征不会主导学习算法，从而提高模型训练的效率和准确性。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml#featurization",
+    "difficulty": "medium",
+    "tags": [
+      "normalization",
+      "data-preprocessing",
+      "feature-scaling"
+    ]
+  },
+  {
+    "id": "ai900-102",
+    "exam": "AI-900",
+    "domain": "Describe fundamental principles of machine learning on Azure",
+    "domainWeight": 0.2,
+    "type": "single",
+    "question": "In Azure ML, what is an MLflow experiment used for?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploying models to Azure Kubernetes Service"
+      },
+      {
+        "id": "B",
+        "text": "Tracking model training runs, parameters, metrics, and artifacts"
+      },
+      {
+        "id": "C",
+        "text": "Scheduling automated retraining jobs"
+      },
+      {
+        "id": "D",
+        "text": "Managing compute resource quotas"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "MLflow in Azure ML is used to track and log experiment runs, including parameters, metrics, models, and other artifacts during training.",
+    "explanationCN": "Azure ML中的MLflow用于跟踪和记录实验运行，包括参数、指标、模型和其他工件（artifacts），方便比较不同训练运行的结果。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-mlflow",
+    "difficulty": "medium",
+    "tags": [
+      "mlflow",
+      "experiment-tracking",
+      "azure-machine-learning"
+    ]
+  },
+  {
+    "id": "ai900-103",
+    "exam": "AI-900",
+    "domain": "Describe fundamental principles of machine learning on Azure",
+    "domainWeight": 0.2,
+    "type": "single",
+    "question": "Which type of machine learning model learns a hierarchy of features automatically from raw data, commonly used in deep learning?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Decision tree"
+      },
+      {
+        "id": "B",
+        "text": "Linear regression"
+      },
+      {
+        "id": "C",
+        "text": "Neural network"
+      },
+      {
+        "id": "D",
+        "text": "K-means clustering"
+      }
+    ],
+    "correctAnswers": [
+      "C"
+    ],
+    "explanation": "Neural networks (especially deep neural networks) automatically learn hierarchical feature representations from raw data, making them powerful for complex tasks like image and speech recognition.",
+    "explanationCN": "神经网络（尤其是深度神经网络）能自动从原始数据中学习层次化特征表示，使其在图像识别、语音识别等复杂任务上非常强大。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-deep-learning-vs-machine-learning",
+    "difficulty": "medium",
+    "tags": [
+      "neural-network",
+      "deep-learning",
+      "feature-learning"
+    ]
+  },
+  {
+    "id": "ai900-104",
+    "exam": "AI-900",
+    "domain": "Describe fundamental principles of machine learning on Azure",
+    "domainWeight": 0.2,
+    "type": "single",
+    "question": "What is model drift in the context of deployed machine learning models?",
+    "options": [
+      {
+        "id": "A",
+        "text": "When the model's code becomes outdated"
+      },
+      {
+        "id": "B",
+        "text": "A decrease in model performance over time due to changes in the real-world data distribution"
+      },
+      {
+        "id": "C",
+        "text": "When a model is retrained with new data"
+      },
+      {
+        "id": "D",
+        "text": "When compute costs for inference increase"
+      }
+    ],
+    "correctAnswers": [
+      "B"
+    ],
+    "explanation": "Model drift (or data drift) occurs when the statistical properties of the input data change over time, causing the model's performance to degrade because it was trained on different data distributions.",
+    "explanationCN": "模型漂移（或数据漂移）发生在输入数据的统计属性随时间变化时，由于模型是在不同数据分布上训练的，导致其性能下降。Azure ML提供数据漂移监控功能。",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-data-drift",
+    "difficulty": "medium",
+    "tags": [
+      "model-drift",
+      "data-drift",
+      "monitoring",
+      "deployment"
+    ]
   }
 ]
